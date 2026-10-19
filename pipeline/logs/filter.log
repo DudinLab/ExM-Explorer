@@ -1,0 +1,23 @@
+10:43:18  INFO      ============================================================
+10:43:18  INFO      ExM Library Filter — DudinLab
+10:43:18  INFO      Input:  C:\Users\dudin\Desktop\ExM_Library\library.csv
+10:43:18  INFO      ============================================================
+10:43:18  INFO      Loaded 861 papers
+10:43:18  INFO      
+Results:
+10:43:18  INFO        Keep (downloaded):        164
+10:43:18  INFO        Keep (scored >= 3):       187
+10:43:18  INFO        Keep (no abstract/check): 49
+10:43:18  INFO        Reject (reviews):         30
+10:43:18  INFO        Reject (weak signal):     431
+10:43:18  INFO        ─────────────────────────────
+10:43:18  INFO        Total kept:               400
+10:43:18  INFO        Total rejected:           461
+10:43:18  INFO        Reduction:                861 → 400 (53% removed)
+10:43:37  INFO      Wrote library.csv: 400 papers
+10:43:37  INFO      Wrote library_rejected.csv: 461 papers
+10:43:37  INFO      Wrote library_needs_review.csv: 49 papers
+10:43:37  INFO      
+Done.
+10:43:37  INFO        Open library_rejected.csv to audit what was removed.
+10:43:37  INFO        Open library_needs_review.csv to manually check 49 papers.

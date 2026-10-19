@@ -1,0 +1,133 @@
+21:38:36  INFO      ============================================================
+21:38:36  INFO      ExM Library Harvest — DudinLab
+21:38:36  INFO      Output folder: C:\Users\dudin\Desktop\ExM_Library
+21:38:36  INFO      Search range:  2015 – 2026
+21:38:36  INFO      ============================================================
+21:38:36  INFO      
+[1/5] Searching PubMed...
+21:38:37  INFO        PubMed '"expansion microscopy"': 652 hits, 652 fetched
+21:38:38  INFO        PubMed '"U-ExM"': 65 hits, 65 fetched
+21:38:39  INFO        PubMed '"ultrastructure expansion microscopy"': 104 hits, 104 fetched
+21:38:40  INFO        PubMed '"proExM"': 10 hits, 10 fetched
+21:38:41  INFO        PubMed '"ExPath"': 6 hits, 6 fetched
+21:38:42  INFO        PubMed '"ExFISH"': 2 hits, 2 fetched
+21:38:44  INFO        PubMed '"TREx expansion"': 0 hits, 0 fetched
+21:38:45  INFO        PubMed '"Magnify" expansion': 26 hits, 26 fetched
+21:38:46  INFO        PubMed '"cryo-ExM"': 5 hits, 5 fetched
+21:38:47  INFO        PubMed '"MAP microscopy"': 0 hits, 0 fetched
+21:38:48  INFO        PubMed '"magnified analysis of proteome"': 0 hits, 0 fetched
+21:38:48  INFO      PubMed total unique PMIDs: 672
+21:38:48  INFO      Fetching PubMed summaries: 672 records in 4 batches
+21:38:58  INFO      PubMed: 672 records retrieved
+21:38:58  INFO      
+[2/5] Searching Europe PMC...
+21:39:13  INFO        EPMC '"expansion microscopy"': 2161 unique so far
+21:39:15  INFO        EPMC '"U-ExM"': 2163 unique so far
+21:39:16  INFO        EPMC '"ultrastructure expansion microscopy"': 2163 unique so far
+21:39:18  INFO        EPMC '"proExM"': 2164 unique so far
+21:39:19  INFO        EPMC '"ExPath"': 2220 unique so far
+21:39:21  INFO        EPMC '"ExFISH"': 2224 unique so far
+21:39:22  INFO        EPMC '"TREx expansion"': 2224 unique so far
+21:39:37  INFO        EPMC '"Magnify" expansion': 4487 unique so far
+21:39:39  INFO        EPMC '"cryo-ExM"': 4487 unique so far
+21:39:40  INFO        EPMC '"MAP microscopy"': 4491 unique so far
+21:39:41  INFO        EPMC '"magnified analysis of proteome"': 4506 unique so far
+21:39:42  INFO      Europe PMC total unique records: 4506
+21:39:42  INFO      Europe PMC: 4506 records retrieved
+21:39:42  INFO      
+[3/5] Searching bioRxiv...
+21:39:42  INFO      Searching bioRxiv (this may take a few minutes)...
+21:39:44  WARNING   bioRxiv parse error cursor 0: '<' not supported between instances of 'str' and 'int'
+21:39:44  INFO      bioRxiv total ExM-related preprints: 0
+21:39:44  INFO      bioRxiv: 0 records retrieved
+21:39:44  INFO      
+[4/5] Deduplicating...
+21:39:44  INFO      Total before dedup: 5178
+21:39:44  INFO      After dedup: 4515 unique papers (122 without DOI)
+21:39:44  INFO      Total after dedup:  4515 unique papers
+21:39:44  INFO      
+[5/5] Resolving open access and downloading PDFs...
+21:51:38  INFO      ============================================================
+21:51:38  INFO      ExM Library Harvest — DudinLab
+21:51:38  INFO      Output folder: C:\Users\dudin\Desktop\ExM_Library
+21:51:38  INFO      Search range:  2015 – 2026
+21:51:38  INFO      ============================================================
+21:51:38  INFO      
+[1/5] Searching PubMed...
+21:51:39  INFO        PubMed '"expansion microscopy"': 652 hits, 652 fetched
+21:51:40  INFO        PubMed '"U-ExM"': 65 hits, 65 fetched
+21:51:41  INFO        PubMed '"ultrastructure expansion"': 108 hits, 108 fetched
+21:51:43  INFO        PubMed '"proExM"': 10 hits, 10 fetched
+21:51:44  INFO        PubMed '"ExFISH"': 2 hits, 2 fetched
+21:51:45  INFO        PubMed '"magnified analysis of proteome"': 0 hits, 0 fetched
+21:51:46  INFO      PubMed total unique PMIDs: 655
+21:51:46  INFO      Fetching PubMed summaries: 655 records in 4 batches
+21:51:55  INFO      PubMed: 655 records retrieved
+21:51:55  INFO      
+[2/5] Searching Europe PMC...
+21:52:00  INFO        EPMC '"expansion microscopy"': 804 unique so far
+21:52:01  INFO        EPMC '"U-ExM"': 804 unique so far
+21:52:03  INFO        EPMC '"ultrastructure expansion"': 809 unique so far
+21:52:04  INFO        EPMC '"proExM"': 809 unique so far
+21:52:05  INFO        EPMC '"ExFISH"': 809 unique so far
+21:52:06  INFO        EPMC '"magnified analysis of proteome"': 817 unique so far
+21:52:06  INFO      Europe PMC total unique records: 817
+21:52:06  INFO      Europe PMC: 817 records retrieved
+21:52:06  INFO      
+[3/5] Searching bioRxiv...
+21:52:06  INFO      Searching bioRxiv (this may take a few minutes)...
+21:57:00  INFO      ============================================================
+21:57:00  INFO      ExM Library Harvest — DudinLab
+21:57:00  INFO      Output folder: C:\Users\dudin\Desktop\ExM_Library
+21:57:00  INFO      Search range:  2015 – 2026
+21:57:00  INFO      ============================================================
+21:57:00  INFO      
+[1/5] Searching PubMed...
+21:57:01  INFO        PubMed '"expansion microscopy"': 652 hits, 652 fetched
+21:57:02  INFO        PubMed '"U-ExM"': 65 hits, 65 fetched
+21:57:03  INFO        PubMed '"ultrastructure expansion"': 108 hits, 108 fetched
+21:57:05  INFO        PubMed '"proExM"': 10 hits, 10 fetched
+21:57:06  INFO        PubMed '"ExFISH"': 2 hits, 2 fetched
+21:57:07  INFO        PubMed '"magnified analysis of proteome"': 0 hits, 0 fetched
+21:57:08  INFO      PubMed total unique PMIDs: 655
+21:57:08  INFO      Fetching PubMed summaries: 655 records in 4 batches
+21:57:18  INFO      PubMed: 655 records retrieved
+21:57:18  INFO      
+[2/5] Searching Europe PMC...
+21:57:21  INFO        EPMC '"expansion microscopy"': 804 unique so far
+21:57:22  INFO        EPMC '"U-ExM"': 804 unique so far
+21:57:24  INFO        EPMC '"ultrastructure expansion"': 809 unique so far
+21:57:25  INFO        EPMC '"proExM"': 809 unique so far
+21:57:26  INFO        EPMC '"ExFISH"': 809 unique so far
+21:57:27  INFO        EPMC '"magnified analysis of proteome"': 817 unique so far
+21:57:27  INFO      Europe PMC total unique records: 817
+21:57:27  INFO      Europe PMC: 817 records retrieved
+21:57:27  INFO      
+[3/5] Checking bioRxiv (covered via Europe PMC)...
+21:57:27  INFO      bioRxiv preprints covered by Europe PMC index — skipping direct scan.
+21:57:27  INFO      bioRxiv total ExM-related preprints: 0 (included in Europe PMC results)
+21:57:27  INFO      bioRxiv: 0 records retrieved
+21:57:27  INFO      
+[4/5] Deduplicating...
+21:57:27  INFO      Total before dedup: 1472
+21:57:27  INFO      After dedup: 861 unique papers (6 without DOI)
+21:57:27  INFO      Total after dedup:  861 unique papers
+21:57:27  INFO      
+[5/5] Resolving open access and downloading PDFs...
+06:07:59  INFO      Download results:
+06:07:59  INFO        Downloaded:        17
+06:07:59  INFO        Paywalled:         128
+06:07:59  INFO        Download failed:   664
+06:07:59  INFO        OA landing only:   52
+06:07:59  INFO      Wrote library.csv: 861 papers → C:\Users\dudin\Desktop\ExM_Library\library.csv
+06:07:59  INFO      Wrote 128 paywalled papers to C:\Users\dudin\Desktop\ExM_Library\needs_manual\needs_manual.txt
+06:07:59  INFO      
+============================================================
+06:07:59  INFO      HARVEST COMPLETE
+06:07:59  INFO        Total papers:   861
+06:07:59  INFO        PDFs in folder: 17
+06:07:59  INFO        Needs manual:   128
+06:07:59  INFO        Library CSV:    C:\Users\dudin\Desktop\ExM_Library\library.csv
+06:07:59  INFO        Manual list:    C:\Users\dudin\Desktop\ExM_Library\needs_manual\needs_manual.txt
+06:07:59  INFO        Full log:       C:\Users\dudin\Desktop\ExM_Library\harvest.log
+06:07:59  INFO      ============================================================

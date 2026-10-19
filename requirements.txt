@@ -1,0 +1,8 @@
+# Python 3.10+
+# Portal build (deterministic, model-free) — only the standard library is required.
+# The extraction/curation pipeline additionally needs:
+anthropic>=0.39
+pymupdf>=1.24
+pandas>=2.0
+matplotlib>=3.7
+requests>=2.31

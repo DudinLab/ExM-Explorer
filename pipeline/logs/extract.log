@@ -1,0 +1,1362 @@
+2026-06-29 14:10:07,516 INFO === Extraction run started ===
+2026-06-29 14:10:29,948 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-29 14:10:29,980 INFO OK Aeschlimann1_bioRxiv_2022.pdf: 8 rows written
+2026-06-29 14:10:53,079 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-29 14:10:53,081 INFO OK Aeschlimann2_bioRxiv_2022.pdf: 8 rows written
+2026-06-29 14:11:10,199 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-29 14:11:10,201 INFO OK Ali_bioRxiv_2024.pdf: 3 rows written
+2026-06-29 14:11:13,136 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-06-29 14:11:13,137 INFO Retrying request to /v1/messages in 0.472379 seconds
+2026-06-29 14:11:32,467 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-29 14:11:32,469 INFO OK Alley_mBio_2025.pdf: 5 rows written
+2026-06-29 14:11:58,078 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-29 14:11:58,080 INFO OK Alon_Nanoscale_2021.pdf: 6 rows written
+2026-06-29 14:17:02,675 INFO === Extraction run started ===
+2026-06-29 14:17:20,453 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-29 14:17:20,495 INFO OK Aeschlimann1_bioRxiv_2022.pdf: 6 rows written
+2026-06-29 14:17:37,072 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-29 14:17:37,074 INFO OK Aeschlimann2_bioRxiv_2022.pdf: 6 rows written
+2026-06-29 14:17:52,883 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-29 14:17:52,885 INFO OK Ali_bioRxiv_2024.pdf: 4 rows written
+2026-06-29 14:18:09,272 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-29 14:18:09,273 INFO OK Alley_mBio_2025.pdf: 5 rows written
+2026-06-29 14:18:34,682 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-29 14:18:34,684 INFO OK Alon_Nanoscale_2021.pdf: 6 rows written
+2026-07-01 15:34:33,180 INFO === Extraction run started ===
+2026-07-01 15:35:24,285 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:35:24,339 INFO OK Alonso-Nanclares_FrontiersinNeuroanatomy_2021.pdf: 18 rows written \u26a0 34 uncertain/inferred fields
+2026-07-01 15:36:02,465 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:36:02,468 INFO OK Alonso_bioRxiv_2022.pdf: 11 rows written
+2026-07-01 15:36:44,154 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:36:44,159 INFO OK Alonso_ParasitologyResearch_2022.pdf: 11 rows written \u26a0 9 uncertain/inferred fields
+2026-07-01 15:37:24,476 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:37:24,478 INFO OK AlvarezViar_bioRxiv_2023.pdf: 10 rows written \u26a0 10 uncertain/inferred fields
+2026-07-01 15:37:32,934 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:37:32,936 INFO SKIP AlvarezViar_CurrentOpinioninCellBiology_2024.pdf: not ExM paper
+2026-07-01 15:38:20,546 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:38:20,548 INFO OK Amiri-Yekta_bioRxiv_2023.pdf: 15 rows written \u26a0 7 uncertain/inferred fields
+2026-07-01 15:38:53,837 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:38:53,840 INFO OK Amodeo_bioRxiv_2020.pdf: 6 rows written \u26a0 6 uncertain/inferred fields
+2026-07-01 15:39:27,513 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:39:27,515 INFO OK Amodeo_JournalofCellScience_2021.pdf: 8 rows written
+2026-07-01 15:40:06,009 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:40:06,013 INFO OK Anderson_JournalofMicroscopy_2025.pdf: 8 rows written
+2026-07-01 15:40:30,777 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:40:30,779 INFO OK Antolin_bioRxiv_2023.pdf: 4 rows written
+2026-07-01 15:41:19,141 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:41:19,146 INFO OK Apicomplexa_mBio_2021.pdf: 20 rows written
+2026-07-01 15:42:12,239 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:42:12,245 INFO OK Aravind_bioRxiv_2025.pdf: 21 rows written \u26a0 21 uncertain/inferred fields
+2026-07-01 15:42:40,198 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:42:40,201 INFO OK Arbi_bioRxiv_2022.pdf: 4 rows written
+2026-07-01 15:43:22,606 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:43:22,608 INFO OK Arbor_bioRxiv_2024.pdf: 11 rows written
+2026-07-01 15:44:04,888 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:44:04,891 INFO OK Arbor_NatureCommunications_2020.pdf: 15 rows written
+2026-07-01 15:44:35,718 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:44:35,721 INFO OK Arrizabalaga_bioRxiv_2024.pdf: 5 rows written \u26a0 10 uncertain/inferred fields
+2026-07-01 15:45:16,230 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:45:16,233 INFO OK Arslanhan_bioRxiv_2023.pdf: 12 rows written \u26a0 48 uncertain/inferred fields
+2026-07-01 15:46:20,419 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:46:20,426 INFO OK Arslanhan_JournalofCellBiology_2023.pdf: 21 rows written \u26a0 87 uncertain/inferred fields
+2026-07-01 15:47:15,732 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:47:15,734 INFO OK Asano_Cells_2020.pdf: 13 rows written
+2026-07-01 15:48:08,798 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:48:08,801 INFO OK Asano_NatureCommunications_2025.pdf: 15 rows written
+2026-07-01 15:48:56,340 INFO Retrying request to /v1/messages in 0.491701 seconds
+2026-07-01 15:49:30,048 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:49:30,051 INFO OK Atchou_bioRxiv_2023.pdf: 8 rows written
+2026-07-01 15:50:38,935 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:50:38,939 INFO OK Atchou_bioRxiv_2025.pdf: 27 rows written
+2026-07-01 15:51:17,964 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:51:17,967 INFO OK Atchou_JournalofCellScience_2023.pdf: 10 rows written
+2026-07-01 15:51:42,966 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:51:42,968 INFO OK Aydemir_bioRxiv_2025.pdf: 4 rows written
+2026-07-01 15:54:00,656 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:54:00,676 INFO OK Azimzadeh1_eLife_2021.pdf: 31 rows written \u26a0 58 uncertain/inferred fields
+2026-07-01 15:55:28,651 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:55:28,653 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 654 column 23 (char 25187)
+2026-07-01 15:57:00,039 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:57:00,041 WARNING JSON parse error (attempt 2): Unterminated string starting at: line 715 column 23 (char 26120)
+2026-07-01 15:58:23,592 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:58:23,593 WARNING JSON parse error (attempt 3): Expecting property name enclosed in double quotes: line 674 column 37 (char 27034)
+2026-07-01 15:58:23,594 ERROR FAILED Bai_NatureCommunications_2023.pdf: All 3 attempts failed
+2026-07-01 15:59:12,834 INFO Retrying request to /v1/messages in 0.376526 seconds
+2026-07-01 15:59:56,016 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 15:59:56,018 INFO OK Balaram_bioRxiv_2023.pdf: 8 rows written
+2026-07-01 16:00:38,083 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 16:00:38,085 INFO OK Bandeira_ExperimentalParasitology_2023.pdf: 10 rows written
+2026-07-01 16:01:16,415 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 16:01:16,575 INFO OK Bandeira_ParasitologyResearch_2025.pdf: 6 rows written \u26a0 6 uncertain/inferred fields
+2026-07-01 16:02:47,806 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 16:02:47,866 INFO OK Batman_PLOSBiology_2025.pdf: 35 rows written \u26a0 29 uncertain/inferred fields
+2026-07-01 16:45:37,750 INFO Retrying request to /v1/messages in 0.375924 seconds
+2026-07-01 16:45:38,129 INFO Retrying request to /v1/messages in 0.941962 seconds
+2026-07-01 16:45:39,072 WARNING API error (attempt 1): Connection error.
+2026-07-01 16:45:52,239 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 16:45:52,241 INFO SKIP Benzing_bioRxiv_2021.pdf: not ExM paper
+2026-07-01 16:46:22,108 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 16:46:22,111 INFO OK Berentsen_BBABioenergetics_2025.pdf: 2 rows written \u26a0 11 uncertain/inferred fields
+2026-07-01 16:47:49,864 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 16:47:49,866 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 644 column 11 (char 25522)
+2026-07-01 16:49:19,897 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 16:49:19,899 WARNING JSON parse error (attempt 2): Unterminated string starting at: line 654 column 25 (char 25700)
+2026-07-01 18:06:07,995 INFO Retrying request to /v1/messages in 0.436706 seconds
+2026-07-01 18:06:08,438 INFO Retrying request to /v1/messages in 0.874642 seconds
+2026-07-01 18:06:09,317 WARNING API error (attempt 3): Connection error.
+2026-07-01 18:06:09,318 ERROR FAILED Bernstock_bioRxiv_2021.pdf: All 3 attempts failed
+2026-07-01 18:06:10,036 INFO Retrying request to /v1/messages in 0.471576 seconds
+2026-07-01 18:06:10,510 INFO Retrying request to /v1/messages in 0.821025 seconds
+2026-07-01 18:07:01,403 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:07:01,410 INFO OK Bertiaux_PLOSBiology_2021.pdf: 17 rows written \u26a0 16 uncertain/inferred fields
+2026-07-01 18:07:31,204 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:07:31,207 INFO OK Bezler_MolecularBiologyoftheCell_2022.pdf: 8 rows written
+2026-07-01 18:08:11,757 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:08:11,761 INFO OK Biocenter_bioRxiv_2024.pdf: 10 rows written \u26a0 30 uncertain/inferred fields
+2026-07-01 18:08:20,260 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:08:20,262 INFO SKIP Biochemie_JournalofCellScience_2024.pdf: not ExM paper
+2026-07-01 18:09:10,136 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:09:10,140 INFO OK BioMediTech_bioRxiv_2022.pdf: 15 rows written \u26a0 8 uncertain/inferred fields
+2026-07-01 18:10:18,224 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:10:18,248 INFO OK Biosciences_bioRxiv_2024.pdf: 24 rows written \u26a0 49 uncertain/inferred fields
+2026-07-01 18:10:44,177 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:10:44,179 INFO OK Biotechnology_AnalyticalChemistry_2023.pdf: 1 rows written
+2026-07-01 18:12:14,429 INFO Retrying request to /v1/messages in 0.477876 seconds
+2026-07-01 18:13:40,827 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:13:40,832 INFO OK Biozentrum_bioRxiv_2025.pdf: 38 rows written \u26a0 34 uncertain/inferred fields
+2026-07-01 18:14:33,382 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:14:33,447 INFO OK Birmingham_bioRxiv_2021.pdf: 17 rows written
+2026-07-01 18:14:43,976 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:14:44,137 INFO SKIP Blanpied_FrontiersinSynapticNeuroscience_2021.pdf: not ExM paper
+2026-07-01 18:15:27,392 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:15:27,464 INFO OK Blauwkamp_bioRxiv_2024.pdf: 15 rows written
+2026-07-01 18:16:56,343 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:16:56,347 INFO OK Blauwkamp_bioRxiv_2025.pdf: 5 rows written \u26a0 10 uncertain/inferred fields
+2026-07-01 18:20:02,684 INFO === Extraction run started ===
+2026-07-01 18:20:11,104 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:20:11,167 INFO SKIP AlvarezViar_CurrentOpinioninCellBiology_2024.pdf: not ExM paper
+2026-07-01 18:21:36,537 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:21:36,546 INFO OK Bai_NatureCommunications_2023.pdf: 48 rows written \u26a0 48 uncertain/inferred fields
+2026-07-01 18:21:45,242 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:21:45,244 INFO SKIP Benzing_bioRxiv_2021.pdf: not ExM paper
+2026-07-01 18:23:10,462 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:23:10,471 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 649 column 11 (char 25477)
+2026-07-01 18:24:39,744 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:24:39,747 WARNING JSON parse error (attempt 2): Expecting property name enclosed in double quotes: line 655 column 46 (char 25602)
+2026-07-01 18:26:12,545 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:26:12,551 INFO OK Bernstock_bioRxiv_2021.pdf: 40 rows written
+2026-07-01 18:26:22,444 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:26:22,454 INFO SKIP Biochemie_JournalofCellScience_2024.pdf: not ExM paper
+2026-07-01 18:26:30,439 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:26:30,441 INFO SKIP Blanpied_FrontiersinSynapticNeuroscience_2021.pdf: not ExM paper
+2026-07-01 18:27:08,937 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:27:08,942 INFO OK Blauwkamp_mSphere_2024.pdf: 11 rows written
+2026-07-01 18:27:37,200 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:27:37,205 INFO OK Blauwkamp_NatureCommunications_2025.pdf: 6 rows written \u26a0 12 uncertain/inferred fields
+2026-07-01 18:28:04,571 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:28:04,574 INFO OK Blauwkamp_ResearchSquare_2025.pdf: 5 rows written \u26a0 6 uncertain/inferred fields
+2026-07-01 18:29:19,842 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:29:19,849 INFO OK Bondarenko_bioRxiv_2024.pdf: 27 rows written
+2026-07-01 18:30:22,547 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:30:22,558 INFO OK Bondarenko_mSphere_2024.pdf: 25 rows written
+2026-07-01 18:31:05,283 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:31:05,292 INFO OK Bonn_bioRxiv_2021.pdf: 16 rows written \u26a0 30 uncertain/inferred fields
+2026-07-01 18:31:53,922 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:31:53,926 INFO OK Bonn_Nanoscale_2022.pdf: 18 rows written
+2026-07-01 18:32:16,759 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:32:16,762 INFO OK Bos_bioRxiv_2023.pdf: 1 rows written
+2026-07-01 18:32:59,461 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:32:59,466 INFO OK Bos_bioRxiv_2025.pdf: 10 rows written
+2026-07-01 18:34:11,144 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:34:11,153 INFO OK Bouhouche_PLOSBiology_2022.pdf: 29 rows written \u26a0 35 uncertain/inferred fields
+2026-07-01 18:35:18,806 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:35:18,812 INFO OK Bournonville_NatureCommunications_2025.pdf: 31 rows written
+2026-07-01 18:35:53,242 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:35:53,249 INFO OK BRUNET_bioRxiv_2023.pdf: 8 rows written \u26a0 16 uncertain/inferred fields
+2026-07-01 18:36:42,186 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:36:42,192 INFO OK Brzozowski1_ActaNeuropathologicaCommunications_2021.pdf: 12 rows written \u26a0 18 uncertain/inferred fields
+2026-07-01 18:37:23,658 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:37:23,664 INFO OK Brzozowski_bioRxiv_2021.pdf: 9 rows written \u26a0 15 uncertain/inferred fields
+2026-07-01 18:37:30,181 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:37:30,183 INFO SKIP Bucur_Cells_2015.pdf: not ExM paper
+2026-07-01 18:38:02,367 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:38:02,371 INFO OK Buda_DevelopmentalCell_2021.pdf: 2 rows written
+2026-07-01 18:38:38,615 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:38:38,621 INFO OK Buisson_bioRxiv_2024.pdf: 8 rows written \u26a0 8 uncertain/inferred fields
+2026-07-01 18:39:26,953 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:39:26,959 INFO OK Bullard_CellReportsMethods_2024.pdf: 13 rows written \u26a0 16 uncertain/inferred fields
+2026-07-01 18:40:10,064 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:40:10,068 INFO OK Bullarda_bioRxiv_2024.pdf: 10 rows written
+2026-07-01 18:40:40,170 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:40:40,174 INFO OK Burdet_microPublicationBiology_2024.pdf: 8 rows written \u26a0 8 uncertain/inferred fields
+2026-07-01 18:41:55,846 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:41:55,854 INFO OK Burns_JournalofCellScience_2026.pdf: 27 rows written \u26a0 15 uncertain/inferred fields
+2026-07-01 18:42:31,277 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:42:31,283 INFO OK Calcineurin_JournalofCellScience_2023.pdf: 12 rows written \u26a0 13 uncertain/inferred fields
+2026-07-01 18:43:04,863 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:43:04,868 INFO OK Calla_bioRxiv_2022.pdf: 7 rows written
+2026-07-01 18:43:52,999 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:43:53,003 INFO OK Campbell1_JournalofNeuroscienceMethods_2021.pdf: 18 rows written
+2026-07-01 18:44:43,276 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:44:43,283 INFO OK Campbell2_JournalofNeuroscienceMethods_2021.pdf: 18 rows written
+2026-07-01 18:45:28,893 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:45:28,899 INFO OK Campbell_bioRxiv_2020.pdf: 17 rows written
+2026-07-01 18:46:22,550 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:46:22,557 INFO OK Campbell_bioRxiv_2023.pdf: 16 rows written \u26a0 22 uncertain/inferred fields
+2026-07-01 18:47:14,753 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:47:14,759 INFO OK Campbell_PLOSNeglectedTropicalDiseases_2023.pdf: 15 rows written \u26a0 21 uncertain/inferred fields
+2026-07-01 18:48:23,029 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:48:23,035 INFO OK Campus_JournalofCellScience_2024.pdf: 20 rows written \u26a0 6 uncertain/inferred fields
+2026-07-01 18:48:57,026 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:48:57,030 INFO OK Capitini_TheFASEBJournal_2022.pdf: 4 rows written \u26a0 12 uncertain/inferred fields
+2026-07-01 18:49:42,934 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:49:42,939 INFO OK Cardenas_eLife_2023.pdf: 14 rows written
+2026-07-01 18:50:11,376 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:50:11,380 INFO OK CBC_ResearchSquare_2024.pdf: 2 rows written
+2026-07-01 18:50:19,970 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:50:19,973 INFO SKIP Centrioles_JournalofCellScience_2025.pdf: not ExM paper
+2026-07-01 18:51:08,101 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:51:08,105 INFO OK Chen1_bioRxiv_2020.pdf: 17 rows written
+2026-07-01 18:51:37,704 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:51:37,708 INFO OK Chen2_bioRxiv_2020.pdf: 7 rows written
+2026-07-01 18:52:13,229 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:52:13,235 INFO OK Chen_ActaBiochimicaetBiophysicaSinica_2022.pdf: 12 rows written \u26a0 no protocol details extracted
+2026-07-01 18:53:01,958 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:53:01,963 INFO OK Chen_ResearchSquare_2023.pdf: 14 rows written
+2026-07-01 18:53:18,194 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:53:18,197 INFO OK Cheng_Cells_2019.pdf: 2 rows written
+2026-07-01 18:54:44,477 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:54:44,479 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 635 column 31 (char 24596)
+2026-07-01 18:56:20,830 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:56:20,850 WARNING JSON parse error (attempt 2): Unterminated string starting at: line 622 column 7 (char 24468)
+2026-07-01 18:57:16,870 INFO Retrying request to /v1/messages in 0.492910 seconds
+2026-07-01 18:58:47,034 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:58:47,036 WARNING JSON parse error (attempt 3): Expecting property name enclosed in double quotes: line 633 column 39 (char 24839)
+2026-07-01 18:58:47,037 ERROR FAILED Cheng_MicrobialCell_2023.pdf: All 3 attempts failed
+2026-07-01 18:58:57,846 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:58:57,848 INFO SKIP Chhabra_bioRxiv_2024.pdf: not ExM paper
+2026-07-01 18:59:53,639 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 18:59:53,644 INFO OK Ching1_eLife_2021.pdf: 22 rows written
+2026-07-01 19:00:37,664 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:00:37,669 INFO OK Ching_bioRxiv_2021.pdf: 17 rows written
+2026-07-01 19:01:23,920 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:01:23,923 INFO OK Cho_ScientificReports_2022.pdf: 15 rows written
+2026-07-01 19:01:30,219 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:01:30,221 INFO OK Cho_ScientificReports_2024.pdf: 0 rows written \u26a0 no antibodies/labels extracted; no protocol details extracted
+2026-07-01 19:01:36,388 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:01:36,389 INFO SKIP Chow_Nature_2015.pdf: not ExM paper
+2026-07-01 19:02:01,501 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:02:01,503 INFO OK Chowdhury1_NatureBiotechnology_2025.pdf: 3 rows written
+2026-07-01 19:02:13,830 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-07-01 19:02:13,832 INFO Retrying request to /v1/messages in 0.431406 seconds
+2026-07-01 19:02:25,722 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-07-01 19:02:25,722 INFO Retrying request to /v1/messages in 0.933322 seconds
+2026-07-01 19:03:31,438 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:03:31,443 INFO OK Chowdhury_CommunicationsBiology_2025.pdf: 15 rows written \u26a0 11 uncertain/inferred fields
+2026-07-01 19:04:23,855 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:04:23,858 INFO OK Chozinski_ScientificReports_2018.pdf: 21 rows written
+2026-07-01 19:05:08,228 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:05:08,231 INFO OK Chuang_bioRxiv_2024.pdf: 10 rows written
+2026-07-01 19:05:33,437 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:05:33,439 INFO OK Cirillo_bioRxiv_2019.pdf: 4 rows written
+2026-07-01 19:05:58,658 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:05:58,661 INFO OK Cirillo_CurrentBiology_2019.pdf: 4 rows written \u26a0 6 uncertain/inferred fields
+2026-07-01 19:06:05,424 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:06:05,425 INFO SKIP Collins_CellReportsMethods_2025.pdf: not ExM paper
+2026-07-01 19:06:32,337 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:06:32,338 INFO OK Cornean_bioRxiv_2023.pdf: 4 rows written
+2026-07-01 19:07:20,191 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:07:20,197 INFO OK Cox_bioRxiv_2024.pdf: 11 rows written \u26a0 19 uncertain/inferred fields
+2026-07-01 19:07:28,012 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:07:28,014 INFO SKIP Cox_Cells_2025.pdf: not ExM paper
+2026-07-01 19:08:47,463 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:08:47,468 INFO OK Cui_bioRxiv_2022.pdf: 30 rows written \u26a0 19 uncertain/inferred fields
+2026-07-01 19:09:45,452 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:09:45,454 INFO OK Dacheux_bioRxiv_2023.pdf: 26 rows written
+2026-07-01 19:10:40,844 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:10:40,848 INFO OK Dacheux_eLife_2023.pdf: 24 rows written \u26a0 7 uncertain/inferred fields
+2026-07-01 19:11:41,592 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:11:41,595 INFO OK Damstra_bioRxiv_2021.pdf: 19 rows written \u26a0 57 uncertain/inferred fields
+2026-07-01 19:12:18,332 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:12:18,340 INFO OK Damstra_eLife_2023.pdf: 11 rows written \u26a0 23 uncertain/inferred fields
+2026-07-01 19:13:42,206 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:13:42,212 INFO OK Damstra_NatureMethods_2023.pdf: 29 rows written \u26a0 151 uncertain/inferred fields
+2026-07-01 19:14:11,909 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:14:11,913 INFO OK Dave_bioRxiv_2022.pdf: 7 rows written \u26a0 7 uncertain/inferred fields
+2026-07-01 19:14:39,988 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:14:39,991 INFO OK Dave_Cells_2022.pdf: 7 rows written
+2026-07-01 19:15:07,881 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:15:07,886 INFO OK Day_bioRxiv_2023.pdf: 4 rows written \u26a0 13 uncertain/inferred fields
+2026-07-01 19:15:48,017 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:15:48,019 INFO OK Day_eLife_2024.pdf: 4 rows written \u26a0 13 uncertain/inferred fields
+2026-07-01 19:16:20,477 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:16:20,481 INFO OK DeGrandis_bioRxiv_2025.pdf: 6 rows written \u26a0 12 uncertain/inferred fields
+2026-07-01 19:17:38,272 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:17:38,273 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 690 column 11 (char 25113)
+2026-07-01 19:19:00,003 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:19:00,005 WARNING JSON parse error (attempt 2): Expecting property name enclosed in double quotes: line 696 column 46 (char 25284)
+2026-07-01 19:20:20,744 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:20:20,746 WARNING JSON parse error (attempt 3): Unterminated string starting at: line 695 column 11 (char 25126)
+2026-07-01 19:20:20,746 ERROR FAILED Dey_bioRxiv_2024.pdf: All 3 attempts failed
+2026-07-01 19:21:11,274 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:21:11,277 INFO OK Dhar_bioRxiv_2025.pdf: 11 rows written
+2026-07-01 19:21:49,785 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:21:49,791 INFO OK DiBenedetto_MethodsinMolecularBiology_2025.pdf: 7 rows written \u26a0 25 uncertain/inferred fields
+2026-07-01 19:22:34,673 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:22:34,678 INFO OK Discovery_FluidsandBarriersoftheCNS_2024.pdf: 12 rows written \u26a0 5 uncertain/inferred fields
+2026-07-01 19:23:20,282 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:23:20,285 INFO OK Dong1_bioRxiv_2024.pdf: 8 rows written \u26a0 5 uncertain/inferred fields
+2026-07-01 19:24:21,298 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:24:21,306 INFO OK Dong2_bioRxiv_2024.pdf: 25 rows written
+2026-07-01 19:24:42,500 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:24:42,504 INFO OK Drelich1_AnalyticalChemistry_2021.pdf: 1 rows written \u26a0 no antibodies/labels extracted
+2026-07-01 19:25:02,961 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:25:02,963 INFO OK Drelich2_AnalyticalChemistry_2021.pdf: 1 rows written \u26a0 no antibodies/labels extracted
+2026-07-01 19:25:23,165 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:25:23,167 INFO OK Drelich_bioRxiv_2021.pdf: 1 rows written \u26a0 no antibodies/labels extracted
+2026-07-01 19:25:51,588 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:25:51,594 INFO OK Dwivedi_bioRxiv_2022.pdf: 5 rows written \u26a0 5 uncertain/inferred fields; no protocol details extracted
+2026-07-01 19:26:23,337 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:26:23,342 INFO OK Dwivedi_NatureCommunications_2023.pdf: 6 rows written \u26a0 6 uncertain/inferred fields; no protocol details extracted
+2026-07-01 19:26:57,896 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:26:57,900 INFO OK Dzhokova_InternationalJournalofMolecularSciences_2025.pdf: 9 rows written \u26a0 9 uncertain/inferred fields
+2026-07-01 19:27:36,599 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:27:36,602 INFO OK Dzyubenko1_FrontiersinCellularNeuroscience_2024.pdf: 11 rows written \u26a0 32 uncertain/inferred fields
+2026-07-01 19:27:42,706 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:27:42,708 INFO SKIP Dzyubenko2_FrontiersinCellularNeuroscience_2024.pdf: not ExM paper
+2026-07-01 19:28:13,902 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:28:13,904 INFO OK Edwards_bioRxiv_2025.pdf: 8 rows written \u26a0 8 uncertain/inferred fields
+2026-07-01 19:29:00,238 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:29:00,242 INFO OK EGFR_bioRxiv_2025.pdf: 9 rows written
+2026-07-01 19:29:51,432 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:29:51,435 INFO OK Eilts_bioRxiv_2025.pdf: 15 rows written
+2026-07-01 19:31:21,129 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:31:21,130 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 601 column 29 (char 24139)
+2026-07-01 19:32:53,943 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:32:53,948 INFO OK Eloy_NatureCommunications_2023.pdf: 32 rows written
+2026-07-01 19:33:17,548 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:33:17,549 INFO OK EM_PlantPhysiology_2003.pdf: 1 rows written
+2026-07-01 19:34:19,526 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:34:19,530 INFO OK Engelberg_bioRxiv_2024.pdf: 23 rows written \u26a0 12 uncertain/inferred fields
+2026-07-01 19:35:37,397 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:35:37,402 INFO OK Engelberg_mBio_2025.pdf: 27 rows written \u26a0 10 uncertain/inferred fields
+2026-07-01 19:36:11,118 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:36:11,121 INFO OK Erbacher_bioRxiv_2022.pdf: 6 rows written
+2026-07-01 19:36:37,208 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:36:37,211 INFO OK Eschment_JournalofCellScience_2025.pdf: 4 rows written \u26a0 14 uncertain/inferred fields
+2026-07-01 19:37:49,847 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:37:49,852 INFO OK ExM_npjBiofilmsandMicrobiomes_2023.pdf: 23 rows written
+2026-07-01 19:38:26,914 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:38:26,919 INFO OK Faber_bioRxiv_2023.pdf: 13 rows written
+2026-07-01 19:39:14,434 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:39:14,436 INFO OK Faber_JCIInsight_2023.pdf: 17 rows written \u26a0 20 uncertain/inferred fields
+2026-07-01 19:39:21,090 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:39:21,091 INFO SKIP Faber_PLOSBiology_2022.pdf: not ExM paper
+2026-07-01 19:39:51,199 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:39:51,201 INFO OK Faulkner_bioRxiv_2024.pdf: 5 rows written
+2026-07-01 19:40:38,175 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:40:38,177 INFO OK Faulkner_JournalofCellScience_2022.pdf: 16 rows written
+2026-07-01 19:41:22,364 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:41:22,367 INFO OK Flinois_JournalofCellScience_2024.pdf: 12 rows written \u26a0 21 uncertain/inferred fields
+2026-07-01 19:42:39,946 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:42:39,948 WARNING JSON parse error (attempt 1): Expecting value: line 621 column 24 (char 25389)
+2026-07-01 19:44:02,689 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:44:02,691 WARNING JSON parse error (attempt 2): Expecting property name enclosed in double quotes: line 603 column 56 (char 25411)
+2026-07-01 19:45:24,577 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:45:24,578 WARNING JSON parse error (attempt 3): Unterminated string starting at: line 616 column 11 (char 25279)
+2026-07-01 19:45:24,579 ERROR FAILED Flori_bioRxiv_2025.pdf: All 3 attempts failed
+2026-07-01 19:46:00,562 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:46:00,564 INFO OK FLRT_bioRxiv_2024.pdf: 9 rows written
+2026-07-01 19:46:39,569 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:46:39,571 INFO OK FLRT_NatureCommunications_2024.pdf: 9 rows written
+2026-07-01 19:46:50,429 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:46:50,431 INFO SKIP Fochler_bioRxiv_2023.pdf: not ExM paper
+2026-07-01 19:47:12,945 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:47:12,947 INFO OK Francisco_bioRxiv_2025.pdf: 2 rows written
+2026-07-01 19:47:20,483 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:47:20,484 INFO SKIP Franke_FrontiersinBioinformatics_2021.pdf: not ExM paper
+2026-07-01 19:47:55,306 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:47:55,309 INFO OK Fu_AnalyticalChemistry_2025.pdf: 5 rows written \u26a0 8 uncertain/inferred fields
+2026-07-01 19:48:19,240 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:48:19,241 INFO OK Fukumoto_bioRxiv_2024.pdf: 6 rows written
+2026-07-01 19:49:46,161 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:49:46,165 INFO OK Galecki_bioRxiv_2026.pdf: 38 rows written
+2026-07-01 19:50:41,511 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:50:41,514 INFO OK Gallei_bioRxiv_2024.pdf: 18 rows written
+2026-07-01 19:51:48,337 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:51:48,342 INFO OK Gambarotto1_NatureMethods_2018.pdf: 25 rows written \u26a0 12 uncertain/inferred fields
+2026-07-01 19:52:43,648 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:52:43,654 INFO OK Gao1_bioRxiv_2018.pdf: 17 rows written \u26a0 9 uncertain/inferred fields
+2026-07-01 19:53:25,401 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:53:25,407 INFO OK Gao2_bioRxiv_2018.pdf: 13 rows written \u26a0 39 uncertain/inferred fields
+2026-07-01 19:54:21,626 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:54:21,629 INFO OK Gao_ACSNano_2018.pdf: 20 rows written
+2026-07-01 19:55:22,731 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:55:22,735 INFO OK Gao_bioRxiv_2019.pdf: 16 rows written \u26a0 12 uncertain/inferred fields
+2026-07-01 19:55:30,011 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:55:30,012 INFO SKIP Gao_BMCBiology_2016.pdf: not ExM paper
+2026-07-01 19:56:00,795 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:56:00,798 INFO OK Garg_MethodsinEnzymology_2026.pdf: 5 rows written
+2026-07-01 19:56:25,080 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:56:25,082 INFO OK Garlick1_ScientificReports_2022.pdf: 3 rows written \u26a0 6 uncertain/inferred fields
+2026-07-01 19:56:49,659 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:56:49,661 INFO OK Garlick_bioRxiv_2021.pdf: 3 rows written
+2026-07-01 19:56:57,662 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:56:57,664 INFO SKIP Gatti_bioRxiv_2019.pdf: not ExM paper
+2026-07-01 19:58:06,715 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:58:06,721 INFO OK Gaudin_bioRxiv_2021.pdf: 27 rows written \u26a0 30 uncertain/inferred fields
+2026-07-01 19:59:35,877 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 19:59:35,884 INFO OK Gentile_bioRxiv_2022.pdf: 32 rows written \u26a0 13 uncertain/inferred fields
+2026-07-01 20:00:14,893 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:00:14,897 INFO OK Ghisleni_bioRxiv_2023.pdf: 9 rows written \u26a0 18 uncertain/inferred fields
+2026-07-01 20:01:12,374 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:01:12,377 INFO OK Ghisleni_NatureCommunications_2024.pdf: 15 rows written
+2026-07-01 20:01:50,816 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:01:50,820 INFO OK Ghisleni_ResearchSquare_2023.pdf: 10 rows written
+2026-07-01 20:02:10,212 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:02:10,214 INFO OK Giunta_MolecularBiologyoftheCell_2023.pdf: 2 rows written
+2026-07-01 20:02:48,271 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:02:48,273 INFO OK GmbH_EuropeanJournalofNeuroscience_2024.pdf: 9 rows written \u26a0 36 uncertain/inferred fields
+2026-07-01 20:04:10,978 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:04:10,986 INFO OK Gomez_MethodsinMolecularBiology_2026.pdf: 26 rows written \u26a0 50 uncertain/inferred fields
+2026-07-01 20:04:58,688 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:04:58,691 INFO OK Gong_bioRxiv_2025.pdf: 9 rows written
+2026-07-01 20:05:05,682 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:05:05,684 INFO SKIP Goodwill_NatureCommunications_2019.pdf: not ExM paper
+2026-07-01 20:05:32,466 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:05:32,469 INFO OK Goodwin_bioRxiv_2022.pdf: 4 rows written
+2026-07-01 20:06:05,640 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:06:05,642 INFO OK Goonawardane_ScientificReports_2025.pdf: 7 rows written
+2026-07-01 20:07:09,887 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:07:09,889 INFO OK Gorilak_OpenBiology_2021.pdf: 25 rows written
+2026-07-01 20:08:16,247 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:08:16,250 INFO OK Gorilaka_bioRxiv_2021.pdf: 26 rows written
+2026-07-01 20:08:52,212 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:08:52,216 INFO OK Grichine_BloodAdvances_2023.pdf: 8 rows written \u26a0 14 uncertain/inferred fields
+2026-07-01 20:10:30,315 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:10:30,326 INFO OK Grinsven_bioRxiv_2025.pdf: 48 rows written \u26a0 48 uncertain/inferred fields
+2026-07-01 20:11:12,426 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:11:12,428 INFO OK Grison_bioRxiv_2024.pdf: 14 rows written
+2026-07-01 20:11:40,253 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:11:40,256 INFO OK Gros_MolecularBiologyoftheCell_2021.pdf: 4 rows written \u26a0 8 uncertain/inferred fields
+2026-07-01 20:11:49,307 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:11:49,308 INFO SKIP Guichard_SeminarsinCellandDevelopmentalBiology_2021.pdf: not ExM paper
+2026-07-01 20:12:18,365 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:12:18,366 INFO OK Guilloux_Bio-protocol_2025.pdf: 4 rows written
+2026-07-01 20:12:53,280 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:12:53,282 INFO OK Guilloux_bioRxiv_2024.pdf: 6 rows written
+2026-07-01 20:13:31,504 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:13:31,508 INFO OK Gunawardhana_bioRxiv_2024.pdf: 10 rows written \u26a0 30 uncertain/inferred fields
+2026-07-01 20:14:27,006 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:14:27,009 INFO OK Guo_CellularandMolecularLifeSciences_2024.pdf: 19 rows written
+2026-07-01 20:15:47,658 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:15:47,660 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 624 column 11 (char 24480)
+2026-07-01 20:17:19,343 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:17:19,346 WARNING JSON parse error (attempt 2): Expecting property name enclosed in double quotes: line 619 column 60 (char 24320)
+2026-07-01 20:18:52,912 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:18:52,914 WARNING JSON parse error (attempt 3): Unterminated string starting at: line 620 column 34 (char 24221)
+2026-07-01 20:18:52,914 ERROR FAILED Guo_NatureCommunications_2025.pdf: All 3 attempts failed
+2026-07-01 20:20:15,260 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:20:15,262 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 611 column 23 (char 24001)
+2026-07-01 20:21:47,993 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:21:47,994 WARNING JSON parse error (attempt 2): Unterminated string starting at: line 611 column 23 (char 24036)
+2026-07-01 20:23:16,898 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:23:16,900 WARNING JSON parse error (attempt 3): Unterminated string starting at: line 623 column 23 (char 24286)
+2026-07-01 20:23:16,900 ERROR FAILED Guoa_bioRxiv_2024.pdf: All 3 attempts failed
+2026-07-01 20:23:53,788 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:23:53,790 INFO OK Gurung1_bioRxiv_2026.pdf: 12 rows written
+2026-07-01 20:24:31,524 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:24:31,527 INFO OK Gurung2_bioRxiv_2026.pdf: 12 rows written
+2026-07-01 20:24:58,217 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:24:58,220 INFO OK Guttery_ResearchSquare_2025.pdf: 6 rows written
+2026-07-01 20:26:02,269 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:26:02,273 INFO OK Götz1_NatureCommunications_2020.pdf: 16 rows written \u26a0 19 uncertain/inferred fields
+2026-07-01 20:26:26,016 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:26:26,019 INFO OK Haak1_BiologicalChemistry_2023.pdf: 5 rows written \u26a0 10 uncertain/inferred fields
+2026-07-01 20:26:58,220 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:26:58,223 INFO OK Haase_bioRxiv_2024.pdf: 9 rows written \u26a0 8 uncertain/inferred fields
+2026-07-01 20:27:43,145 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:27:43,149 INFO OK Haase_MolecularBiologyoftheCell_2024.pdf: 15 rows written \u26a0 14 uncertain/inferred fields
+2026-07-01 20:27:51,940 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:27:51,942 INFO SKIP Haase_Nanoscale_2022.pdf: not ExM paper
+2026-07-01 20:28:28,653 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:28:28,657 INFO OK Hafner_bioRxiv_2018.pdf: 13 rows written
+2026-07-01 20:29:51,103 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:29:51,108 INFO OK Hafner_Cell_2020.pdf: 40 rows written
+2026-07-01 20:30:30,147 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:30:30,149 INFO OK Halpern_ACSNano_2017.pdf: 13 rows written
+2026-07-01 20:31:07,450 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:31:07,453 INFO OK HALPERN_bioRxiv_2021.pdf: 6 rows written
+2026-07-01 20:32:11,629 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:32:11,633 INFO OK Hamel_bioRxiv_2024.pdf: 28 rows written \u26a0 no protocol details extracted
+2026-07-01 20:33:15,503 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:33:15,505 INFO OK Han_CellReportsMethods_2023.pdf: 20 rows written
+2026-07-01 20:34:14,971 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:34:14,973 WARNING JSON parse error (attempt 1): Expecting value: line 1 column 1 (char 0)
+2026-07-01 20:35:12,622 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:35:12,624 WARNING JSON parse error (attempt 2): Expecting value: line 1 column 1 (char 0)
+2026-07-01 20:35:23,908 INFO Retrying request to /v1/messages in 0.494610 seconds
+2026-07-01 20:36:19,039 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:36:19,045 INFO OK Haspel_MethodsinMolecularBiology_2022.pdf: 10 rows written \u26a0 11 uncertain/inferred fields
+2026-07-01 20:36:48,111 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:36:48,114 INFO OK He_ResearchSquare_2024.pdf: 5 rows written
+2026-07-01 20:37:42,780 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:37:42,785 INFO OK Heiden_CellularandMolecularLifeSciences_2020.pdf: 18 rows written \u26a0 17 uncertain/inferred fields
+2026-07-01 20:38:13,392 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:38:13,395 INFO OK Heil1_bioRxiv_2021.pdf: 6 rows written \u26a0 8 uncertain/inferred fields
+2026-07-01 20:38:48,060 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:38:48,062 INFO OK Heil2_bioRxiv_2021.pdf: 6 rows written
+2026-07-01 20:39:24,151 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:39:24,154 INFO OK Heiss_bioRxiv_2024.pdf: 5 rows written
+2026-07-01 20:39:56,563 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:39:56,567 INFO OK Heit_MethodsinMolecularBiology_2022.pdf: 3 rows written \u26a0 9 uncertain/inferred fields
+2026-07-01 20:40:48,746 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:40:48,750 INFO OK Herde_CellReports_2020.pdf: 15 rows written \u26a0 6 uncertain/inferred fields
+2026-07-01 20:41:28,003 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:41:28,006 INFO OK Herrmann1_FrontiersinCellandDevelopmentalBiology_2020.pdf: 14 rows written
+2026-07-01 20:42:18,286 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:42:18,289 INFO OK Hinterndorfer_bioRxiv_2022.pdf: 17 rows written
+2026-07-01 20:43:33,332 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:43:33,335 INFO OK Hinterndorfer_JournalofCellScience_2022.pdf: 33 rows written
+2026-07-01 20:43:41,076 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:43:41,078 INFO SKIP Ho_JACS_2025.pdf: not ExM paper
+2026-07-01 20:44:17,641 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:44:17,646 INFO OK Hofbauer_bioRxiv_2023.pdf: 9 rows written \u26a0 36 uncertain/inferred fields
+2026-07-01 20:44:51,161 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:44:51,165 INFO OK Horwitz_bioRxiv_2022.pdf: 9 rows written \u26a0 23 uncertain/inferred fields
+2026-07-01 20:45:28,838 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:45:28,840 INFO OK Houben_bioRxiv_2020.pdf: 5 rows written \u26a0 11 uncertain/inferred fields
+2026-07-01 20:45:39,808 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:45:39,810 INFO SKIP Hsiao_CommunicationsBiology_2026.pdf: not ExM paper
+2026-07-01 20:46:13,585 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:46:13,587 INFO OK Hu1_bioRxiv_2024.pdf: 8 rows written
+2026-07-01 20:46:57,970 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:46:57,974 INFO OK Hu2_bioRxiv_2024.pdf: 13 rows written
+2026-07-01 20:47:37,707 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:47:37,709 INFO OK Hu_bioRxiv_2023.pdf: 10 rows written
+2026-07-01 20:48:25,997 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:48:25,999 INFO OK Hu_Cells_2024.pdf: 14 rows written
+2026-07-01 20:48:57,844 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:48:57,845 INFO OK Hu_MolecularBiologyoftheCell_2024.pdf: 7 rows written
+2026-07-01 20:49:22,640 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:49:22,642 INFO OK Huang_Bio-protocol_2025.pdf: 2 rows written
+2026-07-01 20:50:01,257 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:50:01,259 INFO OK Huang_bioRxiv_2025.pdf: 8 rows written
+2026-07-01 20:50:29,362 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:50:29,365 INFO OK Hubland_bioRxiv_2018.pdf: 5 rows written \u26a0 10 uncertain/inferred fields
+2026-07-01 20:51:41,370 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:51:41,372 INFO OK Humpfer_bioRxiv_2025.pdf: 34 rows written
+2026-07-01 20:52:10,266 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:52:10,318 INFO OK Hurley_Cells_2024.pdf: 5 rows written
+2026-07-01 20:52:59,687 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:52:59,691 INFO OK Hussey_MethodsinMolecularBiology_2023.pdf: 6 rows written \u26a0 15 uncertain/inferred fields
+2026-07-01 20:53:47,284 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:53:47,287 INFO OK Huttunen_CommunicationsBiology_2026.pdf: 16 rows written
+2026-07-01 20:54:12,554 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:54:12,557 INFO OK Imanakaa_bioRxiv_2022.pdf: 4 rows written
+2026-07-01 20:54:41,772 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:54:41,775 INFO OK Iwanski_bioRxiv_2025.pdf: 4 rows written \u26a0 12 uncertain/inferred fields
+2026-07-01 20:55:09,613 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:55:09,616 INFO OK Iwanski_JournalofCellScience_2025.pdf: 4 rows written \u26a0 8 uncertain/inferred fields
+2026-07-01 20:56:15,163 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:56:15,167 INFO OK Jalalvand1_eLife_2021.pdf: 24 rows written
+2026-07-01 20:57:07,162 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:57:07,169 INFO OK Jalalvand_bioRxiv_2021.pdf: 19 rows written
+2026-07-01 20:57:48,678 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:57:48,681 INFO OK Jetishi_MicrobialCell_2024.pdf: 10 rows written
+2026-07-01 20:58:27,369 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:58:27,373 INFO OK Jetishia_bioRxiv_2025.pdf: 11 rows written \u26a0 11 uncertain/inferred fields
+2026-07-01 20:59:05,896 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:59:05,898 INFO OK Jiang_eLife_2023.pdf: 4 rows written \u26a0 8 uncertain/inferred fields
+2026-07-01 20:59:13,698 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:59:13,699 INFO SKIP Jiang_MicrosystemsNanoengineering_2026.pdf: not ExM paper
+2026-07-01 20:59:41,703 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 20:59:41,705 INFO OK Jin_bioRxiv_2024.pdf: 5 rows written
+2026-07-01 21:00:26,397 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:00:26,399 WARNING JSON parse error (attempt 1): Expecting value: line 1 column 1 (char 0)
+2026-07-01 21:01:16,910 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:01:16,912 WARNING JSON parse error (attempt 2): Expecting value: line 1 column 1 (char 0)
+2026-07-01 21:02:03,212 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:02:03,214 WARNING JSON parse error (attempt 3): Expecting value: line 1 column 1 (char 0)
+2026-07-01 21:02:03,214 ERROR FAILED Kabatas_bioRxiv_2017.pdf: All 3 attempts failed
+2026-07-01 21:02:32,992 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:02:32,995 INFO OK Kalichava_bioRxiv_2021.pdf: 9 rows written \u26a0 16 uncertain/inferred fields
+2026-07-01 21:03:25,011 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:03:25,014 INFO OK Kang_ACSApplMaterInterfaces_2021.pdf: 13 rows written
+2026-07-01 21:03:31,513 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:03:31,514 INFO SKIP Kang_TheInnovation_2025.pdf: not ExM paper
+2026-07-01 21:04:05,404 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:04:05,409 INFO OK Kao_bioRxiv_2019.pdf: 9 rows written \u26a0 5 uncertain/inferred fields
+2026-07-01 21:04:41,876 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:04:41,881 INFO OK Kao_ScientificReports_2019.pdf: 9 rows written \u26a0 9 uncertain/inferred fields
+2026-07-01 21:06:16,715 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:06:16,720 INFO OK Kapitein1_eLife_2021.pdf: 28 rows written \u26a0 101 uncertain/inferred fields
+2026-07-01 21:06:54,270 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:06:54,273 INFO OK Karagiannis1_bioRxiv_2019.pdf: 11 rows written
+2026-07-01 21:07:32,467 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:07:32,470 INFO OK Karagiannis2_bioRxiv_2019.pdf: 11 rows written
+2026-07-01 21:08:43,638 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:08:43,644 INFO OK Katoha_MolecularBiologyoftheCell_2020.pdf: 34 rows written \u26a0 34 uncertain/inferred fields
+2026-07-01 21:09:32,890 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:09:32,893 INFO OK Katrukha1_eLife_2021.pdf: 12 rows written
+2026-07-01 21:10:02,777 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:10:02,792 INFO OK Katrukha_bioRxiv_2021.pdf: 6 rows written \u26a0 6 uncertain/inferred fields
+2026-07-01 21:11:32,473 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:11:32,475 WARNING JSON parse error (attempt 1): Expecting property name enclosed in double quotes: line 680 column 43 (char 26354)
+2026-07-01 21:13:04,797 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:13:04,800 WARNING JSON parse error (attempt 2): Expecting value: line 687 column 31 (char 26519)
+2026-07-01 21:14:40,084 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:14:40,086 WARNING JSON parse error (attempt 3): Unterminated string starting at: line 679 column 29 (char 26409)
+2026-07-01 21:14:40,087 ERROR FAILED Katrukha_CurrentBiology_2026.pdf: All 3 attempts failed
+2026-07-01 21:15:02,737 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:15:02,739 INFO OK Kim_MicrosystemsNanoengineering_2025.pdf: 2 rows written
+2026-07-01 21:15:56,288 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:15:56,291 INFO OK Kim_NanoscaleAdvances_2023.pdf: 12 rows written \u26a0 11 uncertain/inferred fields
+2026-07-01 21:16:39,594 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:16:39,598 INFO OK Kimmel_MethodsinMolecularBiology_2024.pdf: 10 rows written \u26a0 8 uncertain/inferred fields
+2026-07-01 21:17:24,910 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:17:24,913 INFO OK Klena_Bio-protocol_2023.pdf: 15 rows written
+2026-07-01 21:18:02,529 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:18:02,533 INFO OK KLHL_PLOSBiology_2023.pdf: 8 rows written \u26a0 8 uncertain/inferred fields
+2026-07-01 21:19:28,069 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:19:28,071 WARNING JSON parse error (attempt 1): Expecting property name enclosed in double quotes: line 652 column 37 (char 24941)
+2026-07-01 21:21:00,859 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:21:00,861 WARNING JSON parse error (attempt 2): Expecting property name enclosed in double quotes: line 648 column 42 (char 25032)
+2026-07-01 21:22:33,201 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:22:33,203 WARNING JSON parse error (attempt 3): Expecting value: line 643 column 16 (char 25267)
+2026-07-01 21:22:33,203 ERROR FAILED Klimas_NatureBiotechnology_2021.pdf: All 3 attempts failed
+2026-07-01 21:23:02,908 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:23:02,910 INFO OK Kodjabachian_STARProtocols_2025.pdf: 7 rows written
+2026-07-01 21:23:11,176 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:23:11,178 INFO SKIP Kofsky_Cells_2025.pdf: not ExM paper
+2026-07-01 21:23:28,289 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:23:28,291 INFO OK Korovesi_microPublicationBiology_2022.pdf: 2 rows written
+2026-07-01 21:24:24,900 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:24:24,906 INFO OK Korsten_bioRxiv_2022.pdf: 20 rows written \u26a0 48 uncertain/inferred fields
+2026-07-01 21:25:31,531 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:25:31,535 INFO OK Kozjak-Pavlovic_bioRxiv_2020.pdf: 18 rows written \u26a0 13 uncertain/inferred fields
+2026-07-01 21:26:19,552 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:26:19,555 INFO OK Kraft_CellandTissueResearch_2023.pdf: 15 rows written
+2026-07-01 21:26:53,778 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:26:53,786 INFO OK Kruss_BiophysicalReports_2023.pdf: 10 rows written
+2026-07-01 21:28:22,746 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:28:22,748 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 634 column 29 (char 26154)
+2026-07-01 21:29:58,164 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:29:58,166 WARNING JSON parse error (attempt 2): Unterminated string starting at: line 630 column 27 (char 25833)
+2026-07-01 21:31:32,478 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:31:32,480 WARNING JSON parse error (attempt 3): Unterminated string starting at: line 624 column 7 (char 25845)
+2026-07-01 21:31:32,480 ERROR FAILED ksaal_bioRxiv_2022.pdf: All 3 attempts failed
+2026-07-01 21:32:05,834 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:32:05,837 INFO OK Kubala_Cell_2023.pdf: 7 rows written
+2026-07-01 21:32:38,953 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:32:38,958 INFO OK Kubalová1_ChromosomeResearch_2020.pdf: 5 rows written \u26a0 11 uncertain/inferred fields
+2026-07-01 21:33:07,506 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:33:07,508 INFO OK Kufukihara1_BritishJournalofCancer_2022.pdf: 5 rows written
+2026-07-01 21:33:55,531 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:33:55,533 INFO OK Kurz_bioRxiv_2019.pdf: 13 rows written
+2026-07-01 21:35:20,207 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:35:20,210 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 622 column 34 (char 24398)
+2026-07-01 21:36:50,302 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:36:50,303 WARNING JSON parse error (attempt 2): Unterminated string starting at: line 617 column 29 (char 24511)
+2026-07-01 21:38:19,769 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:38:19,770 WARNING JSON parse error (attempt 3): Unterminated string starting at: line 611 column 25 (char 24188)
+2026-07-01 21:38:19,770 ERROR FAILED Kylies_NatureNanotechnology_2022.pdf: All 3 attempts failed
+2026-07-01 21:39:23,728 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:39:23,733 INFO OK Langner_bioRxiv_2024.pdf: 27 rows written
+2026-07-01 21:40:46,943 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:40:46,952 INFO OK Laporte_Cell_2024.pdf: 41 rows written \u26a0 82 uncertain/inferred fields
+2026-07-01 21:41:19,442 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:41:19,445 INFO OK Laporte_MedecineSciences_2023.pdf: 7 rows written \u26a0 5 uncertain/inferred fields
+2026-07-01 21:42:44,469 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:42:44,472 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 634 column 23 (char 24688)
+2026-07-01 21:44:14,839 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:44:14,841 WARNING JSON parse error (attempt 2): Unterminated string starting at: line 626 column 11 (char 25210)
+2026-07-01 21:45:43,727 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:45:43,729 WARNING JSON parse error (attempt 3): Unterminated string starting at: line 644 column 11 (char 25455)
+2026-07-01 21:45:43,732 ERROR FAILED Laporte_NatureMethods_2021.pdf: All 3 attempts failed
+2026-07-01 21:46:14,274 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:46:14,277 INFO OK Lausanne_bioRxiv_2022.pdf: 8 rows written
+2026-07-01 21:47:28,627 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:47:28,631 INFO OK Lee1_ScientificReports_2021.pdf: 24 rows written
+2026-07-01 21:47:54,752 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:47:54,756 INFO OK Lee2_ScientificReports_2021.pdf: 3 rows written
+2026-07-01 21:49:18,395 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:49:18,397 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 662 column 39 (char 25476)
+2026-07-01 21:50:46,966 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:50:46,968 WARNING JSON parse error (attempt 2): Expecting property name enclosed in double quotes: line 666 column 35 (char 25390)
+2026-07-01 21:52:15,616 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:52:15,618 WARNING JSON parse error (attempt 3): Expecting value: line 650 column 38 (char 25470)
+2026-07-01 21:52:15,619 ERROR FAILED Lemaitre_bioRxiv_2025.pdf: All 3 attempts failed
+2026-07-01 21:52:44,575 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:52:44,580 INFO OK Lemgruber_FrontiersinCellularandInfectionMicrobiol_2022.pdf: 8 rows written \u26a0 8 uncertain/inferred fields
+2026-07-01 21:53:18,989 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:53:18,992 INFO OK Levytska_InternationalJournalforParasitology_2026.pdf: 10 rows written
+2026-07-01 21:53:28,888 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:53:28,891 INFO SKIP Li_Nature_2026.pdf: not ExM paper
+2026-07-01 21:54:54,096 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:54:54,099 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 647 column 29 (char 25447)
+2026-07-01 21:56:27,525 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:56:27,527 WARNING JSON parse error (attempt 2): Expecting ',' delimiter: line 616 column 37 (char 24738)
+2026-07-01 21:57:54,817 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:57:54,819 WARNING JSON parse error (attempt 3): Unterminated string starting at: line 624 column 32 (char 24951)
+2026-07-01 21:57:54,819 ERROR FAILED Li_NatureMethods_2020.pdf: All 3 attempts failed
+2026-07-01 21:58:21,710 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:58:21,713 INFO OK Lian_JournalofDigitalImaging_2025.pdf: 5 rows written \u26a0 no antibodies/labels extracted; no protocol details extracted
+2026-07-01 21:59:06,544 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:59:06,546 INFO OK Licha_AngewandteChemie_2023.pdf: 8 rows written
+2026-07-01 21:59:54,034 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 21:59:54,038 INFO OK Liffner1_bioRxiv_2021.pdf: 18 rows written
+2026-07-01 22:00:37,069 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:00:37,074 INFO OK Liffner2_bioRxiv_2021.pdf: 14 rows written
+2026-07-01 22:01:28,865 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:01:28,870 INFO OK Liffner_bioRxiv_2023.pdf: 22 rows written
+2026-07-01 22:02:19,785 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:02:19,791 INFO OK Liffner_bioRxiv_2024.pdf: 18 rows written \u26a0 18 uncertain/inferred fields
+2026-07-01 22:02:32,509 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:02:32,510 INFO SKIP Liffner_Cell_2023.pdf: not ExM paper
+2026-07-01 22:03:43,903 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:03:43,907 INFO OK Liffner_eLife_2023.pdf: 31 rows written
+2026-07-01 22:04:29,122 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:04:29,125 INFO OK Liffner_Microorganisms_2021.pdf: 15 rows written
+2026-07-01 22:05:14,340 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:05:14,341 INFO OK Liffner_npjImaging_2024.pdf: 13 rows written
+2026-07-01 22:06:05,755 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:06:05,757 INFO OK Liffnera_bioRxiv_2025.pdf: 17 rows written
+2026-07-01 22:07:29,070 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:07:29,074 INFO OK Lim1_PLOSBiology_2019.pdf: 20 rows written
+2026-07-01 22:08:46,747 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:08:46,750 INFO OK Lim_bioRxiv_2019.pdf: 19 rows written
+2026-07-01 22:08:54,931 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:08:54,932 INFO SKIP Lin_bioRxiv_2022.pdf: not ExM paper
+2026-07-01 22:09:19,540 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:09:19,542 INFO OK Lin_bioRxiv_2025.pdf: 4 rows written
+2026-07-01 22:09:54,436 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:09:54,438 INFO OK Lin_Cells_2022.pdf: 8 rows written \u26a0 24 uncertain/inferred fields
+2026-07-01 22:10:34,432 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:10:34,435 INFO OK Lin_eLife_2024.pdf: 11 rows written \u26a0 11 uncertain/inferred fields
+2026-07-01 22:11:21,742 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:11:21,745 INFO OK Lisa_bioRxiv_2024.pdf: 7 rows written
+2026-07-01 22:11:55,529 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:11:55,533 INFO OK Liu1_eLife_2020.pdf: 8 rows written \u26a0 16 uncertain/inferred fields
+2026-07-01 22:12:28,145 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:12:28,148 INFO OK Liu_bioRxiv_2020.pdf: 8 rows written \u26a0 16 uncertain/inferred fields
+2026-07-01 22:13:05,170 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:13:05,173 INFO OK Liu_Cell_2023.pdf: 11 rows written
+2026-07-01 22:13:42,830 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:13:42,834 INFO OK Llado-Santaeularia_JournalofCellScience_2021.pdf: 10 rows written \u26a0 10 uncertain/inferred fields
+2026-07-01 22:14:17,152 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:14:17,155 INFO OK Login_Cell_2024.pdf: 9 rows written \u26a0 18 uncertain/inferred fields
+2026-07-01 22:14:46,033 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:14:46,037 INFO OK Loi_CommunicationsBiology_2024.pdf: 7 rows written
+2026-07-01 22:15:14,304 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:15:14,308 INFO OK Long_bioRxiv_2025.pdf: 7 rows written
+2026-07-01 22:15:35,150 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:15:35,152 INFO OK Lopes_CurrentProtocols_2024.pdf: 2 rows written
+2026-07-01 22:16:58,677 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:16:58,682 INFO OK Louvel_bioRxiv_2022.pdf: 28 rows written \u26a0 6 uncertain/inferred fields
+2026-07-01 22:17:51,456 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:17:51,460 INFO OK Lu_bioRxiv_2024.pdf: 14 rows written \u26a0 15 uncertain/inferred fields
+2026-07-01 22:18:13,192 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:18:13,194 INFO OK Ma_bioRxiv_2024.pdf: 1 rows written
+2026-07-01 22:18:40,933 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:18:40,935 INFO OK Madison_bioRxiv_2024.pdf: 7 rows written
+2026-07-01 22:19:34,161 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:19:34,164 INFO OK Mahecic1_NatureMethods_2020.pdf: 17 rows written
+2026-07-01 22:20:25,660 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:20:25,662 INFO OK Mahecic2_NatureMethods_2020.pdf: 17 rows written
+2026-07-01 22:21:24,833 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:21:24,837 INFO OK Mahecic_bioRxiv_2020.pdf: 17 rows written
+2026-07-01 22:22:13,765 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:22:13,770 INFO OK Mahen1_PLOSBiology_2022.pdf: 11 rows written \u26a0 8 uncertain/inferred fields
+2026-07-01 22:22:46,800 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:22:46,801 INFO OK Mahen_bioRxiv_2021.pdf: 9 rows written
+2026-07-01 22:23:50,283 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:23:50,288 INFO OK Marin_bioRxiv_2025.pdf: 20 rows written \u26a0 62 uncertain/inferred fields
+2026-07-01 22:24:33,787 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:24:33,789 INFO OK Martino_CurrentBiology_2024.pdf: 10 rows written \u26a0 20 uncertain/inferred fields
+2026-07-01 22:24:56,626 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:24:56,630 INFO OK Mascheroni1_BiomedicalOpticsExpress_2020.pdf: 5 rows written \u26a0 5 uncertain/inferred fields
+2026-07-01 22:25:20,743 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:25:20,746 INFO OK Mascheroni_bioRxiv_2020.pdf: 5 rows written \u26a0 5 uncertain/inferred fields
+2026-07-01 22:25:52,208 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:25:52,210 INFO OK Matschke_Cell_2024.pdf: 6 rows written \u26a0 10 uncertain/inferred fields
+2026-07-01 22:26:39,163 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:26:39,166 INFO OK McCafferty1_Cells_2026.pdf: 19 rows written \u26a0 78 uncertain/inferred fields
+2026-07-01 22:27:24,589 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:27:24,594 INFO OK McCafferty2_Cells_2026.pdf: 19 rows written \u26a0 30 uncertain/inferred fields
+2026-07-01 22:28:50,184 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:28:50,186 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 647 column 7 (char 25601)
+2026-07-01 22:30:20,813 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:30:20,815 WARNING JSON parse error (attempt 2): Unterminated string starting at: line 662 column 11 (char 25937)
+2026-07-01 22:31:50,193 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:31:50,196 WARNING JSON parse error (attempt 3): Expecting property name enclosed in double quotes: line 664 column 36 (char 25782)
+2026-07-01 22:31:50,196 ERROR FAILED Mean_CellReports_2026.pdf: All 3 attempts failed
+2026-07-01 22:33:09,305 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:33:09,311 INFO OK Mechanistically_NatureCommunications_2025.pdf: 35 rows written \u26a0 55 uncertain/inferred fields
+2026-07-01 22:33:36,789 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:33:36,793 INFO OK Mekbib_bioRxiv_2025.pdf: 7 rows written \u26a0 8 uncertain/inferred fields; no protocol details extracted
+2026-07-01 22:34:35,129 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:34:35,133 INFO OK Mennella1_MethodsinMolecularBiology_2024.pdf: 15 rows written
+2026-07-01 22:35:00,601 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:35:00,603 INFO OK Menon1_eLife_2019.pdf: 4 rows written
+2026-07-01 22:35:32,664 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:35:32,666 INFO OK Mercey1_bioRxiv_2021.pdf: 12 rows written
+2026-07-01 22:36:07,124 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:36:07,128 INFO OK Mercey2_bioRxiv_2021.pdf: 13 rows written \u26a0 13 uncertain/inferred fields
+2026-07-01 22:36:55,059 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:36:55,066 INFO OK Mercey_bioRxiv_2024.pdf: 20 rows written \u26a0 60 uncertain/inferred fields
+2026-07-01 22:38:22,576 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:38:22,579 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 670 column 11 (char 25301)
+2026-07-01 22:39:52,715 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:39:52,717 WARNING JSON parse error (attempt 2): Unterminated string starting at: line 662 column 11 (char 25186)
+2026-07-01 22:41:27,688 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:41:27,690 WARNING JSON parse error (attempt 3): Unterminated string starting at: line 671 column 7 (char 25301)
+2026-07-01 22:41:27,691 ERROR FAILED Mercey_bioRxiv_2025.pdf: All 3 attempts failed
+2026-07-01 22:42:55,980 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:42:55,981 WARNING JSON parse error (attempt 1): Expecting value: line 666 column 11 (char 24961)
+2026-07-01 22:44:25,577 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:44:25,580 WARNING JSON parse error (attempt 2): Expecting property name enclosed in double quotes: line 670 column 42 (char 25291)
+2026-07-01 22:45:54,936 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:45:54,938 WARNING JSON parse error (attempt 3): Expecting value: line 665 column 33 (char 25224)
+2026-07-01 22:45:54,938 ERROR FAILED Mercey_CellReportsMethods_2026.pdf: All 3 attempts failed
+2026-07-01 22:46:56,531 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:46:56,536 INFO OK Mercey_EMBOReports_2024.pdf: 26 rows written \u26a0 78 uncertain/inferred fields
+2026-07-01 22:47:41,399 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:47:41,404 INFO OK Mercey_PLOSBiology_2022.pdf: 14 rows written \u26a0 36 uncertain/inferred fields
+2026-07-01 22:48:23,168 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:48:23,171 INFO OK Mestre_BiomedicalOpticsExpress_2025.pdf: 10 rows written
+2026-07-01 22:49:06,080 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:49:06,082 INFO OK Mestre_bioRxiv_2025.pdf: 10 rows written
+2026-07-01 22:49:51,218 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:49:51,220 INFO OK Michalska_bioRxiv_2022.pdf: 11 rows written
+2026-07-01 22:51:19,625 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:51:19,627 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 681 column 7 (char 26596)
+2026-07-01 22:52:52,405 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:52:52,407 WARNING JSON parse error (attempt 2): Expecting property name enclosed in double quotes: line 658 column 45 (char 26316)
+2026-07-01 22:54:08,464 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:54:08,467 INFO OK Michalska_NatureBiotechnology_2022.pdf: 29 rows written
+2026-07-01 22:55:13,090 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:55:13,094 WARNING JSON parse error (attempt 1): Expecting value: line 1 column 1 (char 0)
+2026-07-01 22:55:29,219 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 520 <none>"
+2026-07-01 22:55:29,220 INFO Retrying request to /v1/messages in 60.000000 seconds
+2026-07-01 22:57:13,573 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:57:13,580 INFO OK Michels1_MethodsinMolecularBiology_2026.pdf: 13 rows written \u26a0 5 uncertain/inferred fields
+2026-07-01 22:57:47,418 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:57:47,420 INFO OK Migliori_BMCBiology_2018.pdf: 4 rows written
+2026-07-01 22:58:01,488 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:58:01,489 WARNING JSON parse error (attempt 1): Expecting value: line 1 column 1 (char 0)
+2026-07-01 22:58:21,008 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:58:21,009 WARNING JSON parse error (attempt 2): Expecting value: line 1 column 1 (char 0)
+2026-07-01 22:58:58,406 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 22:58:58,408 WARNING JSON parse error (attempt 3): Expecting value: line 1 column 1 (char 0)
+2026-07-01 22:58:58,408 ERROR FAILED Mikulenková_bioRxiv_2025.pdf: All 3 attempts failed
+2026-07-01 23:00:15,695 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:00:15,697 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 685 column 34 (char 25134)
+2026-07-01 23:01:36,157 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:01:36,160 WARNING JSON parse error (attempt 2): Unterminated string starting at: line 687 column 29 (char 25168)
+2026-07-01 23:02:56,117 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:02:56,119 WARNING JSON parse error (attempt 3): Unterminated string starting at: line 690 column 11 (char 25250)
+2026-07-01 23:02:56,119 ERROR FAILED Mikus_Cell_2025.pdf: All 3 attempts failed
+2026-07-01 23:04:31,199 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 520 <none>"
+2026-07-01 23:04:31,199 INFO Retrying request to /v1/messages in 60.000000 seconds
+2026-07-01 23:07:05,149 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:07:05,169 INFO OK Miller_bioRxiv_2020.pdf: 26 rows written
+2026-07-01 23:07:51,657 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:07:51,661 INFO OK Mitchell1_bioRxiv_2026.pdf: 7 rows written \u26a0 21 uncertain/inferred fields; no protocol details extracted
+2026-07-01 23:08:26,893 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:08:26,897 INFO OK Mitchell2_bioRxiv_2026.pdf: 6 rows written \u26a0 18 uncertain/inferred fields; no protocol details extracted
+2026-07-01 23:08:59,781 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:08:59,784 INFO OK Moehle_bioRxiv_2025.pdf: 7 rows written \u26a0 7 uncertain/inferred fields
+2026-07-01 23:09:34,635 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:09:34,638 INFO OK Morano_bioRxiv_2024.pdf: 9 rows written
+2026-07-01 23:10:09,279 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:10:09,282 INFO OK Morano_mBio_2024.pdf: 9 rows written \u26a0 9 uncertain/inferred fields
+2026-07-01 23:10:43,682 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:10:43,686 INFO OK Morano_PLOSPathogens_2024.pdf: 8 rows written \u26a0 8 uncertain/inferred fields
+2026-07-01 23:12:03,302 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:12:03,306 INFO OK Morgan_bioRxiv_2024.pdf: 36 rows written
+2026-07-01 23:12:11,914 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:12:11,916 INFO SKIP Moye_AdvancesinExperimentalMedicineandBiology_2023.pdf: not ExM paper
+2026-07-01 23:12:51,971 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:12:51,973 INFO OK Mu_bioRxiv_2023.pdf: 11 rows written
+2026-07-01 23:13:10,877 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:13:10,879 INFO OK Mullins_bioRxiv_2025.pdf: 3 rows written
+2026-07-01 23:14:28,880 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:14:28,885 INFO OK Munro_NatureNanotechnology_2021.pdf: 20 rows written \u26a0 26 uncertain/inferred fields
+2026-07-01 23:15:13,588 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:15:13,591 INFO OK Nachury_bioRxiv_2025.pdf: 10 rows written \u26a0 5 uncertain/inferred fields
+2026-07-01 23:15:22,294 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:15:22,295 INFO SKIP Nagahata_PNAS_2025.pdf: not ExM paper
+2026-07-01 23:16:01,592 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:16:01,596 INFO OK Nakamoto_ACSNano_2022.pdf: 9 rows written
+2026-07-01 23:16:37,888 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:16:37,893 INFO OK NE_Cells_2019.pdf: 7 rows written \u26a0 11 uncertain/inferred fields
+2026-07-01 23:17:11,571 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:17:11,577 INFO OK NEK_bioRxiv_2024.pdf: 5 rows written \u26a0 5 uncertain/inferred fields
+2026-07-01 23:17:52,601 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:17:52,603 INFO OK Neubert_bioRxiv_2022.pdf: 10 rows written
+2026-07-01 23:18:21,554 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:18:21,558 INFO OK Nielsen_FluidsandBarriersoftheCNS_2023.pdf: 5 rows written \u26a0 6 uncertain/inferred fields
+2026-07-01 23:19:51,595 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:19:51,596 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 620 column 27 (char 24759)
+2026-07-01 23:21:23,971 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:21:23,975 INFO OK Norman_bioRxiv_2024.pdf: 21 rows written \u26a0 20 uncertain/inferred fields
+2026-07-01 23:22:15,758 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:22:15,761 INFO OK Odenwald_bioRxiv_2023.pdf: 12 rows written \u26a0 9 uncertain/inferred fields
+2026-07-01 23:23:07,355 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:23:07,358 INFO OK Odenwald_eLife_2024.pdf: 12 rows written \u26a0 12 uncertain/inferred fields
+2026-07-01 23:23:13,535 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:23:13,537 INFO SKIP Ohno_FrontiersinNeuroanatomy_2021.pdf: not ExM paper
+2026-07-01 23:23:19,752 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:23:19,754 INFO SKIP Oria_FrontiersinNeuroscience_2020.pdf: not ExM paper
+2026-07-01 23:23:26,907 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:23:26,908 INFO SKIP Ortiz_bioRxiv_2021.pdf: not ExM paper
+2026-07-01 23:23:33,792 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:23:33,794 INFO SKIP Ortiz_ChromosomeResearch_2022.pdf: not ExM paper
+2026-07-01 23:24:22,935 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:24:22,942 INFO OK Pacheco_bioRxiv_2021.pdf: 18 rows written \u26a0 198 uncertain/inferred fields
+2026-07-01 23:25:00,595 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:25:00,598 INFO OK Padilla_JournalofCellScience_2024.pdf: 7 rows written \u26a0 7 uncertain/inferred fields
+2026-07-01 23:25:56,301 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:25:56,304 INFO OK Paques_CommunicationsBiology_2022.pdf: 24 rows written
+2026-07-01 23:27:14,531 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:27:14,535 INFO OK Park_ACSNano_2020.pdf: 32 rows written
+2026-07-01 23:27:44,849 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:27:44,850 INFO OK Park_BritishJournalofCancer_2023.pdf: 5 rows written
+2026-07-01 23:28:55,191 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:28:55,196 INFO OK Park_PLOSONE_2023.pdf: 25 rows written \u26a0 6 uncertain/inferred fields
+2026-07-01 23:30:08,120 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:30:08,127 INFO OK Park_ScienceAdvances_2021.pdf: 30 rows written \u26a0 23 uncertain/inferred fields
+2026-07-01 23:31:09,734 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:31:09,741 INFO OK Patch_ScientificReports_2025.pdf: 21 rows written \u26a0 11 uncertain/inferred fields
+2026-07-01 23:31:45,868 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:31:45,872 INFO OK Patt_InternationalJournalofMolecularSciences_2023.pdf: 8 rows written \u26a0 16 uncertain/inferred fields
+2026-07-01 23:32:29,883 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:32:29,887 INFO OK Pereda_bioRxiv_2023.pdf: 14 rows written \u26a0 14 uncertain/inferred fields
+2026-07-01 23:32:56,078 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:32:56,081 INFO OK Pernal1_bioRxiv_2019.pdf: 4 rows written
+2026-07-01 23:33:29,318 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:33:29,322 INFO OK Pernal1_HistochemistryandCellBiology_2020.pdf: 5 rows written \u26a0 5 uncertain/inferred fields
+2026-07-01 23:33:59,163 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:33:59,165 INFO OK Pernal2_bioRxiv_2019.pdf: 4 rows written
+2026-07-01 23:34:28,201 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:34:28,203 INFO OK Pesce1_Nanoscale_2019.pdf: 5 rows written
+2026-07-01 23:34:57,926 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:34:57,928 INFO OK Pesce2_Nanoscale_2019.pdf: 5 rows written
+2026-07-01 23:35:28,243 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:35:28,246 INFO OK Pesce_bioRxiv_2018.pdf: 5 rows written \u26a0 8 uncertain/inferred fields
+2026-07-01 23:36:06,361 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:36:06,366 INFO OK Pesce_bioRxiv_2023.pdf: 11 rows written
+2026-07-01 23:36:33,035 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:36:33,037 INFO OK Petreaca_MethodsinMolecularBiology_2025.pdf: 2 rows written
+2026-07-01 23:36:40,237 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:36:40,239 INFO SKIP Piatkevich_ResearchSquare_2021.pdf: not ExM paper
+2026-07-01 23:37:25,562 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:37:25,566 INFO OK Plasmodium_bioRxiv_2020.pdf: 17 rows written
+2026-07-01 23:37:55,717 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:37:55,720 INFO OK Plasmodium_LifeScienceAlliance_2025.pdf: 6 rows written
+2026-07-01 23:38:36,142 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:38:36,145 INFO OK Prague_bioRxiv_2024.pdf: 12 rows written \u26a0 12 uncertain/inferred fields
+2026-07-01 23:39:50,774 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:39:50,778 INFO OK Pudlowski_bioRxiv_2024.pdf: 36 rows written
+2026-07-01 23:41:09,972 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:41:09,977 INFO OK Pudlowski_eLife_2024.pdf: 39 rows written
+2026-07-01 23:41:56,394 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:41:56,398 INFO OK Pugliese_ScientificReports_2023.pdf: 10 rows written
+2026-07-01 23:42:31,239 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:42:31,242 INFO OK Pujals_Nanoscale_2024.pdf: 7 rows written
+2026-07-01 23:42:37,680 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:42:37,682 INFO SKIP Pullman_FrontiersinMedicine_2018.pdf: not ExM paper
+2026-07-01 23:42:44,182 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:42:44,185 INFO SKIP Radmacher_AnnualReviewofBiophysics_2025.pdf: not ExM paper
+2026-07-01 23:43:20,559 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:43:20,560 INFO OK Ramadan_CellReportsMethods_2025.pdf: 8 rows written
+2026-07-01 23:43:58,039 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:43:58,042 INFO OK Ramanantsalama_JournalofCellScience_2022.pdf: 10 rows written
+2026-07-01 23:44:53,233 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:44:53,237 INFO OK Rashpa_bioRxiv_2021.pdf: 22 rows written
+2026-07-01 23:45:17,845 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:45:17,847 INFO OK Rashpa_bioRxiv_2023.pdf: 5 rows written
+2026-07-01 23:45:43,425 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:45:43,429 INFO OK Rashpa_mBio_2024.pdf: 5 rows written \u26a0 5 uncertain/inferred fields
+2026-07-01 23:46:20,792 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:46:20,795 INFO OK Rashpa_PLOSPathogens_2022.pdf: 11 rows written
+2026-07-01 23:46:27,983 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:46:27,985 INFO SKIP Reinhard_bioRxiv_2025.pdf: not ExM paper
+2026-07-01 23:46:57,502 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:46:57,504 INFO OK Rena_PNAS_2024.pdf: 6 rows written
+2026-07-01 23:48:08,526 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:48:08,531 INFO OK Reza_bioRxiv_2024.pdf: 21 rows written \u26a0 6 uncertain/inferred fields
+2026-07-01 23:48:39,140 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:48:39,142 INFO OK Rios_bioRxiv_2024.pdf: 8 rows written \u26a0 8 uncertain/inferred fields
+2026-07-01 23:50:09,351 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:50:09,352 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 628 column 34 (char 26096)
+2026-07-01 23:51:40,852 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:51:40,854 WARNING JSON parse error (attempt 2): Unterminated string starting at: line 642 column 27 (char 26233)
+2026-07-01 23:53:13,141 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:53:13,144 WARNING JSON parse error (attempt 3): Unterminated string starting at: line 625 column 11 (char 25977)
+2026-07-01 23:53:13,144 ERROR FAILED Rizzoli_ResearchSquare_2022.pdf: All 3 attempts failed
+2026-07-01 23:54:49,358 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:54:49,364 INFO OK Rokicki_bioRxiv_2024.pdf: 33 rows written \u26a0 26 uncertain/inferred fields
+2026-07-01 23:55:22,990 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:55:22,992 INFO OK RON_bioRxiv_2024.pdf: 7 rows written
+2026-07-01 23:56:25,534 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:56:25,539 INFO OK Rosnet_bioRxiv_2021.pdf: 23 rows written \u26a0 7 uncertain/inferred fields
+2026-07-01 23:56:49,462 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:56:49,464 INFO OK Rouhanifard_bioRxiv_2017.pdf: 4 rows written
+2026-07-01 23:57:14,793 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:57:14,795 INFO OK Rout_EMBOReports_2025.pdf: 4 rows written
+2026-07-01 23:58:05,026 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:58:05,039 INFO OK Ruetten_bioRxiv_2025.pdf: 8 rows written \u26a0 14 uncertain/inferred fields
+2026-07-01 23:59:08,822 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-01 23:59:08,827 INFO OK Rühling_NatureCommunications_2024.pdf: 19 rows written
+2026-07-02 00:00:35,896 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:00:35,898 WARNING JSON parse error (attempt 1): Expecting property name enclosed in double quotes: line 688 column 10 (char 26310)
+2026-07-02 00:02:07,665 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:02:07,667 WARNING JSON parse error (attempt 2): Unterminated string starting at: line 662 column 11 (char 26088)
+2026-07-02 00:03:39,365 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:03:39,367 WARNING JSON parse error (attempt 3): Expecting value: line 666 column 24 (char 26116)
+2026-07-02 00:03:39,367 ERROR FAILED Saal_ScientificReports_2023.pdf: All 3 attempts failed
+2026-07-02 00:04:13,995 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:04:14,000 INFO OK Saka_bioRxiv_2018.pdf: 11 rows written \u26a0 11 uncertain/inferred fields; no protocol details extracted
+2026-07-02 00:05:49,884 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:05:49,892 INFO OK Saka_NatureBiotechnology_2019.pdf: 40 rows written \u26a0 13 uncertain/inferred fields
+2026-07-02 00:06:57,093 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:06:57,099 INFO OK Sala_FrontiersinMolecularNeuroscience_2024.pdf: 29 rows written \u26a0 58 uncertain/inferred fields
+2026-07-02 00:07:20,898 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:07:20,900 INFO OK Samuel_bioRxiv_2024.pdf: 1 rows written
+2026-07-02 00:07:52,729 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:07:52,731 INFO OK Sarwal_FrontiersinMedicine_2018.pdf: 7 rows written
+2026-07-02 00:08:31,737 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:08:31,741 INFO OK Sass_MethodsinMolecularBiology_2023.pdf: 2 rows written \u26a0 7 uncertain/inferred fields
+2026-07-02 00:09:02,150 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:09:02,154 INFO OK Sayers1_CellSystems_2024.pdf: 6 rows written \u26a0 6 uncertain/inferred fields
+2026-07-02 00:09:34,618 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:09:34,621 INFO OK Schaffer1_bioRxiv_2021.pdf: 9 rows written \u26a0 9 uncertain/inferred fields
+2026-07-02 00:10:03,743 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:10:03,745 INFO OK Schaffer2_bioRxiv_2021.pdf: 6 rows written
+2026-07-02 00:10:21,405 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:10:21,411 INFO OK Scheible_bioRxiv_2018.pdf: 1 rows written \u26a0 no protocol details extracted
+2026-07-02 00:10:58,743 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:10:58,746 INFO OK Schliebs_Cells_2020.pdf: 8 rows written
+2026-07-02 00:11:54,370 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:11:54,374 INFO OK Schroeder_bioRxiv_2024.pdf: 16 rows written \u26a0 35 uncertain/inferred fields
+2026-07-02 00:13:17,196 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:13:17,204 INFO OK Schweizer_bioRxiv_2020.pdf: 37 rows written
+2026-07-02 00:13:45,448 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:13:45,451 INFO OK Seehra_bioRxiv_2023.pdf: 6 rows written
+2026-07-02 00:14:25,646 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:14:25,651 INFO OK Sena_JournalofMicroscopy_2025.pdf: 11 rows written \u26a0 no protocol details extracted
+2026-07-02 00:14:50,817 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:14:50,820 INFO OK Seo1_bioRxiv_2021.pdf: 3 rows written
+2026-07-02 00:15:13,333 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:15:13,334 INFO OK Seo2_bioRxiv_2021.pdf: 1 rows written
+2026-07-02 00:16:40,522 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:16:40,524 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 623 column 23 (char 23464)
+2026-07-02 00:17:54,744 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:17:54,748 INFO OK Shah_Cell_2023.pdf: 28 rows written
+2026-07-02 00:19:25,865 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:19:25,867 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 639 column 11 (char 26066)
+2026-07-02 00:21:03,007 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:21:03,009 WARNING JSON parse error (attempt 2): Unterminated string starting at: line 637 column 11 (char 25855)
+2026-07-02 00:22:35,344 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:22:35,346 WARNING JSON parse error (attempt 3): Expecting property name enclosed in double quotes: line 651 column 35 (char 26003)
+2026-07-02 00:22:35,346 ERROR FAILED Shaib_bioRxiv_2022.pdf: All 3 attempts failed
+2026-07-02 00:24:10,072 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:24:10,074 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 638 column 23 (char 24123)
+2026-07-02 00:25:44,744 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:25:44,746 WARNING JSON parse error (attempt 2): Unterminated string starting at: line 650 column 23 (char 24652)
+2026-07-02 00:27:22,926 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:27:22,928 WARNING JSON parse error (attempt 3): Unterminated string starting at: line 626 column 23 (char 24051)
+2026-07-02 00:27:22,929 ERROR FAILED Shaib_NatureBiotechnology_2023.pdf: All 3 attempts failed
+2026-07-02 00:28:21,892 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:28:21,896 INFO OK Shakespeare_ACSNano_2026.pdf: 19 rows written
+2026-07-02 00:29:01,467 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:29:01,472 INFO OK Sheard1_bioRxiv_2021.pdf: 9 rows written \u26a0 6 uncertain/inferred fields
+2026-07-02 00:29:40,867 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:29:40,872 INFO OK Sheard2_bioRxiv_2021.pdf: 9 rows written
+2026-07-02 00:30:09,781 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:30:09,784 INFO OK Sheard_ACSNano_2019.pdf: 7 rows written \u26a0 7 uncertain/inferred fields
+2026-07-02 00:31:01,254 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:31:01,258 INFO OK Sheard_bioRxiv_2023.pdf: 23 rows written
+2026-07-02 00:31:57,125 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:31:57,128 INFO OK Sheard_Nanoscale_2023.pdf: 26 rows written
+2026-07-02 00:32:27,087 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:32:27,098 INFO OK Shearda_bioRxiv_2020.pdf: 6 rows written \u26a0 6 uncertain/inferred fields
+2026-07-02 00:33:42,246 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:33:42,251 INFO OK Shi_bioRxiv_2019.pdf: 24 rows written \u26a0 13 uncertain/inferred fields
+2026-07-02 00:34:33,200 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:34:33,203 INFO OK Shi_bioRxiv_2021.pdf: 15 rows written
+2026-07-02 00:36:03,810 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:36:03,815 INFO OK Shi_JournalofCellBiology_2021.pdf: 30 rows written
+2026-07-02 00:37:14,068 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:37:14,074 INFO OK Sim1_bioRxiv_2021.pdf: 31 rows written \u26a0 24 uncertain/inferred fields
+2026-07-02 00:38:26,664 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:38:26,670 INFO OK Sim2_bioRxiv_2021.pdf: 29 rows written \u26a0 29 uncertain/inferred fields
+2026-07-02 00:39:37,755 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:39:37,758 INFO OK Sim_ACSNano_2025.pdf: 34 rows written
+2026-07-02 00:39:45,637 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:39:45,638 INFO SKIP Simon_bioRxiv_2021.pdf: not ExM paper
+2026-07-02 00:39:56,575 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:39:56,576 INFO SKIP Soldati-Favre_PLOSBiology_2021.pdf: not ExM paper
+2026-07-02 00:40:37,869 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:40:37,877 INFO OK Soukup_ExperimentalParasitology_2024.pdf: 14 rows written \u26a0 14 uncertain/inferred fields
+2026-07-02 00:41:05,727 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:41:05,732 INFO OK Souza_PLOSPathogens_2024.pdf: 6 rows written \u26a0 12 uncertain/inferred fields
+2026-07-02 00:41:26,246 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:41:26,248 INFO OK Srinivas_bioRxiv_2021.pdf: 2 rows written
+2026-07-02 00:42:05,211 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:42:05,213 INFO OK Stefani_ScientificReports_2020.pdf: 10 rows written
+2026-07-02 00:43:06,864 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:43:06,873 INFO OK Steib1_eLife_2020.pdf: 20 rows written \u26a0 54 uncertain/inferred fields
+2026-07-02 00:43:58,766 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:43:58,770 INFO OK Steib_bioRxiv_2020.pdf: 21 rows written
+2026-07-02 00:45:14,612 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:45:14,620 INFO OK Steib_CellReportsMethods_2022.pdf: 31 rows written \u26a0 6 uncertain/inferred fields
+2026-07-02 00:45:45,705 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:45:45,714 INFO OK Suen1_LifeScienceAlliance_2023.pdf: 7 rows written \u26a0 31 uncertain/inferred fields
+2026-07-02 00:45:53,141 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:45:53,142 INFO SKIP Suen2_LifeScienceAlliance_2023.pdf: not ExM paper
+2026-07-02 00:46:24,656 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:46:24,660 INFO OK Suen_bioRxiv_2022.pdf: 7 rows written \u26a0 30 uncertain/inferred fields
+2026-07-02 00:47:01,874 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:47:01,876 INFO OK Sun_AnalyticalChemistry_2022.pdf: 8 rows written
+2026-07-02 00:48:32,511 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:48:32,514 INFO OK Sun_bioRxiv_2020.pdf: 35 rows written
+2026-07-02 00:49:01,264 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:49:01,267 INFO OK Sun_FrontiersinChemistry_2020.pdf: 4 rows written
+2026-07-02 00:49:28,012 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:49:28,014 INFO OK Taddei_JAMANeurology_2023.pdf: 8 rows written
+2026-07-02 00:50:32,672 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:50:32,677 INFO OK Takahashi_bioRxiv_2024.pdf: 32 rows written \u26a0 128 uncertain/inferred fields
+2026-07-02 00:51:41,400 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:51:41,407 INFO OK Takahashi_Cell_2025.pdf: 35 rows written \u26a0 103 uncertain/inferred fields
+2026-07-02 00:52:25,117 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:52:25,120 INFO OK Tassin_ScienceAdvances_2020.pdf: 12 rows written \u26a0 36 uncertain/inferred fields; no protocol details extracted
+2026-07-02 00:52:59,944 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:52:59,948 INFO OK Technologies_ResearchSquare_2020.pdf: 9 rows written
+2026-07-02 00:54:01,642 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:54:01,648 INFO OK Teng_FrontiersinMolecularBiosciences_2020.pdf: 18 rows written \u26a0 18 uncertain/inferred fields
+2026-07-02 00:54:44,617 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:54:44,620 INFO OK Tengganu_bioRxiv_2025.pdf: 10 rows written \u26a0 10 uncertain/inferred fields
+2026-07-02 00:55:39,121 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:55:39,126 INFO OK Thornlow_Cells_2024.pdf: 8 rows written
+2026-07-02 00:56:36,415 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:56:36,418 INFO OK Tian_bioRxiv_2025.pdf: 16 rows written \u26a0 7 uncertain/inferred fields
+2026-07-02 00:57:04,155 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:57:04,158 INFO OK Tian_npjCancer_2026.pdf: 5 rows written \u26a0 8 uncertain/inferred fields
+2026-07-02 00:57:11,640 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:57:11,641 INFO SKIP Tillberg_AnnualReviewofCellandDevelopmentalBiolog_2019.pdf: not ExM paper
+2026-07-02 00:58:33,659 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 00:58:33,660 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 682 column 31 (char 25459)
+2026-07-02 01:00:01,504 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:00:01,505 WARNING JSON parse error (attempt 2): Unterminated string starting at: line 677 column 34 (char 25456)
+2026-07-02 01:01:29,947 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:01:29,949 WARNING JSON parse error (attempt 3): Unterminated string starting at: line 691 column 7 (char 25886)
+2026-07-02 01:01:29,949 ERROR FAILED Tillberg_NatureBiotechnology_2016.pdf: All 3 attempts failed
+2026-07-02 01:02:16,520 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:02:16,526 INFO OK Tillberg_ScientificReports_2016.pdf: 14 rows written \u26a0 14 uncertain/inferred fields
+2026-07-02 01:03:10,795 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:03:10,799 INFO OK Tilley_ResearchSquare_2023.pdf: 21 rows written
+2026-07-02 01:03:44,153 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:03:44,156 INFO OK tobia_bioRxiv_2020.pdf: 9 rows written \u26a0 10 uncertain/inferred fields
+2026-07-02 01:03:54,996 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:03:54,997 INFO SKIP Tomasina_Microorganisms_2021.pdf: not ExM paper
+2026-07-02 01:04:30,128 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:04:30,131 INFO OK Tomasina_Microorganisms_2023.pdf: 10 rows written
+2026-07-02 01:05:08,385 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:05:08,387 INFO OK Tong_bioRxiv_2016.pdf: 10 rows written
+2026-07-02 01:05:48,166 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:05:48,169 INFO OK Tosetti_bioRxiv_2020.pdf: 12 rows written
+2026-07-02 01:06:24,348 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:06:24,352 INFO OK Tosetti_eLife_2020.pdf: 11 rows written \u26a0 11 uncertain/inferred fields
+2026-07-02 01:07:18,732 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:07:18,737 INFO OK Toulouse_bioRxiv_2024.pdf: 19 rows written \u26a0 8 uncertain/inferred fields
+2026-07-02 01:08:51,258 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:08:51,260 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 595 column 23 (char 23255)
+2026-07-02 01:10:23,507 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:10:23,514 INFO OK Toulouse_NatureCommunications_2021.pdf: 39 rows written \u26a0 6 uncertain/inferred fields
+2026-07-02 01:11:12,221 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:11:12,224 INFO OK Trinks_CommunicationsBiology_2021.pdf: 12 rows written
+2026-07-02 01:12:17,492 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:12:17,495 INFO OK Truckenbrodt1_EMBOReports_2018.pdf: 21 rows written
+2026-07-02 01:12:48,829 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:12:48,831 INFO OK Tsaia_Methods_2019.pdf: 8 rows written \u26a0 8 uncertain/inferred fields
+2026-07-02 01:13:28,158 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:13:28,161 INFO OK Tsekitsidou_bioRxiv_2022.pdf: 14 rows written
+2026-07-02 01:14:32,175 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:14:32,179 INFO OK Utrecht_bioRxiv_2022.pdf: 20 rows written \u26a0 72 uncertain/inferred fields
+2026-07-02 01:15:17,218 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:15:17,224 INFO OK Vardalaki_bioRxiv_2023.pdf: 18 rows written \u26a0 28 uncertain/inferred fields
+2026-07-02 01:16:09,134 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:16:09,140 INFO OK Vaughan_NucleicAcidsResearch_2021.pdf: 17 rows written \u26a0 17 uncertain/inferred fields
+2026-07-02 01:16:42,520 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:16:42,522 INFO OK Venkataramani1_bioRxiv_2026.pdf: 4 rows written
+2026-07-02 01:17:19,401 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:17:19,405 INFO OK Venkataramani2_bioRxiv_2026.pdf: 6 rows written \u26a0 6 uncertain/inferred fields
+2026-07-02 01:17:46,925 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:17:46,927 INFO OK Vigetti_InternationalJournalofMolecularSciences_2022.pdf: 5 rows written
+2026-07-02 01:18:37,100 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:18:37,102 INFO OK Vihinen-Rantac_MolecularBiologyoftheCell_2023.pdf: 13 rows written
+2026-07-02 01:18:44,794 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:18:44,795 INFO SKIP Villegas-Hernández_NatureCommunications_2025.pdf: not ExM paper
+2026-07-02 01:18:52,948 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:18:52,949 INFO SKIP Vinopal_CurrentOpinioninNeurobiology_2025.pdf: not ExM paper
+2026-07-02 01:19:33,801 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:19:33,804 INFO OK Voth_FrontiersinCellularandInfectionMicrobiol_2019.pdf: 14 rows written
+2026-07-02 01:20:33,861 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:20:33,865 INFO OK Wan1_eLife_2023.pdf: 18 rows written
+2026-07-02 01:21:10,937 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:21:10,939 INFO OK Wang1_ScientificReports_2018.pdf: 9 rows written
+2026-07-02 01:21:18,076 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:21:18,077 INFO SKIP Wang2_ScientificReports_2018.pdf: not ExM paper
+2026-07-02 01:21:54,908 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:21:54,913 INFO OK Wang_bioRxiv_2017.pdf: 9 rows written \u26a0 18 uncertain/inferred fields
+2026-07-02 01:22:40,183 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:22:40,185 INFO OK Wang_bioRxiv_2023.pdf: 12 rows written
+2026-07-02 01:23:27,678 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:23:27,682 INFO OK Wang_Cell_2021.pdf: 12 rows written \u26a0 37 uncertain/inferred fields
+2026-07-02 01:24:05,604 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:24:05,608 INFO OK Wang_CellularandMolecularLifeSciences_2022.pdf: 10 rows written \u26a0 10 uncertain/inferred fields
+2026-07-02 01:24:41,037 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:24:41,041 INFO OK Wang_eLife_2019.pdf: 8 rows written \u26a0 8 uncertain/inferred fields
+2026-07-02 01:24:49,142 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:24:49,144 INFO SKIP Wang_FrontiersinCellandDevelopmentalBiology_2024.pdf: not ExM paper
+2026-07-02 01:24:56,887 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:24:56,889 INFO SKIP Wang_NanoConvergence_2022.pdf: not ExM paper
+2026-07-02 01:25:45,319 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:25:45,321 INFO OK Wang_ScientificReports_2023.pdf: 14 rows written
+2026-07-02 01:26:57,303 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:26:57,308 INFO OK Wei_FrontiersinCellularandInfectionMicrobiol_2020.pdf: 29 rows written
+2026-07-02 01:28:02,818 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:28:02,822 INFO OK Weish_bioRxiv_2021.pdf: 24 rows written \u26a0 43 uncertain/inferred fields
+2026-07-02 01:29:28,539 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:29:28,544 INFO OK Welp_Cell_2023.pdf: 38 rows written
+2026-07-02 01:30:00,113 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:30:00,117 INFO OK Wen1_bioRxiv_2019.pdf: 10 rows written \u26a0 10 uncertain/inferred fields; no protocol details extracted
+2026-07-02 01:30:33,605 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:30:33,607 INFO OK Wen2_bioRxiv_2019.pdf: 9 rows written \u26a0 9 uncertain/inferred fields; no protocol details extracted
+2026-07-02 01:31:42,606 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:31:42,608 INFO OK Wen_ACSNano_2015.pdf: 22 rows written
+2026-07-02 01:32:18,101 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:32:18,103 INFO OK Wen_ACSNano_2020.pdf: 6 rows written
+2026-07-02 01:33:22,356 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:33:22,362 INFO OK Wen_bioRxiv_2023.pdf: 20 rows written \u26a0 21 uncertain/inferred fields
+2026-07-02 01:33:31,335 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:33:31,336 INFO SKIP Wen_ChemicalReviews_2022.pdf: not ExM paper
+2026-07-02 01:34:06,488 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:34:06,490 INFO OK Wen_ChemistryEuropeanJournal_2022.pdf: 7 rows written
+2026-07-02 01:34:47,397 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:34:47,400 INFO OK Wen_JACS_2021.pdf: 10 rows written
+2026-07-02 01:35:36,351 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:35:36,358 INFO OK Wen_JACS_2025.pdf: 17 rows written \u26a0 52 uncertain/inferred fields
+2026-07-02 01:36:28,242 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:36:28,247 INFO OK Wilmerding_STARProtocols_2023.pdf: 15 rows written \u26a0 45 uncertain/inferred fields
+2026-07-02 01:36:50,951 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:36:50,954 INFO OK Wilson_bioRxiv_2024.pdf: 2 rows written
+2026-07-02 01:37:20,751 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:37:20,753 INFO OK Winzeler_ResearchSquare_2024.pdf: 5 rows written
+2026-07-02 01:38:34,549 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:38:34,554 INFO OK Woglar_bioRxiv_2022.pdf: 34 rows written
+2026-07-02 01:39:01,247 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:39:01,248 INFO OK Wollweber_Cell_2025.pdf: 5 rows written
+2026-07-02 01:39:54,615 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:39:54,620 INFO OK Woo_ScientificReports_2020.pdf: 18 rows written \u26a0 17 uncertain/inferred fields
+2026-07-02 01:40:47,801 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:40:47,806 INFO OK Woodworth1_bioRxiv_2026.pdf: 14 rows written \u26a0 6 uncertain/inferred fields
+2026-07-02 01:41:48,376 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:41:48,387 INFO OK Woodworth2_bioRxiv_2026.pdf: 14 rows written \u26a0 15 uncertain/inferred fields
+2026-07-02 01:42:46,176 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:42:46,183 INFO OK Woodworth_bioRxiv_2020.pdf: 20 rows written \u26a0 21 uncertain/inferred fields
+2026-07-02 01:42:55,758 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:42:55,759 INFO SKIP Wu_FrontiersinComputationalNeuroscience_2017.pdf: not ExM paper
+2026-07-02 01:43:46,911 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:43:46,915 INFO OK Wu_NatureCommunications_2025.pdf: 12 rows written \u26a0 no protocol details extracted
+2026-07-02 01:44:14,336 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:44:14,338 INFO OK Wu_TranslationalPsychiatry_2025.pdf: 6 rows written
+2026-07-02 01:44:40,786 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:44:40,790 INFO OK Wunderlich_AnalyticalandBioanalyticalChemistry_2020.pdf: 3 rows written \u26a0 6 uncertain/inferred fields
+2026-07-02 01:45:01,638 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:45:01,639 INFO OK Xiea_bioRxiv_2024.pdf: 2 rows written
+2026-07-02 01:45:41,117 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:45:41,121 INFO OK Xu_bioRxiv_2025.pdf: 10 rows written \u26a0 21 uncertain/inferred fields
+2026-07-02 01:46:31,105 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:46:31,108 INFO OK Xu_ResearchSquare_2022.pdf: 15 rows written \u26a0 6 uncertain/inferred fields
+2026-07-02 01:46:54,094 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:46:54,095 INFO OK Yanase_bioRxiv_2024.pdf: 4 rows written
+2026-07-02 01:47:21,311 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:47:21,314 INFO OK Yanase_bioRxiv_2025.pdf: 6 rows written
+2026-07-02 01:47:44,682 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:47:44,684 INFO OK Yanase_LifeScienceAlliance_2025.pdf: 4 rows written
+2026-07-02 01:48:18,676 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:48:18,678 INFO OK Yang_ChemicalBiomedicalImaging_2025.pdf: 6 rows written
+2026-07-02 01:49:05,210 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:49:05,213 INFO OK Yang_NatureCommunications_2025.pdf: 13 rows written
+2026-07-02 01:49:35,051 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:49:35,052 INFO OK Yeon_ScientificReports_2022.pdf: 9 rows written
+2026-07-02 01:50:53,696 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:50:53,703 INFO OK Yu_bioRxiv_2023.pdf: 28 rows written
+2026-07-02 01:51:39,738 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:51:39,741 INFO OK Yu_bioRxiv_2024.pdf: 17 rows written
+2026-07-02 01:52:28,075 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:52:28,077 INFO OK Yu_CommunicationsBiology_2025.pdf: 19 rows written
+2026-07-02 01:53:58,436 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:53:58,444 INFO OK Yu_eLife_2019.pdf: 39 rows written \u26a0 9 uncertain/inferred fields
+2026-07-02 01:54:43,196 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:54:43,198 INFO OK Yu_ResearchSquare_2024.pdf: 16 rows written
+2026-07-02 01:55:15,553 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:55:15,555 INFO OK Zeeshan1_eLife_2025.pdf: 7 rows written
+2026-07-02 01:55:46,477 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:55:46,480 INFO OK Zeeshan_bioRxiv_2024.pdf: 6 rows written
+2026-07-02 01:56:10,371 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:56:10,373 INFO OK Zeeshan_bioRxiv_2025.pdf: 5 rows written
+2026-07-02 01:56:33,545 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:56:33,547 INFO OK Zeeshan_LifeScienceAlliance_2026.pdf: 5 rows written
+2026-07-02 01:57:15,671 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:57:15,674 INFO OK Zeilinger_FrontiersinMicrobiology_2020.pdf: 10 rows written \u26a0 10 uncertain/inferred fields
+2026-07-02 01:58:04,933 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:58:04,947 INFO OK Zelena_bioRxiv_2025.pdf: 19 rows written
+2026-07-02 01:58:11,737 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:58:11,738 INFO SKIP Zerulla_BeilsteinJournalofNanotechnology_2023.pdf: not ExM paper
+2026-07-02 01:58:22,820 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:58:22,821 INFO SKIP Zhang_bioRxiv_2020.pdf: not ExM paper
+2026-07-02 01:58:43,555 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:58:43,557 INFO OK Zhang_Cells_2020.pdf: 2 rows written
+2026-07-02 01:59:10,716 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:59:10,718 INFO OK Zhang_HeartRhythm_2025.pdf: 5 rows written
+2026-07-02 01:59:43,374 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 01:59:43,377 INFO OK Zhang_JNeuroendocrinology_2022.pdf: 5 rows written \u26a0 5 uncertain/inferred fields
+2026-07-02 02:00:25,484 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 02:00:25,486 INFO OK Zhao_bioRxiv_2020.pdf: 11 rows written
+2026-07-02 02:03:50,826 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 02:03:50,830 INFO OK Zhao_ResearchSquare_2021.pdf: 30 rows written \u26a0 19 uncertain/inferred fields
+2026-07-02 02:05:17,871 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 02:05:17,873 WARNING JSON parse error (attempt 1): Expecting value: line 615 column 30 (char 24377)
+2026-07-02 02:06:49,983 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 02:06:49,986 WARNING JSON parse error (attempt 2): Expecting property name enclosed in double quotes: line 634 column 31 (char 24702)
+2026-07-02 02:08:23,114 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 02:08:23,116 WARNING JSON parse error (attempt 3): Unterminated string starting at: line 612 column 7 (char 24293)
+2026-07-02 02:08:23,117 ERROR FAILED Zhao_ResearchSquare_2023.pdf: All 3 attempts failed
+2026-07-02 02:09:08,088 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 02:09:08,091 INFO OK Zhao_ScienceAdvances_2021.pdf: 12 rows written
+2026-07-02 02:10:02,584 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 02:10:02,589 INFO OK Zhao_ScienceAdvances_2022.pdf: 20 rows written \u26a0 60 uncertain/inferred fields
+2026-07-02 02:10:33,682 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 02:10:33,684 INFO OK Zhovmer1_NatureMethods_2021.pdf: 7 rows written
+2026-07-02 02:12:03,066 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 02:12:03,068 WARNING JSON parse error (attempt 1): Unterminated string starting at: line 645 column 29 (char 25601)
+2026-07-02 02:13:35,676 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 02:13:35,677 WARNING JSON parse error (attempt 2): Unterminated string starting at: line 648 column 39 (char 25722)
+2026-07-02 02:15:10,135 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 02:15:10,137 WARNING JSON parse error (attempt 3): Expecting value: line 646 column 32 (char 25458)
+2026-07-02 02:15:10,137 ERROR FAILED Zhuang_bioRxiv_2024.pdf: All 3 attempts failed
+2026-07-02 02:15:36,760 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 02:15:36,762 INFO OK Zink_bioRxiv_2025.pdf: 5 rows written
+2026-07-02 02:16:32,026 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 02:16:32,029 INFO OK Zwettler1_NatureCommunications_2020.pdf: 14 rows written
+2026-07-02 02:17:20,560 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 02:17:20,562 INFO OK Zwettler2_NatureCommunications_2020.pdf: 13 rows written
+2026-07-02 02:18:11,514 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 02:18:11,516 INFO OK Zwettler_bioRxiv_2020.pdf: 13 rows written
+2026-07-02 02:18:31,601 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-07-02 02:18:31,605 INFO OK Övermöhle_npjPrecisionOncology_2026.pdf: 2 rows written \u26a0 no protocol details extracted

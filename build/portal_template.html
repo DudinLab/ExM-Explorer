@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ExM Explorer: a search engine for expansion microscopy</title>
+<style>
+:root{
+  --mag:#C0006A; --magd:#8a004c; --magl:#e0479b; --magbg:#f7e6ef;
+  --ink:#211b26; --mid:#6a6472; --dim:#9a94a3;
+  --paper:#faf8f5; --surf:#ffffff; --brd:#eae5df; --brd2:#ded7cf;
+  --ok:#1c7d57; --okbg:#e7f3ec; --part:#a9720c; --partbg:#f8efdc; --bad:#b23a30; --badbg:#f6e6e3;
+  --field:#8fb8ad; --gap:#d6cfd7;
+  --serif:Georgia,'Iowan Old Style','Palatino Linotype',Palatino,Charter,'Times New Roman',serif;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--mag);text-decoration:none}
+a:hover{text-decoration:underline}
+.hd{position:sticky;top:0;z-index:40;background:var(--surf);border-bottom:1px solid var(--brd);padding:16px 30px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{font-family:var(--serif);font-weight:600;font-size:26px;letter-spacing:-.5px;color:var(--ink)}
+.logo b{color:var(--mag);font-weight:600}
+.sub{font-family:var(--serif);font-style:italic;font-size:13.5px;color:var(--mid);border-left:1px solid var(--brd2);padding-left:16px;line-height:1.35}
+.sub a{color:var(--mid);border-bottom:1px solid var(--brd2)}
+.sub a:hover{text-decoration:none;color:var(--mag);border-color:var(--magl)}
+.moore{margin-left:auto;font-size:11px;color:var(--dim);line-height:1.4;text-align:right;max-width:170px}
+.moore a{color:var(--mid);border-bottom:1px solid var(--brd2)}
+.moore a:hover{color:var(--mag);border-color:var(--magl);text-decoration:none}
+.gsearch{position:relative;display:flex;align-items:center}
+.gsearch svg{position:absolute;left:15px;width:15px;height:15px;stroke:var(--dim);pointer-events:none}
+.gsearch input{width:280px;max-width:40vw;padding:11px 16px 11px 40px;border:1px solid var(--brd2);border-radius:30px;font-size:13px;font-family:var(--sans);background:var(--paper);color:var(--ink);transition:.15s}
+.gsearch input:focus{outline:none;border-color:var(--mag);background:#fff;box-shadow:0 0 0 4px var(--magbg)}
+.gsearch input::placeholder{color:var(--dim)}
+.hbtn{display:flex;align-items:center;gap:7px;padding:10px 14px;border:1px solid var(--brd2);border-radius:30px;background:var(--paper);cursor:pointer;font-size:12.5px;font-weight:500;color:var(--mid);font-family:var(--sans);transition:.14s}
+.hbtn:hover{border-color:var(--mag);color:var(--mag)}
+.hbtn svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2}
+.bcount{background:var(--mag);color:#fff;border-radius:20px;font-size:10px;font-weight:700;min-width:17px;height:17px;display:inline-flex;align-items:center;justify-content:center;padding:0 5px}
+.bcount.zero{display:none}
+#gdrop{position:absolute;top:46px;right:0;width:380px;max-width:90vw;background:#fff;border:1px solid var(--brd);border-radius:14px;box-shadow:0 20px 50px -18px rgba(80,20,60,.25);max-height:60vh;overflow:auto;display:none;z-index:60}
+#gdrop .gi{padding:10px 15px;border-bottom:1px solid var(--brd);cursor:pointer;font-size:13px;display:flex;gap:9px;align-items:center}
+#gdrop .gi:last-child{border:none}
+#gdrop .gi:hover{background:var(--magbg)}
+.gtag{font-size:9px;font-weight:600;padding:2px 7px;border-radius:20px;background:var(--magbg);color:var(--magd);text-transform:uppercase;letter-spacing:.6px}
+.tabs{position:sticky;top:59px;z-index:35;background:var(--surf);border-bottom:1px solid var(--brd);padding:0 30px;display:flex;gap:32px;flex-wrap:wrap}
+.tab{padding:14px 2px;font-size:13.5px;font-weight:500;color:var(--mid);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;letter-spacing:.2px;transition:.15s}
+.tab.on{color:var(--mag);border-color:var(--mag)}
+.tab:hover:not(.on){color:var(--ink)}
+.disc{background:var(--paper);border-bottom:1px solid var(--brd);color:var(--mid);font-size:12px;padding:10px 30px;line-height:1.5}
+.disc b{color:var(--ink);font-weight:600}
+.stats{background:var(--surf);border-bottom:1px solid var(--brd);padding:18px 30px;display:flex;flex-wrap:wrap}
+.stat{padding:0 30px;border-right:1px solid var(--brd);display:flex;flex-direction:column;gap:3px}
+.stat:first-child{padding-left:0}.stat:last-child{border:none}
+.stat b{font-family:var(--serif);font-size:28px;font-weight:500;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
+.stat span{font-size:10px;text-transform:uppercase;letter-spacing:1.1px;color:var(--dim);font-weight:500}
+.body{display:flex;align-items:flex-start}
+.sb{width:214px;flex:0 0 214px;padding:26px 22px;position:sticky;top:108px;max-height:calc(100vh - 108px);overflow:auto}
+.sb h4{font-size:10px;text-transform:uppercase;letter-spacing:1.3px;color:var(--dim);margin:22px 0 9px;font-weight:600}
+.sb h4:first-child{margin-top:0}
+.fopt{display:flex;justify-content:space-between;align-items:center;padding:6px 11px;border-radius:8px;cursor:pointer;font-size:13px;color:var(--mid);transition:.12s}
+.fopt:hover{background:#fff;color:var(--ink)}
+.fopt.on{background:var(--mag);color:#fff;font-weight:500}
+.fopt .c{font-size:11px;color:var(--dim);font-variant-numeric:tabular-nums}
+.fopt.on .c{color:#f4c4dd}
+.main{flex:1;padding:26px 30px;min-width:0}
+.count{font-size:12px;color:var(--dim);margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:16px}
+.card{background:var(--surf);border:1px solid var(--brd);border-radius:14px;padding:18px 19px;cursor:pointer;position:relative;transition:.18s ease;display:flex;flex-direction:column}
+.card:hover{border-color:var(--magl);box-shadow:0 10px 30px -12px rgba(120,20,80,.26);transform:translateY(-3px)}
+.card .cl{font-size:10px;text-transform:uppercase;letter-spacing:1.2px;color:var(--mag);font-weight:600;margin-bottom:9px;padding-right:28px}
+.card .sp{font-family:var(--serif);font-style:italic;font-size:19px;font-weight:500;line-height:1.15;margin-bottom:12px;padding-right:14px;color:var(--ink)}
+.card .abname{font-size:16px;font-weight:600;line-height:1.2;margin-bottom:4px;padding-right:46px;color:var(--ink)}
+.card .abtarget{font-size:13px;color:var(--mid);margin-bottom:12px}
+.card .meta{display:flex;gap:14px;align-items:center;font-size:12px;color:var(--mid);padding-top:13px;border-top:1px solid var(--brd);margin-top:auto}
+.card .meta b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+.dot{position:absolute;top:19px;right:18px;width:9px;height:9px;border-radius:50%}
+.d-ok{background:var(--ok)}.d-part{background:var(--part)}.d-bad{background:var(--bad)}.d-na{background:var(--brd2)}
+.scorebadge{position:absolute;top:15px;right:15px;background:var(--mag);color:#fff;border-radius:11px;padding:6px 10px 5px;text-align:center;font-family:var(--serif);font-weight:500;font-size:18px;line-height:1;font-variant-numeric:tabular-nums}
+.scorebadge em{display:block;font-family:var(--sans);font-style:normal;font-size:8px;text-transform:uppercase;letter-spacing:.5px;font-weight:600;opacity:.85;margin-top:2px}
+.cmpbtn{margin-left:auto;border:1px solid var(--brd2);background:#fff;color:var(--dim);cursor:pointer;font-size:10.5px;font-weight:600;padding:4px 10px;border-radius:20px;transition:.14s;font-family:var(--sans)}
+.cmpbtn:hover{border-color:var(--mag);color:var(--mag)}
+.cmpbtn.on{background:var(--mag);border-color:var(--mag);color:#fff}
+.vchips{display:flex;flex-wrap:wrap;gap:5px}
+.vchip{font-size:10.5px;background:var(--magbg);color:var(--magd);padding:3px 9px;border-radius:20px;font-weight:500}
+.empty{padding:56px;text-align:center;color:var(--dim)}
+.hint{font-size:12px;color:var(--dim);text-align:center;margin-top:14px}
+.intro{color:var(--mid);margin-bottom:16px;font-size:13.5px;max-width:760px}
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+.controls input,.controls select{padding:10px 13px;border:1px solid var(--brd2);border-radius:9px;font-size:13px;font-family:var(--sans);background:#fff;color:var(--ink)}
+.controls input:focus,.controls select:focus{outline:none;border-color:var(--mag);box-shadow:0 0 0 3px var(--magbg)}
+.btn{padding:10px 15px;border:1px solid var(--brd2);border-radius:9px;background:#fff;cursor:pointer;font-size:13px;font-weight:500;color:var(--mid);font-family:var(--sans);transition:.14s;text-decoration:none;display:inline-block}
+.btn:hover{border-color:var(--mag);color:var(--mag);text-decoration:none}
+.btn.p{background:var(--mag);color:#fff;border-color:var(--mag)}
+.btn.p:hover{background:var(--magd);color:#fff}
+.btn.tiny{padding:5px 11px;font-size:11px}
+.abrow{background:var(--surf);border:1px solid var(--brd);border-radius:12px;padding:14px 17px;margin-bottom:10px;cursor:pointer;display:flex;gap:16px;align-items:center;transition:.15s}
+.abrow:hover{border-color:var(--magl);box-shadow:0 8px 22px -12px rgba(120,20,80,.22)}
+.abrow .nm{font-weight:600;font-size:14.5px;min-width:0;flex:1;color:var(--ink)}
+.abrow .tg{font-size:12.5px;color:var(--mid);margin-top:2px;font-weight:400}
+.nbadge{background:var(--mag);color:#fff;font-weight:500;font-family:var(--serif);font-size:17px;border-radius:11px;padding:8px 12px 6px;text-align:center;min-width:52px;font-variant-numeric:tabular-nums}
+.nbadge span{display:block;font-family:var(--sans);font-size:8px;font-weight:600;opacity:.85;text-transform:uppercase;letter-spacing:.4px;margin-top:2px}
+.hostb{font-size:10px;font-weight:600;padding:4px 9px;border-radius:20px;background:var(--paper);color:var(--mid);border:1px solid var(--brd2)}
+.cladestrip{display:flex;flex-wrap:wrap;gap:5px;max-width:360px;margin-top:6px}
+.clchip{font-size:10px;background:var(--magbg);color:var(--magd);padding:2px 9px;border-radius:20px;font-weight:500}
+.catchip{font-size:10px;background:#efe7d9;color:#7a5606;padding:2px 8px;border-radius:20px;font-weight:600;text-transform:capitalize}
+.overlay{position:fixed;inset:0;background:rgba(33,20,40,.4);z-index:70;display:none;backdrop-filter:blur(2px)}
+.overlay.on{display:block}
+#panel{position:fixed;top:0;right:0;bottom:0;width:452px;max-width:94vw;background:var(--surf);z-index:80;box-shadow:-16px 0 50px -20px rgba(60,20,50,.3);display:none;flex-direction:column;overflow-y:auto}
+#panel.on{display:flex}
+.phd{position:sticky;top:0;background:var(--surf);border-bottom:1px solid var(--brd);padding:24px 26px 20px;z-index:2}
+.phd .x{position:absolute;top:18px;right:20px;font-size:22px;color:var(--dim);cursor:pointer;line-height:1;transition:.14s}
+.phd .x:hover{color:var(--mag)}
+.phd .t{font-family:var(--serif);font-style:italic;font-weight:500;font-size:25px;line-height:1.12;padding-right:28px;color:var(--ink)}
+.phd .st{font-size:11px;text-transform:uppercase;letter-spacing:1.1px;color:var(--dim);margin-top:7px;font-weight:500}
+.psec{padding:18px 26px;border-bottom:1px solid var(--brd);display:flex;flex-direction:column;gap:9px}
+.psec:last-child{border:none}
+.lbl{font-size:10px;text-transform:uppercase;letter-spacing:1.3px;color:var(--dim);font-weight:600}
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:9px 16px}
+.pgrid .k{font-size:9.5px;text-transform:uppercase;letter-spacing:.5px;color:var(--dim);font-weight:600}
+.pgrid .v{font-size:13px;color:var(--ink);margin-top:1px}
+.protocard{background:var(--paper);border:1px solid var(--brd);border-radius:11px;padding:13px 15px;font-size:12.5px}
+.protocard .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:8px}
+.protocard .vv{font-weight:600;color:var(--magd);font-size:12.5px}
+a.labcard,.labcard{display:block;text-decoration:none;color:inherit;background:var(--paper);border:1px solid var(--brd);border-radius:11px;padding:12px 15px;transition:.14s}
+a.labcard:hover{border-color:var(--magl);background:#fff;text-decoration:none}
+.labcard .lt{font-weight:600;font-size:13.5px;color:var(--ink)}
+.labcard .lm{color:var(--mid);font-size:12px;margin-top:3px}
+.srchico{color:var(--dim);font-size:11px;font-weight:400}
+a.labcard:hover .srchico{color:var(--mag)}
+.mini{font-size:9px;font-weight:700;padding:2px 8px;border-radius:20px;text-transform:uppercase;letter-spacing:.4px}
+.mini.r-success{background:var(--okbg);color:var(--ok)}
+.mini.r-partial{background:var(--partbg);color:var(--part)}
+.mini.r-fail{background:var(--badbg);color:var(--bad)}
+.mini.r-{background:var(--paper);color:var(--dim)}
+.paperitem{font-size:12.5px;padding:8px 0;border-bottom:1px dashed var(--brd);line-height:1.5;color:var(--mid)}
+.paperitem:last-child{border:none}
+.paperitem i{font-family:var(--serif);font-style:italic;color:var(--ink)}
+.linklist{font-size:12.5px;color:var(--mid);line-height:1.8}
+.linklist a{color:var(--mag)}
+/* modal */
+.mwrap{position:fixed;inset:0;z-index:90;display:none;align-items:flex-start;justify-content:center;padding:5vh 20px;background:rgba(33,20,40,.45);backdrop-filter:blur(3px);overflow:auto}
+.mwrap.on{display:flex}
+.modal{background:var(--surf);border-radius:16px;width:100%;max-width:760px;box-shadow:0 30px 70px -25px rgba(60,20,50,.4);overflow:hidden}
+.mhd{display:flex;justify-content:space-between;align-items:center;padding:20px 26px;border-bottom:1px solid var(--brd)}
+.mhd h3{font-family:var(--serif);font-weight:500;font-size:21px;color:var(--ink)}
+.mhd .x{font-size:24px;color:var(--dim);cursor:pointer;line-height:1}
+.mhd .x:hover{color:var(--mag)}
+.mbody{padding:22px 26px;max-height:68vh;overflow:auto}
+.mact{display:flex;gap:10px;padding:16px 26px;border-top:1px solid var(--brd);flex-wrap:wrap}
+.bkrow{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--brd)}
+.bkrow:last-child{border:none}
+.bkrow .bn{font-weight:600;font-size:13.5px;color:var(--ink)}
+.bkrow .bm{font-size:12px;color:var(--mid);margin-top:2px}
+.bkrow .rm{color:var(--dim);cursor:pointer;font-size:20px;padding:2px 8px;line-height:1}
+.bkrow .rm:hover{color:var(--bad)}
+.bkempty{color:var(--dim);text-align:center;padding:34px;line-height:1.6}
+.cmpsum{font-size:13px;color:var(--mid);margin-bottom:14px}
+.cmpsum b{color:var(--ink)}
+.cmptbl{width:100%;border-collapse:collapse;font-size:12.5px}
+.cmptbl th,.cmptbl td{padding:7px 10px;border-bottom:1px solid var(--brd);text-align:center;white-space:nowrap}
+.cmptbl th:first-child,.cmptbl td:first-child{text-align:left;white-space:normal}
+.cmptbl thead th{position:sticky;top:0;background:var(--surf);font-size:11px;color:var(--mid);font-weight:600}
+.cmptbl thead th i{font-family:var(--serif);font-style:italic;color:var(--ink)}
+.cmptbl .rn{font-weight:600;color:var(--ink)}
+.cmptbl .yes{color:var(--ok);font-weight:700}
+.cmptbl .no{color:var(--brd2)}
+.cmptbl tr.shared td{background:var(--okbg)}
+.reccard .rt{font-family:var(--serif);font-size:22px;font-weight:500;margin-bottom:2px}
+.recstep{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--brd)}
+.recstep:last-child{border:none}
+.recnum{flex:0 0 26px;height:26px;border-radius:50%;background:var(--magbg);color:var(--magd);font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center}
+.recstep .rk{font-size:10px;text-transform:uppercase;letter-spacing:.8px;color:var(--dim);font-weight:600}
+.recstep .rv{font-size:13.5px;color:var(--ink);margin-top:2px}
+.citebox{font-size:14px;line-height:1.7;background:var(--paper);border:1px solid var(--brd);border-radius:10px;padding:16px;color:var(--ink)}
+/* compare tray */
+.cmptray{position:fixed;left:0;right:0;bottom:0;z-index:75;background:var(--surf);border-top:1px solid var(--brd);box-shadow:0 -10px 30px -18px rgba(60,20,50,.25);padding:12px 24px;display:none;align-items:center;gap:10px;flex-wrap:wrap}
+.cmptray.on{display:flex}
+.cmptray .cl{font-size:10px;text-transform:uppercase;letter-spacing:1.1px;color:var(--dim);font-weight:600}
+.cmpchip{display:inline-flex;align-items:center;gap:7px;background:var(--magbg);color:var(--magd);border-radius:20px;padding:4px 8px 4px 13px;font-size:13px;font-style:italic;font-family:var(--serif)}
+.cmpchip b{cursor:pointer;font-style:normal;font-family:var(--sans);opacity:.55;font-size:15px;line-height:1}
+.cmpchip b:hover{opacity:1}
+/* toast */
+.toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:11px 20px;border-radius:30px;font-size:13px;opacity:0;pointer-events:none;transition:.25s;z-index:100}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+/* footer */
+.footer{padding:30px;text-align:center;color:var(--mid);font-size:12.5px;border-top:1px solid var(--brd);margin-top:24px;background:var(--surf)}
+.footer a{color:var(--mid);border-bottom:1px solid var(--brd2)}
+.footer a:hover{color:var(--mag);text-decoration:none;border-color:var(--magl)}
+.footer .fund b{color:var(--ink)}
+.footer .toolrow{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin:14px 0 12px}
+.footer .toollink{cursor:pointer;color:var(--mag);border-bottom:1px solid transparent}
+.footer .toollink:hover{border-color:var(--magl)}
+.verbadge{display:inline-block;font-size:11px;color:var(--mid);background:var(--paper);border:1px solid var(--brd);border-radius:20px;padding:4px 13px;font-variant-numeric:tabular-nums}
+.papercard{background:var(--surf);border:1px solid var(--brd);border-radius:14px;padding:16px 20px;margin-bottom:12px;cursor:pointer;transition:.15s}
+.papercard:hover{border-color:var(--magl);box-shadow:0 8px 22px -12px rgba(120,20,80,.22)}
+.papercard .pt{font-family:var(--serif);font-size:17px;font-weight:500;line-height:1.3;color:var(--ink);margin-bottom:5px}
+.papercard .pa{font-size:12.5px;color:var(--mid);margin-bottom:11px}
+.papercard .pa i{font-family:var(--serif);font-style:italic;color:var(--ink)}
+.pcontrib{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pbadge{font-size:10.5px;font-weight:600;padding:3px 9px;border-radius:20px;background:var(--paper);border:1px solid var(--brd2);color:var(--mid);text-transform:capitalize}
+.pbadge.sp{background:var(--magbg);border-color:transparent;color:var(--magd)}
+.pbadge.new{background:var(--okbg);border-color:transparent;color:var(--ok)}
+.pdoi{font-size:11.5px;color:var(--mag);font-variant-numeric:tabular-nums}
+.pgrouphd{font-family:var(--serif);font-size:18px;font-weight:500;color:var(--ink);margin:24px 0 12px;padding-bottom:7px;border-bottom:1px solid var(--brd)}
+.pgrouphd:first-child{margin-top:0}
+.pgrouphd span{font-size:12px;color:var(--dim);font-family:var(--sans);margin-left:8px}
+@media(max-width:900px){.body{flex-direction:column}.sb{width:100%;flex:none;position:static;max-height:none}#panel{width:100vw}}
+@media(max-width:640px){
+  .hd{padding:12px 16px;gap:10px}
+  .logo{order:1;font-size:22px}.sub{display:none}.moore{display:none}
+  .hbtn{order:2;margin-left:auto}
+  .gsearch{order:3;flex-basis:100%;margin-left:0}.gsearch input{width:100%;max-width:none}
+  .tabs{padding:0 16px;gap:20px;overflow-x:auto;flex-wrap:nowrap}
+  .tab{white-space:nowrap}
+  .disc{padding:9px 16px}
+  .stats{padding:14px 16px}.stat{padding:0 16px}.stat b{font-size:22px}
+  .main{padding:18px 16px}.sb{padding:18px 16px}
+  .grid{grid-template-columns:1fr;gap:12px}
+  .controls{gap:8px}.controls input,.controls select{flex:1;min-width:0}
+  .modal{max-width:none}.mbody{max-height:74vh}
+  .cmptray{padding:10px 14px}
+}
+@media print{
+  body>*:not(#mwrap){display:none!important}
+  #mwrap{position:static!important;display:block!important;background:#fff!important;padding:0!important;backdrop-filter:none!important}
+  .modal{box-shadow:none!important;max-width:none!important}
+  .mhd .x,.mact{display:none!important}
+  .mbody{max-height:none!important;overflow:visible!important}
+}
+/* ===== Overview tab (landing figures) ===== */
+.ovwrap{max-width:1180px;margin:0 auto;padding:24px 30px}
+.ovhead h2{font-family:var(--serif);font-weight:600;font-size:22px;margin-bottom:6px}
+.ovhead p{color:var(--mid);font-size:13px;max-width:780px;margin-bottom:20px;line-height:1.55}
+.ovgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:16px}
+.ovtop{display:grid;grid-template-columns:minmax(320px,1fr) minmax(320px,1fr);gap:16px;align-items:stretch;margin-bottom:22px}
+.ovtop>.ocard{display:flex;flex-direction:column}
+@media(max-width:860px){.ovtop{grid-template-columns:1fr}.treebox{min-height:360px}}
+.fnum{font-size:9.5px;letter-spacing:1.3px;text-transform:uppercase;color:var(--mag);font-weight:700;margin-bottom:3px}
+.secttl{font-family:var(--serif);font-size:16px;font-weight:600;margin:4px 0 12px}
+.treebox{flex:none;max-height:600px;overflow:auto;border:1px solid var(--brd);border-radius:10px;padding:10px 8px;background:var(--paper)}
+.f1prok{font-size:10.5px;color:var(--dim);margin-top:9px;line-height:1.5}
+.rawlist{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px;max-height:160px;overflow:auto}
+.rawchip{font-size:10.5px;color:var(--mid);background:var(--paper);border:1px solid var(--brd);border-radius:12px;padding:2px 8px}
+.f1kpi{display:flex;gap:18px;flex-wrap:wrap;margin:8px 0 12px}
+.f1kpi .k{font-family:var(--serif);font-size:19px;font-weight:600}.f1kpi .k small{display:block;font-family:var(--sans);font-size:8.5px;letter-spacing:.5px;text-transform:uppercase;color:var(--dim);font-weight:600;margin-top:1px}
+.tn{display:flex;align-items:center;gap:7px;padding:1px 0;font-size:12px;white-space:nowrap}
+.tn .tog{width:14px;height:14px;flex:none;border:1px solid var(--brd2);border-radius:4px;font-size:9px;line-height:12px;text-align:center;color:var(--mid);cursor:pointer;background:#fff}
+.tn .tog.leaf{border:none;background:none;color:transparent;cursor:default}
+.tn .tdot{width:11px;height:11px;border-radius:50%;flex:none;border:1px solid rgba(0,0,0,.08)}
+.tn .tnm{font-weight:500}.tn .tnm.sg{font-weight:600}
+.tn .tcnt{font-size:10.5px;font-variant-numeric:tabular-nums;color:var(--mid)}.tn .tcnt b{color:var(--ink)}.tn .tcnt.z{color:var(--dim);font-style:italic}
+.tn .tsplit{width:52px;height:8px;border-radius:5px;overflow:hidden;background:#fff;display:inline-flex;flex:none;border:1px solid var(--brd)}.tn .tsplit>i{height:8px}
+.arow{display:flex;align-items:center;gap:9px;margin-bottom:3px;font-size:11px}
+.arow .alab{width:128px;flex:none;text-align:right;font-style:italic;font-family:var(--serif);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.arow .atrack{flex:1;display:flex;height:11px;border-radius:4px;overflow:hidden;background:var(--paper)}
+.arow .aseg{height:11px}.arow .atot{width:38px;flex:none;font-weight:600;font-size:10px;color:var(--mid);font-variant-numeric:tabular-nums}
+.ocard{background:var(--surf);border:1px solid var(--brd);border-radius:14px;padding:18px 20px}
+.opair{grid-column:1/-1;display:grid;grid-template-columns:minmax(280px,1fr) minmax(360px,1.5fr);gap:16px;align-items:stretch}
+.opair>.ocard{display:flex;flex-direction:column}
+.opair .omwrap{flex:1;display:flex;flex-direction:column;justify-content:center}
+.oct{font-family:var(--serif);font-size:16px;font-weight:600}
+.ocs{font-size:12px;color:var(--mid);margin:2px 0 14px}
+.orow{display:flex;align-items:center;gap:10px;margin-bottom:7px;font-size:12px}
+.orow .olab{width:120px;text-align:right;color:var(--mid);flex:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.orow a.olink{color:var(--mag);text-decoration:none}.orow a.olink:hover{text-decoration:underline}
+.orow .otrack{flex:1;background:var(--paper);border-radius:6px;height:15px;overflow:hidden}
+.orow .obar{height:15px;background:var(--mag);border-radius:6px;min-width:2px}
+.orow .obar.amb{background:var(--part)}
+.orow .oval{width:96px;color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums;font-size:11px}
+.oprow2{display:flex;align-items:center;gap:10px;margin-bottom:9px;font-size:12px}
+.oprow2 .olab{width:120px;text-align:right;color:var(--mid);flex:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.oprow2 .obars{flex:1;display:flex;flex-direction:column;gap:3px}
+.oprow2 .otrack{background:var(--paper);border-radius:5px;height:10px;overflow:hidden}
+.oprow2 .onom{height:10px;background:#eab9d4;border-radius:5px;min-width:2px}
+.oprow2 .omea{height:10px;background:var(--mag);border-radius:5px;min-width:2px}
+.oprow2 .oval{width:88px;font-weight:600;font-size:11px;color:var(--ink);font-variant-numeric:tabular-nums}
+.osrow{display:flex;align-items:center;gap:10px;margin-bottom:8px;font-size:12px}
+.osrow .olab{width:120px;text-align:right;color:var(--mid);flex:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.osrow .ostk{flex:1;display:flex;height:15px;border-radius:5px;overflow:hidden;background:var(--paper)}
+.oleg{display:flex;flex-wrap:wrap;gap:14px;font-size:11.5px;color:var(--mid);margin-top:10px}
+.oleg i{width:10px;height:10px;border-radius:3px;display:inline-block;margin-right:5px;vertical-align:-1px}
+.ofoot{font-size:11px;color:var(--dim);margin-top:10px;line-height:1.5}
+.omwrap{overflow-x:auto}
+.omtx{border-collapse:collapse;font-size:11px}
+.omtx th{font-size:10px;color:var(--mid);font-weight:600;padding:3px 2px;text-align:center}
+.omtx th.orh{text-align:right;font-family:var(--serif);font-style:italic;color:var(--ink);padding-right:8px;white-space:nowrap}
+.omtx td{width:26px;height:25px;text-align:center;color:#fff;font-size:9.5px;border:1px solid var(--surf)}
+@media(max-width:820px){.opair{grid-template-columns:1fr}}
+/* ===== Methods tab ===== */
+.mwrap2{max-width:1180px;margin:0 auto;padding:24px 30px}
+.mhead h2{font-family:var(--serif);font-weight:600;font-size:22px;margin-bottom:6px}
+.mhead p{color:var(--mid);font-size:13px;max-width:820px;margin-bottom:20px;line-height:1.55}
+.mtop{display:grid;grid-template-columns:minmax(300px,1fr) minmax(320px,1fr);gap:16px;align-items:start;margin-bottom:26px}
+.mcol{display:flex;flex-direction:column;gap:16px}
+.mfig{background:var(--surf);border:1px solid var(--brd);border-radius:14px;padding:18px 20px}
+.mfig .ft2{font-family:var(--serif);font-size:15px;font-weight:600;margin-bottom:2px}
+.mfig .fd2{font-size:11.5px;color:var(--mid);margin-bottom:14px}
+.pstep{display:flex;gap:12px;align-items:flex-start;padding:8px 10px;border-radius:10px;cursor:pointer;transition:.13s}
+.pstep:hover{background:var(--magbg)}
+.pnum{flex:none;width:27px;height:27px;border-radius:50%;background:var(--mag);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.pstep .pt{font-size:14px;font-weight:600;color:var(--ink)}
+.pstep .pd{font-size:11.5px;color:var(--mid)}
+.pstep .pgo{margin-left:auto;color:var(--dim);font-size:15px;align-self:center;flex:none}
+.pline{margin-left:23px;height:9px;border-left:2px solid #e5dfe8}
+.msec{scroll-margin-top:124px;background:var(--surf);border:1px solid var(--brd);border-radius:14px;padding:18px 22px;margin-bottom:14px}
+.msec h3{font-family:var(--serif);font-size:16px;font-weight:600;margin-bottom:8px}
+.msec h3 .stepn{color:var(--mag);margin-right:8px}
+.msec p{font-size:13px;color:var(--ink);line-height:1.6;margin-bottom:8px}
+.msec p:last-child{margin-bottom:0}
+.msec .muted{color:var(--mid);font-size:12px}
+.mnote{background:var(--magbg);border:1px solid #f0cfe0;border-radius:12px;padding:14px 18px;font-size:12.5px;color:var(--magd);line-height:1.6;margin:6px 0 22px}
+.msec.mcav{border-left:3px solid var(--part)}
+.cavlist{margin:6px 0 0;padding-left:20px}
+.cavlist li{font-size:13px;color:var(--ink);line-height:1.6;margin-bottom:9px}
+.cavlist li:last-child{margin-bottom:0}
+@media(max-width:860px){.mtop{grid-template-columns:1fr}}
+.ppl{font-size:11px;font-weight:500;color:var(--mag);margin-left:6px;text-decoration:none;border-bottom:1px dotted var(--mag)}
+.sectog{display:flex;gap:6px;align-items:center;font-size:11.5px;color:var(--mid);margin:2px 0 8px;cursor:pointer}
+.ocard{position:relative}
+.fsbtn{position:absolute;top:12px;right:14px;font:inherit;font-size:11px;color:var(--mid);background:var(--surf);border:1px solid var(--brd);border-radius:7px;padding:3px 8px;cursor:pointer;z-index:2}
+.fsbtn:hover{color:var(--mag);border-color:var(--mag)}
+.ocard .oct{padding-right:84px}
+.fswrap{position:fixed;inset:0;z-index:95;display:none;background:rgba(33,20,40,.55);backdrop-filter:blur(3px);overflow:auto;padding:3vh 3vw}
+.fswrap.on{display:block}
+.fsbox{background:#fff;border-radius:14px;max-width:1240px;margin:0 auto;padding:22px 28px 26px}
+.fshd{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:12px}
+.fstt{font-family:var(--serif);font-size:22px;font-weight:600}
+.fsst{font-size:13px;color:var(--mid);margin-top:4px;max-width:780px}
+.fsact{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.fsfoot{font-size:13px;color:var(--mid);margin-top:12px;border-top:1px solid var(--brd);padding-top:10px}
+.fsclk{cursor:pointer}g.fsclk:hover text{fill:#C0006A}g.fsclk:hover rect[fill="transparent"]{fill:#faf3f7}
+.fsmtx{overflow:auto}.fsmtx table{border-collapse:collapse;font-size:12.5px}
+.fsmtx td{width:56px;height:30px;text-align:center;border:2px solid #fff;font-weight:600}
+.fsmtx td:hover{outline:2px solid var(--ink)}
+.fsmtx .fsrh{text-align:right;padding-right:10px;font-weight:500;white-space:nowrap}
+.fsmtx .fsch{height:150px;vertical-align:bottom;font-weight:500;padding:0}.fsmtx .fsch div{writing-mode:vertical-rl;transform:rotate(180deg);margin:0 auto;white-space:nowrap;padding-bottom:6px}
+.fsmtx .fsax{font-size:11.5px;color:var(--mid);font-weight:600;text-align:right;vertical-align:bottom;padding:0 10px 8px 0}
+.fsscale{display:flex;gap:6px;align-items:center;font-size:12px;color:var(--mid);margin-top:10px}.fsscale i{display:inline-block;width:22px;height:14px;border-radius:3px}
+.f1kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:10px 0 12px}
+.f1kpi .k1{background:var(--paper);border:1px solid var(--brd);border-radius:10px;padding:8px 10px;line-height:1.15}
+.f1kpi .k1 b{font-family:var(--serif);font-size:24px;color:var(--mag)}.f1kpi .k1 span{font-size:13px;color:var(--mid)}
+.f1kpi .k1 small{display:block;font-size:11px;color:var(--ink);margin-top:3px;font-weight:500}
+.f1hd,.f1r{display:grid;grid-template-columns:minmax(120px,1.15fr) minmax(130px,1.5fr) 82px;gap:8px;align-items:center}
+.f1hd{font-size:10.5px;font-weight:600;color:var(--ink);padding:0 2px 6px;border-bottom:1px solid var(--brd);margin-bottom:4px;position:sticky;top:-10px;background:var(--paper);z-index:1}
+.f1hd em{display:flex;justify-content:space-between;font-style:normal;font-weight:400;color:var(--dim);font-size:9.5px;margin-right:62px}
+.f1r{font-size:12px;padding:1px 2px;white-space:nowrap}.f1r.g{cursor:pointer;font-weight:600}.f1r.g:hover{background:#f6f1f5}.f1r.z{color:var(--dim)}
+.f1r .f1n{overflow:hidden;text-overflow:ellipsis;display:flex;align-items:center;gap:6px}.f1r sup{color:var(--mag);font-weight:700}
+.f1r .tog{width:13px;height:13px;flex:none;border:1px solid var(--brd2);border-radius:4px;font-size:9px;line-height:11px;text-align:center;color:var(--mid);background:#fff;font-style:normal}
+.f1r .tog.leaf{border:none;background:none}
+.f1b{display:flex;align-items:center;gap:6px}.f1t{flex:1;height:9px;background:#efe9f1;border-radius:2px;display:flex;overflow:hidden}.f1t i{height:9px}
+.f1v{font-size:10.5px;color:var(--mid);width:56px;flex:none;font-variant-numeric:tabular-nums}.f1v.na{width:auto;font-style:italic;color:var(--dim)}
+.f1o{display:flex;align-items:center;gap:5px}.f1ot{width:52px;height:7px;display:flex}.f1ot i{height:7px}.f1o b{font-size:10.5px;font-weight:600}
+.oleg a{font-size:11.5px;color:var(--mag)}
+.fsgrid{display:block}.fsgrid.side{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:18px;align-items:start}
+.fsside{display:none}.fsgrid.side .fsside{display:block;position:sticky;top:0;max-height:86vh;overflow:auto;border:1px solid var(--brd);border-radius:12px;padding:12px 14px;background:var(--paper)}
+@media(max-width:900px){.fsgrid.side{grid-template-columns:1fr}.fsgrid.side .fsside{position:static;max-height:none}}
+.sdhd{display:flex;justify-content:space-between;gap:10px;margin-bottom:8px}.sdhd .x{cursor:pointer;font-size:20px;color:var(--mid);line-height:1}
+.sdt{font-family:var(--serif);font-size:16px;font-weight:600}.sds{font-size:12px;color:var(--mid);margin-top:3px}
+.sdab{border-top:1px solid var(--brd);padding:6px 0}.sdab summary{cursor:pointer;display:flex;flex-direction:column;font-size:13px}.sdab summary span{font-size:11.5px;color:var(--mid)}
+.sdab[open] summary b{color:var(--mag)}.sdbody{padding:6px 0 4px;font-size:12px}.sdk{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--dim);margin-top:8px}.sdv{font-size:12px;color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="hd">
+  <div class="logo">Ex<b>M</b> Explorer</div>
+  <div class="sub"><a href="https://www.dudinlab.com/exame" target="_blank" rel="noopener">A search engine for expansion microscopy</a><br><a href="https://www.evonuclab.org" target="_blank" rel="noopener">Dey</a> &amp; <a href="https://www.dudinlab.com" target="_blank" rel="noopener">Dudin</a> Labs</div>
+  <div class="moore">Supported by the<br><a href="https://www.moore.org" target="_blank" rel="noopener">Gordon and Betty Moore Foundation</a></div>
+  <div class="gsearch">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    <input id="gq" type="text" placeholder="Search species, antibody, dye, target…" autocomplete="off">
+    <div id="gdrop"></div>
+  </div>
+  <button class="hbtn" onclick="openBasket()" title="Your reagent list">
+    <svg viewBox="0 0 24 24"><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M2 3h2l2.4 12.3a2 2 0 0 0 2 1.7h8.7a2 2 0 0 0 2-1.6L23 7H6"/></svg>
+    List <span class="bcount zero" id="bcount">0</span>
+  </button>
+</div>
+<div class="tabs">
+  <div class="tab on" data-tab="overview" onclick="switchTab('overview')">Overview</div>
+  <div class="tab" data-tab="trends" onclick="switchTab('trends')">Infographic</div>
+  <div class="tab" data-tab="browse" onclick="switchTab('browse')">Select species</div>
+  <div class="tab" data-tab="antibodies" onclick="switchTab('antibodies')">Antibodies</div>
+  <div class="tab" data-tab="dye" onclick="switchTab('dye')">Dyes &amp; stains</div>
+  <div class="tab" data-tab="papers" onclick="switchTab('papers')">Publications</div>
+  <div class="tab" data-tab="methods" onclick="switchTab('methods')">Methods</div>
+</div>
+<div class="stats" id="stats"></div>
+
+<div id="view-overview">
+  <div class="ovwrap">
+    <div class="ovhead">
+      <h2>What ExM Explorer shows</h2>
+      <p>Within a decade of its invention, expansion microscopy has spread from a handful of animal cell lines across much of the eukaryotic tree. Yet the record of which organisms were expanded, with which protocol and with which antibody or dye, remains scattered over several hundred papers. ExM Explorer assembles that record into a single curated database, searchable by species, antibody, dye and study in the tabs, with its construction described under <b>Methods</b>.</p>
+    </div>
+    <div class="ovtop">
+      <div class="ocard" data-fig="f1">
+        <button class="fsbtn" onclick="openFig('f1')" title="Open every lineage in a full-page view with complete axes">⤢ Expand</button>
+        <div class="fnum">Figure 1</div>
+        <div class="oct">Across the eukaryotic tree</div>
+        <div class="ocs">For each lineage, the bar gives the share of its species in EukProt v3 (a reference set of eukaryotes with genome-scale data) that have been expanded; the right-hand column counts expanded species that EukProt does not contain. Species from <a href="https://doi.org/10.1016/j.cell.2025.09.027" target="_blank" rel="noopener">Mikus et al. (Cell 2025)</a> are shown in magenta and those from all other studies in teal. Click a group to open it.</div>
+        <div class="f1kpi" id="f1-kpi"></div>
+        <div class="treebox" id="f1-tree"></div>
+        <div class="oleg"><span><i style="background:var(--mag)"></i>Mikus et al. 2025</span><span><i style="background:var(--field)"></i>other studies</span><span><i style="background:#efe9f1"></i>EukProt species not yet expanded</span><a href="#" onclick="f1all(true);return false">open all</a><a href="#" onclick="f1all(false);return false">fold</a></div>
+        <div class="f1prok" id="f1-prok"></div>
+      </div>
+      <div class="ocard" data-fig="anim">
+        <button class="fsbtn" onclick="openFig('anim')" title="Open a full-page view with complete axes">⤢ Expand</button>
+        <div class="fnum">Figure 2</div>
+        <div class="oct">In animals</div>
+        <div class="ocs">Nearly every animal expansion concerns one of {{ANIMALS}} species, albeit across a wide range of sample types. Each bar is stacked by the sample type recorded in the paper, its length giving the number of distinct samples.</div>
+        <div id="f2-bars"></div>
+        <div class="oleg" id="f2-leg"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="view-browse" style="display:none">
+  <div class="body">
+    <div class="sb" id="sidebar"></div>
+    <div class="main">
+      <div class="count" id="browse-count"></div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </div>
+</div>
+
+<div id="view-antibodies" style="display:none">
+  <div class="main" style="max-width:1000px;margin:0 auto">
+    <p class="intro">Every antibody and nanobody in the database, ranked by the number of species in which it was used. Search a <b>target</b> (for example tubulin, centrin, actin or the nuclear pore complex) or filter by clade, category, channel, homogenization or ExM method to see what worked where.</p>
+    <div class="controls">
+      <input id="ab-q" type="text" placeholder="Search target, antibody, supplier, catalogue #…" style="flex:1;min-width:240px">
+      <select id="ab-clade"><option value="">All clades</option></select>
+      <select id="ab-cat"><option value="">All categories</option></select>
+      <select id="ab-chan"><option value="">All channels</option></select>
+      <select id="ab-homog"><option value="">Any homogenization</option><option value="Proteinase K">Worked w/ Proteinase K</option><option value="heat-SDS">Worked w/ heat-SDS</option><option value="other">Worked w/ other</option></select>
+      <select id="ab-var"><option value="">Any ExM method</option></select>
+      <select id="ab-type"><option value="primary">Primary antibodies</option><option value="secondary">Secondary / detection</option></select>
+      <select id="ab-min"><option value="1">≥1 validation</option><option value="2">≥2 species</option><option value="3">≥3 species</option><option value="5">≥5 species</option></select>
+      <button class="btn" onclick="exportAB()">Export CSV</button>
+    </div>
+    <div class="count" id="ab-count"></div>
+    <div id="ab-list"></div>
+  </div>
+</div>
+
+<div id="view-dye" style="display:none">
+  <div class="main" style="max-width:1000px;margin:0 auto">
+    <p class="intro">Dyes, stains and non-antibody labels used in ExM, from DNA dyes (DAPI, Hoechst, SYTOX) and NHS-ester pan-protein stains to phalloidin, lectins and streptavidin, ranked by the number of species in which each was used.</p>
+    <div class="controls">
+      <input id="dy-q" type="text" placeholder="Search dye / stain, target, supplier, catalogue #…" style="flex:1;min-width:240px">
+      <select id="dy-type"><option value="">All types</option></select>
+      <select id="dy-chan"><option value="">All channels</option></select>
+      <select id="dy-clade"><option value="">All clades</option></select>
+      <select id="dy-min"><option value="1">≥1 use</option><option value="2">≥2 species</option><option value="3">≥3 species</option><option value="5">≥5 species</option></select>
+      <button class="btn" onclick="exportDye()">Export CSV</button>
+    </div>
+    <div class="count" id="dy-count"></div>
+    <div id="dy-list"></div>
+  </div>
+</div>
+
+<div id="view-papers" style="display:none">
+  <div class="main" style="max-width:1000px;margin:0 auto">
+    <p class="intro" id="pp-stats"></p>
+    <div class="controls">
+      <input id="pp-q" type="text" placeholder="Search species, author, title, journal, year, variant…" style="flex:1;min-width:240px">
+      <select id="pp-group"><option value="">Sort by contribution</option><option value="year">Group by year</option><option value="variant">Group by ExM variant</option></select>
+      <button class="btn" onclick="exportBib()">Export BibTeX</button>
+      <button class="btn" onclick="exportRis()">Export RIS</button>
+    </div>
+    <div class="count" id="pp-count"></div>
+    <div id="pp-list"></div>
+  </div>
+</div>
+
+<div id="view-methods" style="display:none">
+  <div class="mwrap2">
+    <div class="mhead">
+      <h2>Methods</h2>
+      <p>Version 1.0 (__RELEASE_DATE_LONG__). ExM Explorer was compiled from the literature by language-model extraction, deterministic curation and eight quality controls. Click a step to read its description.</p>
+    </div>
+    <div class="mtop">
+      <div class="mcol">
+        <div class="mfig">
+          <div class="ft2">From literature to database</div>
+            <svg viewBox="0 0 720 250" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,Segoe UI,sans-serif"><rect x="20" y="40" width="150" height="78" rx="12" fill="#faf8f5" stroke="#e5e1ec"/><text x="95" y="80" text-anchor="middle" fill="#6a6472" font-family="Georgia,serif" font-size="30" font-weight="600">861</text><text x="95" y="103" text-anchor="middle" fill="#6a6472" font-size="12">records found</text><text x="179" y="85" text-anchor="middle" fill="#9a94a3" font-size="20">&#8594;</text><rect x="188" y="40" width="150" height="78" rx="12" fill="#faf8f5" stroke="#e5e1ec"/><text x="263" y="80" text-anchor="middle" fill="#6a6472" font-family="Georgia,serif" font-size="30" font-weight="600">579</text><text x="263" y="103" text-anchor="middle" fill="#6a6472" font-size="12">full texts read</text><text x="347" y="85" text-anchor="middle" fill="#9a94a3" font-size="20">&#8594;</text><rect x="356" y="40" width="150" height="78" rx="12" fill="#faf8f5" stroke="#e5e1ec"/><text x="431" y="80" text-anchor="middle" fill="#C0006A" font-family="Georgia,serif" font-size="30" font-weight="600">{{STUDIES}}</text><text x="431" y="103" text-anchor="middle" fill="#6a6472" font-size="12">studies with ExM data</text><text x="515" y="85" text-anchor="middle" fill="#9a94a3" font-size="20">&#8594;</text><rect x="524" y="40" width="150" height="78" rx="12" fill="#faf8f5" stroke="#e5e1ec"/><text x="599" y="80" text-anchor="middle" fill="#C0006A" font-family="Georgia,serif" font-size="30" font-weight="600">{{ROWS}}</text><text x="599" y="103" text-anchor="middle" fill="#6a6472" font-size="12">structured rows</text><text x="20" y="160" fill="#9a94a3" font-size="11" font-weight="700" letter-spacing="1">YIELD</text><text x="20" y="200" fill="#211b26" font-family="Georgia,serif" font-size="26" font-weight="600">{{SPECIES}}</text><text x="20" y="220" fill="#6a6472" font-size="12">species</text><text x="195" y="200" fill="#211b26" font-family="Georgia,serif" font-size="26" font-weight="600">{{PRIMARY}}</text><text x="195" y="220" fill="#6a6472" font-size="12">antibodies</text><text x="370" y="200" fill="#211b26" font-family="Georgia,serif" font-size="26" font-weight="600">{{DYES}}</text><text x="370" y="220" fill="#6a6472" font-size="12">dyes &amp; stains</text><text x="545" y="200" fill="#211b26" font-family="Georgia,serif" font-size="26" font-weight="600">15</text><text x="545" y="220" fill="#6a6472" font-size="12">clades</text></svg>
+        </div>
+        <div class="mfig">
+          <div class="ft2">Validation scorecard</div>
+            <svg viewBox="0 0 720 378" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,Segoe UI,sans-serif"><rect x="0" y="5" width="345" height="78" rx="12" fill="#faf8f5" stroke="#e5e1ec"/><rect x="0" y="5" width="5" height="78" fill="#1c7d57"/><text x="20" y="27" fill="#9a94a3" font-size="10" font-weight="700" letter-spacing="1">QC 01</text><text x="20" y="49" fill="#211b26" font-size="14" font-weight="600">Field completeness</text><text x="20" y="71" fill="#1c7d57" font-family="Georgia,serif" font-size="20" font-weight="600">core &#8805;96%</text><rect x="363" y="5" width="345" height="78" rx="12" fill="#faf8f5" stroke="#e5e1ec"/><rect x="363" y="5" width="5" height="78" fill="#1c7d57"/><text x="383" y="27" fill="#9a94a3" font-size="10" font-weight="700" letter-spacing="1">QC 02</text><text x="383" y="49" fill="#211b26" font-size="14" font-weight="600">Identifier completeness</text><text x="383" y="71" fill="#1c7d57" font-family="Georgia,serif" font-size="20" font-weight="600">90.5%</text><rect x="0" y="97" width="345" height="78" rx="12" fill="#faf8f5" stroke="#e5e1ec"/><rect x="0" y="97" width="5" height="78" fill="#1c7d57"/><text x="20" y="119" fill="#9a94a3" font-size="10" font-weight="700" letter-spacing="1">QC 03</text><text x="20" y="141" fill="#211b26" font-size="14" font-weight="600">Test&#8211;retest v1/v2</text><text x="20" y="163" fill="#1c7d57" font-family="Georgia,serif" font-size="20" font-weight="600">96&#8211;99%</text><rect x="363" y="97" width="345" height="78" rx="12" fill="#faf8f5" stroke="#e5e1ec"/><rect x="363" y="97" width="5" height="78" fill="#1c7d57"/><text x="383" y="119" fill="#9a94a3" font-size="10" font-weight="700" letter-spacing="1">QC 04</text><text x="383" y="141" fill="#211b26" font-size="14" font-weight="600">Cross-paper corroboration</text><text x="383" y="163" fill="#1c7d57" font-family="Georgia,serif" font-size="20" font-weight="600">100% / 78%</text><rect x="0" y="189" width="345" height="78" rx="12" fill="#faf8f5" stroke="#e5e1ec"/><rect x="0" y="189" width="5" height="78" fill="#1c7d57"/><text x="20" y="211" fill="#9a94a3" font-size="10" font-weight="700" letter-spacing="1">QC 05</text><text x="20" y="233" fill="#211b26" font-size="14" font-weight="600">Vocabulary conformance</text><text x="20" y="255" fill="#1c7d57" font-family="Georgia,serif" font-size="20" font-weight="600">100%</text><rect x="363" y="189" width="345" height="78" rx="12" fill="#faf8f5" stroke="#e5e1ec"/><rect x="363" y="189" width="5" height="78" fill="#1c7d57"/><text x="383" y="211" fill="#9a94a3" font-size="10" font-weight="700" letter-spacing="1">QC 06</text><text x="383" y="233" fill="#211b26" font-size="14" font-weight="600">Catalogue validity</text><text x="383" y="255" fill="#1c7d57" font-family="Georgia,serif" font-size="20" font-weight="600">~99%</text><rect x="0" y="281" width="345" height="78" rx="12" fill="#faf8f5" stroke="#e5e1ec"/><rect x="0" y="281" width="5" height="78" fill="#1c7d57"/><text x="20" y="303" fill="#9a94a3" font-size="10" font-weight="700" letter-spacing="1">QC 07</text><text x="20" y="325" fill="#211b26" font-size="14" font-weight="600">NCBI concordance</text><text x="20" y="347" fill="#1c7d57" font-family="Georgia,serif" font-size="20" font-weight="600">99.6%</text><rect x="363" y="281" width="345" height="78" rx="12" fill="#faf8f5" stroke="#e5e1ec"/><rect x="363" y="281" width="5" height="78" fill="#1c7d57"/><text x="383" y="303" fill="#9a94a3" font-size="10" font-weight="700" letter-spacing="1">QC 08</text><text x="383" y="325" fill="#211b26" font-size="14" font-weight="600">Honest abstention</text><text x="383" y="347" fill="#1c7d57" font-family="Georgia,serif" font-size="20" font-weight="600">291 + 1,632 flags</text></svg>
+        </div>
+      </div>
+      <div class="mfig">
+        <div class="ft2">The pipeline</div>
+        <div class="pstep" onclick="scrollMethods('m1')"><span class="pnum">1</span><div><div class="pt">Literature search</div><div class="pd">PubMed · Europe PMC (incl. bioRxiv, medRxiv)</div></div><span class="pgo">&#8594;</span></div>
+        <div class="pline"></div>
+        <div class="pstep" onclick="scrollMethods('m2')"><span class="pnum">2</span><div><div class="pt">Full-text retrieval</div><div class="pd">579 PDFs</div></div><span class="pgo">&#8594;</span></div>
+        <div class="pline"></div>
+        <div class="pstep" onclick="scrollMethods('m3')"><span class="pnum">3</span><div><div class="pt">Keyword screen</div><div class="pd">titles and abstracts; not used to exclude</div></div><span class="pgo">&#8594;</span></div>
+        <div class="pline"></div>
+        <div class="pstep" onclick="scrollMethods('m4')"><span class="pnum">4</span><div><div class="pt">Extraction</div><div class="pd">Claude Sonnet 4.6 · species × label × paper</div></div><span class="pgo">&#8594;</span></div>
+        <div class="pline"></div>
+        <div class="pstep" onclick="scrollMethods('m5')"><span class="pnum">5</span><div><div class="pt">Curation</div><div class="pd">names, clades, duplicates</div></div><span class="pgo">&#8594;</span></div>
+        <div class="pline"></div>
+        <div class="pstep" onclick="scrollMethods('m6')"><span class="pnum">6</span><div><div class="pt">Second extraction</div><div class="pd">expanded schema, reproducibility</div></div><span class="pgo">&#8594;</span></div>
+        <div class="pline"></div>
+        <div class="pstep" onclick="scrollMethods('m7')"><span class="pnum">7</span><div><div class="pt">Normalization and taxonomy</div><div class="pd">reagent names, species resolution</div></div><span class="pgo">&#8594;</span></div>
+        <div class="pline"></div>
+        <div class="pstep" onclick="scrollMethods('m8')"><span class="pnum">8</span><div><div class="pt">Quality control</div><div class="pd">eight controls</div></div><span class="pgo">&#8594;</span></div>
+        <div class="pline"></div>
+        <div class="pstep" onclick="scrollMethods('m9')"><span class="pnum">9</span><div><div class="pt">Portal</div><div class="pd">single HTML file, v1.0</div></div><span class="pgo">&#8594;</span></div>
+        <div class="pline"></div>
+        <div class="pstep" onclick="scrollMethods('mdata')"><span class="pnum">10</span><div><div class="pt">Data and code availability</div><div class="pd">MIT License · CC BY 4.0</div></div><span class="pgo">&#8594;</span></div>
+        <div class="pline"></div>
+        <div class="pstep" onclick="scrollMethods('mcav')"><span class="pnum" style="background:var(--part)">!</span><div><div class="pt">Limitations</div><div class="pd">scope of the data</div></div><span class="pgo">&#8594;</span></div>
+      </div>
+    </div>
+
+    
+    <div class="msec" id="m1"><h3><span class="stepn">1</span>Literature search</h3><p>PubMed and Europe PMC, which indexes the bioRxiv and medRxiv preprint servers, were queried on 27–28 April 2026 for expansion microscopy method names (expansion microscopy, U-ExM, ultrastructure expansion, proExM, ExPath, ExFISH, Magnify, cryo-ExM and others) published from 2015 onward. Records were deduplicated by DOI, giving <b>861</b> records.</p></div>
+    <div class="msec" id="m2"><h3><span class="stepn">2</span>Full-text retrieval</h3><p>Full texts were retrieved for records on both sides of the keyword screen (step 3): open-access PDFs by script (164), bioRxiv preprints from the bioRxiv server (224), and the remainder manually through institutional subscriptions. Papers from our laboratories and collaborators not returned by the search were added manually, giving <b>579</b> PDFs. PDFs are not redistributed; every record links to its source by DOI.</p></div>
+    <div class="msec" id="m3"><h3><span class="stepn">3</span>Keyword screen</h3><p>Titles and abstracts were scored for ExM, antibody and experimental terms (400 records retained, 461 rejected). As ExM is often used without being named in the abstract, the screen was not used to exclude papers, and relevance was assessed on the full text (step 4). Both assessments are recorded for every PDF.</p></div>
+    <div class="msec" id="m4"><h3><span class="stepn">4</span>Extraction</h3><p>Each PDF was converted to text (PyMuPDF 1.28.2) and read in full, one paper at a time and without cross-paper context, by a large language model (Claude Sonnet 4.6, <b>claude-sonnet-4-6</b>; Anthropic API). The model first determined whether the paper reported ExM experiments and then returned one record per species × label × paper, comprising the organism, sample type, fixation, anchoring, gel composition, homogenization, nominal and measured expansion factors, labeling strategy, and for each antibody, dye or stain its target, host, supplier, catalog number, dilution, fluorophore and outcome. Unreported fields were left empty, and inferred or uncertain values were prefixed <i>inferred:</i> or <i>uncertain:</i>.</p><p>Of the 579 PDFs, 525 yielded data, 51 were classified as not reporting ExM experiments, and 3 failed or contained no data. Species reported only in Supplementary Table S1 of Mikus et al. (2025) were added from that table.</p></div>
+    <div class="msec" id="m5"><h3><span class="stepn">5</span>Curation</h3><p>ExM variant names were standardized, species synonyms merged, and each species assigned to one of 15 clades. Preprints and their published versions were identified by title similarity and by shared authors and species, classified with the CrossRef API and confirmed with Claude Sonnet 4.6; 116 duplicate PDFs were removed, retaining the published version, and 30 further preprint–publication pairs with changed titles were merged under the published DOI. Two review articles were removed, and environmental ciliates missed by extraction were added manually. All changes are logged.</p></div>
+    <div class="msec" id="m6"><h3><span class="stepn">6</span>Second extraction</h3><p>To capture additional protocol fields and to assess reproducibility, all papers were extracted a second time with an expanded schema (Claude Sonnet 4.6). Three papers that failed this extraction retained their first-pass records. The database comprises <b>{{STUDIES}}</b> studies and <b>{{ROWS}}</b> rows.</p></div>
+    <div class="msec" id="m7"><h3><span class="stepn">7</span>Normalization and taxonomy</h3><p>Antibody, dye and supplier names were mapped to canonical forms, and antibodies listed as "alpha/beta-tubulin" were split by target. Missing suppliers and catalog numbers were recovered from the source text with Claude Haiku 4.5 (<b>claude-haiku-4-5</b>), which filled empty fields only. Antibodies obtained as gifts are recorded as "gift: [lab]" without a catalog number.</p><p>For counts and figures, cell lines, strains and tissues were resolved to their source organism (for example, HeLa and HEK293 to <i>Homo sapiens</i>), giving <b>{{SPECIES}}</b> species, and eukaryotes were placed on the UniEuk taxonomy as used in EukProt. To express coverage relative to sequenced diversity (Overview, Figure 1), the species of EukProt v3 were assigned to the same lineages by their UniEuk taxonomy and matched to expanded species by binomial name; expanded species without a EukProt counterpart are counted separately.</p></div>
+    <div class="msec" id="m8"><h3><span class="stepn">8</span>Quality control</h3><p>Eight controls were computed on the released database: core fields ≥96% filled; <b>90.5%</b> of primary antibodies with a catalog number, clone, gift laboratory or supplier; agreement between the two extractions of 98.8% (clade), 99.4% (protocol outcome) and 95.7% (label outcome); a single clade per species across studies (100%) and a single target for 78.1% of antibodies used in two or more studies; 100% conformance to controlled vocabularies; valid syntax for 99.1% of catalog numbers; clade agreement with NCBI Taxonomy of <b>99.6%</b>; and 291 values flagged <i>uncertain:</i> and 1,632 <i>inferred:</i>.</p></div>
+    <div class="msec" id="m9"><h3><span class="stepn">9</span>Portal</h3><p>This portal is a single HTML file generated from the database by a deterministic script, with all data embedded and no external resources loaded. Within each species, protocol records sharing every reported parameter were grouped, and each record lists the papers that reported it. In the Overview, the difficulty of each clade is the share of its species for which any study reported a partial or failed expansion, shown for clades with at least five species. Every number displayed was checked against the data, and all views, links and exports were tested.</p></div>
+
+    <div class="msec" id="mdata"><h3><span class="stepn">10</span>Data and code availability</h3><p>The database, portal, code, pipeline scripts with their logs, and quality-control outputs are openly available. Code is released under the MIT License and data under CC BY 4.0. <span id="mdata-links"></span></p></div>
+
+    <div class="msec mcav" id="mcav"><h3><span class="stepn" style="color:var(--part)">!</span>Limitations</h3>
+      <ul class="cavlist">
+        <li>Entries reflect what was published and are biased toward animals and model organisms; absence indicates that ExM has not been tried or reported, not that it fails.</li>
+        <li>Failed experiments are rarely published, so outcomes overestimate success.</li>
+        <li>Values were extracted automatically and may contain errors or omissions; species shown only in figures or supplements may be missing.</li>
+        <li>Antibody targets are those reported by the authors and were not validated.</li>
+        <li>Exact protocols should be taken from the original publications, linked by DOI.</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<div id="view-trends" style="display:none">
+  <div class="ovwrap">
+    <div class="ovhead">
+      <h2>Infographic</h2>
+      <p>Views across the whole database, computed from the curated data, showing how fast the field has grown, which reagents and protocols it relies on, and where the gaps remain.</p>
+    </div>
+    <div class="ovgrid" id="ov-grid"></div>
+  </div>
+</div>
+
+<div class="overlay" id="overlay" onclick="closePanel()"></div>
+<div id="panel"></div>
+<div class="fswrap" id="fsw" onclick="if(event.target===this)closeFig()"><div class="fsbox"><div class="fshd"><div><div class="fstt" id="fst"></div><div class="fsst" id="fss"></div></div><div class="fsact"><button class="btn" id="fssvg" onclick="figSVG()">Download SVG</button><button class="btn" onclick="figCSV()">Download data (CSV)</button><button class="btn p" onclick="closeFig()">Close ×</button></div></div><div class="fsgrid" id="fsgrid"><div class="fsbody" id="fsb"></div><aside class="fsside" id="fsside"></aside></div><div class="fsfoot" id="fsf"></div></div></div>
+<div class="mwrap" id="mwrap"><div class="modal"><div class="mhd"><h3 id="mtitle"></h3><span class="x" onclick="closeModal()">×</span></div><div class="mbody" id="mbody"></div><div class="mact" id="mact"></div></div></div>
+<div class="cmptray" id="cmptray"></div>
+<div class="toast" id="toast"></div>
+
+<div class="footer">
+  <div style="margin-bottom:8px">A joint resource of the <a href="https://www.evonuclab.org" target="_blank" rel="noopener">Dey Lab</a> (<a href="https://www.embl.org" target="_blank" rel="noopener">EMBL</a>) &amp; the <a href="https://www.dudinlab.com" target="_blank" rel="noopener">Dudin Lab</a> (<a href="https://www.unige.ch" target="_blank" rel="noopener">University of Geneva</a>)</div>
+  <div class="fund">Principal funding: <a href="https://www.moore.org" target="_blank" rel="noopener">The Gordon and Betty Moore Foundation</a></div>
+  <div class="citeline" style="margin-top:14px;font-size:12px;color:var(--mid);max-width:760px;margin-left:auto;margin-right:auto;line-height:1.5"><b>Cite:</b> <span id="citetext"></span></div>
+  <div style="margin-top:10px"><button class="btn" onclick="openCite()">Copy citation</button></div>
+  <div class="verbadge" style="margin-top:14px">Version __VERSION__ · __RELEASE_DATE_LONG__ · <span id="vspecies"></span> species · <span id="vpapers"></span> studies · code MIT, data CC BY 4.0</div>
+</div>
+
+<script>
+/*DATA*/
+
+var BUILD_DATE='__BUILD_DATE__';
+var RESOURCE_URL='https://www.dudinlab.com/exame', AUTHORS='__AUTHORS__', VERSION='__VERSION__', REPO_URL='__REPO_URL__', DATA_DOI='__DATA_DOI__';
+function el(id){return document.getElementById(id)}
+function esc(s){s=s==null?'':String(s);return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function rc(r){return 'r-'+(r||'')}
+function rl(r){return r?r.charAt(0).toUpperCase()+r.slice(1):'—'}
+function dotClass(r){return r==='success'?'d-ok':r==='partial'?'d-part':r==='fail'?'d-bad':'d-na'}
+function outMini(o){var c=o==='success'?'r-success':o==='partial'?'r-partial':o==='fail'?'r-fail':'r-';return '<span class="mini '+c+'">'+(o||'n/a')+'</span>'}
+function rankO(o){return o==='success'?3:o==='partial'?2:o==='fail'?1:0}
+var CLADES=['Metazoa','Alveolata','Viridiplantae','Discoba','Stramenopiles','Haptophyta','Bacteria','Fungi','Unicellular Holozoa','Cryptista','Amoebozoa','Rhodophyta','Rhizaria','Archaea','Glaucophyta','Unknown'];
+function nint(x){var n=parseInt(x,10);return isNaN(n)?0:n}
+function enc(s){return encodeURIComponent(s)}
+function gsearch(){var q=[].slice.call(arguments).filter(Boolean).join(' ');return 'https://www.google.com/search?q='+encodeURIComponent(q)}
+function catLabel(c){return c?c.replace(/_/g,' '):''}
+function buyLink(a){
+  var sup=(a.sup||'').toLowerCase();
+  if(a.cat){
+    // checked 10 Oct 2026: abcam.com/<ab####> resolves to the product page; Thermo Fisher search finds the catalog number;
+    // Proteintech and DSHB have no stable product URL, so they fall through to a supplier + catalog-number search below.
+    if(sup.indexOf('abcam')>=0&&/^ab\d+$/i.test(a.cat.trim())) return 'https://www.abcam.com/'+encodeURIComponent(a.cat.trim().toLowerCase());
+    if(sup.indexOf('thermo')>=0||sup.indexOf('invitrogen')>=0) return 'https://www.thermofisher.com/search/results?query='+encodeURIComponent(a.cat);
+  }
+  return 'https://www.google.com/search?q='+encodeURIComponent([a.name,a.target,a.sup,a.cat].filter(Boolean).join(' '));
+}
+function rridLink(a){return 'https://www.antibodyregistry.org/search?q='+encodeURIComponent(a.cat||a.name)}
+var CHANORDER=['405 · blue','488 · green','555–594 · orange','647 · far-red','NIR · 680+'];
+function channelOf(fl){
+  if(!fl)return '';var s=String(fl).toLowerCase();var m=s.match(/(\d{3})/);var n=m?parseInt(m[1],10):0;
+  if(!n){
+    if(/dapi|hoechst|bfp|pacific blue|sytox blue/.test(s))n=405;
+    else if(/fitc|gfp|egfp|fluorescein|oregon green|atto ?488|bodipy ?fl|sytox green/.test(s))n=488;
+    else if(/tritc|cy3|rhodamine|tamra|mcherry|dsred|texas red|sytox orange/.test(s))n=560;
+    else if(/cy5|apc|atto ?647|sytox red|to-?pro-?3/.test(s))n=647;
+    else if(/cy7|nir|irdye|ir dye/.test(s))n=750;
+  }
+  if(!n)return '';
+  if(n<440)return '405 · blue';if(n<510)return '488 · green';if(n<620)return '555–594 · orange';if(n<670)return '647 · far-red';return 'NIR · 680+';
+}
+function toast(msg){var t=el('toast');t.textContent=msg;t.classList.add('on');clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('on')},1700)}
+
+var _npapers=0;
+(function(){
+  _npapers=PAPERS.length;
+  el('stats').innerHTML=[
+    ['Species',SPECIES.length],['Studies',_npapers],
+    ['Antibodies',ABP.length],['Dyes &amp; stains',DYE.length],['Clades',CLADES.length-1]
+  ].map(function(x){return '<div class="stat"><b>'+x[1].toLocaleString()+'</b><span>'+x[0]+'</span></div>'}).join('');
+  el('vspecies').textContent=SPECIES.length;el('vpapers').textContent=_npapers;
+  var ct=el('citetext');if(ct){var cc=citation();ct.innerHTML=DATA_DOI?esc(cc.replace('https://doi.org/'+DATA_DOI,''))+'<a href="https://doi.org/'+DATA_DOI+'" target="_blank" rel="noopener">https://doi.org/'+DATA_DOI+'</a>':esc(cc);}
+  var ml=el('mdata-links');if(ml){var L=[];if(REPO_URL)L.push('<a href="'+REPO_URL+'" target="_blank" rel="noopener">Code and data on GitHub ↗</a>');if(DATA_DOI)L.push('<a href="https://doi.org/'+DATA_DOI+'" target="_blank" rel="noopener">Archived release, doi:'+DATA_DOI+' ↗</a>');ml.innerHTML=L.join(' · ');}
+})();
+
+/* ===== BROWSE SPECIES ===== */
+var fClade='',fVar='',fRes='',fSmp='';
+function speciesCounts(key){var c={};SPECIES.forEach(function(s){
+  var vals=key==='clade'?[s.clade]:key==='res'?[s.res]:key==='var'?s.var:s.smp;
+  vals.forEach(function(v){if(v!=null)c[v]=(c[v]||0)+1})});return c}
+function buildSidebar(){
+  var cc=speciesCounts('clade'),vc=speciesCounts('var'),sc=speciesCounts('smp');
+  var h='<h4>Clade</h4>';
+  h+='<div class="fopt'+(fClade===''?' on':'')+'" onclick="setF(\'clade\',\'\')">All clades<span class="c">'+SPECIES.length+'</span></div>';
+  CLADES.forEach(function(c){if(cc[c])h+='<div class="fopt'+(fClade===c?' on':'')+'" onclick="setF(\'clade\',\''+c.replace(/'/g,"\\'")+'\')">'+c+'<span class="c">'+cc[c]+'</span></div>'});
+  h+='<h4>ExM result</h4>';
+  ['','success','partial','fail'].forEach(function(r){var lab=r===''?'Any result':rl(r),n=r===''?SPECIES.length:(speciesCounts('res')[r]||0);
+    h+='<div class="fopt'+(fRes===r?' on':'')+'" onclick="setF(\'res\',\''+r+'\')">'+lab+'<span class="c">'+n+'</span></div>'});
+  h+='<h4>ExM variant</h4>';
+  h+='<div class="fopt'+(fVar===''?' on':'')+'" onclick="setF(\'var\',\'\')">All variants</div>';
+  Object.keys(vc).sort(function(a,b){return vc[b]-vc[a]}).slice(0,12).forEach(function(v){
+    h+='<div class="fopt'+(fVar===v?' on':'')+'" onclick="setF(\'var\',\''+v.replace(/'/g,"\\'")+'\')">'+esc(v)+'<span class="c">'+vc[v]+'</span></div>'});
+  h+='<h4>Sample type</h4>';
+  h+='<div class="fopt'+(fSmp===''?' on':'')+'" onclick="setF(\'smp\',\'\')">All samples</div>';
+  Object.keys(sc).sort(function(a,b){return sc[b]-sc[a]}).forEach(function(v){
+    h+='<div class="fopt'+(fSmp===v?' on':'')+'" onclick="setF(\'smp\',\''+v.replace(/'/g,"\\'")+'\')">'+esc(v.replace(/_/g,' '))+'<span class="c">'+sc[v]+'</span></div>'});
+  el('sidebar').innerHTML=h;
+}
+function setF(k,v){if(k==='clade')fClade=v;if(k==='var')fVar=v;if(k==='res')fRes=v;if(k==='smp')fSmp=v;buildSidebar();renderGrid()}
+function getFilteredSpecies(){return SPECIES.filter(function(s){
+  if(fClade&&s.clade!==fClade)return false;
+  if(fRes&&s.res!==fRes)return false;
+  if(fVar&&s.var.indexOf(fVar)<0)return false;
+  if(fSmp&&s.smp.indexOf(fSmp)<0)return false;
+  return true})}
+function renderGrid(){
+  var list=getFilteredSpecies();
+  el('browse-count').textContent=list.length+' species'+(fClade||fVar||fRes||fSmp?' (filtered)':'');
+  if(!list.length){el('grid').innerHTML='<div class="empty">No species match these filters.</div>';return}
+  el('grid').innerHTML=list.map(function(s){var i=SPECIES.indexOf(s);var oncmp=cmp.indexOf(i)>=0;
+    return '<div class="card" onclick="openSpecies('+i+')">'+
+      '<span class="dot '+dotClass(s.res)+'"></span>'+
+      '<div class="cl">'+esc(s.clade)+'</div>'+
+      '<div class="sp">'+esc(s.sp)+'</div>'+
+      '<div class="vchips">'+s.var.slice(0,3).map(function(v){return '<span class="vchip">'+esc(v)+'</span>'}).join('')+(s.var.length>3?'<span class="vchip">+'+(s.var.length-3)+'</span>':'')+'</div>'+
+      '<div class="meta"><span><b>'+s.np+'</b> paper'+(s.np===1?'':'s')+'</span><span><b>'+s.nl+'</b> label'+(s.nl===1?'':'s')+'</span>'+
+        '<button class="cmpbtn'+(oncmp?' on':'')+'" onclick="event.stopPropagation();toggleCmp('+i+')">'+(oncmp?'✓ comparing':'+ compare')+'</button></div>'+
+    '</div>'}).join('');
+}
+var SHOWSEC=false;
+function isSecL(l){return l.type==='secondary_antibody'}
+function openSpecies(i){
+  var s=SPECIES[i];if(!s)return;
+  var h='<div class="phd"><span class="x" onclick="closePanel()">×</span>'+
+    '<div class="st" style="color:var(--mag);margin-top:0;margin-bottom:6px">'+esc(s.clade)+'</div>'+
+    '<div class="t">'+esc(s.sp)+'</div><div class="st">'+(s.smp.join(', ').replace(/_/g,' ')||'—')+'</div>'+
+    '<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn tiny'+(cmp.indexOf(i)>=0?' p':'')+'" onclick="toggleCmp('+i+');openSpecies('+i+')">'+(cmp.indexOf(i)>=0?'✓ in compare':'+ Add to compare')+'</button></div></div>';
+  h+='<div class="psec"><span class="lbl">ExM outcome</span><div><span class="mini '+rc(s.res)+'">'+rl(s.res)+'</span> '+
+    '<span style="font-size:12px;color:var(--mid)"> across '+s.protos.length+' protocol record'+(s.protos.length===1?'':'s')+' — '+(s.pout.success||0)+' success · '+(s.pout.partial||0)+' partial · '+(s.pout.fail||0)+' fail</span></div>'+
+    '<div class="vchips">'+s.var.map(function(v){return '<span class="vchip">'+esc(v)+'</span>'}).join('')+'</div></div>';
+  if(s.nraw>1)h+='<div class="psec"><span class="lbl">'+s.nraw+' database entries grouped under this species (cell lines, strains, tissues)</span><div class="rawlist">'+s.raw.map(function(x){return '<span class="rawchip">'+esc(x)+'</span>'}).join('')+'</div></div>';
+  h+='<div class="psec"><span class="lbl">Protocols ('+s.protos.length+'), most reported first · tap “card” for the recipe and its papers</span>';
+  s.protos.slice(0,20).forEach(function(p,pIdx){
+    var npp=(p.pp||[]).length;
+    h+='<div class="protocard"><div class="top"><span class="vv">'+esc(p.variant||'ExM')+' <a href="#" class="ppl" onclick="openCard('+i+','+pIdx+');return false" title="Papers that reported this recipe">'+npp+' paper'+(npp===1?'':'s')+'</a></span><div style="display:flex;gap:8px;align-items:center">'+outMini(p.out)+'<button class="btn tiny" onclick="openCard('+i+','+pIdx+')">Card ↗</button></div></div><div class="pgrid">'+
+      pk('Sample',p.sample&&p.sample.replace(/_/g,' '))+pk('Fixation',[p.fix,p.fixc,p.fixd].filter(Boolean).join(', '))+
+      pk('Anchoring',p.anch)+pk('Homogenization',p.homog)+
+      pk('Gel SA/AA/bis %',[p.sa,p.aa,p.bis].some(Boolean)?[p.sa||'–',p.aa||'–',p.bis||'–'].join(' / '):'')+
+      pk('Expansion nom/meas',[p.efn,p.efm].some(Boolean)?((p.efn||'–')+' / '+(p.efm||'–')):'')+pk('Labelling',p.lab)+
+    '</div></div>'});
+  if(s.protos.length>20)h+='<div class="hint" style="text-align:left">+'+(s.protos.length-20)+' more protocol records</div>';
+  h+='</div>';
+  var nsec=s.labels.filter(isSecL).length,labs=SHOWSEC?s.labels:s.labels.filter(function(l){return !isSecL(l)});
+  h+='<div class="psec"><span class="lbl">Labels &amp; antibodies ('+labs.length+') · click to source</span>';
+  if(nsec)h+='<label class="sectog"><input type="checkbox" id="sectog"'+(SHOWSEC?' checked':'')+' onchange="SHOWSEC=this.checked;openSpecies('+i+')"> Show secondary antibodies ('+nsec+'). Their outcome reflects the primary they detected.</label>';
+  labs.slice(0,60).forEach(function(l){
+    h+='<a class="labcard" href="'+gsearch(l.name,l.sup,l.cat)+'" target="_blank" rel="noopener">'+
+      '<div style="display:flex;justify-content:space-between;gap:8px;align-items:center"><span class="lt">'+esc(l.name)+' <span class="srchico">↗</span></span>'+outMini(l.out)+'</div>'+
+      '<div class="lm">'+esc(l.target||'—')+(l.type?' · '+esc(l.type.replace(/_/g,' ')):'')+(l.cat_g&&l.cat_g!=='other'?' · <span class="catchip">'+esc(catLabel(l.cat_g))+'</span>':'')+'</div>'+
+      '<div class="lm">'+[l.sup,l.cat,l.dil,l.fl].filter(Boolean).map(esc).join(' · ')+'</div></a>';
+  });
+  if(labs.length>60)h+='<div class="hint" style="text-align:left">+'+(labs.length-60)+' more labels</div>';
+  h+='</div>';
+  h+='<div class="psec"><span class="lbl">Source papers ('+s.papers.length+')</span>';
+  s.papers.forEach(function(p){h+=paperLine(p)});
+  h+='</div>';
+  el('panel').innerHTML=h;openPanel();setHash(currentTab+'/species/'+enc(s.sp));
+}
+function paperLine(p){var au=p.fa?esc(p.fa.split(/[ ,]/)[0])+' et al.':'';return '<div class="paperitem">'+(au?au+' ':'')+(p.yr?'('+esc(p.yr)+') ':'')+(p.ti?esc(p.ti)+'. ':'')+'<i>'+esc(p.jr||'—')+'</i>'+(p.doi?' · <a href="https://doi.org/'+esc(p.doi)+'" target="_blank" rel="noopener">doi</a>':'')+'</div>'}
+function pk(k,v){if(!v)return '';return '<div><div class="k">'+k+'</div><div class="v">'+esc(v)+'</div></div>'}
+
+/* ===== ANTIBODIES (search + filter) ===== */
+function abData(){return el('ab-type').value==='secondary'?ABS:ABP}
+function getFilteredAB(){
+  var q=el('ab-q').value.trim().toLowerCase(),cl=el('ab-clade').value,mn=nint(el('ab-min').value),cg=el('ab-cat').value,ch=el('ab-chan').value,hg=el('ab-homog').value,vr=el('ab-var').value;
+  return abData().filter(function(a){
+    if(nint(a.n)<mn)return false;
+    if(cl&&(a.cll||'').indexOf(cl)<0)return false;
+    if(cg&&a.cat_g!==cg)return false;
+    if(ch&&channelOf(a.fl)!==ch)return false;
+    if(hg&&!(a.hmg&&a.hmg[hg]&&a.hmg[hg][1]>0))return false;
+    if(vr&&!(a.vmg&&a.vmg[vr]&&a.vmg[vr][1]>0))return false;
+    if(q){var hay=[a.name,a.target,a.sup,a.cat,a.cll,a.cat_g].filter(Boolean).join(' ').toLowerCase();if(hay.indexOf(q)<0)return false}
+    return true})}
+function renderAB(){
+  var list=getFilteredAB(),sec=el('ab-type').value==='secondary';
+  el('ab-count').textContent=list.length+' '+(sec?'secondaries':'antibodies');
+  if(!list.length){el('ab-list').innerHTML='<div class="empty">No matches. Try a broader target term (e.g. "tubulin").</div>';return}
+  el('ab-list').innerHTML=list.slice(0,300).map(function(a){var i=abData().indexOf(a);
+    var clades=(a.cll||'').split(';').map(function(x){return x.trim()}).filter(Boolean);
+    return '<div class="abrow" onclick="openAB('+i+','+sec+')">'+
+      '<div class="nbadge">'+esc(a.n)+'<span>'+(sec?'uses':'species')+'</span></div>'+
+      '<div style="flex:1;min-width:0"><div class="nm">'+esc(a.name)+(a.cat_g&&a.cat_g!=='other'?' <span class="catchip">'+esc(catLabel(a.cat_g))+'</span>':'')+'</div>'+
+        '<div class="tg">'+(sec?'':esc(a.target||'—')+' · ')+esc(a.sup||'—')+(a.cat?' · '+esc(a.cat):'')+'</div>'+
+        '<div class="cladestrip">'+clades.slice(0,6).map(function(c){return '<span class="clchip">'+esc(c)+'</span>'}).join('')+'</div></div>'+
+      (a.host?'<span class="hostb">'+esc(a.host)+'</span>':'')+
+    '</div>'}).join('');
+  if(list.length>300)el('ab-list').innerHTML+='<div class="hint">Showing first 300 of '+list.length+' — narrow your search.</div>';
+}
+function exportAB(){
+  var list=getFilteredAB(),sec=el('ab-type').value==='secondary';
+  var cols=sec?['name','type','cat_g','host','sup','fl','n','cll','out']:['name','target','type','cat_g','host','sup','cat','fl','n','cll','out'];
+  var body=list.map(function(a){return cols.map(function(c){var v=(a[c]==null?'':String(a[c])).replace(/"/g,'""');return /[",\n]/.test(v)?'"'+v+'"':v}).join(',')}).join('\n');
+  dl('ExM_Explorer_antibodies.csv',cols.join(',')+'\n'+body);
+}
+function dl(name,txt){try{var b=new Blob([txt],{type:'text/plain;charset=utf-8'});var u=URL.createObjectURL(b);var l=document.createElement('a');l.href=u;l.download=name;l.style.display='none';document.body.appendChild(l);l.click();setTimeout(function(){document.body.removeChild(l);URL.revokeObjectURL(u)},150);toast('Downloaded '+name)}catch(e){toast('Export failed — '+e.message)}}
+
+/* ===== shared detail panel ===== */
+function compatChip(m,v){var ok=v[1]>0;return '<span class="clchip" style="background:'+(ok?'var(--okbg)':'var(--badbg)')+';color:'+(ok?'var(--ok)':'var(--bad)')+'">'+esc(m)+' · '+v[1]+'/'+v[0]+'</span>'}
+function compatHtml(a){
+  var hk=a.hmg?['Proteinase K','heat-SDS','other'].filter(function(m){return a.hmg[m]}):[];
+  var vk=a.vmg?Object.keys(a.vmg).sort(function(x,y){return a.vmg[y][0]-a.vmg[x][0]}):[];
+  if(!hk.length&&!vk.length)return '';
+  var h='<div class="psec"><span class="lbl">Protocol compatibility · successes / uses</span>';
+  if(hk.length)h+='<div style="font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--dim)">Homogenization</div><div class="cladestrip" style="max-width:none">'+hk.map(function(m){return compatChip(m,a.hmg[m])}).join('')+'</div>';
+  if(vk.length)h+='<div style="font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--dim);margin-top:8px">ExM method</div><div class="cladestrip" style="max-width:none">'+vk.map(function(m){return compatChip(m,a.vmg[m])}).join('')+'</div>';
+  return h+'</div>';
+}
+function openRes(arr,i,opts){
+  var a=arr[i];if(!a)return;opts=opts||{};
+  var showTarget=opts.showTarget!==false,buyLabel=opts.buyLabel||'Find / buy this →',unit=opts.unit||'species',type=opts.type||'antibody';
+  var species=(a.sppl||'').split(';').map(function(x){return x.trim()}).filter(Boolean);
+  var clades=(a.cll||'').split(';').map(function(x){return x.trim()}).filter(Boolean);
+  var papers=a.papers||[];
+  var subtitle=(showTarget?(a.target||a.type):a.type)||'—';
+  window._cur={name:a.name,target:showTarget?(a.target||''):'',type:(a.type||'').replace(/_/g,' '),sup:a.sup||'',cat:a.cat||'',link:buyLink(a)};
+  var h='<div class="phd"><span class="x" onclick="closePanel()">×</span>'+
+    (a.cat_g&&a.cat_g!=='other'?'<div class="st" style="color:var(--mag);margin-top:0;margin-bottom:6px">'+esc(catLabel(a.cat_g))+'</div>':'')+
+    '<div class="t" style="font-style:normal">'+esc(a.name)+'</div><div class="st">'+esc(subtitle)+'</div></div>';
+  h+='<div class="psec"><span class="lbl">Validation</span><div style="display:flex;align-items:center;gap:12px"><span class="nbadge" style="min-width:56px">'+esc(a.n)+'<span>'+unit+'</span></span>'+
+    '<span style="font-size:13px;color:var(--mid)">reported outcome: <b style="color:var(--ink)">'+esc(a.out||'—')+'</b></span></div></div>';
+  h+='<div class="psec"><span class="lbl">Details</span><div class="pgrid">'+
+    (showTarget&&a.target?pk('Target',a.target):'')+pk('Type',(a.type||'').replace(/_/g,' '))+pk('Category',catLabel(a.cat_g))+
+    pk('Host',a.host)+pk('Supplier',a.sup)+pk('Catalogue #',a.cat)+pk('Conjugate',a.fl)+
+  '</div><div style="margin-top:6px;display:flex;gap:8px;flex-wrap:wrap"><a class="btn p" href="'+buyLink(a)+'" target="_blank" rel="noopener">'+buyLabel+'</a>'+(type==='antibody'?'<a class="btn" href="'+rridLink(a)+'" target="_blank" rel="noopener">Antibody Registry ↗</a>':'')+'<button class="btn" onclick="addCur()">+ Add to list</button></div></div>';
+  h+='<div class="psec"><span class="lbl">Used in clades ('+clades.length+')</span><div class="cladestrip" style="max-width:none">'+clades.map(function(c){return '<span class="clchip">'+esc(c)+'</span>'}).join('')+'</div></div>';
+  h+=compatHtml(a);
+  h+='<div class="psec"><span class="lbl">Species ('+species.length+')</span><div class="linklist">'+species.map(function(sp){var idx=SPECIES.map(function(x){return x.sp}).indexOf(sp);
+    return idx>=0?'<a href="#" onclick="closePanel();switchTab(\'browse\');openSpecies('+idx+');return false">'+esc(sp)+'</a>':esc(sp)}).join(', ')+'</div></div>';
+  if(papers.length)h+='<div class="psec"><span class="lbl">Papers ('+papers.length+')</span>'+papers.map(function(p){
+    return '<div class="paperitem"><i>'+esc(p.jr||'—')+'</i>'+(p.yr?' ('+esc(p.yr)+')':'')+(p.doi?' · <a href="https://doi.org/'+esc(p.doi)+'" target="_blank" rel="noopener">doi</a>':'')+'</div>'}).join('')+'</div>';
+  el('panel').innerHTML=h;openPanel();setHash(currentTab+'/'+type+'/'+enc(a.name));
+}
+function openAB(i,sec){openRes(sec?ABS:ABP,i,{showTarget:!sec,buyLabel:'Find / buy this antibody →',type:'antibody'})}
+function openDye(i){openRes(DYE,i,{showTarget:true,buyLabel:'Find / buy this dye →',unit:'species',type:'dye'})}
+
+/* ===== DYES ===== */
+function getFilteredDye(){
+  var q=el('dy-q').value.trim().toLowerCase(),cl=el('dy-clade').value,mn=nint(el('dy-min').value),ty=el('dy-type').value,ch=el('dy-chan').value;
+  return DYE.filter(function(a){
+    if(nint(a.n)<mn)return false;
+    if(ty&&a.type!==ty)return false;
+    if(ch&&channelOf(a.fl)!==ch)return false;
+    if(cl&&(a.cll||'').indexOf(cl)<0)return false;
+    if(q){var hay=[a.name,a.target,a.sup,a.cat,a.cll].filter(Boolean).join(' ').toLowerCase();if(hay.indexOf(q)<0)return false}
+    return true})}
+function renderDye(){
+  var list=getFilteredDye();
+  el('dy-count').textContent=list.length+' dyes / stains';
+  if(!list.length){el('dy-list').innerHTML='<div class="empty">No matches. Try DAPI, Hoechst, NHS-ester, phalloidin, WGA…</div>';return}
+  el('dy-list').innerHTML=list.slice(0,300).map(function(a){var i=DYE.indexOf(a);
+    var clades=(a.cll||'').split(';').map(function(x){return x.trim()}).filter(Boolean);
+    return '<div class="abrow" onclick="openDye('+i+')">'+
+      '<div class="nbadge">'+esc(a.n)+'<span>species</span></div>'+
+      '<div style="flex:1;min-width:0"><div class="nm">'+esc(a.name)+(a.type?' <span class="catchip">'+esc(a.type.replace(/_/g,' '))+'</span>':'')+'</div>'+
+        '<div class="tg">'+esc(a.target||'—')+' · '+esc(a.sup||'—')+(a.cat?' · '+esc(a.cat):'')+'</div>'+
+        '<div class="cladestrip">'+clades.slice(0,6).map(function(c){return '<span class="clchip">'+esc(c)+'</span>'}).join('')+'</div></div>'+
+    '</div>'}).join('');
+  if(list.length>300)el('dy-list').innerHTML+='<div class="hint">Showing first 300 of '+list.length+' — narrow your search.</div>';
+}
+function exportDye(){
+  var list=getFilteredDye();
+  var cols=['name','target','type','cat_g','sup','cat','fl','n','cll','out'];
+  var body=list.map(function(a){return cols.map(function(c){var v=(a[c]==null?'':String(a[c])).replace(/"/g,'""');return /[",\n]/.test(v)?'"'+v+'"':v}).join(',')}).join('\n');
+  dl('ExM_Explorer_dyes_stains.csv',cols.join(',')+'\n'+body);
+}
+
+/* ===== #2 protocol card ===== */
+function openCard(spIdx,pIdx){
+  var s=SPECIES[spIdx];if(!s)return;var p=s.protos[pIdx];if(!p)return;
+  var steps=[];
+  var fix=[p.fix,p.fixc,p.fixd].filter(Boolean).join(', ');if(fix)steps.push(['Fixation',fix]);
+  if(p.anch)steps.push(['Anchoring',p.anch]);
+  var gel=[p.sa&&('sodium acrylate '+p.sa+'%'),p.aa&&('acrylamide '+p.aa+'%'),p.bis&&('bis-acrylamide '+p.bis+'%')].filter(Boolean).join(', ');if(gel)steps.push(['Gelation',gel]);
+  if(p.homog)steps.push(['Homogenization / denaturation',p.homog]);
+  var exp=[(p.efn?'nominal '+p.efn:''),(p.efm?'measured '+p.efm:'')].filter(Boolean).join(' · ');if(exp)steps.push(['Expansion',exp]);
+  if(p.lab)steps.push(['Labelling',p.lab]);
+  var body='<div class="reccard"><div class="rt"><i>'+esc(s.sp)+'</i></div>'+
+    '<div style="font-size:12px;color:var(--mid);margin-bottom:10px">'+esc(s.clade)+' · '+esc(p.variant||'ExM')+(p.sample?' · '+esc(p.sample.replace(/_/g,' ')):'')+' · outcome '+esc(p.out||'—')+'</div>';
+  if(!steps.length)body+='<div style="color:var(--dim)">The source paper did not report step-level detail for this protocol.</div>';
+  steps.forEach(function(st,k){body+='<div class="recstep"><div class="recnum">'+(k+1)+'</div><div><div class="rk">'+st[0]+'</div><div class="rv">'+esc(st[1])+'</div></div></div>'});
+  var pp=(p.pp||[]).map(function(k){return s.papers[k]}).filter(Boolean);
+  body+='<div class="psec" style="margin-top:14px"><span class="lbl">Reported in '+pp.length+' paper'+(pp.length===1?'':'s')+'</span>'+pp.map(paperLine).join('')+'</div>';
+  body+='<div style="font-size:11.5px;color:var(--dim);margin-top:12px">Every paper listed reported this exact recipe for <i>'+esc(s.sp)+'</i>. Verify each step against the original before use. Generated by the ExM Explorer · '+BUILD_DATE+'.</div></div>';
+  openModal(esc(p.variant||'ExM')+' protocol card',body,'<button class="btn p" onclick="window.print()">Print</button><button class="btn" onclick="closeModal()">Close</button>');
+}
+
+/* ===== #3 reagent list / basket ===== */
+var basket=[];
+try{basket=JSON.parse(localStorage.getItem('exame_basket')||'[]')||[]}catch(e){basket=[]}
+function saveBasket(){try{localStorage.setItem('exame_basket',JSON.stringify(basket))}catch(e){}updateBasketCount()}
+function updateBasketCount(){var b=el('bcount');b.textContent=basket.length;b.classList.toggle('zero',basket.length===0)}
+function inBasket(n,c){return basket.some(function(x){return x.name===n&&x.cat===c})}
+function addCur(){var a=window._cur;if(!a)return;if(inBasket(a.name,a.cat)){toast('Already in your list')}else{basket.push(a);saveBasket();toast('Added — '+basket.length+' in list')}}
+function removeBasket(i){basket.splice(i,1);saveBasket();openBasket()}
+function clearBasket(){if(confirm('Clear the whole list?')){basket=[];saveBasket();openBasket()}}
+function openBasket(){
+  var body=basket.length?basket.map(function(x,i){return '<div class="bkrow"><div style="flex:1;min-width:0"><div class="bn">'+esc(x.name)+'</div><div class="bm">'+esc([x.target,x.type].filter(Boolean).join(' · ')||'—')+'</div><div class="bm">'+esc([x.sup,x.cat].filter(Boolean).join(' · '))+'</div></div><a class="btn tiny" href="'+x.link+'" target="_blank" rel="noopener">Buy ↗</a><span class="rm" onclick="removeBasket('+i+')">×</span></div>'}).join(''):'<div class="bkempty">Your reagent list is empty.<br>Open any antibody or dye and click “Add to list”, then export or print an order sheet here.</div>';
+  var act=basket.length?'<button class="btn p" onclick="exportBasket()">Export CSV</button><button class="btn" onclick="window.print()">Print list</button><button class="btn" onclick="clearBasket()">Clear all</button>':'';
+  openModal('Reagent list ('+basket.length+')',body,act);
+}
+function exportBasket(){var cols=['name','target','type','sup','cat','link'];var body=basket.map(function(x){return cols.map(function(c){var v=(x[c]==null?'':String(x[c])).replace(/"/g,'""');return /[",\n]/.test(v)?'"'+v+'"':v}).join(',')}).join('\n');dl('ExM_Explorer_reagent_list.csv',cols.join(',')+'\n'+body)}
+
+/* ===== #4 compare ===== */
+var cmp=[];
+function toggleCmp(i){var k=cmp.indexOf(i);if(k>=0){cmp.splice(k,1)}else{if(cmp.length>=6){toast('Compare up to 6 species');return}cmp.push(i)}renderGrid();renderCmpTray()}
+function clearCmp(){cmp=[];renderCmpTray();renderGrid()}
+function renderCmpTray(){var t=el('cmptray');if(!cmp.length){t.classList.remove('on');t.innerHTML='';return}
+  t.classList.add('on');
+  t.innerHTML='<span class="cl">Compare</span>'+cmp.map(function(i){return '<span class="cmpchip"><i>'+esc(SPECIES[i].sp)+'</i><b onclick="toggleCmp('+i+')">×</b></span>'}).join('')+
+    '<button class="btn p" style="margin-left:auto"'+(cmp.length<2?' disabled style="margin-left:auto;opacity:.5"':'')+' onclick="openCompare()">Compare '+cmp.length+' →</button>'+
+    '<button class="btn" onclick="clearCmp()">Clear</button>';
+}
+function openCompare(){
+  if(cmp.length<2){toast('Pick at least 2 species');return}
+  var sps=cmp.map(function(i){return SPECIES[i]});
+  var nsec={};sps.forEach(function(s){s.labels.forEach(function(l){if(isSecL(l))nsec[l.name]=1})});nsec=Object.keys(nsec).length;
+  function labsOf(s){return SHOWSEC?s.labels:s.labels.filter(function(l){return !isSecL(l)})}
+  var perSp=sps.map(function(s){var m={};labsOf(s).forEach(function(l){if(!(l.name in m)||rankO(l.out)>rankO(m[l.name]))m[l.name]=l.out});return m});
+  var counts={},tgt={};
+  sps.forEach(function(s){labsOf(s).forEach(function(l){if(l.target&&!tgt[l.name])tgt[l.name]=l.target})});
+  perSp.forEach(function(m){Object.keys(m).forEach(function(n){counts[n]=(counts[n]||0)+1})});
+  var names=Object.keys(counts).sort(function(a,b){return counts[b]-counts[a]||a.localeCompare(b)});
+  var sharedAll=names.filter(function(n){return counts[n]===sps.length}).length;
+  var sharedVars=sps[0].var.filter(function(v){return sps.every(function(s){return s.var.indexOf(v)>=0})});
+  var h='<div class="cmpsum"><b>'+sharedAll+'</b> reagent'+(sharedAll===1?'':'s')+' used across <b>all '+sps.length+'</b> species'+(sharedVars.length?'; shared ExM variants: <b>'+esc(sharedVars.join(', '))+'</b>':'')+'. ✓ success · ~ partial · ✕ fail · • used, outcome not reported · – not used / not reported in this species.</div>'+
+    (nsec?'<label class="sectog"><input type="checkbox" id="cmpsectog"'+(SHOWSEC?' checked':'')+' onchange="SHOWSEC=this.checked;openCompare()"> Show secondary antibodies ('+nsec+'). Their outcome reflects the primary they detected.</label>':'');
+  h+='<table class="cmptbl"><thead><tr><th>Reagent</th>'+sps.map(function(s){return '<th><i>'+esc(s.sp)+'</i></th>'}).join('')+'</tr></thead><tbody>';
+  names.slice(0,200).forEach(function(n){var shared=counts[n]===sps.length;
+    h+='<tr class="'+(shared?'shared':'')+'"><td class="rn">'+esc(n)+(tgt[n]?' <span style="color:var(--dim);font-weight:400">· '+esc(tgt[n])+'</span>':'')+'</td>'+
+      perSp.map(function(m){var o=m[n];return '<td>'+(o!=null?'<span class="yes" title="'+esc(o)+'">'+(o==='success'?'✓':o==='partial'?'~':o==='fail'?'✕':'•')+'</span>':'<span class="no">–</span>')+'</td>'}).join('')+'</tr>'});
+  h+='</tbody></table>';
+  if(names.length>200)h+='<div class="hint">Showing first 200 of '+names.length+' reagents.</div>';
+  openModal('Comparing '+sps.length+' species',h,'<button class="btn" onclick="closeModal()">Close</button>');
+}
+
+/* ===== #6 cite ===== */
+function citation(){return AUTHORS+' ('+BUILD_DATE.slice(0,4)+'). ExM Explorer v'+VERSION+': a search engine for expansion microscopy. '+(DATA_DOI?'Zenodo. https://doi.org/'+DATA_DOI:RESOURCE_URL);}
+function openCite(){var c=citation();window._cite=c;
+  openModal('Cite this resource','<div class="citebox">'+esc(c)+'</div>','<button class="btn p" onclick="copyCite()">Copy citation</button><button class="btn" onclick="closeModal()">Close</button>');}
+function copyCite(){var c=window._cite||citation();
+  function fallback(){try{var ta=document.createElement('textarea');ta.value=c;ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();var ok=document.execCommand&&document.execCommand('copy');document.body.removeChild(ta);toast(ok?'Citation copied':'Select the text to copy')}catch(e){toast('Select the text to copy')}}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(c).then(function(){toast('Citation copied')},fallback)}else{fallback()}}
+
+/* ===== PAPERS ===== */
+function corpusStats(){var yrs=PAPERS.map(function(p){return p.yr}).filter(Boolean).sort();var jr={};PAPERS.forEach(function(p){if(p.jr)jr[p.jr]=1});
+  return PAPERS.length+' studies · '+yrs[0]+'–'+yrs[yrs.length-1]+' · '+Object.keys(jr).length+' journals. Search matches species (including higher ranks such as Ichthyosporea), first or last author, title, journal, year and ExM variant.';}
+function ppMatch(p,q){if(!q)return true;return [p.title,p.fa,p.la,p.jr,p.yr,p.variants.join(' '),p.stx].filter(Boolean).join(' ').toLowerCase().indexOf(q)>=0}
+function paperCard(p){var i=PAPERS.indexOf(p);var auth=[p.fa,p.la&&p.la!==p.fa?p.la:''].filter(Boolean).join(' … ');
+  return '<div class="papercard" onclick="openPaper('+i+')">'+
+    '<div class="pt">'+esc(p.title||'(untitled)')+'</div>'+
+    '<div class="pa">'+esc(auth)+' · <i>'+esc(p.jr||'—')+'</i> · '+esc(p.yr||'')+'</div>'+
+    '<div class="pcontrib"><span class="pbadge sp">'+p.nsp+' species</span><span class="pbadge">'+p.nlab+' reagents</span>'+
+      p.variants.slice(0,3).map(function(v){return '<span class="vchip">'+esc(v)+'</span>'}).join('')+
+      (p.ptype?'<span class="pbadge">'+esc(p.ptype)+'</span>':'')+(p.newp?'<span class="pbadge new">new protocol</span>':'')+
+      (p.doi?' <a class="pdoi" href="https://doi.org/'+esc(p.doi)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">'+esc(p.doi)+' ↗</a>':'')+
+    '</div></div>';}
+function renderPapers(){
+  el('pp-stats').textContent=corpusStats();
+  var q=el('pp-q').value.trim().toLowerCase(),grp=el('pp-group').value;
+  var list=PAPERS.filter(function(p){return ppMatch(p,q)});
+  el('pp-count').textContent=list.length+' paper'+(list.length===1?'':'s')+(q?' (filtered)':'');
+  if(!list.length){el('pp-list').innerHTML='<div class="empty">No papers match.</div>';return}
+  var html='';
+  if(grp==='year'){var by={};list.forEach(function(p){(by[p.yr||'—']=by[p.yr||'—']||[]).push(p)});
+    Object.keys(by).sort(function(a,b){return (''+b).localeCompare(''+a)}).forEach(function(y){html+='<div class="pgrouphd">'+esc(y)+'<span>'+by[y].length+' papers</span></div>'+by[y].map(paperCard).join('')});
+  }else if(grp==='variant'){var by={};list.forEach(function(p){(p.variants.length?p.variants:['(unspecified)']).forEach(function(v){(by[v]=by[v]||[]).push(p)})});
+    Object.keys(by).sort(function(a,b){return by[b].length-by[a].length}).forEach(function(v){html+='<div class="pgrouphd">'+esc(v)+'<span>'+by[v].length+' papers</span></div>'+by[v].map(paperCard).join('')});
+  }else{html=list.map(paperCard).join('')}
+  el('pp-list').innerHTML=html;
+}
+function openPaper(i){
+  var p=PAPERS[i];if(!p)return;var auth=[p.fa,p.la&&p.la!==p.fa?p.la:''].filter(Boolean).join(' … ');
+  var h='<div class="phd"><span class="x" onclick="closePanel()">×</span>'+
+    (p.variants.length?'<div class="st" style="color:var(--mag);margin-top:0;margin-bottom:6px">'+esc(p.variants.join(' · '))+'</div>':'')+
+    '<div class="t" style="font-style:normal;font-size:20px">'+esc(p.title||'(untitled)')+'</div>'+
+    '<div class="st" style="text-transform:none;letter-spacing:0;font-size:12.5px;margin-top:8px">'+esc(auth)+' · '+esc(p.jr||'—')+' · '+esc(p.yr||'')+'</div>'+
+    (p.doi?'<div style="margin-top:12px"><a class="btn p" href="https://doi.org/'+esc(p.doi)+'" target="_blank" rel="noopener">Open paper ↗</a></div>':'')+'</div>';
+  h+='<div class="psec"><span class="lbl">Contribution</span><div style="font-size:13px;color:var(--mid)"><b style="color:var(--ink)">'+p.nsp+'</b> species · <b style="color:var(--ink)">'+p.nlab+'</b> reagents · '+(p.pout.success||0)+' success · '+(p.pout.partial||0)+' partial · '+(p.pout.fail||0)+' fail</div>'+
+    '<div class="cladestrip" style="max-width:none">'+p.clades.map(function(c){return '<span class="clchip">'+esc(c)+'</span>'}).join('')+'</div>'+
+    (p.ptype?'<div style="margin-top:2px"><span class="pbadge">'+esc(p.ptype)+'</span>'+(p.newp?' <span class="pbadge new">introduces a new protocol</span>':'')+'</div>':'')+'</div>';
+  h+='<div class="psec"><span class="lbl">Species studied ('+p.nsp+')</span><div class="linklist">'+p.species.map(function(s){var idx=SPECIES.map(function(x){return x.sp}).indexOf(s.sp);
+    return idx>=0?'<a href="#" onclick="closePanel();switchTab(\'browse\');openSpecies('+idx+');return false">'+esc(s.sp)+'</a>':esc(s.sp)}).join(', ')+'</div></div>';
+  h+='<div class="psec"><span class="lbl">Reagents used ('+p.nlab+')</span><div class="linklist">'+p.labels.map(function(l,j){
+    return '<a href="#" onclick="openReagentFromPaper('+i+','+j+');return false">'+esc(l.name)+'</a>'}).join(', ')+'</div></div>';
+  el('panel').innerHTML=h;openPanel();setHash('papers/paper/'+enc(p.id));
+}
+function openReagentFromPaper(pi,li){var nm=PAPERS[pi].labels[li].name;closePanel();openReagentByName(nm)}
+function openReagentByName(nm){
+  var i=ABP.map(function(x){return x.name}).indexOf(nm);if(i>=0){switchTab('antibodies');openAB(i,false);return}
+  i=ABS.map(function(x){return x.name}).indexOf(nm);if(i>=0){switchTab('antibodies');el('ab-type').value='secondary';renderAB();openAB(i,true);return}
+  i=DYE.map(function(x){return x.name}).indexOf(nm);if(i>=0){switchTab('dye');openDye(i);return}
+  window.open(gsearch(nm),'_blank');
+}
+function bibkey(p,used){var base=(p.fa||'anon').replace(/[^A-Za-z]/g,'')+(p.yr||'');var k=base,n=1;while(used[k]){n++;k=base+String.fromCharCode(95+n)}used[k]=1;return k}
+function exportBib(){var used={},q=el('pp-q').value.trim().toLowerCase();
+  var out=PAPERS.filter(function(p){return ppMatch(p,q)}).map(function(p){var auth=[p.fa,p.la&&p.la!==p.fa?p.la:''].filter(Boolean).join(' and ');
+    return '@article{'+bibkey(p,used)+',\n  author = {'+auth+'},\n  title = {{'+p.title+'}},\n  journal = {'+p.jr+'},\n  year = {'+p.yr+'},\n  doi = {'+p.doi+'}\n}'}).join('\n\n');
+  dl('ExM_Explorer_references.bib',out);}
+function exportRis(){var q=el('pp-q').value.trim().toLowerCase();
+  var out=PAPERS.filter(function(p){return ppMatch(p,q)}).map(function(p){var l=['TY  - JOUR'];
+    if(p.fa)l.push('AU  - '+p.fa);if(p.la&&p.la!==p.fa)l.push('AU  - '+p.la);if(p.title)l.push('TI  - '+p.title);
+    if(p.jr)l.push('JO  - '+p.jr);if(p.yr)l.push('PY  - '+p.yr);if(p.doi)l.push('DO  - '+p.doi);l.push('ER  - ');return l.join('\n')}).join('\n\n');
+  dl('ExM_Explorer_references.ris',out);}
+
+/* ===== OVERVIEW (landing figures) ===== */
+function ovEsc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+function ovHbar(rows,fmt,amb,click,tip){var mx=Math.max.apply(0,rows.map(function(r){return r.value}));
+  return rows.map(function(r){return '<div class="orow'+(click?' oclk':'')+'"'+(click?' onclick="'+click(r)+'"':'')+'><span class="olab" title="'+ovEsc(r.label)+(click?' — '+tip:'')+'">'+ovEsc(r.label)+'</span><div class="otrack"><div class="obar'+(amb?' amb':'')+'" style="width:'+Math.max(2,r.value/mx*100)+'%"></div></div><span class="oval">'+fmt(r)+'</span></div>'}).join('')}
+function ovPaired(rows){var mx=Math.max.apply(0,rows.map(function(r){return Math.max(r.nom||0,r.mea||0)}));
+  return rows.map(function(r){var n=r.nom||0,m=r.mea||0;return '<div class="oprow2"><span class="olab" title="'+ovEsc(r.label)+'">'+ovEsc(r.label)+'</span><div class="obars"><div class="otrack"><div class="onom" style="width:'+Math.max(2,n/mx*100)+'%"></div></div><div class="otrack"><div class="omea" style="width:'+Math.max(2,m/mx*100)+'%"></div></div></div><span class="oval">'+(n?n+'×':'–')+' → '+(m?m+'×':'–')+'</span></div>'}).join('')}
+function ovStacked(rows){var cols={sds:'#298576',pk:'#C0006A',both:'#500464',other:'#c9bfd4'};
+  return rows.map(function(r){var s='';['sds','pk','both','other'].forEach(function(k){if(r[k]>0)s+='<div style="width:'+r[k]+'%;background:'+cols[k]+'" title="'+k+' '+r[k]+'%"></div>'});return '<div class="osrow"><span class="olab">'+ovEsc(r.label)+'</span><div class="ostk">'+s+'</div></div>'}).join('')+'<div class="oleg"><span><i style="background:#298576"></i>heat-SDS</span><span><i style="background:#C0006A"></i>Proteinase K</span><span><i style="background:#500464"></i>both</span><span><i style="background:#c9bfd4"></i>other / n.r.</span></div>'}
+function ovMatrix(m){var mx=0;m.cells.forEach(function(row){row.forEach(function(v){if(v>mx)mx=v})});
+  var h='<div class="omwrap"><table class="omtx"><tr><th></th>';
+  m.clades.forEach(function(c,i){h+='<th title="'+ovEsc(m.cladesFull[i])+'">'+c+'</th>'});h+='</tr>';
+  m.targets.forEach(function(t,ri){h+='<tr><th class="orh">'+ovEsc(t)+'</th>';
+    m.cells[ri].forEach(function(v,ci){var cf=m.cladesFull[ci];var op=v>0?(0.18+0.82*v/mx):0;var bg=v>0?'rgba(192,0,106,'+op.toFixed(2)+')':'#f1eef2';var col=op>0.5?'#fff':'#8a004c';
+      h+='<td style="background:'+bg+';color:'+col+'" title="'+ovEsc(t)+' in '+ovEsc(cf)+': '+v+' species">'+(v>0?v:'')+'</td>'});h+='</tr>'});
+  return h+'</table></div>'}
+function ovCard(t,s,body,foot,k){return '<div class="ocard"'+(k?' data-fig="'+k+'"':'')+'>'+(k?fsBtn(k):'')+'<div class="oct">'+t+'</div><div class="ocs">'+s+'</div>'+body+(foot?'<div class="ofoot">'+foot+'</div>':'')+'</div>'}
+function scrollMethods(id){var t=el(id);if(t)t.scrollIntoView({behavior:'smooth',block:'start'})}
+/* Figure 1 — share of each lineage's EukProt v3 species expanded, and expanded species outside EukProt */
+var F1=(typeof OVERVIEW2!=='undefined')?OVERVIEW2.tree:null,F1N=[],F1L=[];
+var F1K=['n','m','N','k','km','o','om'];
+function f1def(n){return n._d<1||(n._d===1&&n.children.some(function(c){return !!c.children}))}   // condensed: major groups shown, lineages folded
+if(F1){(function idx(n,d){n._id=F1N.length;n._d=d;F1N.push(n);if(n.leaf)F1L.push(n);if(n.children)n.children.forEach(function(c){idx(c,d+1)})})(F1,0);
+ (function roll(n){if(n.leaf){F1K.forEach(function(k){n['_'+k]=n[k]});n._lf=1;n._z=n.n>0?0:1;return}
+   F1K.forEach(function(k){n['_'+k]=0});n._lf=0;n._z=0;n.children.forEach(function(c){roll(c);F1K.forEach(function(k){n['_'+k]+=c['_'+k]});n._lf+=c._lf;n._z+=c._z})})(F1);
+ F1N.forEach(function(n){n._open=f1def(n)});}   // condensed: major groups shown, lineages folded
+var F1OMAX=0;F1L.forEach(function(n){if(n.o>F1OMAX)F1OMAX=n.o});   // outside-EukProt bars are drawn for lineages; group rows give the number only
+function f1tg(id){var n=F1N[id];if(n.children)n._open=!n._open;renderF1()}
+function f1all(o){F1N.forEach(function(n){n._open=o?true:f1def(n)});renderF1()}
+function f1pct(a,b){return b?Math.round(100*a/b):0}
+function renderF1(){if(!F1)return;var R=F1,nl=F1L.length,zero=F1L.filter(function(n){return n.n===0}).length;
+  el('f1-kpi').innerHTML=
+    '<div class="k1"><b>'+R._k+'</b><span> of '+R._N+'</span><small>EukProt species expanded ('+f1pct(R._k,R._N)+'%)</small></div>'+
+    '<div class="k1"><b>'+zero+'</b><span> of '+nl+'</span><small>lineages never expanded</small></div>'+
+    '<div class="k1"><b>'+R._o+'</b><span> of '+R._n+'</span><small>expanded species not in EukProt ('+f1pct(R._o,R._n)+'%)</small></div>';
+  var h='<div class="f1hd"><span>Lineage</span><span>Share of the lineage’s EukProt species expanded<em><i>0%</i><i>50%</i><i>100%</i></em></span><span>Expanded, not in EukProt</span></div>';
+  (function rec(n){if(n!==F1){var d=n._d-1,star=n._o>n._k?' <sup title="More species expanded outside EukProt than inside">*</sup>':'',dim=n._n===0;
+     h+='<div class="f1r'+(dim?' z':'')+(n.children?' g':'')+'"'+(n.children?' onclick="f1tg('+n._id+')"':'')+' title="'+ovEsc(n.name)+': '+n._k+' of '+n._N+' EukProt species expanded'+(n._N?' ('+f1pct(n._k,n._N)+'%)':'')+'; '+n._o+' expanded species not in EukProt; '+n._n+' expanded in total">';
+     h+='<span class="f1n" style="padding-left:'+(d*13)+'px">'+(n.children?'<i class="tog">'+(n._open?'−':'+')+'</i>':'<i class="tog leaf"></i>')+ovEsc(n.name)+star+'</span>';
+     if(n._N){var ko=(n._k-n._km)/n._N*100,km=n._km/n._N*100;h+='<span class="f1b"><span class="f1t"><i style="width:'+ko+'%;background:var(--field)"></i><i style="width:'+km+'%;background:var(--mag)"></i></span><span class="f1v">'+n._k+' / '+n._N+'</span></span>'}
+     else h+='<span class="f1b"><span class="f1v na">no EukProt genome</span></span>';
+     if(n._o&&n.children)h+='<span class="f1o"><b>'+n._o+'</b></span>';
+     else if(n._o){var oo=(n._o-n._om)/F1OMAX*100,om=n._om/F1OMAX*100;h+='<span class="f1o"><span class="f1ot"><i style="width:'+oo+'%;background:var(--field)"></i><i style="width:'+om+'%;background:var(--mag)"></i></span><b>'+n._o+'</b></span>'}
+     else h+='<span class="f1o"></span>';
+     h+='</div>'}
+   if(n.children&&(n===F1||n._open))n.children.forEach(rec)})(F1);
+  el('f1-tree').innerHTML=h;
+  var pk=(typeof OVERVIEW2!=='undefined'&&OVERVIEW2.prok)?OVERVIEW2.prok:null;
+  if(pk&&el('f1-prok'))el('f1-prok').innerHTML='* More species expanded outside EukProt than inside. As EukProt covers eukaryotes only, the <b>'+pk.Bacteria+'</b> bacteria and <b>'+pk.Archaea+'</b> archaeon in the database are not shown, but remain searchable in the tabs.';
+}
+/* full-page Figure 1: every lineage, with axes */
+function fsF1(){var W=1000,L=270,BX=L+10,BW=380,OX=BX+BW+110,OW=170,top=62,rh=21,rows=[];
+  (function rec(n){if(n!==F1)rows.push(n);if(n.children)n.children.forEach(rec)})(F1);
+  var ph=rows.length*rh,H=top+ph+40,s=fsHead(W,H);
+  s+=fsT(BX+BW/2,20,'Share of the lineage’s EukProt species expanded',{a:'middle',fs:13,c:'#211b26',w:600});
+  s+=fsT(OX+OW/2,20,'Expanded species not in EukProt (n)',{a:'middle',fs:13,c:'#211b26',w:600});
+  [0,25,50,75,100].forEach(function(t){var x=BX+BW*t/100;s+='<line x1="'+x+'" y1="'+(top-8)+'" x2="'+x+'" y2="'+(top+ph)+'" stroke="#eee9f0"/>'+fsT(x,top-14,t+'%',{a:'middle',fs:11})});
+  var ot=fsTicks(F1OMAX),om=ot[ot.length-1];ot.forEach(function(t){var x=OX+OW*t/om;s+='<line x1="'+x.toFixed(1)+'" y1="'+(top-8)+'" x2="'+x.toFixed(1)+'" y2="'+(top+ph)+'" stroke="#eee9f0"/>'+fsT(x,top-14,fsNum(t),{a:'middle',fs:11})});
+  rows.forEach(function(n,i){var y=top+i*rh,cy=y+rh/2,d=n._d-1,g=!!n.children,c=n._n?'#211b26':'#a59fae';
+    if(g)s+='<rect x="0" y="'+y+'" width="'+W+'" height="'+rh+'" fill="#faf8f5"/>';
+    s+=fsT(14+d*14,cy+4,n.name+(n._o>n._k?' *':''),{fs:g?12.5:12,c:c,w:g?700:null});
+    s+='<rect x="'+BX+'" y="'+(cy-5)+'" width="'+BW+'" height="10" fill="#efe9f1"/>';
+    if(n._N){var a=(n._k-n._km)/n._N*BW,b=n._km/n._N*BW;s+='<rect x="'+BX+'" y="'+(cy-5)+'" width="'+a.toFixed(1)+'" height="10" fill="#8fb8ad"/><rect x="'+(BX+a).toFixed(1)+'" y="'+(cy-5)+'" width="'+b.toFixed(1)+'" height="10" fill="#C0006A"/>';
+      s+=fsT(BX+BW+8,cy+4,n._k+' / '+n._N+' ('+f1pct(n._k,n._N)+'%)',{fs:11,c:c})}
+    else s+=fsT(BX+BW+8,cy+4,'no EukProt genome',{fs:11,c:'#a59fae'});
+    if(n._o&&g)s+=fsT(OX+6,cy+4,n._o,{fs:11.5,c:'#211b26',w:700});
+    else if(n._o){var oa=(n._o-n._om)/om*OW,ob=n._om/om*OW;s+='<rect x="'+OX+'" y="'+(cy-4)+'" width="'+oa.toFixed(1)+'" height="8" fill="#8fb8ad"/><rect x="'+(OX+oa).toFixed(1)+'" y="'+(cy-4)+'" width="'+ob.toFixed(1)+'" height="8" fill="#C0006A"/>'+fsT(OX+oa+ob+6,cy+4,n._o,{fs:11,c:'#211b26'})}});
+  s+='<line x1="'+BX+'" y1="'+(top-8)+'" x2="'+BX+'" y2="'+(top+ph)+'" stroke="#9a94a3"/><line x1="'+OX+'" y1="'+(top-8)+'" x2="'+OX+'" y2="'+(top+ph)+'" stroke="#9a94a3"/>';
+  s+=fsT(14,top+ph+26,'Lineages in grey have no species expanded; shaded group rows sum their lineages. * More species expanded outside EukProt than inside.',{fs:11});
+  return s+'</svg>'+fsLegend([['other studies','#8fb8ad'],['Mikus et al. 2025','#C0006A'],['EukProt species not yet expanded','#efe9f1']])}
+function f1Data(){var out=[];(function rec(n,path){if(n.leaf)out.push({lineage:n.name,group:path.join(' > '),eukprot_species:n.N,expanded_in_eukprot:n.k,in_eukprot_by_mikus2025:n.km,expanded_not_in_eukprot:n.o,not_in_eukprot_by_mikus2025:n.om,expanded_total:n.n});else n.children.forEach(function(c){rec(c,n===F1?path:path.concat(n.name))})})(F1,[]);return out}
+/* Figure 2 — animals by sample type */
+var ACOL={'Cultured cells':'#C0006A','Tissue':'#263789','Organoid':'#C1A118','Whole organism':'#954345','Isolated protein':'#98CADC','Environmental':'#298576','Other':'#9C3280'};
+function renderF2(){if(typeof OVERVIEW2==='undefined')return;var A=OVERVIEW2.anim,cats=OVERVIEW2.acats;
+  function tot(o){return cats.reduce(function(a,c){return a+(A[o][c]||0)},0)}
+  var ord=Object.keys(A).sort(function(a,b){return tot(b)-tot(a)});var mx=Math.max.apply(0,ord.map(tot));
+  el('f2-bars').innerHTML=ord.map(function(o){var segs=cats.map(function(c){var v=A[o][c]||0;return v>0?'<div class="aseg" style="width:'+(v/mx*100)+'%;background:'+ACOL[c]+'" title="'+ovEsc(c)+': '+v+'"></div>':''}).join('');
+   return '<div class="arow"><span class="alab">'+ovEsc(o)+'</span><div class="atrack">'+segs+'</div><span class="atot">'+tot(o)+'</span></div>'}).join('');
+  el('f2-leg').innerHTML=cats.map(function(c){var t=ord.reduce(function(a,o){return a+(A[o][c]||0)},0);return '<span><i style="background:'+ACOL[c]+'"></i>'+ovEsc(c)+' ('+t+')</span>'}).join('');
+}
+function ovCols(rows){var mx=Math.max.apply(0,rows.map(function(r){return r.value}));
+  return '<div style="display:flex;align-items:flex-end;gap:4px;height:128px;padding-top:4px">'+rows.map(function(r){var hh=Math.max(3,r.value/mx*104);return '<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end" title="'+ovEsc(r.label)+': '+r.value+'"><div style="font-size:9px;color:var(--mid)">'+r.value+'</div><div style="width:100%;max-width:28px;height:'+hh+'px;background:var(--mag);border-radius:3px 3px 0 0"></div><div style="font-size:9px;color:var(--dim);margin-top:3px">’'+ovEsc(r.label).slice(2)+'</div></div>'}).join('')+'</div>'}
+var _ABSUP=null;
+function abSup(nm){if(!_ABSUP){_ABSUP={};ABP.concat(ABS).forEach(function(a){if(a.name&&!_ABSUP[a.name])_ABSUP[a.name]=a.sup||''})}return _ABSUP[nm]||''}
+function ovHbarLink(rows,fmt,href){var mx=Math.max.apply(0,rows.map(function(r){return r.value}));
+  return rows.map(function(r){return '<div class="orow"><a class="olab olink" href="'+href(r)+'" target="_blank" rel="noopener" title="'+ovEsc(r.label)+(r.tgt?' — '+ovEsc(r.tgt):'')+' — search Google">'+ovEsc(r.label)+'</a><div class="otrack"><div class="obar" style="width:'+Math.max(2,r.value/mx*100)+'%"></div></div><span class="oval">'+fmt(r)+'</span></div>'}).join('')}
+var OVPAL=['#C0006A','#298576','#263789','#C1A118','#9C3280','#954345','#98CADC','#500464'];
+function ovScatter(pts){var W=380,H=210,pad=40;
+  function nice(m){return Math.ceil(m/5)*5||5}
+  var xmx=nice(Math.max.apply(0,pts.map(function(p){return p.x}))||1),ymx=nice(Math.max.apply(0,pts.map(function(p){return p.y}))||1);
+  var vk=[];pts.forEach(function(p){if(vk.indexOf(p.v)<0)vk.push(p.v)});var cv={};vk.forEach(function(v,i){cv[v]=OVPAL[i%OVPAL.length]});
+  function X(x){return pad+x/xmx*(W-pad-10)}function Y(y){return H-pad-y/ymx*(H-pad-12)}
+  var s='<svg viewBox="0 0 '+W+' '+H+'" width="100%">';
+  // gridlines + ticks (0, 1/4, 1/2, 3/4, max)
+  var xt=[0,xmx/4,xmx/2,xmx*3/4,xmx],yt=[0,ymx/4,ymx/2,ymx*3/4,ymx];
+  xt.forEach(function(v){var x=X(v);s+='<line x1="'+x.toFixed(1)+'" y1="'+pad*0.3+'" x2="'+x.toFixed(1)+'" y2="'+(H-pad)+'" stroke="#f1edf2"/><text x="'+x.toFixed(1)+'" y="'+(H-pad+11)+'" text-anchor="middle" font-size="8.5" fill="#9a94a3">'+(v%1?v.toFixed(1):v)+'</text>'});
+  yt.forEach(function(v){var y=Y(v);s+='<line x1="'+pad+'" y1="'+y.toFixed(1)+'" x2="'+(W-10)+'" y2="'+y.toFixed(1)+'" stroke="#f1edf2"/><text x="'+(pad-4)+'" y="'+(y+3).toFixed(1)+'" text-anchor="end" font-size="8.5" fill="#9a94a3">'+(v%1?v.toFixed(1):v)+'</text>'});
+  s+='<line x1="'+pad+'" y1="'+(H-pad)+'" x2="'+(W-10)+'" y2="'+(H-pad)+'" stroke="#cfc6d2"/><line x1="'+pad+'" y1="'+(pad*0.3)+'" x2="'+pad+'" y2="'+(H-pad)+'" stroke="#cfc6d2"/>';
+  s+='<text x="'+((pad+W-10)/2)+'" y="'+(H-3)+'" text-anchor="middle" font-size="9.5" fill="#6a6472">sodium acrylate (%)</text>';
+  s+='<text x="11" y="'+((pad*0.3+H-pad)/2)+'" transform="rotate(-90 11 '+((pad*0.3+H-pad)/2)+')" text-anchor="middle" font-size="9.5" fill="#6a6472">acrylamide (%)</text>';
+  pts.forEach(function(p){s+='<circle cx="'+X(p.x).toFixed(1)+'" cy="'+Y(p.y).toFixed(1)+'" r="3.2" fill="'+cv[p.v]+'" opacity="0.65"><title>'+ovEsc(p.v)+': SA '+p.x+'% / AA '+p.y+'%</title></circle>'});
+  s+='</svg><div class="oleg">'+vk.map(function(v){return '<span><i style="background:'+cv[v]+'"></i>'+ovEsc(v)+'</span>'}).join('')+'</div>';
+  return s}
+function ovArea(rows){if(!rows.length)return '';var W=360,H=150,pad=28;var mx=Math.max.apply(0,rows.map(function(r){return r.value}))||1;
+  function X(i){return pad+(rows.length<2?0:i/(rows.length-1)*(W-2*pad))}function Y(v){return H-pad-v/mx*(H-2*pad)}
+  var pl=rows.map(function(r,i){return X(i).toFixed(1)+','+Y(r.value).toFixed(1)}).join(' ');
+  var s='<svg viewBox="0 0 '+W+' '+H+'" width="100%">';
+  s+='<polygon points="'+X(0).toFixed(1)+','+(H-pad)+' '+pl+' '+X(rows.length-1).toFixed(1)+','+(H-pad)+'" fill="rgba(192,0,106,0.12)"/>';
+  s+='<polyline points="'+pl+'" fill="none" stroke="var(--mag)" stroke-width="2"/>';
+  rows.forEach(function(r,i){s+='<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(r.value).toFixed(1)+'" r="2.4" fill="var(--mag)"><title>'+r.label+': '+r.value+'</title></circle>';
+    if(i%2===0||i===rows.length-1)s+='<text x="'+X(i).toFixed(1)+'" y="'+(H-pad+12)+'" text-anchor="middle" font-size="8" fill="#9a94a3">’'+r.label.slice(2)+'</text>'});
+  var last=rows[rows.length-1];s+='<text x="'+X(rows.length-1).toFixed(1)+'" y="'+(Y(last.value)-6).toFixed(1)+'" text-anchor="end" font-size="11" font-weight="700" fill="var(--mag)">'+last.value+'</text>';
+  return s+'</svg>'}
+function renderOverview(){CLK=[];FIGS=null;renderF1();renderF2();var D=OVERVIEW;if(!D){return}var CATd=D.CAT.filter(function(c){return c.label!=='other'});
+  var O2=(typeof OVERVIEW2!=='undefined')?OVERVIEW2:{papersYear:[],sampleTypes:[],gelPoints:[],accum:[]};
+  el('ov-grid').innerHTML=
+    ovCard('Publications per year','Distinct ExM papers in the database, by year',ovCols(O2.papersYear),'Publications have risen steeply since 2018; 2026 is a partial year, as the search was run in April.','pubs')+
+    ovCard('Species accumulation','Cumulative distinct species, by year of first report',ovArea(O2.accum),'Almost all of the 2025 jump comes from a single study, Mikus et al., which roughly tripled the number of species expanded.','accum')+
+    ovCard('ExM method usage','Distinct species per ExM variant',ovHbar(D.D,function(r){return r.value}),null,'method')+
+    ovCard('Expansion factor: intended vs achieved','Median nominal (light) vs measured (solid) per method',ovPaired(D.EXP),'Several methods expand less in practice than intended, Magnify and μExM most of all.','exp')+
+    ovCard('Denaturation strategy by method','Share of protocols using heat-SDS vs Proteinase K',ovStacked(D.HOM),'A reagent that survives heat-SDS denaturation may not survive Proteinase K digestion, and the reverse.','hom')+
+    ovCard('Gel-chemistry space','Sodium acrylate % against acrylamide %, per protocol, colored by variant',ovScatter(O2.gelPoints),'Each method occupies its own region of recipe space.','gel')+
+    ovCard('Antibody target landscape','Distinct species per primary-antibody target',ovHbar(D.C,function(r){return r.value}),'Tubulins and centrin dominate, whereas most cellular compartments remain unlabeled.','target')+
+    ovCard('Marker categories','Distinct primary antibodies per biological category',ovHbar(CATd,function(r){return r.value}),'Cytoskeletal markers dominate, and for most other compartments of microbial eukaryotes almost no antibody has been reported to work.','cat')+
+    ovCard('Reagent transferability','Clades spanned by the most portable antibodies',ovHbar(D.TRANS,function(r){return r.value+' clades'}),'A handful of antibodies work across most of the tree.','trans')+
+    '<div class="opair">'+
+    ovCard('Where the difficulty is','Share of species for which a partial or failed expansion was reported, per clade (clades with at least 5 species)',ovHbar(D.DIFF,function(r){return r.value+'% of '+r.n+' species'},true),'As failed experiments are rarely published, these shares <b>underestimate</b> failure. Partial or failed expansions were reported most often in Viridiplantae and Alveolata. A species counts once, whatever the number of studies.','diff')+
+    ovCard('Reagent × clade coverage matrix','Species with a successful stain, per antibody target (rows) across clades (columns)',ovMatrix(D.MAT),'Where markers work, and the blank space where none has been reported. As expected, no tubulin stain is recorded in Bacteria or Archaea.','mat')+
+    '</div>';
+}
+
+/* ===== Full-page figure view (each figure redrawn with complete, labelled axes) + figure clicks ===== */
+var CLK=[];function clk(f){CLK.push(f);return 'CLK['+(CLK.length-1)+']()'}
+/* figure clicks (full-page view only): details open in a card beside the chart; the page does not change */
+function abSheet(a,open){var sp=(a.sppl||'').split(';').map(function(x){return x.trim()}).filter(Boolean),cl=(a.cll||'').split(';').map(function(x){return x.trim()}).filter(Boolean);
+  return '<details class="sdab"'+(open?' open':'')+'><summary><b>'+esc(a.name)+'</b><span>'+esc(a.target||'—')+' · '+a.n+' species</span></summary><div class="sdbody">'+
+    '<div class="pgrid">'+pk('Supplier',a.sup)+pk('Catalogue #',a.cat)+pk('Host',a.host)+pk('Conjugate',a.fl)+pk('Category',catLabel(a.cat_g))+pk('Reported outcome',a.out)+'</div>'+
+    (a.tgts&&a.tgts.length>1?'<div class="sdk">Targets as reported</div><div class="sdv">'+a.tgts.map(esc).join(', ')+'</div>':'')+
+    '<div class="sdk">Clades ('+cl.length+')</div><div class="sdv">'+cl.map(esc).join(', ')+'</div>'+
+    '<div class="sdk">Species ('+sp.length+')</div><div class="sdv"><i>'+sp.slice(0,40).map(esc).join(', ')+'</i>'+(sp.length>40?' and '+(sp.length-40)+' more':'')+'</div>'+
+    '<div class="sdk">Papers ('+(a.papers||[]).length+')</div>'+(a.papers||[]).slice(0,12).map(function(p){return '<div class="paperitem"><i>'+esc(p.jr||'—')+'</i>'+(p.yr?' ('+esc(p.yr)+')':'')+(p.doi?' · <a href="https://doi.org/'+esc(p.doi)+'" target="_blank" rel="noopener">doi</a>':'')+'</div>'}).join('')+((a.papers||[]).length>12?'<div class="sdv">and '+((a.papers||[]).length-12)+' more</div>':'')+
+    '<div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap"><a class="btn tiny p" href="'+buyLink(a)+'" target="_blank" rel="noopener">Find / buy ↗</a><a class="btn tiny" href="'+rridLink(a)+'" target="_blank" rel="noopener">Antibody Registry ↗</a></div></div></details>'}
+function fsSide(title,sub,list,openFirst){var h='<div class="sdhd"><div><div class="sdt">'+title+'</div><div class="sds">'+sub+'</div></div><span class="x" onclick="fsSideClose()" title="Close">×</span></div>';
+  h+=list.length?list.map(function(a,i){return abSheet(a,openFirst&&i===0)}).join(''):'<div class="sds">No primary antibody recorded.</div>';
+  el('fsside').innerHTML=h;el('fsside').scrollTop=0;el('fsgrid').classList.add('side')}
+function fsSideClose(){el('fsgrid').classList.remove('side');el('fsside').innerHTML=''}
+function bySpecies(a,b){return nint(b.n)-nint(a.n)||(a.name<b.name?-1:1)}
+function sideTarget(t){var L=ABP.filter(function(a){return (a.tgts||[a.target]).indexOf(t)>=0}).sort(bySpecies);
+  fsSide('Target: '+esc(t),L.length+' primary antibod'+(L.length===1?'y':'ies')+' reported against this target, most used first. Click one for its details.',L)}
+function sideCat(c){var L=ABP.filter(function(a){return (a.cgs||[]).indexOf(c)>=0}).sort(bySpecies);
+  fsSide('Category: '+esc(c),L.length+' primary antibodies in this category, most used first. Click one for its details.',L)}
+function sideName(nm){var L=ABP.filter(function(a){return a.name===nm});fsSide(esc(nm),'Antibody sheet',L,true)}
+function sideCell(ri,ci){var m=OVERVIEW.MAT,t=m.targets[ri],c=m.cladesFull[ci],names=(m.abs&&m.abs[ri][ci])||[];
+  var L=ABP.filter(function(a){return names.indexOf(a.name)>=0}).sort(bySpecies);
+  fsSide(esc(t)+' in '+esc(c),m.cells[ri][ci]+' species with a successful stain, using '+L.length+' antibod'+(L.length===1?'y':'ies')+'. Species counts below are across all clades.',L)}
+function fsTicks(mx){if(!(mx>0))return [0,1];var raw=mx/6,p=Math.pow(10,Math.floor(Math.log(raw)/Math.LN10)),st=[1,2,2.5,5,10].map(function(m){return m*p}).filter(function(s){return s>=raw})[0];var t=[];for(var v=0;v<mx+st*0.999;v+=st)t.push(+v.toFixed(6));return t}
+function fsNum(v){return (Math.abs(v-Math.round(v))<1e-9)?String(Math.round(v)):v.toFixed(1)}
+var FST='font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif"';
+function fsT(x,y,txt,o){o=o||{};return '<text x="'+x.toFixed(1)+'" y="'+y.toFixed(1)+'" font-size="'+(o.fs||12)+'" fill="'+(o.c||'#6a6472')+'"'+(o.a?' text-anchor="'+o.a+'"':'')+(o.w?' font-weight="'+o.w+'"':'')+(o.rot?' transform="rotate(-90 '+x.toFixed(1)+' '+y.toFixed(1)+')"':'')+'>'+ovEsc(String(txt))+'</text>'}
+function fsHead(W,H){return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 '+W+' '+H+'" width="100%" '+FST+'><rect width="'+W+'" height="'+H+'" fill="#fff"/>'}
+/* horizontal bars: o.segs(r) -> [[value,color,name],...]; o.over(r,X,y,rh) optional extra marks */
+function fsBars(rows,o){var W=1000,L=o.lw||230,R=o.rw||170,top=16,rh=o.rh||26,ph=rows.length*rh,H=top+ph+64;
+  var tot=function(r){return o.segs(r).reduce(function(a,s){return a+s[0]},0)};
+  var mx=o.max||Math.max.apply(0,rows.map(tot));var ticks=fsTicks(mx);mx=ticks[ticks.length-1];var pw=W-L-R;function X(v){return L+v/mx*pw}
+  var s=fsHead(W,H);
+  ticks.forEach(function(t){var x=X(t);s+='<line x1="'+x.toFixed(1)+'" y1="'+top+'" x2="'+x.toFixed(1)+'" y2="'+(top+ph)+'" stroke="#eee9f0"/><line x1="'+x.toFixed(1)+'" y1="'+(top+ph)+'" x2="'+x.toFixed(1)+'" y2="'+(top+ph+5)+'" stroke="#9a94a3"/>'+fsT(x,top+ph+19,fsNum(t),{a:'middle',fs:11})});
+  rows.forEach(function(r,i){var y=top+i*rh,bh=rh*0.62,yb=y+(rh-bh)/2,x=L,g='';
+    o.segs(r).forEach(function(sg){if(sg[0]>0){var w=sg[0]/mx*pw;g+='<rect x="'+x.toFixed(1)+'" y="'+yb.toFixed(1)+'" width="'+Math.max(1,w).toFixed(1)+'" height="'+bh.toFixed(1)+'" fill="'+sg[1]+'"><title>'+ovEsc(r.label+' · '+(sg[2]?sg[2]+': ':'')+(sg[3]!=null?sg[3]:fsNum(sg[0]))+(o.unit||''))+'</title></rect>';if(o.inner&&w>34)g+=fsT(x+w/2,yb+bh/2+4,(sg[3]!=null?sg[3]:fsNum(sg[0]))+(o.unit||''),{a:'middle',fs:10.5,c:'#fff'});x+=w}});
+    if(o.over)g+=o.over(r,X,y,rh);
+    g+=fsT(L-8,y+rh/2+4,o.lab?o.lab(r):r.label,{a:'end',fs:12.5,c:'#211b26'});
+    g+=fsT(X(o.endv?o.endv(r):tot(r))+6,y+rh/2+4,o.fmt(r),{fs:11.5});
+    var c=o.click&&o.click(r);s+=c?'<g class="fsclk" onclick="'+c+'"><rect x="0" y="'+y+'" width="'+W+'" height="'+rh+'" fill="transparent"/>'+g+'</g>':g});
+  s+='<line x1="'+L+'" y1="'+(top+ph)+'" x2="'+(W-R)+'" y2="'+(top+ph)+'" stroke="#9a94a3"/><line x1="'+L+'" y1="'+top+'" x2="'+L+'" y2="'+(top+ph)+'" stroke="#9a94a3"/>';
+  s+=fsT(L+pw/2,top+ph+44,o.xlab,{a:'middle',fs:13,c:'#211b26',w:600});
+  s+=fsT(16,top+ph/2,o.ylab,{a:'middle',fs:13,c:'#211b26',w:600,rot:1});
+  return s+'</svg>'}
+/* columns (or a line) over years */
+function fsYears(rows,o){var W=1000,H=470,L=78,R=30,top=24,B=70,pw=W-L-R,ph=H-top-B;var mx=Math.max.apply(0,rows.map(function(r){return r.value}));var ticks=fsTicks(mx);mx=ticks[ticks.length-1];
+  function Y(v){return top+ph-v/mx*ph}var n=rows.length,bw=pw/n;function X(i){return L+bw*(i+0.5)}
+  var s=fsHead(W,H);
+  ticks.forEach(function(t){var y=Y(t);s+='<line x1="'+L+'" y1="'+y.toFixed(1)+'" x2="'+(W-R)+'" y2="'+y.toFixed(1)+'" stroke="#eee9f0"/><line x1="'+(L-5)+'" y1="'+y.toFixed(1)+'" x2="'+L+'" y2="'+y.toFixed(1)+'" stroke="#9a94a3"/>'+fsT(L-9,y+4,fsNum(t),{a:'end',fs:11})});
+  if(o.line){var pl=rows.map(function(r,i){return X(i).toFixed(1)+','+Y(r.value).toFixed(1)}).join(' ');
+    s+='<polygon points="'+X(0).toFixed(1)+','+(top+ph)+' '+pl+' '+X(n-1).toFixed(1)+','+(top+ph)+'" fill="rgba(192,0,106,0.10)"/><polyline points="'+pl+'" fill="none" stroke="#C0006A" stroke-width="2.4"/>';
+    rows.forEach(function(r,i){s+='<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(r.value).toFixed(1)+'" r="4" fill="#C0006A"><title>'+ovEsc(r.label)+': '+r.value+'</title></circle>'+fsT(X(i),Y(r.value)-10,r.value,{a:'middle',fs:10.5,c:'#211b26'})})}
+  else rows.forEach(function(r,i){var bh=r.value/mx*ph;s+='<rect x="'+(X(i)-bw*0.34).toFixed(1)+'" y="'+Y(r.value).toFixed(1)+'" width="'+(bw*0.68).toFixed(1)+'" height="'+bh.toFixed(1)+'" fill="#C0006A"><title>'+ovEsc(r.label)+': '+r.value+'</title></rect>'+fsT(X(i),Y(r.value)-6,r.value,{a:'middle',fs:11,c:'#211b26'})});
+  rows.forEach(function(r,i){s+='<line x1="'+X(i).toFixed(1)+'" y1="'+(top+ph)+'" x2="'+X(i).toFixed(1)+'" y2="'+(top+ph+5)+'" stroke="#9a94a3"/>'+fsT(X(i),top+ph+19,r.label,{a:'middle',fs:11})});
+  s+='<line x1="'+L+'" y1="'+(top+ph)+'" x2="'+(W-R)+'" y2="'+(top+ph)+'" stroke="#9a94a3"/><line x1="'+L+'" y1="'+top+'" x2="'+L+'" y2="'+(top+ph)+'" stroke="#9a94a3"/>';
+  s+=fsT(L+pw/2,H-18,o.xlab,{a:'middle',fs:13,c:'#211b26',w:600})+fsT(22,top+ph/2,o.ylab,{a:'middle',fs:13,c:'#211b26',w:600,rot:1});
+  return s+'</svg>'}
+function fsScatter(pts){var W=1000,H=600,L=78,R=30,top=20,B=70,pw=W-L-R,ph=H-top-B;
+  var xt=fsTicks(Math.max.apply(0,pts.map(function(p){return p.x}))),yt=fsTicks(Math.max.apply(0,pts.map(function(p){return p.y})));var xm=xt[xt.length-1],ym=yt[yt.length-1];
+  function X(v){return L+v/xm*pw}function Y(v){return top+ph-v/ym*ph}
+  var vk=[];pts.forEach(function(p){if(vk.indexOf(p.v)<0)vk.push(p.v)});var cv={};vk.forEach(function(v,i){cv[v]=OVPAL[i%OVPAL.length]});
+  var s=fsHead(W,H);
+  xt.forEach(function(t){var x=X(t);s+='<line x1="'+x.toFixed(1)+'" y1="'+top+'" x2="'+x.toFixed(1)+'" y2="'+(top+ph)+'" stroke="#eee9f0"/><line x1="'+x.toFixed(1)+'" y1="'+(top+ph)+'" x2="'+x.toFixed(1)+'" y2="'+(top+ph+5)+'" stroke="#9a94a3"/>'+fsT(x,top+ph+19,fsNum(t),{a:'middle',fs:11})});
+  yt.forEach(function(t){var y=Y(t);s+='<line x1="'+L+'" y1="'+y.toFixed(1)+'" x2="'+(W-R)+'" y2="'+y.toFixed(1)+'" stroke="#eee9f0"/><line x1="'+(L-5)+'" y1="'+y.toFixed(1)+'" x2="'+L+'" y2="'+y.toFixed(1)+'" stroke="#9a94a3"/>'+fsT(L-9,y+4,fsNum(t),{a:'end',fs:11})});
+  pts.forEach(function(p){s+='<circle cx="'+X(p.x).toFixed(1)+'" cy="'+Y(p.y).toFixed(1)+'" r="5" fill="'+cv[p.v]+'" opacity="0.6"><title>'+ovEsc(p.v)+': sodium acrylate '+p.x+'%, acrylamide '+p.y+'%</title></circle>'});
+  s+='<line x1="'+L+'" y1="'+(top+ph)+'" x2="'+(W-R)+'" y2="'+(top+ph)+'" stroke="#9a94a3"/><line x1="'+L+'" y1="'+top+'" x2="'+L+'" y2="'+(top+ph)+'" stroke="#9a94a3"/>';
+  s+=fsT(L+pw/2,H-18,'Sodium acrylate (%)',{a:'middle',fs:13,c:'#211b26',w:600})+fsT(22,top+ph/2,'Acrylamide (%)',{a:'middle',fs:13,c:'#211b26',w:600,rot:1});
+  var lx=W-R-200,ly=top+12;s+='<rect x="'+(lx-12)+'" y="'+(ly-10)+'" width="210" height="'+(vk.length*19+14)+'" fill="#fff" stroke="#eee9f0"/>';
+  vk.forEach(function(v,i){s+='<circle cx="'+lx+'" cy="'+(ly+i*19+4)+'" r="5" fill="'+cv[v]+'"/>'+fsT(lx+12,ly+i*19+8,v,{fs:11.5,c:'#211b26'})});
+  return s+'</svg>'}
+function fsLegend(items){return '<div class="oleg" style="margin-top:6px">'+items.map(function(x){return '<span><i style="background:'+x[1]+'"></i>'+ovEsc(x[0])+'</span>'}).join('')+'</div>'}
+function fsMatrix(m){var mx=0;m.cells.forEach(function(r){r.forEach(function(v){if(v>mx)mx=v})});
+  var h='<div class="fsmtx"><table><tr><th class="fsax">Antibody target ↓ &nbsp; Clade →</th>';
+  m.cladesFull.forEach(function(c){h+='<th class="fsch"><div>'+ovEsc(c)+'</div></th>'});h+='</tr>';
+  m.targets.forEach(function(t,ri){h+='<tr><th class="fsrh">'+ovEsc(t)+'</th>';
+    m.cells[ri].forEach(function(v,ci){var op=v>0?(0.18+0.82*v/mx):0;var bg=v>0?'rgba(192,0,106,'+op.toFixed(2)+')':'#f4f1f5';var col=op>0.5?'#fff':'#8a004c';var c=m.cladesFull[ci];
+      h+='<td style="background:'+bg+';color:'+col+'" class="fsclk" title="'+ovEsc(t)+' in '+ovEsc(c)+': '+v+' species with a successful stain. Click to list the antibodies." onclick="sideCell('+ri+','+ci+')">'+(v>0?v:'')+'</td>'});h+='</tr>'});
+  h+='</table></div><div class="fsscale"><span>Species with a successful stain (n):</span><i style="background:#f4f1f5"></i><span>0</span>';
+  [1,Math.round(mx/2),mx].forEach(function(v){h+='<i style="background:rgba(192,0,106,'+(0.18+0.82*v/mx).toFixed(2)+')"></i><span>'+v+'</span>'});
+  return h+'</div>'}
+function fsAnimals(){var A=OVERVIEW2.anim,cats=OVERVIEW2.acats;function tt(o){return cats.reduce(function(s,c){return s+(A[o][c]||0)},0)}
+  var rows=Object.keys(A).sort(function(a,b){return tt(b)-tt(a)}).map(function(o){return {label:o,A:A[o]}});
+  return fsBars(rows,{segs:function(r){return cats.map(function(c){return [r.A[c]||0,ACOL[c],c]})},fmt:function(r){return tt(r.label)},xlab:'Distinct samples (n)',ylab:'Species',lw:210,inner:true})+fsLegend(cats.map(function(c){return [c,ACOL[c]]}))}
+var FIGS=null;
+function figDefs(){var D=OVERVIEW,O2=OVERVIEW2,CATd=D.CAT.filter(function(c){return c.label!=='other'}),M='#C0006A';
+  function one(col){return function(r){return [[r.value,col]]}}
+  var EXPMX=Math.max.apply(0,D.EXP.map(function(r){return Math.max(r.nom||0,r.mea||0)}));
+  var HC={sds:'#298576',pk:'#C0006A',both:'#500464',other:'#c9bfd4'};
+  FIGS={
+   pubs:{t:'Publications per year',draw:function(){return fsYears(O2.papersYear,{xlab:'Year of publication',ylab:'Papers (n)'})},data:O2.papersYear},
+   accum:{t:'Species accumulation',draw:function(){return fsYears(O2.accum,{line:1,xlab:'Year of first report',ylab:'Cumulative species (n)'})},data:O2.accum},
+   method:{t:'ExM method usage',draw:function(){return fsBars(D.D,{segs:one(M),fmt:function(r){return r.value},xlab:'Distinct species (n)',ylab:'ExM variant'})},data:D.D},
+   exp:{t:'Expansion factor: intended vs achieved',draw:function(){return fsBars(D.EXP,{rh:34,max:EXPMX,segs:function(r){return [[r.nom||0,'#ecc6da','median nominal']]},endv:function(r){return Math.max(r.nom||0,r.mea||0)},
+      over:function(r,X,y,rh){var bh=rh*0.62,yb=y+(rh-bh)/2;return r.mea?'<rect x="'+X(0).toFixed(1)+'" y="'+(yb+bh*0.45).toFixed(1)+'" width="'+(X(r.mea)-X(0)).toFixed(1)+'" height="'+(bh*0.55).toFixed(1)+'" fill="#C0006A"><title>'+ovEsc(r.label)+' · median measured: '+r.mea+'×</title></rect>':''},
+      fmt:function(r){return (r.nom?r.nom+'×':'–')+' → '+(r.mea?r.mea+'×':'–')+(r.n?'  (n = '+r.n+')':'')},xlab:'Median expansion factor (×)',ylab:'ExM variant'})+fsLegend([['median nominal (intended)','#ecc6da'],['median measured (achieved)','#C0006A']])+'<div class="fsst">n, protocol records with a measured expansion factor.</div>'},data:D.EXP},
+   hom:{t:'Denaturation strategy by method',draw:function(){return fsBars(D.HOM,{max:100,inner:true,unit:'%',segs:function(r){var t=(r.sds+r.pk+r.both+r.other)||1,f=t>100?100/t:1;return [[r.sds*f,HC.sds,'heat-SDS',r.sds],[r.pk*f,HC.pk,'Proteinase K',r.pk],[r.both*f,HC.both,'both',r.both],[r.other*f,HC.other,'other / not reported',r.other]]},endv:function(){return 100},fmt:function(r){return 'n = '+r.n+' protocols'},rw:190,xlab:'Protocols (%)',ylab:'ExM variant'})+fsLegend([['heat-SDS',HC.sds],['Proteinase K',HC.pk],['both',HC.both],['other / not reported',HC.other]])},data:D.HOM},
+   gel:{t:'Gel-chemistry space',draw:function(){return fsScatter(O2.gelPoints)},data:O2.gelPoints},
+   target:{t:'Antibody target landscape',hint:'Click a target to list its antibodies.',draw:function(){return fsBars(D.C,{segs:one(M),fmt:function(r){return r.value},xlab:'Distinct species (n)',ylab:'Primary-antibody target',click:function(r){return clk(function(){sideTarget(r.label)})}})},data:D.C},
+   cat:{t:'Marker categories',hint:'Click a category to list its antibodies.',draw:function(){return fsBars(CATd,{segs:one(M),fmt:function(r){return r.value},xlab:'Distinct primary antibodies (n)',ylab:'Biological category',click:function(r){return clk(function(){sideCat(r.label)})}})},data:CATd},
+   trans:{t:'Reagent transferability',hint:'Click an antibody to open its sheet.',draw:function(){return fsBars(D.TRANS,{lw:300,segs:one(M),lab:function(r){return r.label+(r.tgt?' ('+r.tgt+')':'')},fmt:function(r){return r.value+' clades'},xlab:'Clades in which the antibody was used (n)',ylab:'Antibody (target)',click:function(r){return clk(function(){sideName(r.label)})}})},data:D.TRANS},
+   diff:{t:'Where the difficulty is',draw:function(){return fsBars(D.DIFF,{segs:one('#C1A118'),rw:230,fmt:function(r){return r.value+'% ('+r.bad+' of '+r.n+' species; '+r.studies+' stud'+(r.studies===1?'y':'ies')+')'},xlab:'Species with a partial or failed expansion reported (%)',ylab:'Clade'})},data:D.DIFF},
+   mat:{t:'Reagent × clade coverage matrix',hint:'Click a cell to list the antibodies behind it.',draw:function(){return fsMatrix(D.MAT)},data:D.MAT.targets.map(function(t,ri){var o={target:t};D.MAT.cladesFull.forEach(function(c,ci){o[c]=D.MAT.cells[ri][ci]});return o})},
+   f1:{t:'Figure 1. Across the eukaryotic tree',draw:fsF1,data:f1Data()},
+   anim:{t:'Figure 2. In animals',draw:fsAnimals,data:Object.keys(O2.anim).map(function(o){var r={species:o};O2.acats.forEach(function(c){r[c]=O2.anim[o][c]||0});return r})}
+  }}
+function openFig(k){if(!FIGS)figDefs();var f=FIGS[k];if(!f)return;var card=document.querySelector('[data-fig="'+k+'"]');
+  var sub=card&&card.querySelector('.ocs')?card.querySelector('.ocs').innerHTML:'',foot=card&&card.querySelector('.ofoot')?card.querySelector('.ofoot').innerHTML:'';
+  fsSideClose();el('fst').textContent=f.t;el('fss').innerHTML=(f.hint?sub.replace(/ · click [^<]*$/,''):sub)+(f.hint?' <b style="color:var(--mag)">'+f.hint+'</b>':'');el('fsb').innerHTML=f.draw();el('fsf').innerHTML=foot;
+  el('fssvg').style.display=el('fsb').querySelector('svg')?'':'none';el('fsw').setAttribute('data-k',k);el('fsw').classList.add('on');document.body.style.overflow='hidden'}
+function closeFig(){var w=el('fsw');if(w&&w.classList.contains('on')){w.classList.remove('on');document.body.style.overflow=''}}
+function figSlug(k){return 'ExM_Explorer_'+FIGS[k].t.replace(/^Figure \d+\. /,'').replace(/[^A-Za-z0-9]+/g,'_').replace(/_+$/,'')}
+function figSVG(){var k=el('fsw').getAttribute('data-k'),sv=el('fsb').querySelector('svg');if(!sv)return;dl(figSlug(k)+'.svg',sv.outerHTML.replace(/ class="fsclk" onclick="[^"]*"/g,''))}
+function figCSV(){var k=el('fsw').getAttribute('data-k'),rows=FIGS[k].data||[];if(!rows.length)return;var cols=Object.keys(rows[0]);
+  dl(figSlug(k)+'.csv',cols.join(',')+'\n'+rows.map(function(r){return cols.map(function(c){var v=r[c]==null?'':String(r[c]);return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v}).join(',')}).join('\n'))}
+function fsBtn(k){return '<button class="fsbtn" onclick="openFig(\''+k+'\')" title="Open a full-page view with complete axes">⤢ Expand</button>'}
+
+/* ===== modal + global search ===== */
+function openModal(title,body,act){el('mtitle').innerHTML=title;el('mbody').innerHTML=body;el('mact').innerHTML=act||'';el('mwrap').classList.add('on')}
+function closeModal(){el('mwrap').classList.remove('on')}
+function globalSearch(){
+  var q=el('gq').value.trim().toLowerCase();var d=el('gdrop');
+  if(q.length<2){d.style.display='none';return}
+  var res=[];
+  SPECIES.forEach(function(s,i){if((s.sp+' '+(s.lin||'')).toLowerCase().indexOf(q)>=0)res.push(['species',s.sp,i])});
+  ABP.forEach(function(a,i){if(res.length<40&&[a.name,a.target,a.cat].filter(Boolean).join(' ').toLowerCase().indexOf(q)>=0)res.push(['antibody',a.name+' · '+(a.target||''),i])});
+  DYE.forEach(function(a,i){if(res.length<60&&[a.name,a.target,a.cat].filter(Boolean).join(' ').toLowerCase().indexOf(q)>=0)res.push(['dye',a.name+' · '+(a.target||a.type||''),i])});
+  PAPERS.forEach(function(p,i){if(res.length<80&&[p.title,p.fa,p.la,p.jr].filter(Boolean).join(' ').toLowerCase().indexOf(q)>=0)res.push(['paper',(p.fa||'')+' '+(p.yr||'')+' · '+(p.title||'').slice(0,42),i])});
+  res=res.slice(0,30);
+  d.innerHTML=res.length?res.map(function(r){return '<div class="gi" onclick="gGo(\''+r[0]+'\','+r[2]+')"><span class="gtag">'+r[0]+'</span>'+esc(r[1])+'</div>'}).join(''):'<div class="gi">No matches</div>';
+  d.style.display='block';
+}
+function gGo(type,i){el('gdrop').style.display='none';el('gq').value='';
+  if(type==='species'){switchTab('browse');openSpecies(i)}
+  else if(type==='dye'){switchTab('dye');openDye(i)}
+  else if(type==='paper'){switchTab('papers');openPaper(i)}
+  else{switchTab('antibodies');openAB(i,false)}}
+
+/* ===== tabs / panel / routing (#1) ===== */
+var currentTab='overview';
+var TABS=['overview','browse','antibodies','dye','papers','trends','methods'];
+function setHash(h){try{history.replaceState(null,'','#'+h)}catch(e){}}
+function switchTab(t){currentTab=t;TABS.forEach(function(x){
+  el('view-'+x).style.display=x===t?'':'none';
+  document.querySelector('.tab[data-tab="'+x+'"]').classList.toggle('on',x===t)});if(t==='papers')renderPapers();setHash(t);window.scrollTo(0,0)}
+function openPanel(){el('panel').classList.add('on');el('overlay').classList.add('on')}
+function closePanel(){el('panel').classList.remove('on');el('overlay').classList.remove('on');setHash(currentTab)}
+function applyHash(){
+  var h=(location.hash||'').replace(/^#/,'');if(!h)return;
+  var parts=h.split('/');var tab=parts[0];
+  if(TABS.indexOf(tab)<0)return;
+  switchTab(tab);
+  if(parts.length>=3){var type=parts[1],name=decodeURIComponent(parts.slice(2).join('/'));
+    if(type==='species'){var i=SPECIES.map(function(x){return x.sp}).indexOf(name);if(i>=0)openSpecies(i)}
+    else if(type==='antibody'){var j=ABP.map(function(x){return x.name}).indexOf(name);if(j>=0)openAB(j,false)}
+    else if(type==='dye'){var k=DYE.map(function(x){return x.name}).indexOf(name);if(k>=0)openDye(k)}
+    else if(type==='paper'){var m=PAPERS.map(function(x){return x.id}).indexOf(name);if(m>=0)openPaper(m)}
+  }
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeFig();closePanel();closeModal()}});
+window.addEventListener('hashchange',applyHash);
+el('mwrap').addEventListener('click',function(e){if(e.target===el('mwrap'))closeModal()});
+
+/* ===== init ===== */
+el('gq').addEventListener('input',globalSearch);
+el('ab-q').addEventListener('input',renderAB);
+el('ab-clade').addEventListener('change',renderAB);
+el('ab-cat').addEventListener('change',renderAB);
+el('ab-type').addEventListener('change',function(){el('ab-clade').selectedIndex=0;el('ab-cat').selectedIndex=0;el('ab-chan').selectedIndex=0;el('ab-homog').selectedIndex=0;el('ab-var').selectedIndex=0;renderAB()});
+el('ab-min').addEventListener('change',renderAB);
+el('ab-chan').addEventListener('change',renderAB);
+el('ab-homog').addEventListener('change',renderAB);
+el('ab-var').addEventListener('change',renderAB);
+el('dy-q').addEventListener('input',renderDye);
+el('dy-type').addEventListener('change',renderDye);
+el('dy-clade').addEventListener('change',renderDye);
+el('dy-min').addEventListener('change',renderDye);
+el('dy-chan').addEventListener('change',renderDye);
+el('pp-q').addEventListener('input',renderPapers);
+el('pp-group').addEventListener('change',renderPapers);
+(function(){var s=el('ab-clade');CLADES.filter(function(c){return c!=='Unknown'}).forEach(function(c){var o=document.createElement('option');o.value=c;o.textContent=c;s.appendChild(o)})})();
+(function(){var cnt={};ABP.concat(ABS).forEach(function(a){if(a.cat_g)cnt[a.cat_g]=(cnt[a.cat_g]||0)+1});
+  Object.keys(cnt).sort(function(a,b){return cnt[b]-cnt[a]}).forEach(function(c){var o=document.createElement('option');o.value=c;o.textContent=catLabel(c)+' ('+cnt[c]+')';el('ab-cat').appendChild(o)})})();
+(function(){var s=el('dy-clade');CLADES.filter(function(c){return c!=='Unknown'}).forEach(function(c){var o=document.createElement('option');o.value=c;o.textContent=c;s.appendChild(o)})})();
+(function(){var cnt={};DYE.forEach(function(a){if(a.type)cnt[a.type]=(cnt[a.type]||0)+1});
+  Object.keys(cnt).sort(function(a,b){return cnt[b]-cnt[a]}).forEach(function(t){var o=document.createElement('option');o.value=t;o.textContent=t.replace(/_/g,' ')+' ('+cnt[t]+')';el('dy-type').appendChild(o)})})();
+(function(){function fill(id,arr){var cnt={};arr.forEach(function(a){var c=channelOf(a.fl);if(c)cnt[c]=(cnt[c]||0)+1});var s=el(id);CHANORDER.forEach(function(c){if(cnt[c]){var o=document.createElement('option');o.value=c;o.textContent=c+' ('+cnt[c]+')';s.appendChild(o)}})}fill('ab-chan',ABP.concat(ABS));fill('dy-chan',DYE)})();
+(function(){var cnt={};ABP.concat(ABS).forEach(function(a){if(a.vmg)Object.keys(a.vmg).forEach(function(v){if(a.vmg[v][1]>0)cnt[v]=(cnt[v]||0)+1})});
+  Object.keys(cnt).sort(function(a,b){return cnt[b]-cnt[a]}).forEach(function(v){var o=document.createElement('option');o.value=v;o.textContent='Worked w/ '+v+' ('+cnt[v]+')';el('ab-var').appendChild(o)})})();
+renderOverview();buildSidebar();renderGrid();renderAB();renderDye();updateBasketCount();applyHash();
+</script>
+</body>
+</html>

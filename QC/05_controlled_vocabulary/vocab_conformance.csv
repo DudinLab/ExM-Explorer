@@ -1,0 +1,4 @@
+﻿field,in_controlled_vocab_pct,note
+clade,100.0,27 rows = Unknown (0.4%)
+exm_variant (canonical),61.2,"2618 rows = novel ""other:"" protocols (38.8%); well-formed 100.0%"
+protocol_outcome,100.0,success/partial/fail/null only

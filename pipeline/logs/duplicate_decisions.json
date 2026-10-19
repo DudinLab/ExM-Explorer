@@ -1,0 +1,842 @@
+{
+  "Aeschlimann1_bioRxiv_2022.pdf|||Aeschlimann2_bioRxiv_2022.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Aeschlimann1_bioRxiv_2022.pdf",
+    "remove": "Aeschlimann2_bioRxiv_2022.pdf",
+    "reason": "Both papers share the same DOI, title, authors, and venue, confirming they are identical works."
+  },
+  "Alon_Nanoscale_2021.pdf|||Miller_bioRxiv_2020.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Alon_Nanoscale_2021.pdf",
+    "remove": "Miller_bioRxiv_2020.pdf",
+    "reason": "Same authors, identical title, and same work published as a bioRxiv preprint (2020) and then in Science (2021); keeping the journal version."
+  },
+  "Alonso_ParasitologyResearch_2022.pdf|||Alonso_bioRxiv_2022.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Alonso_ParasitologyResearch_2022.pdf",
+    "remove": "Alonso_bioRxiv_2022.pdf",
+    "reason": "Identical title, same first/last author, and same year; the bioRxiv preprint was published as the Parasitology Research journal article."
+  },
+  "Amodeo_JournalofCellScience_2021.pdf|||Amodeo_bioRxiv_2020.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Amodeo_JournalofCellScience_2021.pdf",
+    "remove": "Amodeo_bioRxiv_2020.pdf",
+    "reason": "Same authors, identical title, and matching study; the bioRxiv preprint is the prior version of the Journal of Cell Science publication."
+  },
+  "Amodeo_bioRxiv_2020.pdf|||Llado-Santaeularia_JournalofCellScience_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Llado-Santaeularia_JournalofCellScience_2021.pdf",
+    "remove": "Amodeo_bioRxiv_2020.pdf",
+    "reason": "Same first and last authors, identical title, and the journal version (Journal of Cell Science, 2021) is the published form of the bioRxiv preprint (2020)."
+  },
+  "Apicomplexa_mBio_2021.pdf|||Pacheco_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Apicomplexa_mBio_2021.pdf",
+    "remove": "Pacheco_bioRxiv_2021.pdf",
+    "reason": "Same first and last authors, identical title, same year \u2014 preprint and published journal version of the same work."
+  },
+  "Arrizabalaga_bioRxiv_2024.pdf|||Souza_PLOSPathogens_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Souza_PLOSPathogens_2024.pdf",
+    "remove": "Arrizabalaga_bioRxiv_2024.pdf",
+    "reason": "Identical title, same first and last authors, same year \u2014 preprint and published journal version of the same work."
+  },
+  "Asano_NatureCommunications_2025.pdf|||Lu_bioRxiv_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Asano_NatureCommunications_2025.pdf",
+    "remove": "Lu_bioRxiv_2024.pdf",
+    "reason": "Same title, same first and last authors, with the bioRxiv preprint (2024) published as a journal article in Nature Communications (2025)."
+  },
+  "Atchou_JournalofCellScience_2023.pdf|||Atchou_bioRxiv_2023.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Atchou_JournalofCellScience_2023.pdf",
+    "remove": "Atchou_bioRxiv_2023.pdf",
+    "reason": "Same first and last authors, nearly identical title, same year, with one being a bioRxiv preprint and the other the published journal version."
+  },
+  "Azimzadeh1_eLife_2021.pdf|||Gaudin_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Azimzadeh1_eLife_2021.pdf",
+    "remove": "Gaudin_bioRxiv_2021.pdf",
+    "reason": "Same title, authors, and work published as a bioRxiv preprint (2021) and then in eLife (2022); keeping the journal version."
+  },
+  "Batman_PLOSBiology_2025.pdf|||Biozentrum_bioRxiv_2025.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Batman_PLOSBiology_2025.pdf",
+    "remove": "Biozentrum_bioRxiv_2025.pdf",
+    "reason": "Same authors, identical title, and same year with one being the PLoS Biology journal publication and the other a bioRxiv preprint of the same work."
+  },
+  "Bertiaux_PLOSBiology_2021.pdf|||Plasmodium_bioRxiv_2020.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Bertiaux_PLOSBiology_2021.pdf",
+    "remove": "Plasmodium_bioRxiv_2020.pdf",
+    "reason": "Same first and last authors, identical title, and matching content published as a bioRxiv preprint in 2020 and then in PLoS Biology in 2021."
+  },
+  "Bezler_MolecularBiologyoftheCell_2022.pdf|||Lausanne_bioRxiv_2022.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Bezler_MolecularBiologyoftheCell_2022.pdf",
+    "remove": "Lausanne_bioRxiv_2022.pdf",
+    "reason": "Same authors, identical title, and same year with one being the journal version and the other the bioRxiv preprint."
+  },
+  "BioMediTech_bioRxiv_2022.pdf|||Vihinen-Rantac_MolecularBiologyoftheCell_2023.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Vihinen-Rantac_MolecularBiologyoftheCell_2023.pdf",
+    "remove": "BioMediTech_bioRxiv_2022.pdf",
+    "reason": "Identical title and authors with same first/last author; the bioRxiv preprint was subsequently published in Molecular Biology of the Cell."
+  },
+  "Biosciences_bioRxiv_2024.pdf|||Mechanistically_NatureCommunications_2025.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Mechanistically_NatureCommunications_2025.pdf",
+    "remove": "Biosciences_bioRxiv_2024.pdf",
+    "reason": "Same first and last authors with nearly identical titles; the bioRxiv preprint was published as a journal article in Nature Communications."
+  },
+  "Birmingham_bioRxiv_2021.pdf|||Faulkner_JournalofCellScience_2022.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Faulkner_JournalofCellScience_2022.pdf",
+    "remove": "Birmingham_bioRxiv_2021.pdf",
+    "reason": "Same first and last authors, identical title, and the bioRxiv preprint was published as a journal article in Journal of Cell Science the following year."
+  },
+  "Blauwkamp_NatureCommunications_2025.pdf|||Blauwkamp_ResearchSquare_2025.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Blauwkamp_NatureCommunications_2025.pdf",
+    "remove": "Blauwkamp_ResearchSquare_2025.pdf",
+    "reason": "Same authors, identical title, and the Research Square preprint was published in Nature Communications; keeping the journal version."
+  },
+  "Blauwkamp_NatureCommunications_2025.pdf|||Blauwkamp_bioRxiv_2025.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Blauwkamp_NatureCommunications_2025.pdf",
+    "remove": "Blauwkamp_bioRxiv_2025.pdf",
+    "reason": "Same authors, identical title, and same year \u2014 preprint and journal version of the same work; keeping the Nature Communications publication."
+  },
+  "Blauwkamp_ResearchSquare_2025.pdf|||Blauwkamp_bioRxiv_2025.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Blauwkamp_ResearchSquare_2025.pdf",
+    "remove": "Blauwkamp_bioRxiv_2025.pdf",
+    "reason": "Same title, authors, and year; both are preprints of the same work, but the Research Square version is noted as published in Nature Communications, making it the more advanced version to retain."
+  },
+  "Blauwkamp_bioRxiv_2024.pdf|||Blauwkamp_mSphere_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Blauwkamp_mSphere_2024.pdf",
+    "remove": "Blauwkamp_bioRxiv_2024.pdf",
+    "reason": "Same first and last authors, virtually identical title, same year \u2014 preprint and journal (mSphere) version of the same work."
+  },
+  "Bonn_Nanoscale_2022.pdf|||Bonn_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Bonn_Nanoscale_2022.pdf",
+    "remove": "Bonn_bioRxiv_2021.pdf",
+    "reason": "Same authors and identical title; the bioRxiv preprint (2021) was published as the journal version in Development (2022)."
+  },
+  "Bos_bioRxiv_2023.pdf|||EM_PlantPhysiology_2003.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "EM_PlantPhysiology_2003.pdf",
+    "remove": "Bos_bioRxiv_2023.pdf",
+    "reason": "Same first and last authors, same year, near-identical titles, with one being a bioRxiv preprint and the other the published journal version in Plant Physiology."
+  },
+  "Bournonville_NatureCommunications_2025.pdf|||Hamel_bioRxiv_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Bournonville_NatureCommunications_2025.pdf",
+    "remove": "Hamel_bioRxiv_2024.pdf",
+    "reason": "Same first and last authors with nearly identical titles (only 'structural integrity' vs 'cohesion' differs), journal version supersedes the bioRxiv preprint."
+  },
+  "Brzozowski1_ActaNeuropathologicaCommunications_2021.pdf|||Brzozowski_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Brzozowski1_ActaNeuropathologicaCommunications_2021.pdf",
+    "remove": "Brzozowski_bioRxiv_2021.pdf",
+    "reason": "Identical title and authors; the bioRxiv preprint is the same work subsequently published in Acta Neuropathologica Communications."
+  },
+  "Bullard_CellReportsMethods_2024.pdf|||Bullarda_bioRxiv_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Bullard_CellReportsMethods_2024.pdf",
+    "remove": "Bullarda_bioRxiv_2024.pdf",
+    "reason": "Same title, authors, and year with matching first/last authors; the Cell Reports Methods version is the peer-reviewed journal publication of the bioRxiv preprint."
+  },
+  "Calcineurin_JournalofCellScience_2023.pdf|||Tsekitsidou_bioRxiv_2022.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Calcineurin_JournalofCellScience_2023.pdf",
+    "remove": "Tsekitsidou_bioRxiv_2022.pdf",
+    "reason": "Same authors, identical title, and same research work published first as a bioRxiv preprint (2022) then in Journal of Cell Science (2023)."
+  },
+  "Campbell_PLOSNeglectedTropicalDiseases_2023.pdf|||Campbell_bioRxiv_2023.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Campbell_PLOSNeglectedTropicalDiseases_2023.pdf",
+    "remove": "Campbell_bioRxiv_2023.pdf",
+    "reason": "Same authors, identical title, and same year with one being a bioRxiv preprint and the other the published journal version in PLOS Neglected Tropical Diseases."
+  },
+  "Campus_JournalofCellScience_2024.pdf|||Reza_bioRxiv_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Campus_JournalofCellScience_2024.pdf",
+    "remove": "Reza_bioRxiv_2024.pdf",
+    "reason": "Same first and last authors, near-identical titles, same year, with one being the journal-published version and the other a bioRxiv preprint of the same work."
+  },
+  "Cardenas_eLife_2023.pdf|||Pereda_bioRxiv_2023.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Cardenas_eLife_2023.pdf",
+    "remove": "Pereda_bioRxiv_2023.pdf",
+    "reason": "Identical title and authors; the bioRxiv preprint was published as the final journal article in eLife."
+  },
+  "Chen2_bioRxiv_2020.pdf|||Technologies_ResearchSquare_2020.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Technologies_ResearchSquare_2020.pdf",
+    "remove": "Chen2_bioRxiv_2020.pdf",
+    "reason": "Same title, authors, and year with identical scientific content posted as preprints on two platforms; the Research Square version is associated with the published Nature Methods 2021 journal article and is thus the more advanced version to retain."
+  },
+  "Chen2_bioRxiv_2020.pdf|||Zhovmer1_NatureMethods_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Zhovmer1_NatureMethods_2021.pdf",
+    "remove": "Chen2_bioRxiv_2020.pdf",
+    "reason": "Same authors, identical title, and same work published first as a bioRxiv preprint then as a Nature Methods journal article."
+  },
+  "Chen_ResearchSquare_2023.pdf|||Wang_ScientificReports_2023.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Wang_ScientificReports_2023.pdf",
+    "remove": "Chen_ResearchSquare_2023.pdf",
+    "reason": "Identical title and authors with same year; the Research Square entry is a preprint of the Scientific Reports journal publication."
+  },
+  "Cheng_MicrobialCell_2023.pdf|||Zhao_ResearchSquare_2023.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Cheng_MicrobialCell_2023.pdf",
+    "remove": "Zhao_ResearchSquare_2023.pdf",
+    "reason": "Same title and year; the Research Square entry is the preprint of the Advanced Science journal publication, so the journal version should be kept."
+  },
+  "Ching1_eLife_2021.pdf|||Ching_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Ching1_eLife_2021.pdf",
+    "remove": "Ching_bioRxiv_2021.pdf",
+    "reason": "Same authors and identical title; the bioRxiv preprint was published as the eLife journal article, so the journal version is kept."
+  },
+  "Damstra_NatureMethods_2023.pdf|||Utrecht_bioRxiv_2022.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Damstra_NatureMethods_2023.pdf",
+    "remove": "Utrecht_bioRxiv_2022.pdf",
+    "reason": "Same authors, identical title, and same work published first as a bioRxiv preprint then in Nature Methods."
+  },
+  "Damstra_bioRxiv_2021.pdf|||Kapitein1_eLife_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Kapitein1_eLife_2021.pdf",
+    "remove": "Damstra_bioRxiv_2021.pdf",
+    "reason": "Same authors and identical title; the bioRxiv preprint was published as a journal article in eLife, so the journal version is kept."
+  },
+  "Dave_Cells_2022.pdf|||Dave_bioRxiv_2022.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Dave_Cells_2022.pdf",
+    "remove": "Dave_bioRxiv_2022.pdf",
+    "reason": "Same first and last authors, identical title, and same year \u2014 the bioRxiv preprint was published as a journal article in Cells."
+  },
+  "Day_bioRxiv_2023.pdf|||Day_eLife_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Day_eLife_2024.pdf",
+    "remove": "Day_bioRxiv_2023.pdf",
+    "reason": "Same authors, identical title, and matching content \u2014 preprint (bioRxiv 2023) and published journal version (eLife 2024) of the same work."
+  },
+  "Drelich1_AnalyticalChemistry_2021.pdf|||Drelich_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Drelich1_AnalyticalChemistry_2021.pdf",
+    "remove": "Drelich_bioRxiv_2021.pdf",
+    "reason": "Same first and last authors with nearly identical titles and year; the bioRxiv preprint is the pre-publication version of the Analytical Chemistry journal article."
+  },
+  "Drelich2_AnalyticalChemistry_2021.pdf|||Drelich_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Drelich2_AnalyticalChemistry_2021.pdf",
+    "remove": "Drelich_bioRxiv_2021.pdf",
+    "reason": "Same first and last authors, near-identical title, same year, with one being the journal-published version and the other the bioRxiv preprint of the same work."
+  },
+  "Dwivedi_NatureCommunications_2023.pdf|||Dwivedi_bioRxiv_2022.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Dwivedi_NatureCommunications_2023.pdf",
+    "remove": "Dwivedi_bioRxiv_2022.pdf",
+    "reason": "Same authors, identical title, and same work published first as a bioRxiv preprint (2022) then in Nature Communications (2023)."
+  },
+  "Eloy_NatureCommunications_2023.pdf|||Louvel_bioRxiv_2022.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Eloy_NatureCommunications_2023.pdf",
+    "remove": "Louvel_bioRxiv_2022.pdf",
+    "reason": "Same authors and virtually identical title; the bioRxiv preprint (2022) is the earlier version of the Nature Communications journal publication (2023)."
+  },
+  "Engelberg_bioRxiv_2024.pdf|||Engelberg_mBio_2025.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Engelberg_mBio_2025.pdf",
+    "remove": "Engelberg_bioRxiv_2024.pdf",
+    "reason": "Same first and last authors with identical title (minor hyphenation difference), same work published as bioRxiv preprint then in mBio journal."
+  },
+  "FLRT_NatureCommunications_2024.pdf|||FLRT_bioRxiv_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "FLRT_NatureCommunications_2024.pdf",
+    "remove": "FLRT_bioRxiv_2024.pdf",
+    "reason": "Same title, authors, and year with one being a bioRxiv preprint and the other the published journal version in Nature Communications."
+  },
+  "Gao1_bioRxiv_2018.pdf|||Gao_ACSNano_2018.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Gao_ACSNano_2018.pdf",
+    "remove": "Gao1_bioRxiv_2018.pdf",
+    "reason": "Same authors, identical title, and same year \u2014 the bioRxiv preprint and ACS Nano journal publication are the same work."
+  },
+  "Garlick1_ScientificReports_2022.pdf|||Garlick_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Garlick1_ScientificReports_2022.pdf",
+    "remove": "Garlick_bioRxiv_2021.pdf",
+    "reason": "Same authors and identical title; the bioRxiv preprint was published as a journal article in Scientific Reports."
+  },
+  "Ghisleni_NatureCommunications_2024.pdf|||Ghisleni_ResearchSquare_2023.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Ghisleni_NatureCommunications_2024.pdf",
+    "remove": "Ghisleni_ResearchSquare_2023.pdf",
+    "reason": "Same first and last authors, virtually identical titles, and the Research Square preprint was explicitly published as the 2024 Nature Communications article."
+  },
+  "Ghisleni_NatureCommunications_2024.pdf|||Ghisleni_bioRxiv_2023.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Ghisleni_NatureCommunications_2024.pdf",
+    "remove": "Ghisleni_bioRxiv_2023.pdf",
+    "reason": "Same first and last authors with nearly identical titles; the bioRxiv preprint (2023) was published as the Nature Communications journal article (2024)."
+  },
+  "Ghisleni_ResearchSquare_2023.pdf|||Ghisleni_bioRxiv_2023.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Ghisleni_ResearchSquare_2023.pdf",
+    "remove": "Ghisleni_bioRxiv_2023.pdf",
+    "reason": "Same title, authors, and year with identical scientific work posted as both a ResearchSquare preprint (linked to the published Nature Communications 2024 version) and a bioRxiv preprint; keeping ResearchSquare as it is associated with the final journal publication."
+  },
+  "GmbH_EuropeanJournalofNeuroscience_2024.pdf|||Hofbauer_bioRxiv_2023.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "GmbH_EuropeanJournalofNeuroscience_2024.pdf",
+    "remove": "Hofbauer_bioRxiv_2023.pdf",
+    "reason": "Same first and last authors with nearly identical titles (PDF/pigment-dispersing factor, same subject matter), preprint 2023 published as journal article in European Journal of Neuroscience 2024."
+  },
+  "Gorilak_OpenBiology_2021.pdf|||Gorilaka_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Gorilak_OpenBiology_2021.pdf",
+    "remove": "Gorilaka_bioRxiv_2021.pdf",
+    "reason": "Same authors, identical title, and same year with one being the journal version (Open Biology) and the other the preprint (bioRxiv)."
+  },
+  "Grinsven_bioRxiv_2025.pdf|||Katrukha_CurrentBiology_2026.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Katrukha_CurrentBiology_2026.pdf",
+    "remove": "Grinsven_bioRxiv_2025.pdf",
+    "reason": "Same title, same first and last authors, with the bioRxiv preprint subsequently published in Current Biology."
+  },
+  "Guo_CellularandMolecularLifeSciences_2024.pdf|||Toulouse_bioRxiv_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Guo_CellularandMolecularLifeSciences_2024.pdf",
+    "remove": "Toulouse_bioRxiv_2024.pdf",
+    "reason": "Same title, same first and last authors, with the journal version (2025) being the published form of the bioRxiv preprint (2024)."
+  },
+  "Guo_NatureCommunications_2025.pdf|||Guoa_bioRxiv_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Guo_NatureCommunications_2025.pdf",
+    "remove": "Guoa_bioRxiv_2024.pdf",
+    "reason": "Same title, authors, and research work published first as a bioRxiv preprint and then in Nature Communications; keep the journal version."
+  },
+  "Gurung1_bioRxiv_2026.pdf|||Gurung2_bioRxiv_2026.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Gurung1_bioRxiv_2026.pdf",
+    "remove": "Gurung2_bioRxiv_2026.pdf",
+    "reason": "Both papers share the same DOI, title, authors, and publication year, confirming they are the same work."
+  },
+  "G\u00f6tz1_NatureCommunications_2020.pdf|||Kozjak-Pavlovic_bioRxiv_2020.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "G\u00f6tz1_NatureCommunications_2020.pdf",
+    "remove": "Kozjak-Pavlovic_bioRxiv_2020.pdf",
+    "reason": "Same title, authors, and year with the journal version (Nature Communications) and its bioRxiv preprint."
+  },
+  "Heil1_bioRxiv_2021.pdf|||Heil2_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Heil2_bioRxiv_2021.pdf",
+    "remove": "Heil1_bioRxiv_2021.pdf",
+    "reason": "Both papers share the same DOI (10.1101/2021.02.16.431449), indicating they are the same work; the second file has a more specific title suggesting it is a later version."
+  },
+  "Herrmann1_FrontiersinCellandDevelopmentalBiology_2020.pdf|||tobia_bioRxiv_2020.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Herrmann1_FrontiersinCellandDevelopmentalBiology_2020.pdf",
+    "remove": "tobia_bioRxiv_2020.pdf",
+    "reason": "Same authors, identical title, and same year \u2014 preprint (bioRxiv) and published journal version (Frontiers) of the same work."
+  },
+  "Hinterndorfer_JournalofCellScience_2022.pdf|||Hinterndorfer_bioRxiv_2022.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Hinterndorfer_JournalofCellScience_2022.pdf",
+    "remove": "Hinterndorfer_bioRxiv_2022.pdf",
+    "reason": "Same first and last authors, near-identical title, same year, with one being the bioRxiv preprint and the other the published journal version."
+  },
+  "Houben_bioRxiv_2020.pdf|||Kubalov\u00e11_ChromosomeResearch_2020.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Kubalov\u00e11_ChromosomeResearch_2020.pdf",
+    "remove": "Houben_bioRxiv_2020.pdf",
+    "reason": "Identical title, authors, and year with the journal version (Chromosome Research) being the published form of the bioRxiv preprint."
+  },
+  "Hu1_bioRxiv_2024.pdf|||Padilla_JournalofCellScience_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Padilla_JournalofCellScience_2024.pdf",
+    "remove": "Hu1_bioRxiv_2024.pdf",
+    "reason": "Same authors, identical title, and same year with one being a bioRxiv preprint and the other the published journal version."
+  },
+  "Hu_MolecularBiologyoftheCell_2024.pdf|||Hu_bioRxiv_2023.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Hu_MolecularBiologyoftheCell_2024.pdf",
+    "remove": "Hu_bioRxiv_2023.pdf",
+    "reason": "Identical title and last author with year within \u00b11; the bioRxiv preprint was published as the journal article in Molecular Biology of the Cell."
+  },
+  "Iwanski_JournalofCellScience_2025.pdf|||Iwanski_bioRxiv_2025.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Iwanski_JournalofCellScience_2025.pdf",
+    "remove": "Iwanski_bioRxiv_2025.pdf",
+    "reason": "Same title, authors, and year with one being the journal-published version and the other a bioRxiv preprint of the same work."
+  },
+  "Jalalvand1_eLife_2021.pdf|||Jalalvand_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Jalalvand1_eLife_2021.pdf",
+    "remove": "Jalalvand_bioRxiv_2021.pdf",
+    "reason": "Same first and last authors with near-identical titles; the bioRxiv preprint was published as the eLife journal article."
+  },
+  "Kabatas_bioRxiv_2017.pdf|||Truckenbrodt1_EMBOReports_2018.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Truckenbrodt1_EMBOReports_2018.pdf",
+    "remove": "Kabatas_bioRxiv_2017.pdf",
+    "reason": "Same first and last authors, nearly identical title, and the 2018 EMBO Reports paper is the peer-reviewed journal version of the 2017 bioRxiv preprint."
+  },
+  "Kao_ScientificReports_2019.pdf|||Kao_bioRxiv_2019.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Kao_ScientificReports_2019.pdf",
+    "remove": "Kao_bioRxiv_2019.pdf",
+    "reason": "Same first and last authors, near-identical title, same year, with the Scientific Reports version being the peer-reviewed journal publication of the bioRxiv preprint."
+  },
+  "Karagiannis1_bioRxiv_2019.pdf|||Karagiannis2_bioRxiv_2019.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Karagiannis1_bioRxiv_2019.pdf",
+    "remove": "Karagiannis2_bioRxiv_2019.pdf",
+    "reason": "Both papers share the same DOI (10.1101/829903), confirming they are identical works."
+  },
+  "Katrukha1_eLife_2021.pdf|||Katrukha_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Katrukha1_eLife_2021.pdf",
+    "remove": "Katrukha_bioRxiv_2021.pdf",
+    "reason": "Same title, authors, and year with identical work published as both a bioRxiv preprint and a peer-reviewed eLife article."
+  },
+  "Kurz_bioRxiv_2019.pdf|||Zwettler1_NatureCommunications_2020.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Zwettler1_NatureCommunications_2020.pdf",
+    "remove": "Kurz_bioRxiv_2019.pdf",
+    "reason": "Identical title and first author with preprint (bioRxiv 2019) later published in Nature Communications (2020); keep the journal version."
+  },
+  "Lemaitre_bioRxiv_2025.pdf|||Mean_CellReports_2026.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Mean_CellReports_2026.pdf",
+    "remove": "Lemaitre_bioRxiv_2025.pdf",
+    "reason": "Same first and last authors with identical title; bioRxiv preprint subsequently published in Cell Reports."
+  },
+  "Li_NatureMethods_2020.pdf|||Sun_bioRxiv_2020.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Li_NatureMethods_2020.pdf",
+    "remove": "Sun_bioRxiv_2020.pdf",
+    "reason": "Same title, same first and last authors, with the bioRxiv preprint being the earlier version of the Nature Methods journal publication."
+  },
+  "Liffner1_bioRxiv_2021.pdf|||Liffner2_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Liffner1_bioRxiv_2021.pdf",
+    "remove": "Liffner2_bioRxiv_2021.pdf",
+    "reason": "Identical DOI, title, authors, year, and venue confirm these are the same paper."
+  },
+  "Liffner1_bioRxiv_2021.pdf|||Liffner_Microorganisms_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Liffner_Microorganisms_2021.pdf",
+    "remove": "Liffner1_bioRxiv_2021.pdf",
+    "reason": "Same first and last authors, identical title, same year \u2014 bioRxiv preprint and published journal version of the same work."
+  },
+  "Liffner2_bioRxiv_2021.pdf|||Liffner_Microorganisms_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Liffner_Microorganisms_2021.pdf",
+    "remove": "Liffner2_bioRxiv_2021.pdf",
+    "reason": "Same first and last authors, identical title, same year \u2014 preprint and published journal version of the same work."
+  },
+  "Liffner_bioRxiv_2023.pdf|||Liffner_eLife_2023.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Liffner_eLife_2023.pdf",
+    "remove": "Liffner_bioRxiv_2023.pdf",
+    "reason": "Same authors, identical title, and same year with one being a bioRxiv preprint and the other the peer-reviewed eLife journal publication."
+  },
+  "Liffner_bioRxiv_2024.pdf|||Liffner_npjImaging_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Liffner_npjImaging_2024.pdf",
+    "remove": "Liffner_bioRxiv_2024.pdf",
+    "reason": "Same authors, identical title, and same year with one being a bioRxiv preprint and the other the published journal version."
+  },
+  "Lim1_PLOSBiology_2019.pdf|||Lim_bioRxiv_2019.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Lim1_PLOSBiology_2019.pdf",
+    "remove": "Lim_bioRxiv_2019.pdf",
+    "reason": "Same first and last authors, identical title, and same year with one being the published journal version and the other the bioRxiv preprint."
+  },
+  "Lisa_bioRxiv_2024.pdf|||Thornlow_Cells_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Thornlow_Cells_2024.pdf",
+    "remove": "Lisa_bioRxiv_2024.pdf",
+    "reason": "Same first and last authors with nearly identical titles; the bioRxiv preprint was published as a journal article in ACS Central Science."
+  },
+  "Liu1_eLife_2020.pdf|||Liu_bioRxiv_2020.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Liu1_eLife_2020.pdf",
+    "remove": "Liu_bioRxiv_2020.pdf",
+    "reason": "Identical title and authors; the bioRxiv preprint was subsequently published in eLife, so the journal version should be kept."
+  },
+  "Mahecic1_NatureMethods_2020.pdf|||Mahecic2_NatureMethods_2020.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Mahecic2_NatureMethods_2020.pdf",
+    "remove": "Mahecic1_NatureMethods_2020.pdf",
+    "reason": "Same title, authors, and year with one being a bioRxiv preprint and the other the published Nature Methods journal version."
+  },
+  "Mahecic1_NatureMethods_2020.pdf|||Mahecic_bioRxiv_2020.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Mahecic1_NatureMethods_2020.pdf",
+    "remove": "Mahecic_bioRxiv_2020.pdf",
+    "reason": "Both papers share the same DOI, title, and authors, indicating they are identical works."
+  },
+  "Mahecic2_NatureMethods_2020.pdf|||Mahecic_bioRxiv_2020.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Mahecic2_NatureMethods_2020.pdf",
+    "remove": "Mahecic_bioRxiv_2020.pdf",
+    "reason": "Same title, authors, and year with one being the bioRxiv preprint and the other the published Nature Methods journal version."
+  },
+  "Mahen1_PLOSBiology_2022.pdf|||Mahen_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Mahen1_PLOSBiology_2022.pdf",
+    "remove": "Mahen_bioRxiv_2021.pdf",
+    "reason": "Same title, same first/last author, and the bioRxiv preprint is the prior version of the PLoS Biology journal publication."
+  },
+  "McCafferty1_Cells_2026.pdf|||McCafferty2_Cells_2026.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "McCafferty1_Cells_2026.pdf",
+    "remove": "McCafferty2_Cells_2026.pdf",
+    "reason": "Both papers share the same DOI, identical title, and identical authors, confirming they are the same work."
+  },
+  "Mercey1_bioRxiv_2021.pdf|||Mercey2_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Mercey1_bioRxiv_2021.pdf",
+    "remove": "Mercey2_bioRxiv_2021.pdf",
+    "reason": "Both papers share the identical DOI, title, authors, and year, confirming they are the same work."
+  },
+  "Mercey_CellReportsMethods_2026.pdf|||Mercey_bioRxiv_2025.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Mercey_CellReportsMethods_2026.pdf",
+    "remove": "Mercey_bioRxiv_2025.pdf",
+    "reason": "Same authors and nearly identical title; the bioRxiv preprint was published as a journal article in Cell Reports Methods."
+  },
+  "Mestre_BiomedicalOpticsExpress_2025.pdf|||Mestre_bioRxiv_2025.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Mestre_BiomedicalOpticsExpress_2025.pdf",
+    "remove": "Mestre_bioRxiv_2025.pdf",
+    "reason": "Same title, same first and last authors, with the bioRxiv version being the preprint of the journal-published Biomedical Optics Express article."
+  },
+  "Mitchell1_bioRxiv_2026.pdf|||Mitchell2_bioRxiv_2026.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Mitchell1_bioRxiv_2026.pdf",
+    "remove": "Mitchell2_bioRxiv_2026.pdf",
+    "reason": "Identical DOI, title, authors, and year confirm these are the same paper."
+  },
+  "Morano_bioRxiv_2024.pdf|||Morano_mBio_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Morano_mBio_2024.pdf",
+    "remove": "Morano_bioRxiv_2024.pdf",
+    "reason": "Same first and last authors with nearly identical titles (only 'Dyn2' vs 'PfDyn2' difference), clearly a preprint and its published journal version."
+  },
+  "Odenwald_bioRxiv_2023.pdf|||Odenwald_eLife_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Odenwald_eLife_2024.pdf",
+    "remove": "Odenwald_bioRxiv_2023.pdf",
+    "reason": "Same authors, identical title, and same work published first as a bioRxiv preprint then as a peer-reviewed eLife article."
+  },
+  "Patch_ScientificReports_2025.pdf|||Vardalaki_bioRxiv_2023.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Patch_ScientificReports_2025.pdf",
+    "remove": "Vardalaki_bioRxiv_2023.pdf",
+    "reason": "Same authors, identical title, and same work published first as a bioRxiv preprint (2023) and then in Scientific Reports (2025)."
+  },
+  "Pernal1_bioRxiv_2019.pdf|||Pernal2_bioRxiv_2019.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Pernal1_bioRxiv_2019.pdf",
+    "remove": "Pernal2_bioRxiv_2019.pdf",
+    "reason": "Identical DOI confirms these are the same paper."
+  },
+  "Prague_bioRxiv_2024.pdf|||Soukup_ExperimentalParasitology_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Soukup_ExperimentalParasitology_2024.pdf",
+    "remove": "Prague_bioRxiv_2024.pdf",
+    "reason": "Same first and last authors, nearly identical title, same year, with the bioRxiv preprint published as a journal article in Experimental Parasitology."
+  },
+  "Pudlowski_bioRxiv_2024.pdf|||Pudlowski_eLife_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Pudlowski_eLife_2024.pdf",
+    "remove": "Pudlowski_bioRxiv_2024.pdf",
+    "reason": "Same title, authors, and year with one being a bioRxiv preprint and the other the published eLife journal version."
+  },
+  "Rashpa_PLOSPathogens_2022.pdf|||Rashpa_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Rashpa_PLOSPathogens_2022.pdf",
+    "remove": "Rashpa_bioRxiv_2021.pdf",
+    "reason": "Same first and last authors with nearly identical titles; the bioRxiv preprint (2021) is the preprint version of the PLoS Pathogens journal article (2022)."
+  },
+  "Rashpa_bioRxiv_2023.pdf|||Rashpa_mBio_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Rashpa_mBio_2024.pdf",
+    "remove": "Rashpa_bioRxiv_2023.pdf",
+    "reason": "Same authors, virtually identical title, and same first/last author pair; the mBio 2024 publication is the peer-reviewed journal version of the 2023 bioRxiv preprint."
+  },
+  "Rizzoli_ResearchSquare_2022.pdf|||ksaal_bioRxiv_2022.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Rizzoli_ResearchSquare_2022.pdf",
+    "remove": "ksaal_bioRxiv_2022.pdf",
+    "reason": "Same title, same first and last authors, same year, both preprints of the same work later published in Scientific Reports 2023; keeping the Research Square version as it is closer to the final publication."
+  },
+  "Schaffer1_bioRxiv_2021.pdf|||Schaffer2_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Schaffer1_bioRxiv_2021.pdf",
+    "remove": "Schaffer2_bioRxiv_2021.pdf",
+    "reason": "Both papers share the same DOI, title, authors, and year, confirming they are identical works."
+  },
+  "Schweizer_bioRxiv_2020.pdf|||Toulouse_NatureCommunications_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Toulouse_NatureCommunications_2021.pdf",
+    "remove": "Schweizer_bioRxiv_2020.pdf",
+    "reason": "Same authors, identical title, and same work published first as a bioRxiv preprint (2020) then in Nature Communications (2021)."
+  },
+  "Seo1_bioRxiv_2021.pdf|||Seo2_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Seo1_bioRxiv_2021.pdf",
+    "remove": "Seo2_bioRxiv_2021.pdf",
+    "reason": "Both papers share the same DOI (10.1101/2021.01.27.428247), identical title, and identical authors, confirming they are the same work."
+  },
+  "Sheard1_bioRxiv_2021.pdf|||Sheard2_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Sheard1_bioRxiv_2021.pdf",
+    "remove": "Sheard2_bioRxiv_2021.pdf",
+    "reason": "Both papers share the identical DOI, title, authors, and venue, confirming they are the same work."
+  },
+  "Sheard_Nanoscale_2023.pdf|||Sheard_bioRxiv_2023.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Sheard_Nanoscale_2023.pdf",
+    "remove": "Sheard_bioRxiv_2023.pdf",
+    "reason": "Same authors, identical title, and same year \u2014 the bioRxiv preprint and Nanoscale journal article represent the same work; keeping the peer-reviewed journal version."
+  },
+  "Shi_JournalofCellBiology_2021.pdf|||Shi_bioRxiv_2019.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Shi_JournalofCellBiology_2021.pdf",
+    "remove": "Shi_bioRxiv_2019.pdf",
+    "reason": "Same title, authors, and topic with the journal version (2021) being the published form of the bioRxiv preprint (2019)."
+  },
+  "Sim1_bioRxiv_2021.pdf|||Sim2_bioRxiv_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Sim2_bioRxiv_2021.pdf",
+    "remove": "Sim1_bioRxiv_2021.pdf",
+    "reason": "Both papers share the same DOI (10.1101/2021.05.18.443629), indicating they are different versions of the same preprint; the 2022 version with the updated title is the later version to keep."
+  },
+  "Sim2_bioRxiv_2021.pdf|||Sim_ACSNano_2025.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Sim_ACSNano_2025.pdf",
+    "remove": "Sim2_bioRxiv_2021.pdf",
+    "reason": "Same first and last authors with nearly identical titles; the bioRxiv preprint was later published as a journal article in ACS Nano."
+  },
+  "Suen1_LifeScienceAlliance_2023.pdf|||Suen_bioRxiv_2022.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Suen1_LifeScienceAlliance_2023.pdf",
+    "remove": "Suen_bioRxiv_2022.pdf",
+    "reason": "Same authors, identical title, and the journal publication in Life Science Alliance (2023) is the peer-reviewed version of the bioRxiv preprint (2022)."
+  },
+  "Takahashi_Cell_2025.pdf|||Takahashi_bioRxiv_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Takahashi_Cell_2025.pdf",
+    "remove": "Takahashi_bioRxiv_2024.pdf",
+    "reason": "Same first and last authors with identical title; the 2024 bioRxiv preprint was published as a 2025 journal article in Investigative Ophthalmology & Visual Science."
+  },
+  "Technologies_ResearchSquare_2020.pdf|||Zhovmer1_NatureMethods_2021.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Zhovmer1_NatureMethods_2021.pdf",
+    "remove": "Technologies_ResearchSquare_2020.pdf",
+    "reason": "Identical title and authors; Research Square preprint and its published Nature Methods journal version of the same work."
+  },
+  "Vaughan_NucleicAcidsResearch_2021.pdf|||Woodworth_bioRxiv_2020.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Vaughan_NucleicAcidsResearch_2021.pdf",
+    "remove": "Woodworth_bioRxiv_2020.pdf",
+    "reason": "Same authors and identical title; the bioRxiv preprint (2020) was published in Nucleic Acids Research (2021), making them the same work."
+  },
+  "Venkataramani1_bioRxiv_2026.pdf|||Venkataramani2_bioRxiv_2026.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Venkataramani1_bioRxiv_2026.pdf",
+    "remove": "Venkataramani2_bioRxiv_2026.pdf",
+    "reason": "Identical DOI, title, authors, and year indicate these are the same paper."
+  },
+  "Wang1_ScientificReports_2018.pdf|||Wang_bioRxiv_2017.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Wang1_ScientificReports_2018.pdf",
+    "remove": "Wang_bioRxiv_2017.pdf",
+    "reason": "Same first and last authors with virtually identical titles; the bioRxiv preprint (2017) is the preprint version of the Scientific Reports journal publication (2018)."
+  },
+  "Wen1_bioRxiv_2019.pdf|||Wen2_bioRxiv_2019.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Wen1_bioRxiv_2019.pdf",
+    "remove": "Wen2_bioRxiv_2019.pdf",
+    "reason": "Both papers share the same DOI (10.1101/696039), identical title, and identical authors, confirming they are the same work."
+  },
+  "Woodworth1_bioRxiv_2026.pdf|||Woodworth2_bioRxiv_2026.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Woodworth1_bioRxiv_2026.pdf",
+    "remove": "Woodworth2_bioRxiv_2026.pdf",
+    "reason": "Identical DOI, title, authors, year, and venue confirm these are the same paper."
+  },
+  "Yanase_LifeScienceAlliance_2025.pdf|||Yanase_bioRxiv_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Yanase_LifeScienceAlliance_2025.pdf",
+    "remove": "Yanase_bioRxiv_2024.pdf",
+    "reason": "Same authors and identical title; the bioRxiv preprint (2024) was published as a journal article in Life Science Alliance (2025)."
+  },
+  "Yu_CommunicationsBiology_2025.pdf|||Yu_ResearchSquare_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Yu_CommunicationsBiology_2025.pdf",
+    "remove": "Yu_ResearchSquare_2024.pdf",
+    "reason": "Same title and authors; Paper B is a ResearchSquare preprint of the same work published in Communications Biology as Paper A."
+  },
+  "Yu_CommunicationsBiology_2025.pdf|||Yu_bioRxiv_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Yu_CommunicationsBiology_2025.pdf",
+    "remove": "Yu_bioRxiv_2024.pdf",
+    "reason": "Same title, authors, and work published first as a bioRxiv preprint and then in Communications Biology; keeping the journal version."
+  },
+  "Yu_ResearchSquare_2024.pdf|||Yu_bioRxiv_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Yu_ResearchSquare_2024.pdf",
+    "remove": "Yu_bioRxiv_2024.pdf",
+    "reason": "Same title, authors, and year with the ResearchSquare version associated with Communications Biology publication, making it the more advanced version to keep over the bioRxiv preprint."
+  },
+  "Zeeshan1_eLife_2025.pdf|||Zeeshan_bioRxiv_2024.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Zeeshan1_eLife_2025.pdf",
+    "remove": "Zeeshan_bioRxiv_2024.pdf",
+    "reason": "Same first and last authors with nearly identical titles; the bioRxiv preprint (2024) was published as the eLife journal article (2025)."
+  },
+  "Zhao_ScienceAdvances_2021.pdf|||Zhao_bioRxiv_2020.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Zhao_ScienceAdvances_2021.pdf",
+    "remove": "Zhao_bioRxiv_2020.pdf",
+    "reason": "Same first and last authors with nearly identical titles; the bioRxiv preprint (2020) was published as the Science Advances journal article (2021)."
+  },
+  "Zwettler2_NatureCommunications_2020.pdf|||Zwettler_bioRxiv_2020.pdf": {
+    "is_duplicate": true,
+    "confidence": "high",
+    "keep": "Zwettler2_NatureCommunications_2020.pdf",
+    "remove": "Zwettler_bioRxiv_2020.pdf",
+    "reason": "Same authors, identical title, and same year \u2014 the bioRxiv preprint was published as the Nature Communications journal article."
+  }
+}

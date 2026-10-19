@@ -1,0 +1,614 @@
+﻿raw_species,resolved_species,genus,method,confidence
+A375,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+A498,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+A549,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Acanthamoeba,Acanthamoeba sp.,Acanthamoeba,genus only,review
+Acetobacter tropicalis,Acetobacter tropicalis,Acetobacter,binomial,ok
+Acidaminococcus intestini,Acidaminococcus intestini,Acidaminococcus,binomial,ok
+Alexandrium insuetum,Alexandrium insuetum,Alexandrium,binomial,ok
+Alexandrium minutum,Alexandrium minutum,Alexandrium,binomial,ok
+Alexandrium tamarense,Alexandrium tamarense,Alexandrium,binomial,ok
+Amoeba proteus,Amoeba proteus,Amoeba,binomial,ok
+Amoebidium appalachense,Amoebidium appalachense,Amoebidium,binomial,ok
+Amphidinium carterae,Amphidinium carterae,Amphidinium,binomial,ok
+Amphidinium massartii,Amphidinium massartii,Amphidinium,binomial,ok
+Amphidinium sp.,Amphidinium sp.,Amphidinium,genus-level / undescribed,review
+Andersenia nodulosa,Andersenia nodulosa,Andersenia,binomial,ok
+Ankistrodesmus,Ankistrodesmus sp.,Ankistrodesmus,genus only,review
+Ankylochrysis sp.,Ankylochrysis sp.,Ankylochrysis,genus-level / undescribed,review
+Ankylochrysis sp. nov,Ankylochrysis sp.,Ankylochrysis,genus-level / undescribed,review
+Ankylochrysis sp1,Ankylochrysis sp.,Ankylochrysis,genus-level / undescribed,review
+Anopheles gambiae,Anopheles gambiae,Anopheles,binomial,ok
+Ansanella sp.,Ansanella sp.,Ansanella,genus-level / undescribed,review
+Apis mellifera,Apis mellifera,Apis,binomial,ok
+Arabidopsis thaliana,Arabidopsis thaliana,Arabidopsis,binomial,ok
+Ascaris suum,Ascaris suum,Ascaris,binomial,ok
+Aspergillus fumigatus,Aspergillus fumigatus,Aspergillus,binomial,ok
+Astyanax mexicanus,Astyanax mexicanus,Astyanax,binomial,ok
+Aurantochytrium sp.,Aurantochytrium sp.,Aurantochytrium,genus-level / undescribed,review
+Aureoumbra lagunensis,Aureoumbra lagunensis,Aureoumbra,binomial,ok
+Aureoumbra sp. nov,Aureoumbra sp.,Aureoumbra,genus-level / undescribed,review
+Azadinium obesum,Azadinium obesum,Azadinium,binomial,ok
+Azadinium poporum,Azadinium poporum,Azadinium,binomial,ok
+Azadinium spinosum,Azadinium sp.,Azadinium,genus-level / undescribed,review
+BEAS-2B,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+BHK,Mesocricetus auratus,Mesocricetus,cell line/abbrev -> source organism,infer
+BS-C-1,Chlorocebus aethiops,Chlorocebus,cell line/abbrev -> source organism,infer
+BV173,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Babesia divergens,Babesia divergens,Babesia,binomial,ok
+Bacillus subtilis,Bacillus subtilis,Bacillus,binomial,ok
+Bacteroides finegoldii,Bacteroides finegoldii,Bacteroides,binomial,ok
+Bacteroides ovatus,Bacteroides ovatus,Bacteroides,binomial,ok
+Biecheleriopsis adriatica,Biecheleriopsis adriatica,Biecheleriopsis,binomial,ok
+Biecheleriopsis sp.,Biecheleriopsis sp.,Biecheleriopsis,genus-level / undescribed,review
+Bifidobacterium breve,Bifidobacterium breve,Bifidobacterium,binomial,ok
+Bos taurus,Bos taurus,Bos,binomial,ok
+Brandtodinium nutriculum,Brandtodinium nutriculum,Brandtodinium,binomial,ok
+C2C12 mouse myoblasts,Mus musculus,Mus,cell line/abbrev -> source organism,infer
+CFBE41o (ΔF508-CFTR Human Bronchial Epithelial CF cell line),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+CFBE41o-6.2 (WT-CFTR Human Bronchial Epithelial cell line),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+CHO,Cricetulus griseus,Cricetulus,cell line/abbrev -> source organism,infer
+COS-7,Chlorocebus aethiops,Chlorocebus,cell line/abbrev -> source organism,infer
+Caenorhabditis elegans,Caenorhabditis elegans,Caenorhabditis,binomial,ok
+Calcidiscus leptoporus 2N,Calcidiscus leptoporus,Calcidiscus,binomial,ok
+Calcidiscus leptoporus N,Calcidiscus leptoporus,Calcidiscus,binomial,ok
+Callithrix jacchus,Callithrix jacchus,Callithrix,binomial,ok
+Candida albicans,Candida albicans,Candida,binomial,ok
+Candida auris,Candida auris,Candida,binomial,ok
+Candida dubliniensis,Candida dubliniensis,Candida,binomial,ok
+Candida parapsilosis,Candida parapsilosis,Candida,binomial,ok
+Candida tropicalis,Candida tropicalis,Candida,binomial,ok
+Candidatus Lokiarchaeum ossiferum,Candidatus sp.,Candidatus,non-standard epithet -> genus,review
+Canis lupus familiaris,Canis lupus,Canis,binomial,ok
+Ceratolithus cristatus,Ceratolithus cristatus,Ceratolithus,binomial,ok
+Chaetoceros decipiens,Chaetoceros decipiens,Chaetoceros,binomial,ok
+Chaetoceros neogracilis,Chaetoceros neogracilis,Chaetoceros,binomial,ok
+Chaetoceros sp. (environmental),Chaetoceros sp.,Chaetoceros,genus-level / undescribed,review
+Chang cells,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Chattonella subsalsa,Chattonella subsalsa,Chattonella,binomial,ok
+Chlamydia trachomatis,Chlamydia trachomatis,Chlamydia,binomial,ok
+Chlamydia trachomatis L2/434/Bu,Chlamydia trachomatis,Chlamydia,binomial,ok
+Chlamydomonas,Chlamydomonas sp.,Chlamydomonas,genus only,review
+Chlamydomonas reinhardtii,Chlamydomonas reinhardtii,Chlamydomonas,binomial,ok
+Chlamydomonas reinhardtii CW15-,Chlamydomonas reinhardtii,Chlamydomonas,binomial,ok
+Chlamydomonas reinhardtii CW15- (whole cells),Chlamydomonas reinhardtii,Chlamydomonas,binomial,ok
+Chlorella,Chlorella sp.,Chlorella,genus only,review
+Chlorella vulgaris,Chlorella vulgaris,Chlorella,binomial,ok
+Chloroparvula japonica,Chloroparvula japonica,Chloroparvula,binomial,ok
+Chloroparvula pacifica,Chloroparvula pacifica,Chloroparvula,binomial,ok
+Chloroparvula sp1,Chloroparvula sp.,Chloroparvula,genus-level / undescribed,review
+Chloroparvula sp2?,Chloroparvula sp.,Chloroparvula,genus-level / undescribed,review
+Chloroparvula sp5,Chloroparvula sp.,Chloroparvula,genus-level / undescribed,review
+Chloroparvula sp6,Chloroparvula sp.,Chloroparvula,genus-level / undescribed,review
+Chloroparvula sp7,Chloroparvula sp.,Chloroparvula,genus-level / undescribed,review
+Chloropicon laureae,Chloropicon laureae,Chloropicon,binomial,ok
+Chloropicon mariensis,Chloropicon mariensis,Chloropicon,binomial,ok
+Chloropicon maureenii,Chloropicon maureenii,Chloropicon,binomial,ok
+Chloropicon primus,Chloropicon primus,Chloropicon,binomial,ok
+Chloropicon roscoffensis,Chloropicon roscoffensis,Chloropicon,binomial,ok
+Chloropicon sp1,Chloropicon sp.,Chloropicon,genus-level / undescribed,review
+Chromera velia,Chromera velia,Chromera,binomial,ok
+Chromosphaera perkinsii,Chromosphaera perkinsii,Chromosphaera,binomial,ok
+Chroomonas sp.,Chroomonas sp.,Chroomonas,genus-level / undescribed,review
+Chrysochromulina acantha,Chrysochromulina acantha,Chrysochromulina,binomial,ok
+Chrysochromulina sp.,Chrysochromulina sp.,Chrysochromulina,genus-level / undescribed,review
+Chrysotila roscoffensis,Chrysotila roscoffensis,Chrysotila,binomial,ok
+Chrysotila sp.,Chrysotila sp.,Chrysotila,genus-level / undescribed,review
+Citrobacter sp.,Citrobacter sp.,Citrobacter,genus-level / undescribed,review
+Closterium,Closterium sp.,Closterium,genus only,review
+Clostridium innocuum,Clostridium innocuum,Clostridium,binomial,ok
+Coccolithus braarudii 2N,Coccolithus braarudii,Coccolithus,binomial,ok
+Coccolithus braarudii N,Coccolithus braarudii,Coccolithus,binomial,ok
+Colacium sp.,Colacium sp.,Colacium,genus-level / undescribed,review
+Conticribra weissflogii,Conticribra weissflogii,Conticribra,binomial,ok
+Coolia,Coolia sp.,Coolia,genus only,review
+Coolia malayensis,Coolia malayensis,Coolia,binomial,ok
+Coolia sp.,Coolia sp.,Coolia,genus-level / undescribed,review
+Corallochytrium limacisporum,Corallochytrium limacisporum,Corallochytrium,binomial,ok
+Coscinodiscus granii,Coscinodiscus granii,Coscinodiscus,binomial,ok
+Cosmarium cf. nitidulum,Cosmarium sp.,Cosmarium,genus-level / undescribed,review
+Creolimax fragrantissima,Creolimax fragrantissima,Creolimax,binomial,ok
+Crucigenia tetrapedia,Crucigenia tetrapedia,Crucigenia,binomial,ok
+Cryptococcus neoformans,Cryptococcus neoformans,Cryptococcus,binomial,ok
+Cryptomonas curvata,Cryptomonas curvata,Cryptomonas,binomial,ok
+Cryptophyceae,Cryptophyceae sp.,Cryptophyceae,genus only,review
+Cryptosporidium parvum,Cryptosporidium parvum,Cryptosporidium,binomial,ok
+Cyanophora paradoxa,Cyanophora paradoxa,Cyanophora,binomial,ok
+Cylindrotheca sp.,Cylindrotheca sp.,Cylindrotheca,genus-level / undescribed,review
+Cymatosiraceae X sp.,Cymatosiraceae sp.,Cymatosiraceae,non-standard epithet -> genus,review
+DNA origami (in vitro nanostructure),,, excluded: non-biological,exclude
+DNA origami nanoruler (GATTA-SIM 160R),,, excluded: non-biological,exclude
+Danio rerio,Danio rerio,Danio,binomial,ok
+Danionella cerebrum,Danionella cerebrum,Danionella,binomial,ok
+Desmodesmus armatus,Desmodesmus armatus,Desmodesmus,binomial,ok
+Desmodesmus pseudocommunis,Desmodesmus pseudocommunis,Desmodesmus,binomial,ok
+Diacronema sp1,Diacronema sp.,Diacronema,genus-level / undescribed,review
+Diacronema sp2,Diacronema sp.,Diacronema,genus-level / undescribed,review
+Diacronema sp4,Diacronema sp.,Diacronema,genus-level / undescribed,review
+Dicrateria rotunda,Dicrateria rotunda,Dicrateria,binomial,ok
+Dicrateria sp.,Dicrateria sp.,Dicrateria,genus-level / undescribed,review
+Dictyostelium discoideum,Dictyostelium discoideum,Dictyostelium,binomial,ok
+Dictyostelium discoideum (isolated protein / in vitro assemblies),,, excluded: non-biological,exclude
+Dinophyceae XXX,Dinophyceae sp.,Dinophyceae,non-standard epithet -> genus,review
+Discocelia plataet GT001,Discocelia plataet,Discocelia,binomial,ok
+Dolischomastix tenuilepis,Dolischomastix tenuilepis,Dolischomastix,binomial,ok
+Drosophila melanogaster,Drosophila melanogaster,Drosophila,binomial,ok
+Drosophila melanogaster (ovary),Drosophila melanogaster,Drosophila,binomial,ok
+Drosophila melanogaster S2 cells,Drosophila melanogaster,Drosophila,cell line/abbrev -> source organism,infer
+Dunaliella salina,Dunaliella salina,Dunaliella,binomial,ok
+Emiliania huxleyi 2N,Emiliania huxleyi,Emiliania,binomial,ok
+Emiliania huxleyi N,Emiliania huxleyi,Emiliania,binomial,ok
+Enterococcus faecalis 15SNG3,Enterococcus faecalis,Enterococcus,binomial,ok
+Epithemia clementina,Epithemia clementina,Epithemia,binomial,ok
+Escherichia coli,Escherichia coli,Escherichia,binomial,ok
+Escherichia coli 8H3-10,Escherichia coli,Escherichia,binomial,ok
+Escherichia coli TOP10,Escherichia coli,Escherichia,binomial,ok
+Ettlia,Ettlia sp.,Ettlia,genus only,review
+Euglena gracilis,Euglena gracilis,Euglena,binomial,ok
+Euglena sp.,Euglena sp.,Euglena,genus-level / undescribed,review
+Euplotes rariseta,Euplotes rariseta,Euplotes,binomial,ok
+Eutreptiella braarudii,Eutreptiella braarudii,Eutreptiella,binomial,ok
+Eutreptiella gymnastica,Eutreptiella gymnastica,Eutreptiella,binomial,ok
+Eutreptiella sp.,Eutreptiella sp.,Eutreptiella,genus-level / undescribed,review
+Exanthemachrysis sp1,Exanthemachrysis sp.,Exanthemachrysis,genus-level / undescribed,review
+Exanthemachrysis sp2,Exanthemachrysis sp.,Exanthemachrysis,genus-level / undescribed,review
+FTM-AQP2-MDCK cells (Madin-Darby Canine Kidney),Canis lupus familiaris,Canis,cell line/abbrev -> source organism,infer
+Fibrocapsa japonica,Fibrocapsa japonica,Fibrocapsa,binomial,ok
+Florenciella parvula,Florenciella parvula,Florenciella,binomial,ok
+Fukuyoa,Fukuyoa sp.,Fukuyoa,genus only,review
+Fusarium oxysporum,Fusarium oxysporum,Fusarium,binomial,ok
+Fusobacterium nucleatum ssp. nucleatum ATCC 23726,Fusobacterium nucleatum,Fusobacterium,binomial,ok
+GBM#18 glioblastoma primary culture (human),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+GES1 (human gastric epithelial cell line),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Gallus gallus (white Leghorn chick embryo),Gallus gallus,Gallus,binomial,ok
+Giardia intestinalis,Giardia intestinalis,Giardia,binomial,ok
+Glenodinium sp.,Glenodinium sp.,Glenodinium,genus-level / undescribed,review
+Goniomonas sp.,Goniomonas sp.,Goniomonas,genus-level / undescribed,review
+Guanchochroma wildpretii,Guanchochroma wildpretii,Guanchochroma,binomial,ok
+Gymnochlora stellifera,Gymnochlora stellifera,Gymnochlora,binomial,ok
+Gymnodinium impudicum,Gymnodinium impudicum,Gymnodinium,binomial,ok
+H4,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+HEK293,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+HEK293FT,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+HEK293S GnTI-TetR (for GABAA receptor production),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+HEK293T,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+"HEK293T (human embryonic kidney cell line, CRISPR knock-in split-mNeonGreen-UBTF)",Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+HFF,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+HFF-hTERT,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+HGADFN167 (Hutchinson-Gilford Progeria Syndrome fibroblast),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+HL-60 (human promyelocytic leukemia cells),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+HOS cells (human osteosarcoma),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+HUVEC,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Haematococcus,Haematococcus sp.,Haematococcus,genus only,review
+Haematococcus lacustris,Haematococcus lacustris,Haematococcus,binomial,ok
+Haramonas dimorpha,Haramonas dimorpha,Haramonas,binomial,ok
+Hazenia basiliensis,Hazenia basiliensis,Hazenia,binomial,ok
+HeLa,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+HeLa (P. berghei ANKA infected),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+HeLa FlipIn,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+HeLa Kyoto,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+HeLa S3,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+HeLa sam50kd-2,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+HeLa229,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+HeLaP4,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Helicosphaera carteri,Helicosphaera carteri,Helicosphaera,binomial,ok
+Hep3B,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Herpes simplex virus type 1 (HSV-1),Herpes simplex,Herpes,binomial,ok
+Heterocapsa pygmaea,Heterocapsa pygmaea,Heterocapsa,binomial,ok
+Heterocapsa rotundata,Heterocapsa rotundata,Heterocapsa,binomial,ok
+Heterosigma akashiwo,Heterosigma akashiwo,Heterosigma,binomial,ok
+Heterosigma minor,Heterosigma minor,Heterosigma,binomial,ok
+Homo sapiens,Homo sapiens,Homo,binomial,ok
+Homo sapiens (CRL-2097 / CCD-1079Sk),Homo sapiens,Homo,binomial,ok
+Homo sapiens (DLB patient brain tissue),Homo sapiens,Homo,binomial,ok
+Homo sapiens (FFPE bladder cancer tissue),Homo sapiens,Homo,binomial,ok
+Homo sapiens (FFPE brain tissue — hippocampus and middle frontal gyrus),Homo sapiens,Homo,binomial,ok
+"Homo sapiens (FFPE cornea tissue, pathogen-infected)",Homo sapiens,Homo,binomial,ok
+"Homo sapiens (FFPE human brain, temporal lobe)",Homo sapiens,Homo,binomial,ok
+Homo sapiens (FFPE human kidney cortex),Homo sapiens,Homo,binomial,ok
+Homo sapiens (FFPE human kidney),Homo sapiens,Homo,binomial,ok
+Homo sapiens (FFPE human tonsil/lymph node tissue array),Homo sapiens,Homo,binomial,ok
+"Homo sapiens (FFPE tissue microarray — breast, brain, colon, prostate, thymus, thyroid, uterus, placenta)",Homo sapiens,Homo,binomial,ok
+Homo sapiens (FFPE tissue),Homo sapiens,Homo,binomial,ok
+Homo sapiens (FFPE tonsil tissue),Homo sapiens,Homo,binomial,ok
+Homo sapiens (GBM tumorsphere cell lines TS14-15 and TS13-64),Homo sapiens,Homo,binomial,ok
+Homo sapiens (HS980 hESC-derived retinal organoids),Homo sapiens,Homo,binomial,ok
+Homo sapiens (Human Nasal Epithelial Cells),Homo sapiens,Homo,binomial,ok
+Homo sapiens (SA501 PDX breast cancer),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Homo sapiens (brain tumor biopsy),Homo sapiens,Homo,binomial,ok
+Homo sapiens (breast tissue),Homo sapiens,Homo,binomial,ok
+Homo sapiens (bronchial basal stem cell-derived lung organoids),Homo sapiens,Homo,binomial,ok
+Homo sapiens (cancer patient plasma EVs),Homo sapiens,Homo,binomial,ok
+Homo sapiens (ccRCC fresh-frozen tissue),Homo sapiens,Homo,binomial,ok
+"Homo sapiens (cerebral organoid, H9 hESC line WAe009-A)",Homo sapiens,Homo,binomial,ok
+Homo sapiens (cerebrospinal fluid — Parkinson disease patients and controls),Homo sapiens,Homo,binomial,ok
+Homo sapiens (cultured human cells),Homo sapiens,Homo,binomial,ok
+Homo sapiens (ejaculated human sperm),Homo sapiens,Homo,binomial,ok
+Homo sapiens (formalin-fixed human brain tissue),Homo sapiens,Homo,binomial,ok
+Homo sapiens (hiPSC),Homo sapiens,Homo,binomial,ok
+Homo sapiens (hiPSC-derived brain organoids),Homo sapiens,Homo,binomial,ok
+Homo sapiens (hiPSC-derived cardiomyocytes),Homo sapiens,Homo,binomial,ok
+Homo sapiens (hiPSC-derived cortical neurons),Homo sapiens,Homo,binomial,ok
+Homo sapiens (hiPSC-derived cortical organoids),Homo sapiens,Homo,binomial,ok
+Homo sapiens (hiPSC-derived glutamatergic neurons),Homo sapiens,Homo,binomial,ok
+Homo sapiens (hiPSC-derived neural progenitors / cortical organoids — WTC11 and KOLF2.1J lines),Homo sapiens,Homo,binomial,ok
+"Homo sapiens (hiPSC-derived neurons, C9orf72 ALS/WT)",Homo sapiens,Homo,binomial,ok
+"Homo sapiens (hippocampal neurons — rat pup culture, but ASYN CSF is human; neurons here from rat; CSF samples from human Parkinson disease patients)",Homo sapiens,Homo,binomial,ok
+Homo sapiens (human donor islets),Homo sapiens,Homo,binomial,ok
+Homo sapiens (human nephrectomy kidney),Homo sapiens,Homo,binomial,ok
+Homo sapiens (human platelets),Homo sapiens,Homo,binomial,ok
+Homo sapiens (human sperm),Homo sapiens,Homo,binomial,ok
+Homo sapiens (kidney glomerulus),Homo sapiens,Homo,binomial,ok
+Homo sapiens (lung airway organoid),Homo sapiens,Homo,binomial,ok
+Homo sapiens (lung organoid),Homo sapiens,Homo,binomial,ok
+Homo sapiens (lymph node tissue — FFPE),Homo sapiens,Homo,binomial,ok
+Homo sapiens (metastatic breast cancer biopsy),Homo sapiens,Homo,binomial,ok
+Homo sapiens (minimal change disease kidney),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Homo sapiens (normal kidney tissue),Homo sapiens,Homo,binomial,ok
+Homo sapiens (patient tissue — gastrocnemius muscle biopsy),Homo sapiens,Homo,binomial,ok
+Homo sapiens (platelets),Homo sapiens,Homo,binomial,ok
+Homo sapiens (primary NK cells),Homo sapiens,Homo,binomial,ok
+Homo sapiens (primary neutrophils),Homo sapiens,Homo,binomial,ok
+Homo sapiens (primary skeletal muscle cells),Homo sapiens,Homo,binomial,ok
+"Homo sapiens (prostate cancer, FFPE)",Homo sapiens,Homo,binomial,ok
+Homo sapiens (retina),Homo sapiens,Homo,binomial,ok
+Homo sapiens (skin punch biopsy tissue),Homo sapiens,Homo,binomial,ok
+Homo sapiens (spleen tissue),Homo sapiens,Homo,binomial,ok
+Homo sapiens (submandibular gland organoid),Homo sapiens,Homo,binomial,ok
+Homo sapiens (surgical brain tissue),Homo sapiens,Homo,binomial,ok
+Homo sapiens Caco-2 BBE,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Homo sapiens cerebral organoid (H9 hESC-derived),Homo sapiens,Homo,binomial,ok
+Homo sapiens glioblastoma FFPE tissue,Homo sapiens,Homo,binomial,ok
+Homo sapiens melanoma brain metastasis FFPE tissue,Homo sapiens,Homo,binomial,ok
+Homo sapiens primary T cells (CD4+ and CD8+),Homo sapiens,Homo,binomial,ok
+Hordeum vulgare,Hordeum vulgare,Hordeum,binomial,ok
+Huh7,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Huh7.5.1,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Human fibroblasts (GCP4 mutant patient AII-1 and control),Human fibroblasts,Human,binomial,ok
+Human immunodeficiency virus (HIV),Human immunodeficiency,Human,binomial,ok
+INS-1E (rat insulinoma cell line),Rattus norvegicus,Rattus,cell line/abbrev -> source organism,infer
+Incendiamoeba cascadensis,Incendiamoeba cascadensis,Incendiamoeba,binomial,ok
+Isochrysis galbana,Isochrysis galbana,Isochrysis,binomial,ok
+Jurkat,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Jurkat Clone E6-1,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Karenia mikimotoi,Karenia mikimotoi,Karenia,binomial,ok
+Karenia papiloniaceae,Karenia papiloniaceae,Karenia,binomial,ok
+Karenia umbella,Karenia umbella,Karenia,binomial,ok
+Karlodinium gentienii,Karlodinium gentienii,Karlodinium,binomial,ok
+Karlodinium micrum,Karlodinium micrum,Karlodinium,binomial,ok
+Karlodinium veneficum,Karlodinium veneficum,Karlodinium,binomial,ok
+Lacrymaria sp.,Lacrymaria sp.,Lacrymaria,genus-level / undescribed,review
+Lactobacillus plantarum,Lactobacillus plantarum,Lactobacillus,binomial,ok
+Lampetra fluviatilis,Lampetra fluviatilis,Lampetra,binomial,ok
+Lecudina tuzetae,Lecudina tuzetae,Lecudina,binomial,ok
+Leishmania major,Leishmania major,Leishmania,binomial,ok
+Limosilactobacillus reuteri 7SNG3,Limosilactobacillus reuteri,Limosilactobacillus,binomial,ok
+Lingulodinium polyedrum,Lingulodinium polyedrum,Lingulodinium,binomial,ok
+LoVo,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+MCF-10A,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+MCF-7,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+MCF-7 (human breast cancer) organoid,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+MDA-MB-231,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+MDA-MB-468,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+MDCKII,Canis lupus familiaris,Canis,cell line/abbrev -> source organism,infer
+MIN6,Mus musculus,Mus,cell line/abbrev -> source organism,infer
+MM.1S,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+MPEK-BL6 (mouse primary epidermal keratinocytes),Mus musculus,Mus,cell line/abbrev -> source organism,infer
+Macaca fascicularis,Macaca fascicularis,Macaca,binomial,ok
+Macaca mulatta,Macaca mulatta,Macaca,binomial,ok
+Macaca nemestrina,Macaca nemestrina,Macaca,binomial,ok
+Mamiella gilva,Mamiella gilva,Mamiella,binomial,ok
+Mantoniella sp.,Mantoniella sp.,Mantoniella,genus-level / undescribed,review
+Mantoniella squamata,Mantoniella squamata,Mantoniella,binomial,ok
+Margalefidinium sp.,Margalefidinium sp.,Margalefidinium,genus-level / undescribed,review
+Melkoniania moestrupii,Melkoniania moestrupii,Melkoniania,binomial,ok
+Micractinium,Micractinium sp.,Micractinium,genus only,review
+Microglena monadina,Microglena monadina,Microglena,binomial,ok
+Microglena reginae,Microglena reginae,Microglena,binomial,ok
+Minidiscus comicus,Minidiscus comicus,Minidiscus,binomial,ok
+Minidiscus variabilis,Minidiscus variabilis,Minidiscus,binomial,ok
+Mouse tracheal epithelial cells (MTEC),Mus musculus,Mus,cell line/abbrev -> source organism,infer
+MucilAir human tracheal epithelial cells (hTEC),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Mus musculus,Mus musculus,Mus,binomial,ok
+"Mus musculus (BALB/c mouse tongue, C. albicans-infected)",Mus musculus,Mus,binomial,ok
+Mus musculus (C57 mouse brain),Mus musculus,Mus,binomial,ok
+Mus musculus (C57BL/6 bone marrow-derived macrophages),Mus musculus,Mus,binomial,ok
+Mus musculus (C57BL/6 hippocampal neurons),Mus musculus,Mus,binomial,ok
+Mus musculus (C57BL/6 mouse brain),Mus musculus,Mus,binomial,ok
+"Mus musculus (C57BL/6 mouse, primary cortical and hippocampal neurons)",Mus musculus,Mus,binomial,ok
+Mus musculus (C57BL/6 primary hippocampal neurons),Mus musculus,Mus,binomial,ok
+Mus musculus (C57BL/6 wild-type mouse islets),Mus musculus,Mus,binomial,ok
+Mus musculus (C57BL/6),Mus musculus,Mus,binomial,ok
+Mus musculus (C57BL/6) brain tissue,Mus musculus,Mus,binomial,ok
+"Mus musculus (C57BL/6J brain sections, striatum)",Mus musculus,Mus,binomial,ok
+Mus musculus (C57BL/6J mouse brain),Mus musculus,Mus,binomial,ok
+Mus musculus (C57BL/6J mouse),Mus musculus,Mus,binomial,ok
+Mus musculus (C57BL/6J),Mus musculus,Mus,binomial,ok
+"Mus musculus (C57BL/6J, brain, liver, kidney, heart, testis)",Mus musculus,Mus,binomial,ok
+Mus musculus (C57BL/6N),Mus musculus,Mus,binomial,ok
+Mus musculus (C57Bl/6 mouse tail skin),Mus musculus,Mus,binomial,ok
+Mus musculus (C57Bl/6J),Mus musculus,Mus,binomial,ok
+Mus musculus (C57Bl/6j),Mus musculus,Mus,binomial,ok
+Mus musculus (CD-1 mouse),Mus musculus,Mus,binomial,ok
+"Mus musculus (DAT-cre, AAV5-Syn-FLEX-rc(ChrimsonR-tdTomato))",Mus sp.,Mus,non-standard epithet -> genus,review
+Mus musculus (E6.5-7.0 embryo),Mus musculus,Mus,binomial,ok
+"Mus musculus (Emx1-Cre, Brainbow3.0)",Mus musculus,Mus,binomial,ok
+Mus musculus (FVB),Mus musculus,Mus,binomial,ok
+Mus musculus (GFAP-EGFP),Mus musculus,Mus,binomial,ok
+"Mus musculus (LLC tumor-bearing lung, FFPE)",Mus musculus,Mus,binomial,ok
+Mus musculus (MEF),Mus musculus,Mus,binomial,ok
+Mus musculus (NG2-EYFPki mouse),Mus musculus,Mus,binomial,ok
+Mus musculus (NPHS2Cre/R26R-Confetti podocin/cre/confetti reporter),Mus musculus,Mus,binomial,ok
+Mus musculus (R26R-Mito-EGFP transgenic),Mus musculus,Mus,binomial,ok
+Mus musculus (SST-cre/Ai3),Mus musculus,Mus,binomial,ok
+Mus musculus (Swiss Webster),Mus musculus,Mus,binomial,ok
+"Mus musculus (Swiss Webster, hippocampal neurons)",Mus musculus,Mus,binomial,ok
+Mus musculus (Thy1-GFP C57BL/6),Mus musculus,Mus,binomial,ok
+Mus musculus (Thy1-YFP brain),Mus musculus,Mus,binomial,ok
+Mus musculus (Thy1-YFP mouse brain tissue),Mus musculus,Mus,binomial,ok
+Mus musculus (Thy1-YFP transgenic mouse),Mus musculus,Mus,binomial,ok
+Mus musculus (Thy1-YFP transgenic),Mus musculus,Mus,binomial,ok
+Mus musculus (Thy1-YFP),Mus musculus,Mus,binomial,ok
+Mus musculus (Thy1-YFP-H mouse),Mus musculus,Mus,binomial,ok
+Mus musculus (Thy1-YFP-H transgenic mouse brain),Mus musculus,Mus,binomial,ok
+Mus musculus (Thy1-YFP-H transgenic),Mus musculus,Mus,binomial,ok
+"Mus musculus (Thy1-YFP-H, C57BL/6)",Mus musculus,Mus,binomial,ok
+"Mus musculus (adult mouse brain, ependymal cells)",Mus musculus,Mus,binomial,ok
+Mus musculus (brain tissue slices - cerebellum and hippocampus),Mus musculus,Mus,binomial,ok
+Mus musculus (brain tissue),Mus musculus,Mus,binomial,ok
+"Mus musculus (brain tissue, C57BL/6, male 12-16 weeks)",Mus musculus,Mus,binomial,ok
+"Mus musculus (brain tissue, C57BL/6, male, 12-16 weeks)",Mus musculus,Mus,binomial,ok
+"Mus musculus (brain tissue, TRAP2 mouse)",Mus musculus,Mus,binomial,ok
+"Mus musculus (brain tissue, Thy1-YFP mouse)",Mus musculus,Mus,binomial,ok
+"Mus musculus (brain tissue, acute slices)",Mus musculus,Mus,binomial,ok
+Mus musculus (cerebellar granule neurons),Mus musculus,Mus,binomial,ok
+Mus musculus (cultured hippocampal neurons),Mus musculus,Mus,binomial,ok
+Mus musculus (embryonic stem cells),Mus musculus,Mus,binomial,ok
+Mus musculus (ependymal cells),Mus musculus,Mus,binomial,ok
+"Mus musculus (epididymal spermatozoa, HA-tagged CCDC146 knock-in)",Mus musculus,Mus,binomial,ok
+Mus musculus (fosTRAP2-tdTomato),Mus musculus,Mus,binomial,ok
+Mus musculus (hippocampal neurons),Mus musculus,Mus,binomial,ok
+"Mus musculus (hippocampal neurons, conditional Haus6 KO)",Mus musculus,Mus,binomial,ok
+Mus musculus (human-WT aSyn transgenic mouse),Mus musculus,Mus,binomial,ok
+Mus musculus (mCCD cells),Mus musculus,Mus,binomial,ok
+Mus musculus (mouse brain tissue),Mus musculus,Mus,binomial,ok
+Mus musculus (mouse brain),Mus musculus,Mus,binomial,ok
+Mus musculus (mouse kidney tissue),Mus musculus,Mus,binomial,ok
+Mus musculus (mouse kidney),Mus musculus,Mus,binomial,ok
+"Mus musculus (mouse platelets, Drp1 WT and KO)",Mus musculus,Mus,binomial,ok
+Mus musculus (mouse primary hippocampal and cortical neurons),Mus musculus,Mus,binomial,ok
+Mus musculus (mouse retina cryosections),Mus musculus,Mus,binomial,ok
+Mus musculus (mouse small intestine),Mus musculus,Mus,binomial,ok
+Mus musculus (mouse),Mus musculus,Mus,binomial,ok
+"Mus musculus (pancreas, spleen, lung)",Mus musculus,Mus,binomial,ok
+"Mus musculus (paraldehyde-fixed brain, lipid imaging)",Mus musculus,Mus,binomial,ok
+Mus musculus (primary hippocampal neuron culture),Mus musculus,Mus,binomial,ok
+Mus musculus (primary hippocampal neurons),Mus musculus,Mus,binomial,ok
+"Mus musculus (primary hippocampal neurons, C57BL/6J)",Mus musculus,Mus,binomial,ok
+"Mus musculus (primary hippocampal neurons, CD1 embryos)",Mus musculus,Mus,binomial,ok
+Mus musculus (retina cryosection),Mus musculus,Mus,binomial,ok
+"Mus musculus (retina cryosection, expansion)",Mus musculus,Mus,binomial,ok
+Mus musculus (retina photoreceptor),Mus musculus,Mus,binomial,ok
+Mus musculus (retina),Mus musculus,Mus,binomial,ok
+"Mus musculus (synaptosomes, vGLUT1VENUS knock-in)",Mus musculus,Mus,binomial,ok
+Mus musculus (tracheal epithelial cells),Mus musculus,Mus,binomial,ok
+Mus musculus (tracheal tissue),Mus musculus,Mus,binomial,ok
+Mus musculus (whole lymph node),Mus musculus,Mus,binomial,ok
+Mus musculus Thy1-EGFP (strain Tg(Thy1-EGFP)MJrs/J),Mus musculus,Mus,binomial,ok
+Mus musculus ependymal cells (primary culture),Mus musculus,Mus,binomial,ok
+Mus musculus erythrocytes,Mus musculus,Mus,binomial,ok
+Mus musculus hippocampal neurons (primary culture),Mus musculus,Mus,binomial,ok
+Mus musculus intestinal epithelium,Mus musculus,Mus,binomial,ok
+Mus musculus primary hepatocytes,Mus musculus,Mus,binomial,ok
+Mus musculus retina (C57BL6J),Mus musculus,Mus,binomial,ok
+Mycobacterium chelonae,Mycobacterium chelonae,Mycobacterium,binomial,ok
+NIH-3T3,Mus musculus,Mus,cell line/abbrev -> source organism,infer
+"NK-92 (human NK cell line, malignant non-Hodgkin's lymphoma)",Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+"NRK49F (rat kidney fibroblast, Septin2-eGFP knock-in)",Rattus norvegicus,Rattus,cell line/abbrev -> source organism,infer
+"NUP43-GFP stable cell line (human, origin inferred)",Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+"NUP96-SNAP stable cell line (human, origin inferred from NUP96 context)",Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Nakaseomyces glabratus,Nakaseomyces glabratus,Nakaseomyces,binomial,ok
+Nanosynbacter lyticus strain TM7x,Nanosynbacter lyticus,Nanosynbacter,binomial,ok
+Neisseria gonorrhoeae,Neisseria gonorrhoeae,Neisseria,binomial,ok
+Nematochrysis heiroglyphica,Nematochrysis heiroglyphica,Nematochrysis,binomial,ok
+Neorhodella cyanea,Neorhodella cyanea,Neorhodella,binomial,ok
+Neospora caninum,Neospora caninum,Neospora,curated override,ok
+Neospora caninum (Liverpool strain) in Vero cells,Neospora caninum,Neospora,curated override,ok
+Nephrocytium agardhianum,Nephrocytium agardhianum,Nephrocytium,binomial,ok
+Nephroselmis,Nephroselmis sp.,Nephroselmis,genus only,review
+Nephroselmis sp.,Nephroselmis sp.,Nephroselmis,genus-level / undescribed,review
+Neuro-2a,Mus musculus,Mus,cell line/abbrev -> source organism,infer
+Neuro-2a (mouse neuroblastoma),Mus musculus,Mus,cell line/abbrev -> source organism,infer
+Nicotiana tabacum BY-2,Nicotiana tabacum,Nicotiana,binomial,ok
+Norden Laboratory Feline Kidney (NLFK) cells,Felis catus,Felis,cell line/abbrev -> source organism,infer
+Odontella sinensis,Odontella sinensis,Odontella,binomial,ok
+Olisthodiscus tomasii,Olisthodiscus tomasii,Olisthodiscus,binomial,ok
+Oltmannsiellopsis unicellularis,Oltmannsiellopsis unicellularis,Oltmannsiellopsis,binomial,ok
+Oolithotus fragilis,Oolithotus fragilis,Oolithotus,binomial,ok
+Opephora sp.,Opephora sp.,Opephora,genus-level / undescribed,review
+Ostreopsis sp.,Ostreopsis sp.,Ostreopsis,genus-level / undescribed,review
+Ostreopsis. cf. ovata,Ostreopsis. sp.,Ostreopsis.,genus-level / undescribed,review
+Oxyrrhis marina,Oxyrrhis marina,Oxyrrhis,binomial,ok
+PC3,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+PDX-HCI-002 (breast cancer patient-derived xenograft tumor tissue),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Palmerina hardmaniana,Palmerina hardmaniana,Palmerina,binomial,ok
+Pandorina morum,Pandorina morum,Pandorina,binomial,ok
+Parabacteroides distasonis,Parabacteroides distasonis,Parabacteroides,binomial,ok
+Paramecium tetraurelia,Paramecium tetraurelia,Paramecium,binomial,ok
+Paratrimastix pyriformis,Paratrimastix pyriformis,Paratrimastix,binomial,ok
+Pavlomulina raninculiformis,Pavlomulina raninculiformis,Pavlomulina,binomial,ok
+Pavlova gyrans,Pavlova gyrans,Pavlova,binomial,ok
+Pavlova sp1,Pavlova sp.,Pavlova,genus-level / undescribed,review
+Pavlova sp2,Pavlova sp.,Pavlova,genus-level / undescribed,review
+Pavlova sp4,Pavlova sp.,Pavlova,genus-level / undescribed,review
+Pediastrum boryanum var. brevicorne,Pediastrum boryanum,Pediastrum,binomial,ok
+Pediastrum duplex,Pediastrum duplex,Pediastrum,binomial,ok
+Pelagococcus subviridis,Pelagococcus subviridis,Pelagococcus,binomial,ok
+Pelagodinium béii,Pelagodinium sp.,Pelagodinium,non-standard epithet -> genus,review
+Pelagodinium sp. nov.,Pelagodinium sp.,Pelagodinium,genus-level / undescribed,review
+Pelagomonadales A1 sp,Pelagomonadales sp.,Pelagomonadales,non-standard epithet -> genus,review
+Pentapharsodinium tyrrenichum,Pentapharsodinium tyrrenichum,Pentapharsodinium,binomial,ok
+Phaeocystis globosa,Phaeocystis globosa,Phaeocystis,binomial,ok
+Phaeodactylum tricornutum,Phaeodactylum tricornutum,Phaeodactylum,binomial,ok
+Plagioselmis,Plagioselmis sp.,Plagioselmis,genus only,review
+Plasmodium berghei,Plasmodium berghei,Plasmodium,binomial,ok
+Plasmodium berghei ANKA,Plasmodium berghei,Plasmodium,binomial,ok
+Plasmodium falciparum,Plasmodium falciparum,Plasmodium,binomial,ok
+Plasmodium falciparum NF54,Plasmodium falciparum,Plasmodium,binomial,ok
+Plasmodium yoelii,Plasmodium yoelii,Plasmodium,binomial,ok
+Plasmodium yoelii 17XNL,Plasmodium yoelii,Plasmodium,binomial,ok
+Pleurodeles waltl,Pleurodeles waltl,Pleurodeles,binomial,ok
+Pleurosigma sp.,Pleurosigma sp.,Pleurosigma,genus-level / undescribed,review
+Plodia interpunctella,Plodia interpunctella,Plodia,binomial,ok
+Podophrya collini,Podophrya collini,Podophrya,binomial,ok
+Polypodochrysis teisserii,Polypodochrysis teisserii,Polypodochrysis,binomial,ok
+Porphyridium sordidum,Porphyridium sordidum,Porphyridium,binomial,ok
+Porphyridium sp.,Porphyridium sp.,Porphyridium,genus-level / undescribed,review
+Porphyridium sp. nov,Porphyridium sp.,Porphyridium,genus-level / undescribed,review
+Potorous tridactylus kidney (PtK2),Potorous tridactylus,Potorous,cell line/abbrev -> source organism,infer
+Prasinococcus sp.,Prasinococcus sp.,Prasinococcus,genus-level / undescribed,review
+Prasinococcus sp. nov.,Prasinococcus sp.,Prasinococcus,genus-level / undescribed,review
+Primary human breast tumor organoid,Primary human,Primary,binomial,ok
+Prorocentrum,Prorocentrum sp.,Prorocentrum,genus only,review
+Prorocentrum caudatum,Prorocentrum caudatum,Prorocentrum,binomial,ok
+Prorocentrum lima,Prorocentrum lima,Prorocentrum,binomial,ok
+Prorocentrum micans,Prorocentrum micans,Prorocentrum,binomial,ok
+Prorocentrum redfieldii,Prorocentrum redfieldii,Prorocentrum,binomial,ok
+Prorocentrum sp.,Prorocentrum sp.,Prorocentrum,genus-level / undescribed,review
+Proteomonas,Proteomonas sp.,Proteomonas,genus only,review
+Proteomonas sp.,Proteomonas sp.,Proteomonas,genus-level / undescribed,review
+Protoceratium reticulatum,Protoceratium reticulatum,Protoceratium,binomial,ok
+Protodinium sp.,Protodinium sp.,Protodinium,genus-level / undescribed,review
+Prymnesium calathiferum,Prymnesium calathiferum,Prymnesium,binomial,ok
+Prymnesium faveolatum,Prymnesium faveolatum,Prymnesium,binomial,ok
+Pseudochattonella verriculosa,Pseudochattonella verriculosa,Pseudochattonella,binomial,ok
+Pseudomonas aeruginosa,Pseudomonas aeruginosa,Pseudomonas,binomial,ok
+Pseudourostyla sp.,Pseudourostyla sp.,Pseudourostyla,genus-level / undescribed,review
+Pterosperma sp.,Pterosperma sp.,Pterosperma,genus-level / undescribed,review
+Pyramimonas obviata,Pyramimonas obviata,Pyramimonas,binomial,ok
+Pyramimonas orientalis,Pyramimonas orientalis,Pyramimonas,binomial,ok
+Pyramimonas subg. Pyramimonas propulsa,Pyramimonas subg,Pyramimonas,binomial,ok
+Pyramimosas diskoicola,Pyramimosas diskoicola,Pyramimosas,binomial,ok
+Pyrocystis sp. (small),Pyrocystis sp.,Pyrocystis,genus-level / undescribed,review
+RAW264.7,Mus musculus,Mus,cell line/abbrev -> source organism,infer
+RCC4,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Rattus norvegicus,Rattus norvegicus,Rattus,binomial,ok
+Rattus norvegicus (Sprague Dawley rat),Rattus norvegicus,Rattus,binomial,ok
+"Rattus norvegicus (Sprague Dawley, dorsal root ganglia)",Rattus norvegicus,Rattus,binomial,ok
+Rattus norvegicus (Wistar rat ventricular cardiomyocytes),Rattus norvegicus,Rattus,binomial,ok
+Rattus norvegicus (Wistar rat),Rattus norvegicus,Rattus,binomial,ok
+Rattus norvegicus (Wistar-Hannover rat),Rattus norvegicus,Rattus,binomial,ok
+Rattus norvegicus (adult male Wistar rat ventricular cardiomyocytes),Rattus norvegicus,Rattus,binomial,ok
+Rattus norvegicus (brain slices),Rattus norvegicus,Rattus,binomial,ok
+Rattus norvegicus (brain tissue slices),Rattus norvegicus,Rattus,binomial,ok
+Rattus norvegicus (cardiomyocytes),Rattus norvegicus,Rattus,binomial,ok
+Rattus norvegicus (cortical neurons),Rattus norvegicus,Rattus,binomial,ok
+Rattus norvegicus (cultured hippocampal neurons),Rattus norvegicus,Rattus,binomial,ok
+Rattus norvegicus (embryonic hippocampal neurons),Rattus norvegicus,Rattus,binomial,ok
+Rattus norvegicus (hippocampal neurons),Rattus norvegicus,Rattus,binomial,ok
+Rattus norvegicus (isolated synaptic vesicles),Rattus norvegicus,Rattus,binomial,ok
+"Rattus norvegicus (primary cortical neurons, E18 Sprague-Dawley)",Rattus norvegicus,Rattus,binomial,ok
+Rattus norvegicus (primary hippocampal neurons),Rattus norvegicus,Rattus,binomial,ok
+"Rattus norvegicus (primary hippocampal neurons, Sprague-Dawley)",Rattus norvegicus,Rattus,binomial,ok
+Rattus norvegicus (primary neuron culture),Rattus norvegicus,Rattus,binomial,ok
+Rattus norvegicus (rat liver tissue),Rattus norvegicus,Rattus,binomial,ok
+Rattus norvegicus (rat liver),Rattus norvegicus,Rattus,binomial,ok
+Rattus norvegicus primary osteoblasts,Rattus norvegicus,Rattus,binomial,ok
+Rebecca sp1,Rebecca sp.,Rebecca,genus-level / undescribed,review
+Rhinomonas nottbecki,Rhinomonas nottbecki,Rhinomonas,binomial,ok
+Rhizoclosmatium globosum,Rhizoclosmatium globosum,Rhizoclosmatium,binomial,ok
+Rhizosolenia setigera,Rhizosolenia setigera,Rhizosolenia,binomial,ok
+Rhodomonas,Rhodomonas sp.,Rhodomonas,genus only,review
+Rhodomonas sp.,Rhodomonas sp.,Rhodomonas,genus-level / undescribed,review
+Ross Sea Dinoflagellate (RCC11403),Ross sp.,Ross,non-standard epithet -> genus,review
+Ruttnera lamellosa,Ruttnera lamellosa,Ruttnera,binomial,ok
+"SA501 PDX (patient-derived xenograft, human breast cancer)",Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+SARS-CoV-2 (viral particles),,, excluded: non-biological,exclude
+SH-SY5Y,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+"SNAP-CLC-YFP expressing cell line (human, origin inferred)",Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+SW480 (human colorectal adenocarcinoma),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Saccharomyces cerevisiae,Saccharomyces cerevisiae,Saccharomyces,binomial,ok
+Saccharomyces cerevisiae BY4741,Saccharomyces cerevisiae,Saccharomyces,binomial,ok
+Salmonella enterica,Salmonella enterica,Salmonella,binomial,ok
+Sarcocystis neurona,Sarcocystis neurona,Sarcocystis,binomial,ok
+Scenedesmus,Scenedesmus sp.,Scenedesmus,genus only,review
+Schaalia odontolytica strain XH001,Schaalia odontolytica,Schaalia,binomial,ok
+Schizocladia sp.,Schizocladia sp.,Schizocladia,genus-level / undescribed,review
+Schizosaccharomyces pombe,Schizosaccharomyces pombe,Schizosaccharomyces,binomial,ok
+Schmidtea mediterranea,Schmidtea mediterranea,Schmidtea,binomial,ok
+Scyphosphaera apsteinii,Scyphosphaera apsteinii,Scyphosphaera,binomial,ok
+Serratia marcescens 10SNG3,Serratia marcescens,Serratia,binomial,ok
+Shionodiscus bioculatus,Shionodiscus bioculatus,Shionodiscus,binomial,ok
+Simkania negevensis,Simkania negevensis,Simkania,binomial,ok
+Sphaeroforma arctica,Sphaeroforma arctica,Sphaeroforma,binomial,ok
+Spinacia oleracea,Spinacia oleracea,Spinacia,binomial,ok
+Spirogyra,Spirogyra sp.,Spirogyra,genus only,review
+Staphylococcus aureus,Staphylococcus aureus,Staphylococcus,binomial,ok
+Staphylococcus aureus 45SNG3,Staphylococcus aureus,Staphylococcus,binomial,ok
+Staphylococcus epidermidis,Staphylococcus epidermidis,Staphylococcus,binomial,ok
+Streptococcus mutans UA159,Streptococcus mutans,Streptococcus,binomial,ok
+Streptococcus pneumoniae,Streptococcus pneumoniae,Streptococcus,binomial,ok
+Streptococcus sanguinis,Streptococcus sanguinis,Streptococcus,binomial,ok
+Suessiales XX,Suessiales sp.,Suessiales,non-standard epithet -> genus,review
+Sus scrofa,Sus scrofa,Sus,binomial,ok
+Sus scrofa (primary brain endothelial cells),Sus scrofa,Sus,binomial,ok
+Symbiodinium voratum,Symbiodinium voratum,Symbiodinium,binomial,ok
+Synechococcus elongatus PCC 7942,Synechococcus elongatus,Synechococcus,binomial,ok
+Synechocystis sp. PCC 6803,Synechocystis sp.,Synechocystis,genus-level / undescribed,review
+Takayama helix,Takayama helix,Takayama,binomial,ok
+Takayama pulchella,Takayama pulchella,Takayama,binomial,ok
+Tetradesmus obliquus,Tetradesmus obliquus,Tetradesmus,binomial,ok
+Tetrahymena pyriformis,Tetrahymena pyriformis,Tetrahymena,binomial,ok
+Tetrahymena thermophila,Tetrahymena thermophila,Tetrahymena,binomial,ok
+Tetraselmis,Tetraselmis sp.,Tetraselmis,genus only,review
+Tetraselmis sp.,Tetraselmis sp.,Tetraselmis,genus-level / undescribed,review
+Thalassiosira profunda,Thalassiosira profunda,Thalassiosira,binomial,ok
+Thoracosphaera heimii,Thoracosphaera heimii,Thoracosphaera,binomial,ok
+Tisochrysis sp1,Tisochrysis sp.,Tisochrysis,genus-level / undescribed,review
+Toxoplasma gondii,Toxoplasma gondii,Toxoplasma,binomial,ok
+Toxoplasma gondii (76K strain) in primary rat hippocampal neurons,Toxoplasma gondii,Toxoplasma,binomial,ok
+Toxoplasma gondii (ME49Δku80Δhxgprt and 76K strains) in human foreskin fibroblasts,Toxoplasma gondii,Toxoplasma,binomial,ok
+Trichomonas vaginalis,Trichomonas vaginalis,Trichomonas,binomial,ok
+Tritrichomonas foetus,Tritrichomonas foetus,Tritrichomonas,binomial,ok
+Trypanosoma brucei,Trypanosoma brucei,Trypanosoma,binomial,ok
+Trypanosoma brucei brucei,Trypanosoma brucei,Trypanosoma,binomial,ok
+Trypanosoma brucei brucei Lister 427,Trypanosoma brucei,Trypanosoma,binomial,ok
+Trypanosoma cruzi,Trypanosoma cruzi,Trypanosoma,binomial,ok
+Trypanosoma cruzi Y strain,Trypanosoma cruzi,Trypanosoma,binomial,ok
+U251,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+U2OS,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+U2OS (NUP96-GFP),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+U2OS (NUP96-mEGFP),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+U87MG,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+U87MG (human glioblastoma cell line) in athymic nude mouse,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+UCI082014 (human breast cancer cell line),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+UCI082014 (triple-negative breast cancer cell line),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Umbilicosphaera foliosa,Umbilicosphaera foliosa,Umbilicosphaera,binomial,ok
+Umbilicosphaera sibogae,Umbilicosphaera sibogae,Umbilicosphaera,binomial,ok
+Urgorri complanatus,Urgorri complanatus,Urgorri,binomial,ok
+Ustilago maydis,Ustilago maydis,Ustilago,binomial,ok
+Vero,Chlorocebus aethiops,Chlorocebus,cell line/abbrev -> source organism,infer
+Vero 76,Chlorocebus aethiops,Chlorocebus,cell line/abbrev -> source organism,infer
+Vesicular stomatitis virus (VSV),Vesicular stomatitis,Vesicular,binomial,ok
+Vitrella brassiciformis,Vitrella brassiciformis,Vitrella,binomial,ok
+Volvox tertius,Volvox tertius,Volvox,binomial,ok
+Vorticella sp.,Vorticella sp.,Vorticella,genus-level / undescribed,review
+WM983b,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+Xanthonema hormidiodes,Xanthonema hormidiodes,Xanthonema,binomial,ok
+Xenopus laevis,Xenopus laevis,Xenopus,binomial,ok
+Xenopus tropicalis,Xenopus tropicalis,Xenopus,binomial,ok
+Zea mays,Zea mays,Zea,binomial,ok
+hTERT-HPNE,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+hTERT-RPE1,Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+hTERT-RPE1 (TP53-/-),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+iD98/HR1 (EBV-positive human B cell line),Homo sapiens,Homo,cell line/abbrev -> source organism,infer
+in vitro assembled microtubules (bovine tubulin),,, excluded: non-biological,exclude
+isolated protein — GABAAR (β3 human homopentamer),,, excluded: non-biological,exclude
+isolated protein — calmodulin-mEGFP,,, excluded: non-biological,exclude
+"isolated protein — immunoglobulins (IgG, IgA, IgM)",,, excluded: non-biological,exclude
+isolated protein — mCLING-Atto 647N,,, excluded: non-biological,exclude
+"isolated protein — nanobodies (ALFA-tag Nb, anti-GFP Nb, anti-ASYN Nb)",,, excluded: non-biological,exclude
+isolated protein — otoferlin,,, excluded: non-biological,exclude
+"isolated proteins (IgG, IgA, IgM, otoferlin, GABAA receptor, calmodulin)",,, excluded: non-biological,exclude
+isolated_protein (synthetic peptides in ExM gels),,, excluded: non-biological,exclude
+mouse embryonic stem cells (mESC),Mus musculus,Mus,cell line/abbrev -> source organism,infer

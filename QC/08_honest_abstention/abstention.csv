@@ -1,0 +1,9 @@
+﻿metric,value
+uncertain: flagged cells,291
+inferred: flagged cells,1632
+null rate: fixation_temperature,13.8%
+null rate: anchoring_duration,13.9%
+null rate: gel_bis_pct,22.5%
+null rate: expansion_factor_measured,26.9%
+null rate: label_dilution,40.1%
+null rate: label_catalogue_number,40.0%

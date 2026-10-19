@@ -1,0 +1,9 @@
+NCBI clade concordance (QC 07)
+========================================
+Species queried:        593
+Clade assignments checkable against NCBI: 238
+Matched NCBI:           237
+Mismatches:             1
+Not resolvable (no taxid / not in vocab): 354
+
+CONCORDANCE: 99.6%

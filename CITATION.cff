@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use ExM Explorer, please cite it as below."
+title: "ExM Explorer: a search engine for expansion microscopy"
+version: "1.0"
+date-released: "2026-10-21"
+doi: "10.5281/zenodo.23439354"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23439354"
+    description: "Zenodo archive of version 1.0"
+authors:
+  - given-names: Felix
+    family-names: Mikus
+    affiliation: "University of Geneva"
+    orcid: "https://orcid.org/0000-0002-5065-4710"
+  - given-names: Paula Lorena
+    family-names: Llanos Fuentes
+    affiliation: "European Molecular Biology Laboratory (EMBL)"
+    orcid: "https://orcid.org/0000-0002-4388-4737"
+  - given-names: Karla Azucena
+    family-names: Juárez Núñez
+    affiliation: "European Molecular Biology Laboratory (EMBL)"
+    orcid: "https://orcid.org/0000-0002-6373-1914"
+  - given-names: Diego
+    family-names: Beltrame
+    affiliation: "University of Geneva"
+    orcid: "https://orcid.org/0009-0000-9605-4668"
+  - given-names: Gautam
+    family-names: Dey
+    affiliation: "European Molecular Biology Laboratory (EMBL)"
+    orcid: "https://orcid.org/0000-0003-1416-6223"
+  - given-names: Omaya
+    family-names: Dudin
+    affiliation: "University of Geneva"
+    orcid: "https://orcid.org/0000-0002-6673-3149"
+    email: "omaya.dudin@unige.ch"
+license: ["MIT", "CC-BY-4.0"]
+url: "https://dudinlab.github.io/ExM-Explorer/"
+repository-code: "https://github.com/DudinLab/ExM-Explorer"
+keywords: ["expansion microscopy", "U-ExM", "microbial eukaryotes", "antibodies", "database", "eukaryotic tree of life"]
+abstract: "A search engine for expansion microscopy experiments extracted from the literature: 381 studies, 6,755 rows, 301 species, 1,483 primary antibodies and 608 dyes and stains, with an offline single-file portal, the full extraction pipeline, logs, quality controls and a paper-by-paper provenance record."

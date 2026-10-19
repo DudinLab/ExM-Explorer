@@ -1,0 +1,24 @@
+10:51:54  INFO      ============================================================
+10:51:54  INFO      bioRxiv PDF Downloader — DudinLab ExM Library
+10:51:54  INFO      ============================================================
+10:51:54  INFO      Found 226 bioRxiv entries across all files
+10:51:54  INFO      Unique DOIs to download: 224
+10:51:54  INFO      Downloading to: C:\Users\dudin\Desktop\ExM_Library\papers
+10:51:54  INFO      
+10:56:19  INFO      ============================================================
+10:56:19  INFO      bioRxiv PDF Downloader — DudinLab ExM Library
+10:56:19  INFO      ============================================================
+10:56:19  INFO      Found 226 bioRxiv entries across all files
+10:56:19  INFO      Unique DOIs to download: 224
+10:56:19  INFO      Downloading to: C:\Users\dudin\Desktop\ExM_Library\papers
+10:56:19  INFO      
+11:17:20  INFO      Updated library.csv: 51 rows
+11:17:20  INFO      Updated library_rejected.csv: 173 rows
+11:17:20  INFO      Updated library_needs_review.csv: 2 rows
+11:17:20  INFO      
+11:17:20  INFO      ============================================================
+11:17:20  INFO      DONE
+11:17:20  INFO        Downloaded:      224
+11:17:20  INFO        Already had:     0
+11:17:20  INFO        Failed:          0
+11:17:20  INFO      ============================================================

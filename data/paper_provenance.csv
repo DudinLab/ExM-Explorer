@@ -1,0 +1,585 @@
+pdf,doi,harvest,screen,screen_reason,v1,dedup,v2_list,v2,in_final,version_pair,final_rows
+Aeschlimann1_bioRxiv_2022.pdf,10.1101/2022.03.10.483810,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,9
+Aeschlimann2_bioRxiv_2022.pdf,10.1101/2022.03.10.483810,in harvest (doi),rejected,,data,removed: duplicate of Aeschlimann1_bioRxiv_2022.pdf,,,,,0
+Ali_bioRxiv_2024.pdf,10.1101/2024.10.31.620364,in harvest (doi),kept (needs review),no abstract — needs manual check,data,kept,yes,re-extracted,yes,,4
+Alley_mBio_2025.pdf,10.1021/acschembio.5c00104,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,10
+Alon_Nanoscale_2021.pdf,10.1126/science.aax2656,in harvest (doi),rejected,ExM in abstract,data,kept,yes,re-extracted,yes,,10
+Alonso-Nanclares_FrontiersinNeuroanatomy_2021.pdf,10.3389/fnana.2021.752234,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,18
+Alonso_ParasitologyResearch_2022.pdf,10.1007/s00436-022-07619-z,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,10
+Alonso_bioRxiv_2022.pdf,10.1101/2022.03.06.483067,in harvest (doi),kept,ExM in title; ExM in abstract,data,removed: duplicate of Alonso_ParasitologyResearch_2022.pdf,,,,,0
+AlvarezViar_CurrentOpinioninCellBiology_2024.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+AlvarezViar_bioRxiv_2023.pdf,10.1101/2023.06.28.546853,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,earlier version of Martino_CurrentBiology_2024.pdf (confirmed),11
+Amiri-Yekta_bioRxiv_2023.pdf,10.1101/2023.02.27.530236,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,18
+Amodeo_JournalofCellScience_2021.pdf,10.1242/jcs.254300,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,8
+Amodeo_bioRxiv_2020.pdf,10.1101/2020.06.25.171090,in harvest (doi),rejected,,data,removed: duplicate of Amodeo_JournalofCellScience_2021.pdf,,,,,0
+Anderson_JournalofMicroscopy_2025.pdf,10.1111/jmi.70019,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,4
+Antolin_bioRxiv_2023.pdf,10.1101/2023.04.12.536603,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,4
+Apicomplexa_mBio_2021.pdf,10.1128/mbio.02057-21,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,16
+Araujo_Biorxiv_2026.pdf,10.64898/2026.02.16.706138,not in harvest: added by hand,,,not run in v1 (added later),,yes,re-extracted,yes,,12
+Aravind_bioRxiv_2025.pdf,10.1101/2025.06.09.658059,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,21
+Arbi_bioRxiv_2022.pdf,10.1101/2022.09.30.510086,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,4
+Arbor_NatureCommunications_2020.pdf,10.1038/s41467-020-18422-8,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,15
+Arbor_bioRxiv_2024.pdf,10.1101/2024.09.05.611432,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,10
+Arrizabalaga_bioRxiv_2024.pdf,10.1101/2024.03.18.585462,in harvest (doi),rejected,,data,removed: duplicate of Souza_PLOSPathogens_2024.pdf,,,,,0
+Arslanhan_JournalofCellBiology_2023.pdf,10.1083/jcb.202305009,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,later version of Arslanhan_bioRxiv_2023.pdf (confirmed),25
+Arslanhan_bioRxiv_2023.pdf,10.1101/2023.02.16.528810,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,earlier version of Arslanhan_JournalofCellBiology_2023.pdf (confirmed),12
+Asano_Cells_2020.pdf,10.1002/cpcb.56,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,9
+Asano_NatureCommunications_2025.pdf,10.1038/s41467-025-56641-z,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,17
+Atchou_JournalofCellScience_2023.pdf,10.1242/jcs.261377,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,11
+Atchou_bioRxiv_2023.pdf,10.1101/2023.05.24.542037,in harvest (doi),kept,ExM in title; ExM in abstract,data,removed: duplicate of Atchou_JournalofCellScience_2023.pdf,,,,,0
+Atchou_bioRxiv_2025.pdf,10.1101/2025.06.26.661843,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,28
+Aydemir_bioRxiv_2025.pdf,10.1101/2025.07.02.662898,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,4
+Azimzadeh1_eLife_2021.pdf,10.7554/elife,in harvest (doi),kept (needs review),,data,kept,yes,re-extracted,yes,,30
+BRUNET_bioRxiv_2023.pdf,10.1101/2023.09.13.557518,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,8
+Bai_NatureCommunications_2023.pdf,10.1038/s41467-023-39616-w,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,46
+Balaram_bioRxiv_2023.pdf,10.1101/2023.11.02.565381,in harvest (doi),rejected,ExM in abstract; review/wrong-method term: 'light sheet',data,kept,yes,re-extracted,yes,,6
+Bandeira_ExperimentalParasitology_2023.pdf,10.1016/j.exppara.2023.108629,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,8
+Bandeira_ParasitologyResearch_2025.pdf,10.1007/s00436-025-08466-4,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,6
+Batman_PLOSBiology_2025.pdf,10.1371/journal.pbio.3003519,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,30
+Benzing_bioRxiv_2021.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Berentsen_BBABioenergetics_2025.pdf,10.1016/j.bbabio.2025.149552,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,2
+Bernstock_bioRxiv_2021.pdf,10.1101/2021.12.05.471271,in harvest (doi),kept,ExM in abstract; antibody mention,data,kept,yes,re-extracted,yes,,39
+Bertiaux_PLOSBiology_2021.pdf,10.1371/journal.pbio.3001020,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,18
+Bezler_MolecularBiologyoftheCell_2022.pdf,10.1091/mbc.e22-04-0123,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,8
+BioMediTech_bioRxiv_2022.pdf,10.1101/2022.09.27.509734,in harvest (doi),kept,ExM in title; antibody mention; experimental terms,data,removed: duplicate of Vihinen-Rantac_MolecularBiologyoftheCell_2023.pdf,,,,,0
+Biocenter_bioRxiv_2024.pdf,10.1101/2024.10.04.616621,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,5
+Biochemie_JournalofCellScience_2024.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Biosciences_bioRxiv_2024.pdf,10.1101/2024.06.17.599416,in harvest (doi),rejected,,data,removed: duplicate of Mechanistically_NatureCommunications_2025.pdf,,,,,0
+Biotechnology_AnalyticalChemistry_2023.pdf,10.1021/acs.analchem.2c02720,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,1
+Biozentrum_bioRxiv_2025.pdf,10.1101/2025.06.17.660204,in harvest (doi),rejected,,data,removed: duplicate of Batman_PLOSBiology_2025.pdf,,,,,0
+Birmingham_bioRxiv_2021.pdf,10.1101/2021.05.04.442164,in harvest (doi),rejected,ExM in title,data,removed: duplicate of Faulkner_JournalofCellScience_2022.pdf,,,,,0
+Blanpied_FrontiersinSynapticNeuroscience_2021.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Blauwkamp_NatureCommunications_2025.pdf,10.1038/s41467-025-66393-5,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,5
+Blauwkamp_ResearchSquare_2025.pdf,10.21203/rs.3.rs-6457426/v1,in harvest (doi),kept,already downloaded,data,removed: duplicate of Blauwkamp_NatureCommunications_2025.pdf,,,,,0
+Blauwkamp_bioRxiv_2024.pdf,10.1101/2024.02.16.580747,in harvest (doi),rejected,,data,removed: duplicate of Blauwkamp_mSphere_2024.pdf,,,,,0
+Blauwkamp_bioRxiv_2025.pdf,10.1101/2025.04.12.648511,in harvest (doi),rejected,,data,removed: duplicate of Blauwkamp_NatureCommunications_2025.pdf,,,,,0
+Blauwkamp_mSphere_2024.pdf,10.1128/msphere.00750-24,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,12
+Bondarenko_bioRxiv_2024.pdf,10.1101/2024.04.24.590991,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,earlier version of Bondarenko_mSphere_2024.pdf (confirmed),22
+Bondarenko_mSphere_2024.pdf,10.1128/msphere.00322-24,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,later version of Bondarenko_bioRxiv_2024.pdf (confirmed),25
+Bonn_Nanoscale_2022.pdf,10.1242/dev.200439,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,18
+Bonn_bioRxiv_2021.pdf,10.1101/2021.12.03.471084,in harvest (doi),rejected,,data,removed: duplicate of Bonn_Nanoscale_2022.pdf,,,,,0
+Bos_bioRxiv_2023.pdf,10.1101/2023.05.17.541202,in harvest (doi),rejected,ExM in title,data,removed: duplicate of EM_PlantPhysiology_2003.pdf,,,,,0
+Bos_bioRxiv_2025.pdf,10.1101/2025.10.29.685299,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,12
+Bouhouche_PLOSBiology_2022.pdf,10.1371/journal.pbio.3001782,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,later version of Rosnet_bioRxiv_2021.pdf (confirmed),25
+Bournonville_NatureCommunications_2025.pdf,10.1038/s41467-025-62154-6,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,32
+Brzozowski1_ActaNeuropathologicaCommunications_2021.pdf,10.1186/s40478-021-01283-7,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,11
+Brzozowski_bioRxiv_2021.pdf,10.1101/2021.10.04.463043,in harvest (doi),rejected,,data,removed: duplicate of Brzozowski1_ActaNeuropathologicaCommunications_2021.pdf,,,,,0
+Bucur_Cells_2015.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Buda_DevelopmentalCell_2021.pdf,10.1016/j.devcel.2021.04.005,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,2
+Buisson_bioRxiv_2024.pdf,10.1101/2024.12.13.628094,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,8
+Bullard_CellReportsMethods_2024.pdf,10.1016/j.crmeth.2024.100907,in harvest (doi),kept,ExM in title; ExM in abstract; experimental terms,data,kept,yes,re-extracted,yes,,13
+Bullarda_bioRxiv_2024.pdf,10.1101/2024.05.11.593228,in harvest (doi),kept,ExM in title; ExM in abstract; antibody mention; experimental terms,data,removed: duplicate of Bullard_CellReportsMethods_2024.pdf,,,,,0
+Burdet_microPublicationBiology_2024.pdf,10.17912/micropub.biology.001033,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,8
+Burns_JournalofCellScience_2026.pdf,10.1242/jcs.264338,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,28
+CBC_ResearchSquare_2024.pdf,10.21203/rs.3.rs-3985326/v1,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,2
+Calcineurin_JournalofCellScience_2023.pdf,10.1242/jcs.260353,in harvest (doi),rejected,experimental terms,data,kept,yes,re-extracted,yes,,14
+Calla_bioRxiv_2022.pdf,10.1101/2022.11.22.517223,in harvest (doi),rejected,antibody mention,data,kept,yes,re-extracted,yes,,7
+Campbell1_JournalofNeuroscienceMethods_2021.pdf,10.1016/j.jneumeth.2021.109285,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,17
+Campbell2_JournalofNeuroscienceMethods_2021.pdf,10.1016/j.jneumeth.2021.109285,in harvest (doi),kept,ExM in title; ExM in abstract,data,removed: duplicate journal download,,,,,0
+Campbell_PLOSNeglectedTropicalDiseases_2023.pdf,10.1371/journal.pntd.0011731,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,16
+Campbell_bioRxiv_2020.pdf,10.1101/2020.12.05.408724,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,15
+Campbell_bioRxiv_2023.pdf,10.1101/2023.05.24.542100,in harvest (doi),rejected,,data,removed: duplicate of Campbell_PLOSNeglectedTropicalDiseases_2023.pdf,,,,,0
+Campus_JournalofCellScience_2024.pdf,10.1242/jcs.262046,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,20
+Capitini_TheFASEBJournal_2022.pdf,10.1096/fj.202201276r,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,6
+Cardenas_eLife_2023.pdf,10.7554/elife,in harvest (doi),kept (needs review),,data,kept,yes,re-extracted,yes,,14
+Centrioles_JournalofCellScience_2025.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Chen1_bioRxiv_2020.pdf,10.1101/2020.04.06.028092,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,17
+Chen2_bioRxiv_2020.pdf,10.1101/2020.08.27.270439,in harvest (doi),rejected,,data,removed: duplicate of Technologies_ResearchSquare_2020.pdf,,,,,0
+Chen_ActaBiochimicaetBiophysicaSinica_2022.pdf,10.3724/abbs.2022113,in harvest (doi),kept (needs review),no abstract — needs manual check,data,kept,yes,re-extracted,yes,,12
+Chen_ResearchSquare_2023.pdf,10.21203/rs.3.rs-3347834/v1,in harvest (doi),kept,already downloaded,data,removed: duplicate of Wang_ScientificReports_2023.pdf,,,,,0
+Cheng_Cells_2019.pdf,10.15190/d.2019.11,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,2
+Cheng_MicrobialCell_2023.pdf,10.1002/advs.202302249,in harvest (doi),rejected,ExM in title,data (after retry),kept,yes,re-extracted,yes,,47
+Chhabra_bioRxiv_2024.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Ching1_eLife_2021.pdf,10.7554/elife,in harvest (doi),kept (needs review),,data,kept,yes,re-extracted,yes,,20
+Ching_bioRxiv_2021.pdf,10.1101/2021.10.12.464082,in harvest (doi),rejected,,data,removed: duplicate of Ching1_eLife_2021.pdf,,,,,0
+Cho_ScientificReports_2022.pdf,10.1038/s41598-022-06903-3,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,12
+Cho_ScientificReports_2024.pdf,,"not extracted, cannot match",,,no rows,,,,,,0
+Chow_Nature_2015.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Chowdhury1_NatureBiotechnology_2025.pdf,10.21769/bioprotoc.5539,in harvest (doi),kept,ExM in title; ExM in abstract; antibody mention; experimental terms,data,kept,yes,re-extracted,yes,,4
+Chowdhury_CommunicationsBiology_2025.pdf,10.1038/s42003-025-07967-3,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,15
+Chozinski_ScientificReports_2018.pdf,10.1038/s41598-018-28694-2,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,20
+Chuang_bioRxiv_2024.pdf,10.1101/2024.02.28.582497,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,11
+Cirillo_CurrentBiology_2019.pdf,10.1016/j.cub.2019.12.020,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,later version of Cirillo_bioRxiv_2019.pdf (likely),4
+Cirillo_bioRxiv_2019.pdf,10.1101/663955,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,earlier version of Cirillo_CurrentBiology_2019.pdf (likely),4
+Collins_CellReportsMethods_2025.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Cornean_bioRxiv_2023.pdf,10.1101/2023.08.29.555204,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,4
+Cox_Cells_2025.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Cox_bioRxiv_2024.pdf,10.1101/2024.07.12.603300,in harvest (doi),kept,ExM in title; ExM in abstract; experimental terms,data,kept,yes,re-extracted,yes,,10
+Cui_bioRxiv_2022.pdf,10.1101/2022.06.19.496699,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,earlier version of Park_PLOSONE_2023.pdf (confirmed),28
+Dacheux_bioRxiv_2023.pdf,10.1101/2023.03.07.531490,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,earlier version of Dacheux_eLife_2023.pdf (confirmed),27
+Dacheux_eLife_2023.pdf,10.7554/elife.87698,in harvest (title 1.00),kept (needs review),,data,kept,yes,re-extracted,yes,later version of Dacheux_bioRxiv_2023.pdf (confirmed),21
+Damstra_NatureMethods_2023.pdf,10.1038/s41592-023-02001-y,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,28
+Damstra_bioRxiv_2021.pdf,10.1101/2021.02.03.428837,in harvest (doi),kept,ExM in title; ExM in abstract,data,removed: duplicate of Kapitein1_eLife_2021.pdf,,,,,0
+Damstra_eLife_2023.pdf,10.21769/bioprotoc.4698,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,12
+Dave_Cells_2022.pdf,10.3390/cells11101709,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,7
+Dave_bioRxiv_2022.pdf,10.1101/2022.05.03.490519,in harvest (doi),rejected,,data,removed: duplicate of Dave_Cells_2022.pdf,,,,,0
+Day_bioRxiv_2023.pdf,10.1101/2023.02.07.527509,in harvest (doi),kept,ExM in title; ExM in abstract; antibody mention; experimental terms,data,removed: duplicate of Day_eLife_2024.pdf,,,,,0
+Day_eLife_2024.pdf,10.7554/elife.96025,in harvest (title 1.00),kept,ExM in title; ExM in abstract; antibody mention; experimental terms,data,kept,yes,re-extracted,yes,,4
+DeGrandis_bioRxiv_2025.pdf,10.1101/2025.11.11.687948,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,8
+Dey_bioRxiv_2024.pdf,,"not extracted, cannot match",,,API failure,,,,,,0
+Dhar_bioRxiv_2025.pdf,10.1101/2025.05.14.654030,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,11
+DiBenedetto_MethodsinMolecularBiology_2025.pdf,10.1007/978-1-0716-4366-2_12,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,5
+Discovery_FluidsandBarriersoftheCNS_2024.pdf,10.1186/s12987-024-00585-x,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,12
+Dong1_bioRxiv_2024.pdf,10.1101/2024.06.25.600639,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,7
+Dong2_bioRxiv_2024.pdf,10.1101/2024.09.06.611752,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,24
+Drelich1_AnalyticalChemistry_2021.pdf,10.1021/acs.analchem.0c05372,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,1
+Drelich2_AnalyticalChemistry_2021.pdf,10.1021/acs.analchem.0c05372,in harvest (doi),kept,ExM in title; ExM in abstract,data,removed: duplicate journal download,,,,,0
+Drelich_bioRxiv_2021.pdf,10.1101/2021.03.03.433765,in harvest (doi),kept,ExM in title; ExM in abstract,data,removed: duplicate of Drelich1_AnalyticalChemistry_2021.pdf,,,,,0
+Dwivedi_NatureCommunications_2023.pdf,10.1038/s41467-023-41753-1,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,6
+Dwivedi_bioRxiv_2022.pdf,10.1101/2022.09.29.510042,in harvest (doi),rejected,,data,removed: duplicate of Dwivedi_NatureCommunications_2023.pdf,,,,,0
+Dzhokova_InternationalJournalofMolecularSciences_2025.pdf,10.3390/ijms262412189,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,9
+Dzyubenko1_FrontiersinCellularNeuroscience_2024.pdf,10.3389/fncel.2024.1328726,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,13
+Dzyubenko2_FrontiersinCellularNeuroscience_2024.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+EGFR_bioRxiv_2025.pdf,10.1101/2025.10.01.678490,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,earlier version of Shakespeare_ACSNano_2026.pdf (confirmed),11
+EM_PlantPhysiology_2003.pdf,10.1093/plphys/kiad526,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,1
+Edwards_bioRxiv_2025.pdf,10.1101/2025.10.10.680277,in harvest (doi),kept,ExM in title; antibody mention; experimental terms,data,kept,yes,re-extracted,yes,,7
+Eilts_bioRxiv_2025.pdf,10.1101/2025.08.11.669713,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,14
+Eloy_NatureCommunications_2023.pdf,10.1038/s41467-023-43582-8,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,42
+Engelberg_bioRxiv_2024.pdf,10.1101/2024.05.25.595886,in harvest (doi),rejected,,data,removed: duplicate of Engelberg_mBio_2025.pdf,,,,,0
+Engelberg_mBio_2025.pdf,10.1128/mbio.01389-25,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,27
+Erbacher_bioRxiv_2022.pdf,10.1101/2022.02.23.481592,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,6
+Eschment_JournalofCellScience_2025.pdf,10.1242/jcs.264092,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,4
+ExM_npjBiofilmsandMicrobiomes_2023.pdf,10.1038/s41522-023-00460-x,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,17
+FLRT_NatureCommunications_2024.pdf,10.1038/s41467-024-54570-x,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,9
+FLRT_bioRxiv_2024.pdf,10.1101/2024.08.27.609862,in harvest (doi),rejected,,data,removed: duplicate of FLRT_NatureCommunications_2024.pdf,,,,,0
+Faber_JCIInsight_2023.pdf,10.1172/jci.insight.169162,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,later version of Faber_bioRxiv_2023.pdf (likely),17
+Faber_PLOSBiology_2022.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Faber_bioRxiv_2023.pdf,10.1101/2023.01.17.524360,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,earlier version of Faber_JCIInsight_2023.pdf (likely),15
+Faulkner_JournalofCellScience_2022.pdf,10.1242/jcs.259009,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,11
+Faulkner_bioRxiv_2024.pdf,10.1101/2024.09.16.613233,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,4
+Flinois_JournalofCellScience_2024.pdf,10.1242/jcs.260745,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,16
+Flori_bioRxiv_2025.pdf,10.1101/2025.06.16.659906,in harvest (doi),rejected,antibody mention,data (after retry),kept,yes,re-extracted,yes,,45
+Fochler_bioRxiv_2023.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Francisco_bioRxiv_2025.pdf,10.1101/2025.05.12.653542,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,3
+Franke_FrontiersinBioinformatics_2021.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Fu_AnalyticalChemistry_2025.pdf,10.1021/acs.analchem.5c02025,in harvest (doi),rejected,antibody mention,data,kept,yes,re-extracted,yes,,6
+Fukumoto_bioRxiv_2024.pdf,10.1101/2024.11.06.622397,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,5
+Galecki_bioRxiv_2026.pdf,10.64898/2026.01.01.697161,in harvest (doi),kept (needs review),no abstract — needs manual check,data,kept,yes,re-extracted,yes,,38
+Gallei_bioRxiv_2024.pdf,10.1101/2024.02.21.581330,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,18
+Gambarotto1_NatureMethods_2018.pdf,10.1038/s41592-018-0238-1,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,later version of Hubland_bioRxiv_2018.pdf (confirmed),24
+Gao1_bioRxiv_2018.pdf,10.1101/278937,in harvest (doi),rejected,,data,removed: duplicate of Gao_ACSNano_2018.pdf,,,,,0
+Gao2_bioRxiv_2018.pdf,10.1101/374140,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,20
+Gao_ACSNano_2018.pdf,10.1021/acsnano.8b00776,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,18
+Gao_BMCBiology_2016.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Gao_bioRxiv_2019.pdf,10.1101/814111,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,earlier version of Munro_NatureNanotechnology_2021.pdf (confirmed),13
+Garg_MethodsinEnzymology_2026.pdf,10.1016/bs.mie.2025.11.004,in harvest (doi),kept,ExM in title; ExM in abstract; experimental terms,data,kept,yes,re-extracted,yes,,5
+Garlick1_ScientificReports_2022.pdf,10.1038/s41598-022-06702-w,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,3
+Garlick_bioRxiv_2021.pdf,10.1101/2021.05.26.445864,in harvest (doi),rejected,,data,removed: duplicate of Garlick1_ScientificReports_2022.pdf,,,,,0
+Gatti_bioRxiv_2019.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Gaudin_bioRxiv_2021.pdf,10.1101/2021.07.21.453218,in harvest (doi),rejected,,data,removed: duplicate of Azimzadeh1_eLife_2021.pdf,,,,,0
+Gentile_bioRxiv_2022.pdf,10.1101/2022.04.04.486901,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,34
+Ghisleni_NatureCommunications_2024.pdf,10.1038/s41467-024-49906-6,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,10
+Ghisleni_ResearchSquare_2023.pdf,10.21203/rs.3.rs-2496269/v1,in harvest (doi),kept,already downloaded,data,removed: duplicate of Ghisleni_NatureCommunications_2024.pdf,,,,,0
+Ghisleni_bioRxiv_2023.pdf,10.1101/2023.01.02.522381,in harvest (doi),rejected,,data,removed: duplicate of Ghisleni_NatureCommunications_2024.pdf,,,,,0
+Giunta_MolecularBiologyoftheCell_2023.pdf,10.1091/mbc.e22-08-0332,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,2
+GmbH_EuropeanJournalofNeuroscience_2024.pdf,10.1111/ejn.16294,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,9
+Gomez_MethodsinMolecularBiology_2026.pdf,10.1007/978-1-0716-4848-3_24,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,26
+Gong_bioRxiv_2025.pdf,10.1101/2025.11.02.685475,in harvest (doi),rejected,ExM in abstract; review/wrong-method term: 'light-sheet microscopy',data,kept,yes,re-extracted,yes,,9
+Goodwill_NatureCommunications_2019.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Goodwin_bioRxiv_2022.pdf,10.1101/2022.07.31.502046,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,3
+Goonawardane_ScientificReports_2025.pdf,10.1038/s41598-025-93812-w,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,6
+Gorilak_OpenBiology_2021.pdf,10.1098/rsob.210131,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,22
+Gorilaka_bioRxiv_2021.pdf,10.1101/2021.04.20.440601,in harvest (doi),kept,ExM in title; ExM in abstract,data,removed: duplicate of Gorilak_OpenBiology_2021.pdf,,,,,0
+Grichine_BloodAdvances_2023.pdf,10.1182/bloodadvances.2023010423,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,9
+Grinsven_bioRxiv_2025.pdf,10.1101/2025.09.04.674302,in harvest (doi),rejected,ExM in abstract,data,removed: duplicate of Katrukha_CurrentBiology_2026.pdf,,,,,0
+Grison_bioRxiv_2024.pdf,10.1101/2024.02.21.581184,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,14
+Gros_MolecularBiologyoftheCell_2021.pdf,10.1091/mbc.e20-10-0668,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,4
+Guichard_SeminarsinCellandDevelopmentalBiology_2021.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Guilloux_Bio-protocol_2025.pdf,10.21769/bioprotoc.5396,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,4
+Guilloux_bioRxiv_2024.pdf,10.1101/2024.09.11.612005,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,6
+Gunawardhana_bioRxiv_2024.pdf,10.1101/2024.11.25.625167,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,10
+Guo_CellularandMolecularLifeSciences_2024.pdf,10.1007/s00018-025-05714-9,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,31
+Guo_NatureCommunications_2025.pdf,10.1038/s41467-025-57350-3,in harvest (doi),kept,already downloaded,data (after retry),kept,yes,re-extracted,yes,,35
+Guoa_bioRxiv_2024.pdf,10.1101/2024.07.11.603043,in harvest (doi),rejected,ExM in abstract; experimental terms,data (after retry),removed: duplicate of Guo_NatureCommunications_2025.pdf,,,,,0
+Gurung1_bioRxiv_2026.pdf,10.64898/2026.01.08.698415,in harvest (doi),kept (needs review),no abstract — needs manual check,data,kept,yes,re-extracted,yes,,8
+Gurung2_bioRxiv_2026.pdf,10.64898/2026.01.08.698415,in harvest (doi),kept (needs review),no abstract — needs manual check,data,removed: duplicate of Gurung1_bioRxiv_2026.pdf,,,,,0
+Guttery_ResearchSquare_2025.pdf,10.21203/rs.3.rs-8180258/v1,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,earlier version of Yanase_bioRxiv_2025.pdf (confirmed),6
+Götz1_NatureCommunications_2020.pdf,10.1038/s41467-020-19897-1,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,13
+HALPERN_bioRxiv_2021.pdf,10.1101/2021.09.04.458950,in harvest (doi),rejected,review/wrong-method term: 'do-it-yourself',data,kept,yes,re-extracted,yes,,8
+Haak1_BiologicalChemistry_2023.pdf,10.1515/hsz-2023-0217,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,5
+Haase_MolecularBiologyoftheCell_2024.pdf,10.1091/mbc.e24-03-0100,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,12
+Haase_Nanoscale_2022.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Haase_bioRxiv_2024.pdf,10.1101/2024.08.29.610260,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,9
+Hafner_Cell_2020.pdf,10.1126/science.aau3644,in harvest (doi),rejected,ExM in abstract,data,kept,yes,re-extracted,yes,later version of Hafner_bioRxiv_2018.pdf (likely),30
+Hafner_bioRxiv_2018.pdf,10.1101/363184,in harvest (doi),rejected,ExM in abstract,data,kept,yes,re-extracted,yes,earlier version of Hafner_Cell_2020.pdf (likely),10
+Halpern_ACSNano_2017.pdf,10.1021/acsnano.7b07200,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,7
+Hamel_bioRxiv_2024.pdf,10.1101/2024.10.04.616628,in harvest (doi),rejected,,data,removed: duplicate of Bournonville_NatureCommunications_2025.pdf,,,,,0
+Han_CellReportsMethods_2023.pdf,10.1016/j.crmeth.2023.100556,in harvest (doi),rejected,ExM in abstract; experimental terms,data,kept,yes,re-extracted,yes,,18
+Haspel_MethodsinMolecularBiology_2022.pdf,10.1007/978-1-0716-2181-3_9,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,8
+He_ResearchSquare_2024.pdf,10.21203/rs.3.rs-3879047/v1,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,5
+Heiden_CellularandMolecularLifeSciences_2020.pdf,10.1007/s00018-021-03769-y,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,30
+Heil1_bioRxiv_2021.pdf,10.1101/2021.02.16.431449,in harvest (doi),rejected,ExM in title,data,removed: duplicate of Heil2_bioRxiv_2021.pdf,,,,,0
+Heil2_bioRxiv_2021.pdf,10.1101/2021.02.16.431449,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,6
+Heiss_bioRxiv_2024.pdf,10.1101/2024.03.29.587336,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,5
+Heit_MethodsinMolecularBiology_2022.pdf,10.1007/978-1-0716-2051-9_13,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,3
+Herde_CellReports_2020.pdf,10.1016/j.celrep.2020.108182,in harvest (doi),kept (needs review),no abstract — needs manual check,data,kept,yes,re-extracted,yes,,15
+Herrmann1_FrontiersinCellandDevelopmentalBiology_2020.pdf,10.3389/fcell.2020.00617,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,14
+Hinterndorfer_JournalofCellScience_2022.pdf,10.1242/jcs.260240,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,33
+Hinterndorfer_bioRxiv_2022.pdf,10.1101/2022.05.16.492060,in harvest (doi),rejected,ExM in title,data,removed: duplicate of Hinterndorfer_JournalofCellScience_2022.pdf,,,,,0
+Ho_JACS_2025.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Hofbauer_bioRxiv_2023.pdf,10.1101/2023.06.20.545701,in harvest (doi),rejected,,data,removed: duplicate of GmbH_EuropeanJournalofNeuroscience_2024.pdf,,,,,0
+Horwitz_bioRxiv_2022.pdf,10.1101/2022.03.23.485555,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,9
+Houben_bioRxiv_2020.pdf,10.1101/2020.03.16.994186,in harvest (doi),kept,ExM in title; ExM in abstract,data,removed: duplicate of Kubalová1_ChromosomeResearch_2020.pdf,,,,,0
+Hsiao_CommunicationsBiology_2026.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Hu1_bioRxiv_2024.pdf,10.1101/2024.07.14.603470,in harvest (doi),rejected,,data,removed: duplicate of Padilla_JournalofCellScience_2024.pdf,,,,,0
+Hu2_bioRxiv_2024.pdf,10.1101/2024.09.10.612355,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,10
+Hu_Cells_2024.pdf,10.1016/j.jlr.2024.100731,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,15
+Hu_MolecularBiologyoftheCell_2024.pdf,10.1091/mbc.e23-11-0418,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,10
+Hu_bioRxiv_2023.pdf,10.1101/2023.11.03.565597,in harvest (doi),rejected,,data,removed: duplicate of Hu_MolecularBiologyoftheCell_2024.pdf,,,,,0
+Huang_Bio-protocol_2025.pdf,10.21769/bioprotoc.5273,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,2
+Huang_bioRxiv_2025.pdf,10.1101/2025.04.28.648957,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,9
+Hubland_bioRxiv_2018.pdf,10.1101/308270,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,earlier version of Gambarotto1_NatureMethods_2018.pdf (confirmed),5
+Humpfer_bioRxiv_2025.pdf,10.1101/2025.09.24.678330,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,34
+Hurley_Cells_2024.pdf,10.3390/cells13010038,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,3
+Hussey_MethodsinMolecularBiology_2023.pdf,10.1007/978-1-0716-2867-6_10,in harvest (doi),kept,ExM in title; ExM in abstract; experimental terms,data,kept,yes,re-extracted,yes,,6
+Huttunen_CommunicationsBiology_2026.pdf,10.1038/s42003-025-09385-x,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,16
+Imanakaa_bioRxiv_2022.pdf,10.1101/2022.06.13.496038,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,4
+Iwanski_JournalofCellScience_2025.pdf,10.1242/jcs.264152,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,4
+Iwanski_bioRxiv_2025.pdf,10.1101/2025.02.07.636940,in harvest (doi),rejected,,data,removed: duplicate of Iwanski_JournalofCellScience_2025.pdf,,,,,0
+Jalalvand1_eLife_2021.pdf,10.7554/elife,in harvest (doi),kept (needs review),,data,kept,yes,re-extracted,yes,,19
+Jalalvand_bioRxiv_2021.pdf,10.1101/2021.08.17.456595,in harvest (doi),rejected,,data,removed: duplicate of Jalalvand1_eLife_2021.pdf,,,,,0
+Jetishi_MicrobialCell_2024.pdf,10.15698/mic2024.06.825,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,12
+Jetishia_bioRxiv_2025.pdf,10.1101/2025.05.14.653994,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,11
+Jiang_MicrosystemsNanoengineering_2026.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Jiang_eLife_2023.pdf,10.7554/elife.91979,in harvest (title 1.00),kept (needs review),,data,kept,yes,re-extracted,yes,,4
+Jin_bioRxiv_2024.pdf,10.1101/2024.09.11.612494,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,10
+KLHL_PLOSBiology_2023.pdf,10.1371/journal.pbio.3002274,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,9
+Kabatas_bioRxiv_2017.pdf,10.1101/172130,in harvest (doi),kept,ExM in title; ExM in abstract,data (after retry),removed: duplicate of Truckenbrodt1_EMBOReports_2018.pdf,,,,,0
+Kalichava_bioRxiv_2021.pdf,10.1101/2021.04.20.440568,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,9
+Kang_ACSApplMaterInterfaces_2021.pdf,10.1021/acsami.1c07592,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,15
+Kang_TheInnovation_2025.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Kao_ScientificReports_2019.pdf,10.1038/s41598-019-53704-2,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,8
+Kao_bioRxiv_2019.pdf,10.1101/679035,in harvest (doi),rejected,,data,removed: duplicate of Kao_ScientificReports_2019.pdf,,,,,0
+Kapitein1_eLife_2021.pdf,10.7554/elife,in harvest (doi),kept (needs review),,data,kept,yes,re-extracted,yes,,27
+Karagiannis1_bioRxiv_2019.pdf,10.1101/829903,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,11
+Karagiannis2_bioRxiv_2019.pdf,10.1101/829903,in harvest (doi),rejected,ExM in title,data,removed: duplicate of Karagiannis1_bioRxiv_2019.pdf,,,,,0
+Katoha_MolecularBiologyoftheCell_2020.pdf,10.1091/mbc.e20-04-0250,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,33
+Katrukha1_eLife_2021.pdf,10.7554/elife,in harvest (doi),kept (needs review),,data,kept,yes,re-extracted,yes,,12
+Katrukha_CurrentBiology_2026.pdf,10.1016/j.cub.2026.03.064,in harvest (doi),rejected,ExM in abstract,data (after retry),kept,yes,re-extracted,yes,,53
+Katrukha_bioRxiv_2021.pdf,10.1101/2021.02.26.432992,in harvest (doi),rejected,,data,removed: duplicate of Katrukha1_eLife_2021.pdf,,,,,0
+Kim_MicrosystemsNanoengineering_2025.pdf,10.1038/s41378-025-01106-y,in harvest (doi),kept,already downloaded,data,kept,yes,carried over from v1 (v2 failed),yes,,2
+Kim_NanoscaleAdvances_2023.pdf,10.1039/d2na00449f,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,11
+Kimmel_MethodsinMolecularBiology_2024.pdf,10.1007/978-1-0716-3894-1_2,in harvest (doi),kept,ExM in title; ExM in abstract; experimental terms,data,kept,yes,re-extracted,yes,,10
+Klena_Bio-protocol_2023.pdf,10.21769/bioprotoc.4792,in harvest (doi),kept,ExM in title; ExM in abstract; antibody mention,data,kept,yes,re-extracted,yes,,14
+Klimas_NatureBiotechnology_2021.pdf,10.1038/s41587-022-01546-1,in harvest (doi),kept,already downloaded,data (after retry),kept,yes,re-extracted,yes,,56
+Kodjabachian_STARProtocols_2025.pdf,10.1016/j.xpro.2025.103961,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,7
+Kofsky_Cells_2025.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Korovesi_microPublicationBiology_2022.pdf,10.17912/micropub.biology.000566,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,2
+Korsten_bioRxiv_2022.pdf,10.1101/2022.11.09.515785,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,20
+Kozjak-Pavlovic_bioRxiv_2020.pdf,10.1101/2020.05.06.080663,in harvest (doi),kept,ExM in title; ExM in abstract,data,removed: duplicate of Götz1_NatureCommunications_2020.pdf,,,,,0
+Kraft_CellandTissueResearch_2023.pdf,10.1007/s00441-023-03803-4,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,16
+Kruss_BiophysicalReports_2023.pdf,10.1016/j.bpr.2022.100091,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,later version of Neubert_bioRxiv_2022.pdf (confirmed),10
+Kubala_Cell_2023.pdf,10.1080/15384047.2023.2170669,in harvest (doi),kept (needs review),no abstract — needs manual check,data,kept,yes,re-extracted,yes,,7
+Kubalová1_ChromosomeResearch_2020.pdf,10.1007/s10577-020-09637-y,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,5
+Kufukihara1_BritishJournalofCancer_2022.pdf,10.1038/s41416-022-01895-3,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,5
+Kurz_bioRxiv_2019.pdf,10.1101/821298,in harvest (doi),kept,ExM in title; ExM in abstract,data,removed: duplicate of Zwettler1_NatureCommunications_2020.pdf,,,,,0
+Kylies_NatureNanotechnology_2022.pdf,10.1038/s41565-023-01328-z,in harvest (doi),kept,already downloaded,data (after retry),kept,yes,re-extracted,yes,,44
+Langner_bioRxiv_2024.pdf,10.1101/2024.02.16.580708,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,27
+Laporte_Cell_2024.pdf,10.1016/j.cell.2024.03.025,in harvest (doi),rejected,ExM in abstract,data,kept,yes,re-extracted,yes,,39
+Laporte_MedecineSciences_2023.pdf,10.1051/medsci/2023052,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,"removed 9 Oct 2026: Q5 review article (O.D., 9 Oct 2026)",,0
+Laporte_NatureMethods_2021.pdf,10.1038/s41592-021-01356-4,in harvest (doi),kept,already downloaded,data (after retry),kept,yes,re-extracted,yes,,51
+Lausanne_bioRxiv_2022.pdf,10.1101/2022.02.07.479401,in harvest (doi),rejected,,data,removed: duplicate of Bezler_MolecularBiologyoftheCell_2022.pdf,,,,,0
+Lee1_ScientificReports_2021.pdf,10.1038/s41598-021-02632-1,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,19
+Lee2_ScientificReports_2021.pdf,10.1038/s41598-021-96258-y,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,2
+Lemaitre_bioRxiv_2025.pdf,10.1101/2025.04.15.648816,in harvest (doi),rejected,ExM in title,data (after retry),removed: duplicate of Mean_CellReports_2026.pdf,,,,,0
+Lemgruber_FrontiersinCellularandInfectionMicrobiol_2022.pdf,10.3389/fcimb.2022.1010038,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,6
+Levytska_InternationalJournalforParasitology_2026.pdf,10.1016/j.ijpara.2026.104851,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,10
+Li_NatureMethods_2020.pdf,10.1038/s41592-020-01005-2,in harvest (doi),kept,ExM in title; ExM in abstract; experimental terms,data (after retry),kept,yes,re-extracted,yes,,56
+Li_Nature_2026.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Lian_JournalofDigitalImaging_2025.pdf,10.1007/s10278-026-01911-5,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,3
+Licha_AngewandteChemie_2023.pdf,10.1002/anie.202302318,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,8
+Liffner1_bioRxiv_2021.pdf,10.1101/2021.09.25.461816,in harvest (doi),rejected,,data,removed: duplicate of Liffner_Microorganisms_2021.pdf,,,,,0
+Liffner2_bioRxiv_2021.pdf,10.1101/2021.09.25.461816,in harvest (doi),rejected,,data,removed: duplicate of Liffner1_bioRxiv_2021.pdf,,,,,0
+Liffner_Cell_2023.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Liffner_Microorganisms_2021.pdf,10.3390/microorganisms9112306,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,16
+Liffner_bioRxiv_2023.pdf,10.1101/2023.03.22.533773,in harvest (doi),kept,ExM in title; ExM in abstract,data,removed: duplicate of Liffner_eLife_2023.pdf,,,,,0
+Liffner_bioRxiv_2024.pdf,10.1101/2024.04.17.589980,in harvest (doi),rejected,ExM in title,data,removed: duplicate of Liffner_npjImaging_2024.pdf,,,,,0
+Liffner_eLife_2023.pdf,10.7554/elife,in harvest (doi),kept (needs review),,data,kept,yes,re-extracted,yes,,31
+Liffner_npjImaging_2024.pdf,10.1186/s44330-024-00013-4,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,13
+Liffnera_bioRxiv_2025.pdf,10.1101/2025.04.09.648058,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,15
+Lim1_PLOSBiology_2019.pdf,10.1371/journal.pbio.3000268,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,24
+Lim_bioRxiv_2019.pdf,10.1101/622654,in harvest (doi),kept,ExM in title; experimental terms,data,removed: duplicate of Lim1_PLOSBiology_2019.pdf,,,,,0
+Lin_Cells_2022.pdf,10.1002/2211-5463.13506,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,8
+Lin_bioRxiv_2022.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Lin_bioRxiv_2025.pdf,10.1101/2025.06.15.659771,in harvest (doi),rejected,experimental terms,data,kept,yes,re-extracted,yes,,4
+Lin_eLife_2024.pdf,10.7554/elife,in harvest (doi),kept (needs review),,data,kept,yes,re-extracted,yes,,11
+Lisa_bioRxiv_2024.pdf,10.1101/2024.02.01.578333,in harvest (doi),rejected,ExM in title,data,removed: duplicate of Thornlow_Cells_2024.pdf,,,,,0
+Liu1_eLife_2020.pdf,10.7554/elife,in harvest (doi),kept (needs review),,data,kept,yes,re-extracted,yes,,8
+Liu_Cell_2023.pdf,10.1021/cbmi.3c00058,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,10
+Liu_bioRxiv_2020.pdf,10.1101/2020.08.25.266080,in harvest (doi),rejected,,data,removed: duplicate of Liu1_eLife_2020.pdf,,,,,0
+Llado-Santaeularia_JournalofCellScience_2021.pdf,10.1242/jcs.254300,in harvest (doi),rejected,,data,removed: duplicate journal download,,,,,0
+Login_Cell_2024.pdf,10.1152/ajpcell.00397.2023,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,9
+Loi_CommunicationsBiology_2024.pdf,10.1038/s42003-024-07035-2,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,later version of Madison_bioRxiv_2024.pdf (confirmed),7
+Long_bioRxiv_2025.pdf,10.1101/2025.01.03.631223,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,7
+Lopes_CurrentProtocols_2024.pdf,10.1002/cpz1.1074,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,2
+Louvel_bioRxiv_2022.pdf,10.1101/2022.11.14.516383,in harvest (doi),kept,ExM in title; ExM in abstract,data,removed: duplicate of Eloy_NatureCommunications_2023.pdf,,,,,0
+Lu_bioRxiv_2024.pdf,10.1101/2024.03.07.583776,in harvest (doi),kept,ExM in title; ExM in abstract; experimental terms,data,removed: duplicate of Asano_NatureCommunications_2025.pdf,,,,,0
+Ma_bioRxiv_2024.pdf,10.1101/2024.07.18.604137,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,19
+Madison_bioRxiv_2024.pdf,10.1101/2024.08.28.610199,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,earlier version of Loi_CommunicationsBiology_2024.pdf (confirmed),7
+Mahecic1_NatureMethods_2020.pdf,10.1101/2020.01.08.895565,in harvest (doi),rejected,,data,removed: duplicate of Mahecic2_NatureMethods_2020.pdf,,,,,0
+Mahecic2_NatureMethods_2020.pdf,10.1038/s41592-020-0859-z,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,19
+Mahecic_bioRxiv_2020.pdf,10.1101/2020.01.08.895565,in harvest (doi),rejected,,data,removed: duplicate of Mahecic1_NatureMethods_2020.pdf,,,,,0
+Mahen1_PLOSBiology_2022.pdf,10.1371/journal.pbio.3001854,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,14
+Mahen_bioRxiv_2021.pdf,10.1101/2021.11.20.469313,in harvest (doi),rejected,,data,removed: duplicate of Mahen1_PLOSBiology_2022.pdf,,,,,0
+Marin_bioRxiv_2025.pdf,10.64898/2025.12.10.693600,in harvest (doi),kept (needs review),no abstract — needs manual check,data,kept,yes,re-extracted,yes,,16
+Martino_CurrentBiology_2024.pdf,10.1016/j.cub.2024.08.021,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,later version of AlvarezViar_bioRxiv_2023.pdf (confirmed),12
+Mascheroni1_BiomedicalOpticsExpress_2020.pdf,10.1364/boe.399404,in harvest (doi),rejected,ExM in abstract; review/wrong-method term: 'light sheet',data,kept,yes,re-extracted,yes,later version of Mascheroni_bioRxiv_2020.pdf (confirmed),5
+Mascheroni_bioRxiv_2020.pdf,10.1101/2020.04.10.035378,in harvest (doi),rejected,ExM in abstract; review/wrong-method term: 'light sheet',data,kept,yes,re-extracted,yes,earlier version of Mascheroni1_BiomedicalOpticsExpress_2020.pdf (confirmed),5
+Matschke_Cell_2024.pdf,10.1002/jmv.29811,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,6
+McCafferty1_Cells_2026.pdf,10.64898/2026.04.05.716577,in harvest (doi),kept (needs review),no abstract — needs manual check,data,kept,yes,re-extracted,yes,,13
+McCafferty2_Cells_2026.pdf,10.64898/2026.04.05.716577,in harvest (doi),kept (needs review),no abstract — needs manual check,data,removed: duplicate of McCafferty1_Cells_2026.pdf,,,,,0
+Mean_CellReports_2026.pdf,10.1016/j.celrep.2026.117165,in harvest (doi),kept,ExM in title; ExM in abstract,data (after retry),kept,yes,re-extracted,yes,,62
+Mechanistically_NatureCommunications_2025.pdf,10.1038/s41467-025-65756-2,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,39
+Mekbib_bioRxiv_2025.pdf,10.1101/2025.08.06.668765,in harvest (doi),rejected,ExM in title; ExM in abstract; review/wrong-method term: 'light sheet',data,kept,yes,re-extracted,yes,earlier version of Tian_npjCancer_2026.pdf (confirmed),7
+Mennella1_MethodsinMolecularBiology_2024.pdf,10.1007/978-1-0716-3507-0_4,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,7
+Menon1_eLife_2019.pdf,10.7554/elife,in harvest (doi),kept (needs review),,data,kept,yes,re-extracted,yes,,12
+Mercey1_bioRxiv_2021.pdf,10.1101/2021.08.27.457921,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,earlier version of Mercey_PLOSBiology_2022.pdf (confirmed),13
+Mercey2_bioRxiv_2021.pdf,10.1101/2021.08.27.457921,in harvest (doi),rejected,,data,removed: duplicate of Mercey1_bioRxiv_2021.pdf,,,,,0
+Mercey_CellReportsMethods_2026.pdf,10.1016/j.crmeth.2026.101408,in harvest (doi),kept,ExM in title; ExM in abstract,data (after retry),kept,yes,re-extracted,yes,,61
+Mercey_EMBOReports_2024.pdf,10.1038/s44318-024-00284-1,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,later version of Mercey_bioRxiv_2024.pdf (confirmed),26
+Mercey_PLOSBiology_2022.pdf,10.1371/journal.pbio.3001649,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,later version of Mercey1_bioRxiv_2021.pdf (confirmed),18
+Mercey_bioRxiv_2024.pdf,10.1101/2024.04.09.588666,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,earlier version of Mercey_EMBOReports_2024.pdf (confirmed),24
+Mercey_bioRxiv_2025.pdf,10.1101/2025.08.26.672318,in harvest (doi),kept,ExM in title; ExM in abstract,data (after retry),removed: duplicate of Mercey_CellReportsMethods_2026.pdf,,,,,0
+Mestre_BiomedicalOpticsExpress_2025.pdf,10.1364/boe.579043,in harvest (doi),rejected,ExM in abstract,data,kept,yes,re-extracted,yes,,10
+Mestre_bioRxiv_2025.pdf,10.1101/2025.09.12.675899,in harvest (doi),rejected,ExM in abstract,data,removed: duplicate of Mestre_BiomedicalOpticsExpress_2025.pdf,,,,,0
+Michalska_NatureBiotechnology_2022.pdf,10.1038/s41587-023-01911-8,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,later version of Michalska_bioRxiv_2022.pdf (confirmed),27
+Michalska_bioRxiv_2022.pdf,10.1101/2022.08.17.504272,in harvest (doi),rejected,,data,kept,yes,carried over from v1 (v2 failed),yes,earlier version of Michalska_NatureBiotechnology_2022.pdf (confirmed),11
+Michels1_MethodsinMolecularBiology_2026.pdf,10.1007/978-1-0716-5146-9_13,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,13
+Migliori_BMCBiology_2018.pdf,10.1186/s12915-018-0521-8,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,1
+Mikulenková_bioRxiv_2025.pdf,,"not extracted, cannot match",,,API failure,,,,,,0
+Mikus_Cell_2025.pdf,10.1016/j.cell.2025.09.027,in harvest (doi),rejected,ExM in abstract; experimental terms,data (after retry),kept,yes,carried over from v1 (v2 failed),yes,,952
+Miller_bioRxiv_2020.pdf,10.1101/2020.05.13.094268,in harvest (doi),rejected,ExM in abstract,data,removed: duplicate of Alon_Nanoscale_2021.pdf,,,,,0
+Mitchell1_bioRxiv_2026.pdf,10.64898/2026.01.29.702630,in harvest (doi),kept (needs review),no abstract — needs manual check,data,kept,yes,re-extracted,yes,,6
+Mitchell2_bioRxiv_2026.pdf,10.64898/2026.01.29.702630,in harvest (doi),kept (needs review),no abstract — needs manual check,data,removed: duplicate of Mitchell1_bioRxiv_2026.pdf,,,,,0
+Moehle_bioRxiv_2025.pdf,10.1101/2025.01.29.635597,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,7
+Morano_PLOSPathogens_2024.pdf,10.1371/journal.ppat.1012265,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,6
+Morano_bioRxiv_2024.pdf,10.1101/2024.03.15.585229,in harvest (doi),rejected,,data,removed: duplicate of Morano_mBio_2024.pdf,,,,,0
+Morano_mBio_2024.pdf,10.1128/mbio.03036-24,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,6
+Morgan_bioRxiv_2024.pdf,10.1101/2024.09.18.613744,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,36
+Moye_AdvancesinExperimentalMedicineandBiology_2023.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Mu_bioRxiv_2023.pdf,10.1101/2023.07.19.549787,in harvest (doi),rejected,ExM in abstract; experimental terms,data,kept,yes,re-extracted,yes,,12
+Mullins_bioRxiv_2025.pdf,10.1101/2025.11.24.690213,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,4
+Munro_NatureNanotechnology_2021.pdf,10.1038/s41565-021-00875-7,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,later version of Gao_bioRxiv_2019.pdf (confirmed),20
+NEK_bioRxiv_2024.pdf,10.1101/2024.02.05.578160,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,7
+NE_Cells_2019.pdf,10.3390/cells8020162,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,7
+Nachury_bioRxiv_2025.pdf,10.1101/2025.09.10.675452,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,10
+Nagahata_PNAS_2025.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Nakamoto_ACSNano_2022.pdf,10.1021/acsnano.1c11015,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,9
+Neubert_bioRxiv_2022.pdf,10.1101/2022.07.21.499684,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,earlier version of Kruss_BiophysicalReports_2023.pdf (confirmed),10
+Nielsen_FluidsandBarriersoftheCNS_2023.pdf,10.1186/s12987-022-00404-1,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,5
+Norman_bioRxiv_2024.pdf,10.1101/2024.08.13.607782,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,32
+Odenwald_bioRxiv_2023.pdf,10.1101/2023.12.01.569576,in harvest (doi),rejected,antibody mention,data,removed: duplicate of Odenwald_eLife_2024.pdf,,,,,0
+Odenwald_eLife_2024.pdf,10.7554/elife.95028,in harvest (title 1.00),rejected,antibody mention,data,kept,yes,re-extracted,yes,,13
+Ohno_FrontiersinNeuroanatomy_2021.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Olivetta_Nature_2024.pdf,10.1038/s41586-024-08115-3,not in harvest: added by hand,,,not run in v1 (added later),,yes,re-extracted,yes,,5
+Oria_FrontiersinNeuroscience_2020.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Ortiz_ChromosomeResearch_2022.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Ortiz_bioRxiv_2021.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Pacheco_bioRxiv_2021.pdf,10.1101/2021.03.22.436543,in harvest (doi),rejected,,data,removed: duplicate of Apicomplexa_mBio_2021.pdf,,,,,0
+Padilla_JournalofCellScience_2024.pdf,10.1242/jcs.263436,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,9
+Paques_CommunicationsBiology_2022.pdf,10.1038/s42003-021-02998-y,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,24
+Park_ACSNano_2020.pdf,10.1021/acsnano.0c04915,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,38
+Park_BritishJournalofCancer_2023.pdf,10.1038/s41416-023-02391-y,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,6
+Park_PLOSONE_2023.pdf,10.1371/journal.pone.0291506,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,later version of Cui_bioRxiv_2022.pdf (confirmed),26
+Park_ScienceAdvances_2021.pdf,10.1126/sciadv.abf6589,in harvest (doi),kept,ExM in title; antibody mention,data,kept,yes,re-extracted,yes,,28
+Patch_ScientificReports_2025.pdf,10.1038/s41598-025-18207-3,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,19
+Patt_InternationalJournalofMolecularSciences_2023.pdf,10.3390/ijms241713490,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,8
+Pereda_bioRxiv_2023.pdf,10.1101/2023.07.25.550347,in harvest (doi),rejected,ExM in title,data,removed: duplicate of Cardenas_eLife_2023.pdf,,,,,0
+Pernal1_HistochemistryandCellBiology_2020.pdf,10.1007/s00418-020-01869-7,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,later version of Pernal1_bioRxiv_2019.pdf (confirmed),5
+Pernal1_bioRxiv_2019.pdf,10.1101/699579,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,earlier version of Pernal1_HistochemistryandCellBiology_2020.pdf (confirmed),5
+Pernal2_bioRxiv_2019.pdf,10.1101/699579,in harvest (doi),kept,ExM in title; ExM in abstract,data,removed: duplicate of Pernal1_bioRxiv_2019.pdf,,,,,0
+Pesce1_Nanoscale_2019.pdf,10.1002/jbio.201900018,in harvest (doi),rejected,ExM in abstract; experimental terms,data,kept,yes,re-extracted,yes,later version of Pesce_bioRxiv_2018.pdf (confirmed),5
+Pesce2_Nanoscale_2019.pdf,10.1002/jbio.201900018,in harvest (doi),rejected,ExM in abstract; experimental terms,data,removed: duplicate journal download,,,,,0
+Pesce_bioRxiv_2018.pdf,10.1101/449702,in harvest (doi),kept,ExM in title; ExM in abstract; experimental terms,data,kept,yes,re-extracted,yes,earlier version of Pesce1_Nanoscale_2019.pdf (confirmed),5
+Pesce_bioRxiv_2023.pdf,10.1101/2023.02.20.529190,in harvest (doi),rejected,ExM in abstract,data,kept,yes,re-extracted,yes,earlier version of Pugliese_ScientificReports_2023.pdf (likely),11
+Petreaca_MethodsinMolecularBiology_2025.pdf,10.1007/978-1-0716-4168-2_4,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,2
+Piatkevich_ResearchSquare_2021.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Plasmodium_LifeScienceAlliance_2025.pdf,10.26508/lsa.202403110,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,6
+Plasmodium_bioRxiv_2020.pdf,10.1101/2020.07.08.192328,in harvest (doi),rejected,ExM in title,data,removed: duplicate of Bertiaux_PLOSBiology_2021.pdf,,,,,0
+Prague_bioRxiv_2024.pdf,10.1101/2024.01.08.574661,in harvest (doi),rejected,ExM in title,data,removed: duplicate of Soukup_ExperimentalParasitology_2024.pdf,,,,,0
+Prokina_JEM_2025.pdf,10.1111/jeu.70041,in harvest (doi),rejected,,not run in v1 (added later),,yes,re-extracted,yes,,5
+Pudlowski_bioRxiv_2024.pdf,10.1101/2024.04.19.590208,in harvest (doi),rejected,,data,removed: duplicate of Pudlowski_eLife_2024.pdf,,,,,0
+Pudlowski_eLife_2024.pdf,10.7554/elife,in harvest (doi),kept (needs review),,data,kept,yes,re-extracted,yes,,39
+Pugliese_ScientificReports_2023.pdf,10.1038/s41598-023-40272-9,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,later version of Pesce_bioRxiv_2023.pdf (likely),10
+Pujals_Nanoscale_2024.pdf,10.1039/d4nr00917g,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,8
+Pullman_FrontiersinMedicine_2018.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+RON_bioRxiv_2024.pdf,10.1101/2024.01.29.577654,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,7
+Radmacher_AnnualReviewofBiophysics_2025.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Ramadan_CellReportsMethods_2025.pdf,10.1016/j.crmeth.2025.101082,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,8
+Ramanantsalama_JournalofCellScience_2022.pdf,10.1242/jcs.259893,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,9
+Rao_CurrBio_2025.pdf,10.1016/j.cub.2025.03.076,not in harvest: added by hand,,,not run in v1 (added later),,yes,re-extracted,yes,,14
+Rashpa_PLOSPathogens_2022.pdf,10.1371/journal.ppat.1010223,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,14
+Rashpa_bioRxiv_2021.pdf,10.1101/2021.07.21.453039,in harvest (doi),rejected,ExM in title,data,removed: duplicate of Rashpa_PLOSPathogens_2022.pdf,,,,,0
+Rashpa_bioRxiv_2023.pdf,10.1101/2023.07.19.549332,in harvest (doi),rejected,,data,removed: duplicate of Rashpa_mBio_2024.pdf,,,,,0
+Rashpa_mBio_2024.pdf,10.1128/mbio.01672-24,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,7
+Reinhard_bioRxiv_2025.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Rena_PNAS_2024.pdf,10.1073/pnas.2416602121,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,5
+Reza_bioRxiv_2024.pdf,10.1101/2024.02.20.581313,in harvest (doi),rejected,ExM in title,data,removed: duplicate of Campus_JournalofCellScience_2024.pdf,,,,,0
+Rios_bioRxiv_2024.pdf,10.1101/2024.02.01.577866,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,8
+Rizzoli_ResearchSquare_2022.pdf,10.21203/rs.3.rs-1990789/v1,in harvest (doi),kept,already downloaded,data (after retry),kept,yes,re-extracted,yes,earlier version of Saal_ScientificReports_2023.pdf (confirmed),51
+Rokicki_bioRxiv_2024.pdf,10.1101/2024.05.17.594641,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,28
+Rosnet_bioRxiv_2021.pdf,10.1101/2021.07.13.452210,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,earlier version of Bouhouche_PLOSBiology_2022.pdf (confirmed),21
+Rouhanifard_bioRxiv_2017.pdf,10.1101/222794,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,5
+Rout_EMBOReports_2025.pdf,10.1021/acs.biochem.5c00487,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,4
+Ruetten_bioRxiv_2025.pdf,10.1101/2025.08.20.670374,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,7
+Rühling_NatureCommunications_2024.pdf,10.1038/s41467-024-51874-w,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,18
+Saal_ScientificReports_2023.pdf,10.1038/s41598-023-32524-5,in harvest (doi),kept,already downloaded,data (after retry),kept,yes,re-extracted,yes,later version of Rizzoli_ResearchSquare_2022.pdf (confirmed),51
+Saka_NatureBiotechnology_2019.pdf,10.1038/s41587-019-0207-y,in harvest (doi),kept,antibody mention; experimental terms,data,kept,yes,re-extracted,yes,later version of Saka_bioRxiv_2018.pdf (confirmed),44
+Saka_bioRxiv_2018.pdf,10.1101/507566,in harvest (doi),kept,antibody mention; experimental terms,data,kept,yes,re-extracted,yes,earlier version of Saka_NatureBiotechnology_2019.pdf (confirmed),28
+Sala_FrontiersinMolecularNeuroscience_2024.pdf,10.3389/fnmol.2024.1381534,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,29
+Samuel_bioRxiv_2024.pdf,10.1101/2024.09.26.615181,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,1
+Sarwal_FrontiersinMedicine_2018.pdf,10.3389/fmed.2018.00322,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,12
+Sass_MethodsinMolecularBiology_2023.pdf,10.1007/978-1-0716-2855-3_10,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,2
+Sayers1_CellSystems_2024.pdf,10.1016/j.cels.2024.10.008,in harvest (doi),kept (needs review),no abstract — needs manual check,data,kept,yes,re-extracted,yes,,10
+Schaffer1_bioRxiv_2021.pdf,10.1101/2021.10.17.464685,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,6
+Schaffer2_bioRxiv_2021.pdf,10.1101/2021.10.17.464685,in harvest (doi),rejected,,data,removed: duplicate of Schaffer1_bioRxiv_2021.pdf,,,,,0
+Scheible_bioRxiv_2018.pdf,10.1101/265405,in harvest (doi),kept (needs review),no abstract — needs manual check,data,kept,yes,re-extracted,yes,,1
+Schliebs_Cells_2020.pdf,10.1002/cbic.202000571,in harvest (doi),kept,ExM in title; ExM in abstract; experimental terms,data,kept,yes,re-extracted,yes,,8
+Schroeder_bioRxiv_2024.pdf,10.1101/2024.10.11.617802,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,20
+Schweizer_bioRxiv_2020.pdf,10.1101/2020.11.18.384156,in harvest (doi),rejected,,data,removed: duplicate of Toulouse_NatureCommunications_2021.pdf,,,,,0
+Seehra_bioRxiv_2023.pdf,10.1101/2023.02.20.529230,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,6
+Sena_JournalofMicroscopy_2025.pdf,10.1111/jmi.13387,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,"removed 9 Oct 2026: Q6 review article (O.D., 9 Oct 2026)",,0
+Seo1_bioRxiv_2021.pdf,10.1101/2021.01.27.428247,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,3
+Seo2_bioRxiv_2021.pdf,10.1101/2021.01.27.428247,in harvest (doi),rejected,,data,removed: duplicate of Seo1_bioRxiv_2021.pdf,,,,,0
+Shah_Cell_2023.pdf,10.1038/s41586-024-07430-z,not in harvest: added by hand,,,data,kept,yes,re-extracted,yes,,28
+Shaib_NatureBiotechnology_2023.pdf,10.1038/s41587-024-02431-9,in harvest (doi),kept,already downloaded,data (after retry),kept,yes,re-extracted,yes,,30
+Shaib_bioRxiv_2022.pdf,10.1101/2022.08.03.502284,in harvest (doi),rejected,ExM in title,data (after retry),kept,yes,re-extracted,yes,,43
+Shakespeare_ACSNano_2026.pdf,10.1021/acsnano.6c00277,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,later version of EGFR_bioRxiv_2025.pdf (confirmed),19
+Sheard1_bioRxiv_2021.pdf,10.1101/2021.10.21.462365,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,9
+Sheard2_bioRxiv_2021.pdf,10.1101/2021.10.21.462365,in harvest (doi),rejected,,data,removed: duplicate of Sheard1_bioRxiv_2021.pdf,,,,,0
+Sheard_ACSNano_2019.pdf,10.1021/acsnano.8b08742,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,7
+Sheard_Nanoscale_2023.pdf,10.1039/d3nr01129a,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,26
+Sheard_bioRxiv_2023.pdf,10.1101/2023.02.21.529394,in harvest (doi),kept,ExM in title; experimental terms,data,removed: duplicate of Sheard_Nanoscale_2023.pdf,,,,,0
+Shearda_bioRxiv_2020.pdf,10.1101/2020.06.26.131854,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,6
+Shi_JournalofCellBiology_2021.pdf,10.1083/jcb.202105067,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,32
+Shi_bioRxiv_2019.pdf,10.1101/687954,in harvest (doi),kept,ExM in title; ExM in abstract,data,removed: duplicate of Shi_JournalofCellBiology_2021.pdf,,,,,0
+Shi_bioRxiv_2021.pdf,10.1101/2021.12.22.473713,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,12
+Sim1_bioRxiv_2021.pdf,10.1101/2021.05.18.443629,in harvest (doi),kept,ExM in title; ExM in abstract,data,removed: duplicate of Sim2_bioRxiv_2021.pdf,,,,,0
+Sim2_bioRxiv_2021.pdf,10.1101/2021.05.18.443629,in harvest (doi),kept,ExM in title; ExM in abstract,data,removed: duplicate of Sim_ACSNano_2025.pdf,,,,,0
+Sim_ACSNano_2025.pdf,10.1021/acsnano.4c14791,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,34
+Simon_bioRxiv_2021.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Soldati-Favre_PLOSBiology_2021.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Soukup_ExperimentalParasitology_2024.pdf,10.1016/j.exppara.2024.108831,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,12
+Souza_PLOSPathogens_2024.pdf,10.1371/journal.ppat.1012127,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,6
+Srinivas_bioRxiv_2021.pdf,10.1101/2021.06.01.446664,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,2
+Stefani_ScientificReports_2020.pdf,10.1038/s41598-020-59856-w,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,10
+Steib1_eLife_2020.pdf,10.7554/elife,in harvest (doi),kept (needs review),,data,kept,yes,re-extracted,yes,,26
+Steib_CellReportsMethods_2022.pdf,10.1016/j.crmeth.2022.100311,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,30
+Steib_bioRxiv_2020.pdf,10.1101/2020.02.15.950444,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,24
+Suen1_LifeScienceAlliance_2023.pdf,10.26508/lsa.202201650,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,7
+Suen2_LifeScienceAlliance_2023.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Suen_bioRxiv_2022.pdf,10.1101/2022.05.29.493872,in harvest (doi),rejected,ExM in title,data,removed: duplicate of Suen1_LifeScienceAlliance_2023.pdf,,,,,0
+Sun_AnalyticalChemistry_2022.pdf,10.1021/acs.analchem.2c00773,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,10
+Sun_FrontiersinChemistry_2020.pdf,10.3389/fchem.2021.640519,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,4
+Sun_bioRxiv_2020.pdf,10.1101/2020.03.19.998039,in harvest (doi),kept,ExM in title; ExM in abstract; experimental terms,data,removed: duplicate of Li_NatureMethods_2020.pdf,,,,,0
+Taddei_JAMANeurology_2023.pdf,10.1001/jamaneurol.2023.3530,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,8
+Takahashi_Cell_2025.pdf,10.1167/iovs.66.2.1,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,35
+Takahashi_bioRxiv_2024.pdf,10.1101/2024.06.27.600953,in harvest (doi),rejected,ExM in title,data,removed: duplicate of Takahashi_Cell_2025.pdf,,,,,0
+Tassin_ScienceAdvances_2020.pdf,10.1126/sciadv.aaz4137,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,12
+Technologies_ResearchSquare_2020.pdf,10.21203/rs.3.rs-68002/v1,in harvest (doi),kept,already downloaded,data,removed: duplicate of Zhovmer1_NatureMethods_2021.pdf,,,,,0
+Teng_FrontiersinMolecularBiosciences_2020.pdf,10.3389/fmolb.2020.00208,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,19
+Tengganu_bioRxiv_2025.pdf,10.1101/2025.08.26.672290,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,8
+Thornlow_Cells_2024.pdf,10.1021/acscentsci.4c01061,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,8
+Tian_bioRxiv_2025.pdf,10.1101/2025.07.28.667278,in harvest (doi),rejected,ExM in abstract,data,kept,yes,re-extracted,yes,,16
+Tian_npjCancer_2026.pdf,10.1038/s44303-026-00141-2,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,later version of Mekbib_bioRxiv_2025.pdf (confirmed),6
+Tillberg_AnnualReviewofCellandDevelopmentalBiolog_2019.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Tillberg_NatureBiotechnology_2016.pdf,10.1038/nbt.3625,in harvest (doi),kept,already downloaded,data (after retry),kept,yes,re-extracted,yes,,35
+Tillberg_ScientificReports_2016.pdf,10.1038/srep22691,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,10
+Tilley_ResearchSquare_2023.pdf,10.21203/rs.3.rs-3404985/v1,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,17
+Tomasina_Microorganisms_2021.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Tomasina_Microorganisms_2023.pdf,10.3390/microorganisms12010061,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,5
+Tong_bioRxiv_2016.pdf,10.1101/049403,in harvest (doi),rejected,ExM in abstract,data,kept,yes,re-extracted,yes,,7
+Tosetti_bioRxiv_2020.pdf,10.1101/2020.02.25.962589,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,earlier version of Tosetti_eLife_2020.pdf (confirmed),11
+Tosetti_eLife_2020.pdf,10.7554/elife,in harvest (doi),kept (needs review),,data,kept,yes,re-extracted,yes,later version of Tosetti_bioRxiv_2020.pdf (confirmed),11
+Toulouse_NatureCommunications_2021.pdf,10.1038/s41467-021-26252-5,in harvest (title 1.00),rejected,,data,kept,yes,re-extracted,yes,,42
+Toulouse_bioRxiv_2024.pdf,10.1101/2024.10.08.617151,in harvest (doi),rejected,,data,removed: duplicate of Guo_CellularandMolecularLifeSciences_2024.pdf,,,,,0
+Trinks_CommunicationsBiology_2021.pdf,10.1038/s42003-021-02669-y,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,13
+Truckenbrodt1_EMBOReports_2018.pdf,10.15252/embr.201845836,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,20
+Tsaia_Methods_2019.pdf,10.1016/j.ymeth.2019.04.006,in harvest (doi),rejected,ExM in abstract; review/wrong-method term: 'light sheet',data,kept,yes,re-extracted,yes,,8
+Tsekitsidou_bioRxiv_2022.pdf,10.1101/2022.06.16.496489,in harvest (doi),rejected,experimental terms,data,removed: duplicate of Calcineurin_JournalofCellScience_2023.pdf,,,,,0
+Utrecht_bioRxiv_2022.pdf,10.1101/2022.12.21.521394,in harvest (doi),kept,ExM in title; ExM in abstract,data,removed: duplicate of Damstra_NatureMethods_2023.pdf,,,,,0
+Vardalaki_bioRxiv_2023.pdf,10.1101/2023.03.20.533452,in harvest (doi),rejected,,data,removed: duplicate of Patch_ScientificReports_2025.pdf,,,,,0
+Vaughan_NucleicAcidsResearch_2021.pdf,10.1093/nar/gkab423,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,15
+Venkataramani1_bioRxiv_2026.pdf,10.64898/2026.02.20.707066,in harvest (doi),kept (needs review),no abstract — needs manual check,data,kept,yes,re-extracted,yes,,4
+Venkataramani2_bioRxiv_2026.pdf,10.64898/2026.02.20.707066,in harvest (doi),kept (needs review),no abstract — needs manual check,data,removed: duplicate of Venkataramani1_bioRxiv_2026.pdf,,,,,0
+Vigetti_InternationalJournalofMolecularSciences_2022.pdf,10.3390/ijms23115995,in harvest (doi),kept (needs review),no abstract — needs manual check,data,kept,yes,re-extracted,yes,,5
+Vihinen-Rantac_MolecularBiologyoftheCell_2023.pdf,10.1091/mbc.e22-09-0448,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,13
+Villegas-Hernández_NatureCommunications_2025.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Vinopal_CurrentOpinioninNeurobiology_2025.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Voth_FrontiersinCellularandInfectionMicrobiol_2019.pdf,10.3389/fcimb.2019.00276,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,14
+Wan1_eLife_2023.pdf,10.7554/elife,in harvest (doi),kept (needs review),,data,kept,yes,re-extracted,yes,,15
+Wang1_ScientificReports_2018.pdf,10.1038/s41598-018-22297-7,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,8
+Wang2_ScientificReports_2018.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Wang_Cell_2021.pdf,10.1016/j.cell.2021.11.024,in harvest (doi),kept (needs review),no abstract — needs manual check,data,kept,yes,re-extracted,yes,,17
+Wang_CellularandMolecularLifeSciences_2022.pdf,10.1007/s00018-022-04564-z,in harvest (doi),rejected,ExM in title,data,kept,yes,re-extracted,yes,,10
+Wang_FrontiersinCellandDevelopmentalBiology_2024.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Wang_NanoConvergence_2022.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Wang_ScientificReports_2023.pdf,10.1038/s41598-023-48959-9,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,later version of Wang_bioRxiv_2023.pdf (confirmed),14
+Wang_bioRxiv_2017.pdf,10.1101/238899,in harvest (doi),rejected,ExM in title; review/wrong-method term: 'merfish',data,removed: duplicate of Wang1_ScientificReports_2018.pdf,,,,,0
+Wang_bioRxiv_2023.pdf,10.1101/2023.03.20.533392,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,earlier version of Wang_ScientificReports_2023.pdf (confirmed),12
+Wang_eLife_2019.pdf,10.7554/elife,in harvest (doi),kept (needs review),,data,kept,yes,re-extracted,yes,,8
+Wei_FrontiersinCellularandInfectionMicrobiol_2020.pdf,10.3389/fcimb.2021.644750,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,21
+Weish_bioRxiv_2021.pdf,10.1101/2021.04.25.441304,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,18
+Welp_Cell_2023.pdf,10.1016/j.cell.2023.10.003,in harvest (doi),kept (needs review),no abstract — needs manual check,data,kept,yes,re-extracted,yes,,37
+Wen1_bioRxiv_2019.pdf,10.1101/696039,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,earlier version of Wen_ACSNano_2020.pdf (confirmed),10
+Wen2_bioRxiv_2019.pdf,10.1101/696039,in harvest (doi),kept,ExM in title; ExM in abstract,data,removed: duplicate of Wen1_bioRxiv_2019.pdf,,,,,0
+Wen_ACSNano_2015.pdf,10.1021/acsnano.3c07510,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,later version of Wen_bioRxiv_2023.pdf (confirmed),23
+Wen_ACSNano_2020.pdf,10.1021/acsnano.9b09259,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,later version of Wen1_bioRxiv_2019.pdf (confirmed),7
+Wen_ChemicalReviews_2022.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Wen_ChemistryEuropeanJournal_2022.pdf,10.1002/chem.202202404,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,6
+Wen_JACS_2021.pdf,10.1021/jacs.1c05931,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,11
+Wen_JACS_2025.pdf,10.1021/jacs.4c15608,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,12
+Wen_bioRxiv_2023.pdf,10.1101/2023.05.10.540261,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,earlier version of Wen_ACSNano_2015.pdf (confirmed),16
+Wilmerding_STARProtocols_2023.pdf,10.1016/j.xpro.2022.101997,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,15
+Wilson_bioRxiv_2024.pdf,10.1101/2024.10.04.616647,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,2
+Winzeler_ResearchSquare_2024.pdf,10.21203/rs.3.rs-4892449/v1,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,5
+Woglar_bioRxiv_2022.pdf,10.1101/2022.05.09.491129,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,21
+Wollweber_Cell_2025.pdf,10.1016/j.cell.2025.02.027,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,5
+Woo_ScientificReports_2020.pdf,10.1038/s41598-020-61156-2,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,17
+Woodworth1_bioRxiv_2026.pdf,10.64898/2026.04.12.717957,in harvest (doi),kept (needs review),no abstract — needs manual check,data,kept,yes,re-extracted,yes,,14
+Woodworth2_bioRxiv_2026.pdf,10.64898/2026.04.12.717957,in harvest (doi),kept (needs review),no abstract — needs manual check,data,removed: duplicate of Woodworth1_bioRxiv_2026.pdf,,,,,0
+Woodworth_bioRxiv_2020.pdf,10.1101/2020.11.17.385476,in harvest (doi),rejected,ExM in title,data,removed: duplicate of Vaughan_NucleicAcidsResearch_2021.pdf,,,,,0
+Wu_FrontiersinComputationalNeuroscience_2017.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Wu_NatureCommunications_2025.pdf,10.1038/s41467-025-62613-0,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,11
+Wu_TranslationalPsychiatry_2025.pdf,10.1038/s41398-026-03905-x,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,6
+Wunderlich_AnalyticalandBioanalyticalChemistry_2020.pdf,10.1007/s00216-020-03084-8,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,4
+Xiea_bioRxiv_2024.pdf,10.1101/2024.10.21.619369,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,2
+Xu_CurrBio_2026.pdf,10.1016/j.cub.2026.05.071,in harvest (title 0.86),rejected,,not run in v1 (added later),,yes,re-extracted,yes,,7
+Xu_ResearchSquare_2022.pdf,10.21203/rs.3.rs-1984380/v1,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,18
+Yanase_LifeScienceAlliance_2025.pdf,10.26508/lsa.202403056,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,4
+Yanase_bioRxiv_2024.pdf,10.1101/2024.09.22.613647,in harvest (doi),rejected,,data,removed: duplicate of Yanase_LifeScienceAlliance_2025.pdf,,,,,0
+Yanase_bioRxiv_2025.pdf,10.1101/2025.11.21.689802,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,later version of Guttery_ResearchSquare_2025.pdf (confirmed),6
+Yang_ChemicalBiomedicalImaging_2025.pdf,10.1021/cbmi.5c00037,in harvest (doi),rejected,ExM in abstract,data,kept,yes,re-extracted,yes,,6
+Yang_NatureCommunications_2025.pdf,10.1038/s41467-025-64158-8,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,11
+Yeon_ScientificReports_2022.pdf,10.1038/s41598-022-12808-y,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,9
+Yu_CommunicationsBiology_2025.pdf,10.1038/s42003-025-07829-y,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,18
+Yu_ResearchSquare_2024.pdf,10.21203/rs.3.rs-5021271/v1,in harvest (doi),kept,already downloaded,data,removed: duplicate of Yu_CommunicationsBiology_2025.pdf,,,,,0
+Yu_bioRxiv_2023.pdf,10.1101/2023.11.09.566477,in harvest (doi),kept,ExM in title; experimental terms,data,kept,yes,re-extracted,yes,,28
+Yu_bioRxiv_2024.pdf,10.1101/2024.10.07.617131,in harvest (doi),rejected,,data,removed: duplicate of Yu_CommunicationsBiology_2025.pdf,,,,,0
+Yu_eLife_2019.pdf,10.7554/elife,in harvest (doi),kept (needs review),,data,kept,yes,re-extracted,yes,,40
+Zeeshan1_eLife_2025.pdf,10.7554/elife,in harvest (doi),kept (needs review),,data,kept,yes,re-extracted,yes,,6
+Zeeshan_LifeScienceAlliance_2026.pdf,10.26508/lsa.202503522,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,later version of Zeeshan_bioRxiv_2025.pdf (confirmed),5
+Zeeshan_bioRxiv_2024.pdf,10.1101/2024.12.04.625416,in harvest (doi),rejected,,data,removed: duplicate of Zeeshan1_eLife_2025.pdf,,,,,0
+Zeeshan_bioRxiv_2025.pdf,10.1101/2025.10.01.678762,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,earlier version of Zeeshan_LifeScienceAlliance_2026.pdf (confirmed),6
+Zeilinger_FrontiersinMicrobiology_2020.pdf,10.3389/fmicb.2020.00574,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,10
+Zelena_bioRxiv_2025.pdf,10.1101/2025.03.23.644790,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,19
+Zerulla_BeilsteinJournalofNanotechnology_2023.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Zhang_Cells_2020.pdf,10.1002/cpns.96,in harvest (doi),kept,ExM in title; ExM in abstract,data,kept,yes,re-extracted,yes,,2
+Zhang_HeartRhythm_2025.pdf,10.1016/j.hrthm.2025.05.015,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,5
+Zhang_JNeuroendocrinology_2022.pdf,10.1111/jne.13164,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,5
+Zhang_bioRxiv_2020.pdf,,"not extracted, cannot match",,,judged not ExM,,,,,,0
+Zhao_ResearchSquare_2021.pdf,10.21203/rs.3.rs-858006/v1,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,26
+Zhao_ResearchSquare_2023.pdf,10.21203/rs.3.rs-2637060/v1,in harvest (doi),kept,already downloaded,data (after retry),removed: duplicate of Cheng_MicrobialCell_2023.pdf,,,,,0
+Zhao_ScienceAdvances_2021.pdf,10.1126/sciadv.abg1244,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,11
+Zhao_ScienceAdvances_2022.pdf,10.21769/bioprotoc.4336,in harvest (doi),kept,ExM in title; antibody mention,data,kept,yes,re-extracted,yes,,18
+Zhao_bioRxiv_2020.pdf,10.1101/2020.05.15.098012,in harvest (doi),rejected,,data,removed: duplicate of Zhao_ScienceAdvances_2021.pdf,,,,,0
+Zhovmer1_NatureMethods_2021.pdf,10.1038/s41592-021-01155-x,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,13
+Zhuang_bioRxiv_2024.pdf,10.1101/2024.06.21.597078,in harvest (doi),rejected,,data (after retry),kept,yes,re-extracted,yes,,36
+Zink_bioRxiv_2025.pdf,10.1101/2025.10.24.684113,in harvest (doi),rejected,,data,kept,yes,re-extracted,yes,,5
+Zwettler1_NatureCommunications_2020.pdf,10.1038/s41467-020-17017-7,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,13
+Zwettler2_NatureCommunications_2020.pdf,10.1038/s41467-020-17086-8,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,13
+Zwettler_bioRxiv_2020.pdf,10.1101/2020.03.12.988923,in harvest (doi),rejected,ExM in abstract,data,removed: duplicate of Zwettler2_NatureCommunications_2020.pdf,,,,,0
+ksaal_bioRxiv_2022.pdf,10.1101/2022.06.24.497479,in harvest (doi),rejected,ExM in abstract,data (after retry),removed: duplicate of Rizzoli_ResearchSquare_2022.pdf,,,,,0
+tobia_bioRxiv_2020.pdf,10.1101/2020.04.28.066605,in harvest (doi),rejected,ExM in title,data,removed: duplicate of Herrmann1_FrontiersinCellandDevelopmentalBiology_2020.pdf,,,,,0
+Övermöhle_npjPrecisionOncology_2026.pdf,10.1038/s44298-025-00169-y,in harvest (doi),kept,already downloaded,data,kept,yes,re-extracted,yes,,2
+Xu_bioRxiv_2025.pdf,10.1101/2025.11.12.688106,in harvest (doi),rejected,,data,removed: preprint of Xu_CurrBio_2026.pdf,,,,,0
